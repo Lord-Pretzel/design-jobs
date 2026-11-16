@@ -115,24 +115,72 @@ def extract_tags(title, desc):
     return found[:5]
 
 
-def extract_dates(desc):
-    """Pull a start date and a duration out of the posting text, if present."""
-    start = ""
-    m = re.search(r"start(?:\s*date)?\s*[:\-]?\s*(\d{1,2})[./-](\d{1,2})[./-](\d{2,4})", desc, re.I)
-    if m:
-        yr = int(m[3]) + (2000 if int(m[3]) < 100 else 0)
-        try:
-            start = datetime(yr, int(m[1]), int(m[2])).date().isoformat()
-        except ValueError:
-            pass
-    elif re.search(r"start(?:\s*date)?\s*[:\-]?\s*(asap|immediate)", desc, re.I):
-        start = "ASAP"
+LABELS = r"(?:placement type|salary|pay rate|start date|duration|location|overview|hours|contract length)"
+DATE_FORMATS = ("%Y-%m-%d", "%m.%d.%Y", "%m/%d/%Y", "%m-%d-%Y", "%m.%d.%y",
+                "%m/%d/%y", "%b %d, %Y", "%B %d, %Y", "%b %d %Y", "%B %d %Y")
+
+
+def label(desc, name):
+    """Value after a 'Label:' in the posting text, up to the next known label."""
+    m = re.search(rf"\b{name}\s*:\s*(.+?)(?=\s+{LABELS}\s*:|$)", desc, re.I)
+    return m.group(1).strip()[:80] if m else ""
+
+
+def fuzzy(d, pattern):
+    """First non-empty value whose field name matches the pattern."""
+    for k, v in d.items():
+        if v and re.search(pattern, k, re.I):
+            return v
+    return ""
+
+
+def parse_any_date(s):
+    s = re.sub(r"^([A-Za-z]{3,9})\.", r"\1", (s or "").strip())
+    s = re.sub(r"(\d)(st|nd|rd|th)\b", r"\1", s)
+    if re.match(r"(asap|immediate)", s, re.I):
+        return "ASAP"
+    for f in DATE_FORMATS:
+        for cand in (s, s[:10]):
+            try:
+                return datetime.strptime(cand, f).date().isoformat()
+            except ValueError:
+                pass
+    return ""
+
+
+def extract_dates(desc, start_hint="", duration_hint=""):
+    """Start date and duration: from labeled fields first, then the posting text."""
+    start = parse_any_date(start_hint)
+    if not start:
+        m = re.search(r"start(?:\s*date)?\s*[:\-]?\s*([A-Za-z]{3,9}\.? \d{1,2},? \d{4}"
+                      r"|\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|ASAP|immediate\w*)", desc, re.I)
+        start = parse_any_date(m[1]) if m else ""
+    if duration_hint:
+        return start, duration_hint[:30]
     m = re.search(r"(\d{1,2}(?:\s*[-–]\s*\d{1,2})?\+?\s*(?:weeks?|months?))", desc, re.I)
     if m:
         duration = m[1].strip()
     else:
         duration = "Ongoing" if re.search(r"\b(ongoing|long[- ]term)\b", desc, re.I) else ""
     return start, duration
+
+
+def pay_text(d, desc):
+    """Readable pay, e.g. '$55-58 Hourly'. Hides bare numbers with no unit."""
+    t = label(desc, r"(?:salary|pay rate)")
+    if t:
+        return t
+    unit = fuzzy(d, r"(period|unit|interval|frequency|basis)")
+    lo = fuzzy(d, r"(salary|pay|rate|comp).*min|min.*(salary|pay|rate|comp)")
+    hi = fuzzy(d, r"(salary|pay|rate|comp).*max|max.*(salary|pay|rate|comp)")
+    if lo and hi and unit:
+        return f"${lo}-{hi} / {unit}"
+    v = pick(d, "salary", "compensation", "pay", "payrate", "salaryrange", "rate")
+    if v and not re.fullmatch(r"[\d.,]+", v.strip()):
+        return v
+    if v and unit:
+        return f"${v} / {unit}"
+    return ""
 
 
 def normalize(d, source):
@@ -165,14 +213,16 @@ def normalize(d, source):
 
     # US only: keep US states, explicit US country, or remote with no location.
     in_us = bool(state) or country in US_NAMES or "united states" in loc.lower()
-    open_remote = workplace == "remote" and (
-        not (loc or country) or re.fullmatch(r"\s*(flexible\s*/\s*)?remote\s*", loc, re.I))
+    # Remote with no real place named ("Remote; Virtual", "Flexible / Remote").
+    open_remote = (workplace == "remote" and not country and not re.sub(
+        r"flexible|remote|virtual|anywhere|work from home|[\W_]+", "", loc, flags=re.I))
     if not in_us and not open_remote:
         return None
 
     raw_type = " ".join([pick(d, "jobtype", "employmenttype", "employment_type",
                               "type", "worktype", "placementtype"),
-                         desc[:300]]).lower()
+                         fuzzy(d, r"placement|employment|job_?type|work_?type"),
+                         label(desc, "placement type"), desc[:300]]).lower()
     if re.search(r"\b(contract|temporary|temp|freelance)\b", raw_type):
         jtype = "Contract"
     elif "part" in raw_type and "time" in raw_type:
@@ -183,7 +233,10 @@ def normalize(d, source):
         jtype = "Unknown"
 
     job_id = pick(d, "id", "jobid", "referencenumber", "reference", "guid") or url
-    start, duration = extract_dates(desc)
+    start, duration = extract_dates(
+        desc,
+        label(desc, "start date") or fuzzy(d, r"start"),
+        label(desc, "duration") or fuzzy(d, r"duration|length|term"))
     return {
         "id": f"{source}:{job_id}",
         "source": source,
@@ -197,7 +250,7 @@ def normalize(d, source):
         "posted": to_date(pick(d, "date", "postdate", "posteddate", "posted",
                                "pubdate", "publisheddate", "datecreated",
                                "dateposted", "createddate")),
-        "pay": pick(d, "salary", "compensation", "pay", "payrate", "salaryrange"),
+        "pay": pay_text(d, desc),
         "start": start,
         "duration": duration,
         "tags": extract_tags(title, desc),
@@ -224,6 +277,8 @@ def fetch_aquent():
     if not els:
         print(raw[:1500].decode("utf-8", "replace"))
         raise RuntimeError("Could not find job entries in the Aquent feed")
+    print("Sample Aquent posting fields:",
+          json.dumps({k: v[:120] for k, v in flat(els[0]).items()}, indent=1))
     return [j for j in (normalize(flat(e), "Aquent") for e in els) if j and j["title"]]
 
 
