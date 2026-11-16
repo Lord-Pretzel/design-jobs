@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design roles</title>
+<style>
+:root{--bg:#F4F5F8;--surface:#fff;--ink:#151922;--muted:#5C6373;--line:#DFE2E9;--accent:#3A37E8;--new:#0E9F6E;--chip:#ECEEF5;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#10121A;--surface:#181B26;--ink:#ECEFF6;--muted:#9AA2B5;--line:#2A2F3E;--accent:#8B89FF;--new:#34D399;--chip:#232837;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+header{max-width:1100px;margin:0 auto;padding:28px 20px 8px}
+h1{margin:0;font-size:28px;letter-spacing:-.02em}
+#status{margin:4px 0 0;color:var(--muted)}
+.grid{max-width:1100px;margin:0 auto;padding:12px 20px 48px;display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start}
+aside{position:sticky;top:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+aside label{display:block;margin:0 0 4px;font-weight:600;font-size:13px}
+aside .f{margin-bottom:14px}
+aside .row label{display:flex;gap:8px;align-items:center;font-weight:400;font-size:14px;margin:0 0 4px}
+input[type=search],select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:1fr 64px;gap:12px}
+.card h2{margin:0;font-size:17px;line-height:1.3}
+.card h2 a{text-decoration:none}.card h2 a:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:13px;margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:12px}
+.tag.new{background:var(--new);color:#fff}
+.tag.cat{background:var(--accent);color:var(--surface)}
+.score{text-align:right;font-variant-numeric:tabular-nums}
+.score b{font-size:20px}
+.bar{height:4px;border-radius:2px;background:var(--chip);margin-top:4px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.empty{padding:32px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px}
+footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);font-size:13px}
+@media (max-width:760px){.grid{grid-template-columns:1fr}aside{position:static}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Design roles</h1>
+  <p id="status">Loading…</p>
+</header>
+<div class="grid">
+  <aside>
+    <div class="f"><label for="q">Search</label><input id="q" type="search" placeholder="Figma, packaging, brand…"></div>
+    <div class="f row"><label>Work setup</label>
+      <label><input type="checkbox" name="wp" value="remote" checked> Remote</label>
+      <label><input type="checkbox" name="wp" value="hybrid" checked> Hybrid</label>
+      <label><input type="checkbox" name="wp" value="onsite" checked> On-site</label>
+      <label><input type="checkbox" name="wp" value="unknown" checked> Not stated</label>
+    </div>
+    <div class="f"><label for="st">State</label><select id="st"></select></div>
+    <div class="f"><label for="city">City</label><select id="city"></select></div>
+    <div class="f row"><label><input id="rem" type="checkbox" checked> Keep remote roles with no location</label></div>
+    <div class="f"><label for="type">Employment</label>
+      <select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div>
+    <div class="f"><label for="sort">Sort by</label>
+      <select id="sort"><option value="score">Best match</option><option value="new">Newest</option></select></div>
+    <div class="f row"><label><input id="only" type="checkbox" checked> Design-related roles only</label></div>
+  </aside>
+  <section id="list" aria-live="polite"></section>
+</div>
+<footer>Job data: Aquent job feed. Work setup is read from each posting’s text, so check the posting before you apply.</footer>
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const TIERS=[
+ {name:"UX/UI",w:10,re:/\b(ux|ui)\b|user (experience|interface)|product design|interaction design|design systems?/i},
+ {name:"Package",w:8,re:/packag(e|ing)|dieline|structural design|label design/i},
+ {name:"Web",w:7,re:/web ?design|website|digital design|front[- ]?end design|landing page/i},
+ {name:"Adjacent",w:5,re:/graphic|brand(ing)? design|visual design|art director|creative director|production (artist|designer)|illustrat|motion|layout|pre-?press|designer|design/i}
+];
+const BAD=/\b(writer|copywriter|engineer|recruiter|analyst|accountant|developer)\b/i;
+function score(j){
+  let best=0,cat="";
+  for(const t of TIERS) if(t.re.test(j.title)&&t.w>best){best=t.w;cat=t.name}
+  const d=j.description||"";
+  let s=best+Math.min(4,TIERS.filter(t=>t.re.test(d)).length);
+  if(best&&BAD.test(j.title)) s-=6;
+  if(!best) s=0;
+  j._cat=cat; j._score=Math.max(0,Math.min(100,Math.round(s/14*100)));
+}
+let DATA=null,JOBS=[];
+const CTRL=["q","st","city","rem","type","sort","only"];
+function save(){try{const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);localStorage.setItem("jobfilters",JSON.stringify(o))}catch(e){}}
+function restore(){try{const o=JSON.parse(localStorage.getItem("jobfilters")||"{}");CTRL.forEach(k=>{if(!(k in o)||k==="city")return;const e=$("#"+k);if(e.type==="checkbox")e.checked=o[k];else e.value=o[k]});(o.wp||[]).forEach((v,i)=>document.querySelectorAll("[name=wp]")[i].checked=v);return o.city||""}catch(e){return ""}}
+function fillStates(){
+  const c={};JOBS.forEach(j=>{if(j.state)c[j.state]=(c[j.state]||0)+1});
+  $("#st").innerHTML='<option value="">All states</option>'+Object.keys(c).sort().map(s=>`<option value="${s}">${s} (${c[s]})</option>`).join("");
+}
+function fillCities(keep){
+  const st=$("#st").value,c={};
+  JOBS.forEach(j=>{if(j.city&&(!st||j.state===st))c[j.city]=(c[j.city]||0)+1});
+  $("#city").innerHTML='<option value="">All cities</option>'+Object.keys(c).sort().map(s=>`<option value="${esc(s)}">${esc(s)} (${c[s]})</option>`).join("");
+  if(keep&&c[keep])$("#city").value=keep;
+}
+function ago(d){if(!d)return"";const n=Math.round((Date.now()-new Date(d+"T12:00:00"))/864e5);return n<=0?"today":n===1?"yesterday":n+" days ago"}
+function render(){
+  const q=$("#q").value.trim().toLowerCase(),st=$("#st").value,city=$("#city").value,type=$("#type").value,rem=$("#rem").checked,only=$("#only").checked;
+  const wp=[...document.querySelectorAll("[name=wp]:checked")].map(x=>x.value);
+  const today=DATA.updated.slice(0,10);
+  let r=JOBS.filter(j=>{
+    if(only&&!j._score)return false;
+    if(!wp.includes(j.workplace))return false;
+    if(type&&j.type!==type)return false;
+    if(q&&!(j.title+" "+j.company+" "+(j.description||"")).toLowerCase().includes(q))return false;
+    if(st||city){
+      const noLoc=!j.state&&!j.city;
+      if(noLoc)return rem&&j.workplace==="remote";
+      if(st&&j.state!==st)return false;
+      if(city&&j.city!==city)return false;
+    }
+    return true;
+  });
+  const bySort=$("#sort").value==="new"
+    ?(a,b)=>(b.posted||"").localeCompare(a.posted||"")||b._score-a._score
+    :(a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||"");
+  r.sort(bySort);
+  $("#status").textContent=`${r.length} of ${JOBS.length} roles · updated ${new Date(DATA.updated).toLocaleString([],{dateStyle:"medium",timeStyle:"short"})}`;
+  $("#list").innerHTML=r.length?r.map(j=>{
+    const where=[j.city,j.state].filter(Boolean).join(", ")||"Location not stated";
+    const wl={remote:"Remote",hybrid:"Hybrid",onsite:"On-site",unknown:"Setup not stated"}[j.workplace];
+    return `<article class="card"><div>
+      <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
+      <div class="meta">${esc(j.company)} · ${esc(where)}${j.posted?" · posted "+ago(j.posted):""}${j.pay?" · "+esc(j.pay):""}</div>
+      <div class="tags">${j.first_seen===today?'<span class="tag new">New</span>':""}${j._cat?`<span class="tag cat">${j._cat}</span>`:""}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span></div>
+    </div><div class="score"><b>${j._score}</b><div class="bar"><i style="width:${j._score}%"></i></div></div></article>`}).join(""):
+    '<div class="empty">No roles match these filters. Try another state or turn off a work setup filter.</div>';
+}
+fetch("jobs.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
+  DATA=d;JOBS=d.jobs;JOBS.forEach(score);
+  fillStates();const keepCity=restore();fillCities(keepCity);
+  document.querySelectorAll("aside input,aside select").forEach(e=>e.addEventListener("input",()=>{if(e.id==="st")fillCities();save();render()}));
+  render();
+}).catch(()=>{
+  $("#status").textContent="No job data yet";
+  $("#list").innerHTML='<div class="empty">jobs.json wasn’t found. In your GitHub repository, open Actions, choose “Refresh jobs”, and click Run workflow. If you opened this file from your computer, use your GitHub Pages link instead.</div>';
+});
+</script>
+</body>
+</html>
