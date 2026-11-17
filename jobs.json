@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-17T04:16:13+00:00",
+ "updated": "2026-11-17T04:39:56+00:00",
  "counts": {
-  "Aquent": 63,
+  "Aquent": 64,
   "Company boards": 165,
   "Coroflot": 9,
   "We Work Remotely": 12,
@@ -11,6 +11,29 @@
   "Himalayas": 52
  },
  "jobs": [
+  {
+   "id": "Aquent:https://aquent.com/find-work/214523",
+   "source": "Aquent",
+   "title": "Product Designer IV, Advertising and Business Tools [214523]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214523",
+   "city": "Culver City",
+   "state": "CA",
+   "workplace": "hybrid",
+   "type": "Contract",
+   "posted": "2026-11-16",
+   "pay": "W2, weekly pay, benefits, 401k w/ match",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Prototyping",
+    "Design systems",
+    "Accessibility",
+    "Web"
+   ],
+   "description": "Please note, this role is fully remote w/in 100 miles of Cupertino or Culver City. We\u2019re looking for a Product Designer to create tools that help businesses manage their operations, reach customers, and understand how their efforts are performing. The work may span advertising tools, business tools, or both. You\u2019ll partner with product managers, engineers, and other designers to turn user needs and business requirements into clear, accessible experiences for web and mobile. You\u2019ll take work from early concepts through implementation, using research and design review to refine your approach. Th",
+   "first_seen": "2026-11-17"
+  },
   {
    "id": "Aquent:https://aquent.com/find-work/214518",
    "source": "Aquent",
@@ -65,7 +88,7 @@
    "url": "https://aquent.com/find-work/214500",
    "city": "KOHLER",
    "state": "WI",
-   "workplace": "hybrid",
+   "workplace": "remote",
    "type": "Contract",
    "posted": "2026-11-16",
    "pay": "",
@@ -422,7 +445,7 @@
    "url": "https://aquent.com/find-work/214356",
    "city": "Beaverton",
    "state": "OR",
-   "workplace": "hybrid",
+   "workplace": "onsite",
    "type": "Contract",
    "posted": "2026-11-10",
    "pay": "up to $62.67/hr",
