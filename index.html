@@ -130,7 +130,7 @@ function card(j,gone){
     <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
     <div class="meta">${esc(j.company)} · ${esc(where)}${j.posted?" · posted "+ago(j.posted):""}${j.pay?" · "+esc(j.pay):""}</div>
     ${when?`<div class="meta">${esc(when)}</div>`:""}
-    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&j.first_seen===DATA.updated.slice(0,10)?'<span class="tag new">New</span>':""}${j._cat?`<span class="tag cat">${esc(j._cat)}</span>`:""}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span>${(j.tags||[]).map(t=>`<button class="tag" data-tag="${esc(t)}">${esc(t)}</button>`).join("")}<span class="tag">${esc(j.source)}</span></div>
+    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&j.first_seen===DATA.updated.slice(0,10)?'<span class="tag new">New</span>':""}${j._cat?`<span class="tag cat">${esc(j._cat)}</span>`:""}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
   </div><div class="side"><button class="star" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved?"Remove from favorites":"Save to favorites"}">${saved?"★":"☆"}</button><small>Match score</small><b>${j._score}</b><div class="bar"><i style="width:${j._score}%"></i></div></div></article>`}
 function elsewhere(q,city,st){
   const kw=q||"graphic designer",loc=city?`${city}, ${st}`:st;
