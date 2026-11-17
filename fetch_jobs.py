@@ -272,6 +272,12 @@ def _pay_text(d, desc):
     return ""
 
 
+US_HINT = re.compile(
+    r"united states|\busa\b|\bu\.s\.|\bus\b|north america|\bamericas\b|nationwide",
+    re.I,
+)
+
+
 def normalize(d, source):
     """Turn one raw posting (flat dict) into the shape the web page expects."""
     title = pick(d, "title", "jobtitle", "job_title", "positiontitle")
@@ -283,25 +289,44 @@ def normalize(d, source):
     country = pick(d, "country", "countrycode").strip().lower()
 
     if loc and not (city and state):
-        m = re.match(r"\s*([^,]+?),\s*([A-Za-z .]+?)(?:,|$)", loc)
+        # One string often lists several offices ("SF, CA • New York, NY") or a
+        # country prefix ("US: SF, CA"), so take the first real place.
+        first = re.split(r"\s*(?:[•|;]|\bor\b|\band\b|/)\s*", loc)[0]
+        first = re.sub(r"^\s*(?:US|USA|U\.S\.)\s*[:\-\u2013]\s*", "", first, flags=re.I)
+        m = re.match(r"\s*([^,]+?),\s*([A-Za-z .]+?)(?:\s*,|\s*$)", first)
         if m:
-            city = city or m.group(1).strip()
+            cand = m.group(1).strip()
+            if not re.fullmatch(r"remote|anywhere|flexible|virtual|hybrid|on-?site",
+                                cand, re.I):
+                city = city or cand
             state = state or to_state(m.group(2))
 
     field = pick(d, "workplace", "workplacetype", "remotetype", "remote",
                  "locationtype", "jobmode")
-    text = " ".join([field, title, loc, desc[:1500]]).lower()
-    if "hybrid" in text:
+    # A board that states the setup outright (Ashby, Lever, Aquent) is trusted
+    # before anything guessed from the wording of the posting.
+    if re.search(r"hybrid", field, re.I):
         workplace = "hybrid"
-    elif re.search(r"\bremote\b|work from home|telecommut", text):
+    elif re.search(r"remote|telecommut|work from home", field, re.I):
         workplace = "remote"
-    elif city or state:
+    elif re.search(r"on[- ]?site|in[- ]person|\boffice\b", field, re.I):
         workplace = "onsite"
     else:
-        workplace = "unknown"
+        text = " ".join([field, title, loc, desc[:1500]]).lower()
+        if "hybrid" in text:
+            workplace = "hybrid"
+        elif re.search(r"\bremote\b|work from home|telecommut", text):
+            workplace = "remote"
+        elif city or state:
+            workplace = "onsite"
+        else:
+            workplace = "unknown"
 
     # US only: keep US states, explicit US country, or remote with no location.
-    in_us = bool(state) or country in US_NAMES or "united states" in loc.lower()
+    # Company boards write the country loosely ("US, Canada", "North America",
+    # "US-Remote"), so those count as US too.
+    in_us = (bool(state) or country in US_NAMES
+             or bool(US_HINT.search(loc)))
     # Remote with no real place named ("Remote; Virtual", "Flexible / Remote").
     open_remote = (workplace == "remote" and not country and not re.sub(
         r"flexible|remote|virtual|anywhere|worldwide|global|work from home|[\W_]+",
@@ -568,6 +593,254 @@ def fetch_himalayas():
     return [j for j in (normalize(d, "Himalayas") for d in out) if j and j["title"]]
 
 
+# ---------------------------------------------------------------------------
+# Company job boards. Greenhouse, Ashby and Lever all publish a company's open
+# roles as public JSON -- no key, no quota, no signup -- and this is where
+# on-site and hybrid design work actually lives; the remote feeds above almost
+# never carry it. A board that moves or closes returns 404 and simply adds
+# nothing, so this list is safe to edit by hand.
+# (slug, display name, platform)
+ATS_BOARDS = [
+    # studios and agencies
+    ("ideo", "IDEO", "greenhouse"),
+    ("hugeinc", "Huge", "greenhouse"),
+    ("codeandtheory", "Code and Theory", "greenhouse"),
+    ("rga", "R/GA", "greenhouse"),
+    ("landor", "Landor", "greenhouse"),
+    ("designbridge", "Design Bridge", "greenhouse"),
+    ("ogilvy", "Ogilvy", "greenhouse"),
+    ("akqa", "AKQA", "greenhouse"),
+    ("metalab", "MetaLab", "greenhouse"),
+    ("instrument", "Instrument", "lever"),
+    ("hush", "Hush", "lever"),
+    ("method", "Method", "greenhouse"),
+    # design-led product and tech
+    ("figma", "Figma", "greenhouse"),
+    ("linear", "Linear", "ashby"),
+    ("notion", "Notion", "ashby"),
+    ("webflow", "Webflow", "ashby"),
+    ("vercel", "Vercel", "greenhouse"),
+    ("supabase", "Supabase", "ashby"),
+    ("posthog", "PostHog", "ashby"),
+    ("sentry", "Sentry", "ashby"),
+    ("miro", "Miro", "ashby"),
+    ("zapier", "Zapier", "ashby"),
+    ("airtable", "Airtable", "greenhouse"),
+    ("carta", "Carta", "greenhouse"),
+    ("ramp", "Ramp", "greenhouse"),
+    ("lattice", "Lattice", "greenhouse"),
+    ("descript", "Descript", "greenhouse"),
+    ("runway", "Runway", "ashby"),
+    ("clickup", "ClickUp", "ashby"),
+    ("thumbtack", "Thumbtack", "ashby"),
+    ("stripe", "Stripe", "greenhouse"),
+    ("brex", "Brex", "greenhouse"),
+    ("mercury", "Mercury", "greenhouse"),
+    ("plaid", "Plaid", "ashby"),
+    ("chime", "Chime", "greenhouse"),
+    ("circle", "Circle", "ashby"),
+    ("coinbase", "Coinbase", "greenhouse"),
+    ("robinhood", "Robinhood", "greenhouse"),
+    ("betterment", "Betterment", "greenhouse"),
+    ("sofi", "SoFi", "greenhouse"),
+    ("wealthfront", "Wealthfront", "lever"),
+    ("gusto", "Gusto", "greenhouse"),
+    ("asana", "Asana", "greenhouse"),
+    ("intercom", "Intercom", "greenhouse"),
+    ("datadog", "Datadog", "greenhouse"),
+    ("databricks", "Databricks", "greenhouse"),
+    ("snowflake", "Snowflake", "ashby"),
+    ("mongodb", "MongoDB", "greenhouse"),
+    ("cloudflare", "Cloudflare", "greenhouse"),
+    ("gitlab", "GitLab", "greenhouse"),
+    ("twilio", "Twilio", "greenhouse"),
+    ("dropbox", "Dropbox", "greenhouse"),
+    ("samsara", "Samsara", "greenhouse"),
+    ("flexport", "Flexport", "greenhouse"),
+    ("palantir", "Palantir", "lever"),
+    ("amplitude", "Amplitude", "ashby"),
+    ("cohere", "Cohere", "ashby"),
+    ("perplexity", "Perplexity", "ashby"),
+    ("openai", "OpenAI", "ashby"),
+    ("anthropic", "Anthropic", "greenhouse"),
+    ("duolingo", "Duolingo", "greenhouse"),
+    ("pinterest", "Pinterest", "greenhouse"),
+    ("reddit", "Reddit", "greenhouse"),
+    ("discord", "Discord", "greenhouse"),
+    ("twitch", "Twitch", "greenhouse"),
+    ("roblox", "Roblox", "greenhouse"),
+    ("riotgames", "Riot Games", "greenhouse"),
+    ("epicgames", "Epic Games", "greenhouse"),
+    ("spotify", "Spotify", "lever"),
+    ("airbnb", "Airbnb", "greenhouse"),
+    ("lyft", "Lyft", "greenhouse"),
+    ("instacart", "Instacart", "greenhouse"),
+    ("waymo", "Waymo", "greenhouse"),
+    ("peloton", "Peloton", "greenhouse"),
+    ("calm", "Calm", "greenhouse"),
+    ("whoop", "WHOOP", "ashby"),
+    ("glossier", "Glossier", "greenhouse"),
+    ("everlane", "Everlane", "greenhouse"),
+    ("away", "Away", "ashby"),
+    ("poshmark", "Poshmark", "ashby"),
+    ("substack", "Substack", "ashby"),
+    ("patreon", "Patreon", "ashby"),
+    ("medium", "Medium", "greenhouse"),
+    ("kickstarter", "Kickstarter", "greenhouse"),
+    ("morningbrew", "Morning Brew", "lever"),
+    ("theathletic", "The Athletic", "lever"),
+    ("hearst", "Hearst", "greenhouse"),
+    ("nextdoor", "Nextdoor", "greenhouse"),
+]
+
+# Titles worth keeping from a company board. Wider than DESIGN_TITLE_RE because
+# agencies name roles "Creative Director" or "Art Director" and never say
+# "designer".
+ATS_TITLE_RE = re.compile(
+    r"\bdesign(?:er|ers|ing)?\b|\bux\b|\bui\b|graphic|visual|illustrat|brand|packag|"
+    r"\bmotion\b|animat|art director|creative|typograph|retouch|video edit|"
+    r"concept art|storyboard|3d artist|\bartist\b",
+    re.I,
+)
+# Titles that only look like design work: chip and hardware design, game design,
+# engineering, marketing and comms, L&D, ops, and university faculty posts.
+ATS_SKIP_RE = re.compile(
+    r"engineer|engineering|developer|devops|programmer|software|architect|technician|"
+    r"scientist|analyst|coordinator|"
+    r"\bgame design|\bgames creative|\blevel design|\bsystems design|\beconomy design|"
+    r"\bnarrative design|\bquest design|\bcombat design|\btechnical design|"
+    r"\bsound design|\bcapture artist|"
+    r"program manager|project manager|product manager|"
+    r"marketing creative|creative services|creative strateg|"
+    r"brand marketing|brand consultant|brand partnerships|brand manager|talent brand|"
+    r"brand\s*(?:&|and)?\s*communications|brand\s*(?:&|and)?\s*content|branded|"
+    r"social media manager|community manager|account manager|operations manager|"
+    r"people partner|recruit|enablement|policy design|"
+    r"learning design|learning experience|instructional design|"
+    r"workplace|sponsorship|pricing and packaging|packaging assistant|"
+    r"packaging department|mailroom|visuals internship|\bbim\b|"
+    r"verification|semiconductor|silicon|\bchip\b|firmware|hardware|\basic\b|\bfpga\b|"
+    r"professor|faculty|\bdean\b|lecturer|instructor|tenure|postdoc|adjunct|"
+    r"head of the department|chair of|copywriter|translator|interpreter|"
+    r"\beditor\b|editorial director",
+    re.I,
+)
+
+
+def _greenhouse(slug):
+    data = get_json(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs?content=true")
+    rows = []
+    for j in data.get("jobs") or []:
+        meta = " ".join(f"{m.get('name', '')}: {m.get('value', '')}"
+                        for m in (j.get("metadata") or []) if isinstance(m, dict))
+        rows.append({"id": str(j.get("id") or j.get("absolute_url")),
+                     "title": j.get("title", ""),
+                     "url": j.get("absolute_url", ""),
+                     "location": (j.get("location") or {}).get("name", ""),
+                     "description": j.get("content", ""),
+                     "date": j.get("first_published") or j.get("updated_at") or "",
+                     "workplace": meta})
+    return rows
+
+
+def _ashby(slug):
+    data = get_json(f"https://api.ashbyhq.com/posting-api/job-board/{slug}")
+    rows = []
+    for j in data.get("jobs") or []:
+        if j.get("isListed") is False:
+            continue
+        places = [j.get("location") or ""]
+        places += [s.get("location", "") for s in (j.get("secondaryLocations") or [])]
+        rows.append({"id": str(j.get("id") or j.get("jobUrl")),
+                     "title": j.get("title", ""),
+                     "url": j.get("jobUrl", ""),
+                     "location": " • ".join(p for p in places if p),
+                     "description": j.get("descriptionPlain", ""),
+                     "date": j.get("publishedAt", ""),
+                     "workplace": j.get("workplaceType", ""),
+                     "jobtype": j.get("employmentType", "")})
+    return rows
+
+
+def _lever(slug):
+    data = get_json(f"https://api.lever.co/v0/postings/{slug}?mode=json")
+    rows = []
+    for j in data or []:
+        cat = j.get("categories") or {}
+        created = j.get("createdAt")
+        rows.append({"id": str(j.get("id") or j.get("hostedUrl")),
+                     "title": j.get("text", ""),
+                     "url": j.get("hostedUrl", ""),
+                     "location": cat.get("location", ""),
+                     "description": j.get("descriptionPlain", ""),
+                     "date": (datetime.fromtimestamp(int(created) / 1000, timezone.utc)
+                              .date().isoformat() if created else ""),
+                     "workplace": j.get("workplaceType", ""),
+                     "jobtype": cat.get("commitment", "")})
+    return rows
+
+
+_ATS = {"greenhouse": _greenhouse, "ashby": _ashby, "lever": _lever}
+
+
+def fetch_company_boards():
+    """Every studio, agency and design-led company we track, as one source."""
+    out, ok, failed = [], 0, 0
+    for slug, name, platform in ATS_BOARDS:
+        try:
+            rows = _ATS[platform](slug)
+        except Exception as e:  # a board that moved must not sink the source
+            failed += 1
+            print(f"  board {name} failed: {e}", file=sys.stderr)
+            continue
+        ok += 1
+        kept = 0
+        for d in rows:
+            title = d["title"]
+            if not title or not ATS_TITLE_RE.search(title) or ATS_SKIP_RE.search(title):
+                continue
+            d["id"] = f"{slug}:{d['id']}"
+            d["company"] = name
+            j = normalize(d, "Company boards")
+            if j and j["title"]:
+                out.append(j)
+                kept += 1
+        if kept:
+            print(f"  {name:16} {platform:11} {kept} design roles")
+    print(f"Company boards: {ok}/{len(ATS_BOARDS)} responded, {failed} failed, "
+          f"{len(out)} design roles")
+    if not ok:
+        raise RuntimeError("no company board responded")
+    return out
+
+
+COROFLOT_SEEKING = re.compile(r"^(.*?)\s+is seeking\s+(?:an?|the)?\s*(.+)$", re.I)
+
+
+def fetch_coroflot():
+    """Coroflot's creative job feed: the 30 newest, mostly on-site studio work."""
+    root = ET.fromstring(fetch("https://www.coroflot.com/jobs/rss"))
+    rows = []
+    for item in root.iter():
+        if local(item.tag) != "item":
+            continue
+        d = {local(c.tag): (c.text or "") for c in item}
+        title, company = d.get("title", "").strip(), ""
+        m = COROFLOT_SEEKING.match(title)
+        if m:  # "Cass Calder Smith ... is seeking an Interior Designer"
+            company, title = m.group(1).strip(), m.group(2).strip()
+        rows.append({"id": d.get("guid") or d.get("link") or title,
+                     "title": title, "company": company,
+                     "url": d.get("link", ""),
+                     "location": d.get("description", "").strip(),
+                     "date": d.get("pubdate", ""),
+                     "description": ""})
+    kept = [d for d in rows
+            if d["title"] and DESIGN_TITLE_RE.search(d["title"])
+            and not ATS_SKIP_RE.search(d["title"])]
+    return [j for j in (normalize(d, "Coroflot") for d in kept) if j and j["title"]]
+
+
 ADZUNA_SEARCHES = ["graphic designer", "ux designer", "ui designer",
                    "product designer", "packaging designer", "web designer"]
 # Recruiters are found by company name: Adzuna's search has a company filter.
@@ -622,6 +895,8 @@ def fetch_adzuna():
 # Recruiter sites (Creative Circle and others) come in through Adzuna above.
 SOURCES = {
     "Aquent": fetch_aquent,
+    "Company boards": fetch_company_boards,
+    "Coroflot": fetch_coroflot,
     "We Work Remotely": fetch_weworkremotely,
     "Dribbble": fetch_dribbble,
     "Remote OK": fetch_remoteok,
@@ -650,6 +925,9 @@ def main():
             got = [j for j in prev_jobs.values() if j["source"] == name]
             if name == "Aquent":  # keep the design-only rule on cached data too
                 got = [j for j in got if AQUENT_TITLE_RE.search(j["title"])]
+            elif name == "Company boards":
+                got = [j for j in got if ATS_TITLE_RE.search(j["title"])
+                       and not ATS_SKIP_RE.search(j["title"])]
         counts[name] = len(got)
         for j in got:
             old = prev_jobs.get(j["id"])
@@ -662,6 +940,18 @@ def main():
     stale = [jid for jid, j in jobs.items() if j["posted"] and j["posted"] < cutoff]
     for jid in stale:
         del jobs[jid]
+
+    # An aggregator (Adzuna) can re-list a job a company board already carries.
+    # Sources are ordered richest first above, so the first copy wins.
+    seen, deduped = set(), {}
+    for jid, j in jobs.items():
+        key = (j["company"].lower(), j["title"].lower(), j["city"].lower())
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped[jid] = j
+    jobs = deduped
+
     counts = {name: 0 for name in SOURCES}
     for j in jobs.values():
         counts[j["source"]] += 1
