@@ -362,49 +362,6 @@ def get_json(url):
     return json.loads(fetch(url))
 
 
-def fetch_muse():
-    """The Muse public API, Design and UX category."""
-    out = []
-    for page in range(1, 6):
-        data = get_json("https://www.themuse.com/api/public/jobs"
-                        f"?category=Design%20and%20UX&page={page}")
-        for r in data.get("results", []):
-            locs = r.get("locations") or [{}]
-            out.append({"id": str(r.get("id")), "title": r.get("name", ""),
-                        "url": (r.get("refs") or {}).get("landing_page", ""),
-                        "company": (r.get("company") or {}).get("name", ""),
-                        "location": locs[0].get("name", ""),
-                        "description": r.get("contents", ""),
-                        "date": r.get("publication_date", "")})
-        if page >= data.get("page_count", 1):
-            break
-    return [j for j in (normalize(d, "The Muse") for d in out) if j and j["title"]]
-
-
-def fetch_remotive():
-    """Remotive public API, design category (remote roles).
-
-    Remotive's category/search filters currently return the whole feed, so the
-    design match is done here on the title.
-    """
-    out = []
-    for r in get_json("https://remotive.com/api/remote-jobs?category=design").get("jobs", []):
-        title = clean(r.get("title", ""))
-        if not DESIGN_TITLE_RE.search(title):
-            continue
-        loc = r.get("candidate_required_location", "")
-        us = re.search(r"usa|united states|\bus\b|north america|americas", loc, re.I)
-        if not us and not re.search(r"worldwide|anywhere", loc, re.I):
-            continue
-        out.append({"id": str(r.get("id")), "title": title,
-                    "url": r.get("url", ""), "company": r.get("company_name", ""),
-                    "workplace": "remote", "country": "USA" if us else "",
-                    "jobtype": r.get("job_type", ""), "salary": r.get("salary", ""),
-                    "description": r.get("description", ""),
-                    "date": r.get("publication_date", "")})
-    return [j for j in (normalize(d, "Remotive") for d in out) if j and j["title"]]
-
-
 def fetch_weworkremotely():
     """We Work Remotely's public design-category RSS feed."""
     raw = fetch("https://weworkremotely.com/categories/remote-design-jobs.rss")
@@ -646,8 +603,6 @@ def fetch_adzuna():
 # Recruiter sites (Creative Circle and others) come in through Adzuna above.
 SOURCES = {
     "Aquent": fetch_aquent,
-    "The Muse": fetch_muse,
-    "Remotive": fetch_remotive,
     "We Work Remotely": fetch_weworkremotely,
     "Dribbble": fetch_dribbble,
     "Remote OK": fetch_remoteok,

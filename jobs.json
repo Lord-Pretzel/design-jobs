@@ -1,9 +1,7 @@
 {
- "updated": "2026-11-17T01:03:03+00:00",
+ "updated": "2026-11-17T01:10:43+00:00",
  "counts": {
-  "Aquent": 338,
-  "The Muse": 0,
-  "Remotive": 0,
+  "Aquent": 339,
   "We Work Remotely": 11,
   "Dribbble": 28,
   "Remote OK": 3,
@@ -11,6 +9,29 @@
   "Himalayas": 52
  },
  "jobs": [
+  {
+   "id": "Aquent:https://aquent.com/find-work/214524",
+   "source": "Aquent",
+   "title": "Senior Full Stack Engineer [214524]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214524",
+   "city": "Los Angeles",
+   "state": "CA",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-17",
+   "pay": "",
+   "start": "",
+   "duration": "Ongoing",
+   "tags": [
+    "Figma",
+    "Adobe CC",
+    "Motion",
+    "Web"
+   ],
+   "description": "Senior Full Stack Engineer \u2014 TypeScript (Node.js, React, Cloud) Location: Remote (United States) Compensation: $125,000 \u2013 $174,000 base salary (based on geographic market tier), plus twice-yearly discretionary profit sharing and benefits Applicants must be US Citizens or GC Holders to be considered. No Vendors or C2C applicants WHO WE ARE We\u2019re an award-winning creative content agency. With a collaborative, maker-centric team, and an emphasis on production-led design, we make ads, campaigns, and experiences that drive growth for the world\u2019s most innovative brands. Our mission is to integrate c",
+   "first_seen": "2026-11-17"
+  },
   {
    "id": "Aquent:https://aquent.com/find-work/214522",
    "source": "Aquent",
