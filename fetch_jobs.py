@@ -7,8 +7,10 @@ normalize(), then add it to SOURCES at the bottom.
 import email.utils
 import html
 import json
+import os
 import re
 import sys
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
@@ -322,13 +324,65 @@ def fetch_remotive():
     return [j for j in (normalize(d, "Remotive") for d in out) if j and j["title"]]
 
 
-# Creative Circle has no public feed that I know of. Add a function here once
-# you have a page or feed to read, then list it in SOURCES.
+ADZUNA_SEARCHES = ["graphic designer", "ux designer", "ui designer",
+                   "product designer", "packaging designer", "web designer"]
+# Recruiters are found by company name: Adzuna's search has a company filter.
+ADZUNA_RECRUITERS = ["Creative Circle", "The Creative Group", "Artisan Creative",
+                     "Mondo", "Creative Financial Staffing"]
+
+
+def fetch_adzuna():
+    """Adzuna API (free key). About 17 calls per run, well inside the free quota."""
+    from urllib.parse import urlencode
+    app = {"app_id": os.environ["ADZUNA_APP_ID"], "app_key": os.environ["ADZUNA_APP_KEY"]}
+    jobs = [({"what": w}, 2) for w in ADZUNA_SEARCHES]
+    jobs += [({"what": "design", "company": c}, 1) for c in ADZUNA_RECRUITERS]
+    seen, out, errors = set(), [], 0
+    for extra, pages in jobs:
+        got = 0
+        for page in range(1, pages + 1):
+            q = {**app, **extra, "results_per_page": 50, "max_days_old": 30,
+                 "sort_by": "date", "content-type": "application/json"}
+            try:
+                data = get_json(f"https://api.adzuna.com/v1/api/jobs/us/search/{page}?{urlencode(q)}")
+            except Exception as e:
+                print(f"Adzuna {extra} page {page} failed: {e}", file=sys.stderr)
+                errors += 1
+                break
+            time.sleep(0.5)
+            for r in data.get("results", []):
+                if r["id"] in seen:
+                    continue
+                seen.add(r["id"])
+                area = (r.get("location") or {}).get("area") or []
+                lo, hi = r.get("salary_min"), r.get("salary_max")
+                stated = lo and hi and str(r.get("salary_is_predicted")) != "1"
+                out.append({
+                    "id": str(r["id"]), "title": clean(r.get("title", "")),
+                    "url": r.get("redirect_url", ""),
+                    "company": (r.get("company") or {}).get("display_name", ""),
+                    "location": (r.get("location") or {}).get("display_name", ""),
+                    "state": area[1] if len(area) > 1 else "",
+                    "city": area[-1] if len(area) > 2 else "", "country": "US",
+                    "description": r.get("description", ""), "date": r.get("created", ""),
+                    "jobtype": f"{r.get('contract_type', '')} {r.get('contract_time', '')}",
+                    "salary": f"${lo:,.0f}-{hi:,.0f} / year" if stated else ""})
+                got += 1
+        if "company" in extra:
+            print(f"Adzuna: {got} new postings for {extra['company']}")
+    if errors == len(jobs) * 1 and not out:
+        raise RuntimeError("Every Adzuna request failed (check the key and quota)")
+    return [j for j in (normalize(d, "Adzuna") for d in out) if j and j["title"]]
+
+
+# Recruiter sites (Creative Circle and others) come in through Adzuna above.
 SOURCES = {
     "Aquent": fetch_aquent,
     "The Muse": fetch_muse,
     "Remotive": fetch_remotive,
 }
+if os.environ.get("ADZUNA_APP_ID") and os.environ.get("ADZUNA_APP_KEY"):
+    SOURCES["Adzuna"] = fetch_adzuna
 
 
 def main():
