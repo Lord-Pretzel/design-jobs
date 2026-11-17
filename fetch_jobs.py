@@ -79,6 +79,13 @@ AQUENT_TITLE_RE = re.compile(
     r"design strateg|creative operations|user research|web design|\bartist\b",
     re.I,
 )
+# Hardware engineering slips past the rule above when the role name itself
+# contains "design" ("EE Switches Design Responsible Engineer").
+AQUENT_SKIP_RE = re.compile(
+    r"responsible engineer|\bconnector\b|semiconductor|\bsilicon\b|"
+    r"\bfirmware\b|\bpcb\b|\bfpga\b|electrical engineer|mechanical engineer",
+    re.I,
+)
 
 
 def looks_us(loc):
@@ -277,6 +284,25 @@ US_HINT = re.compile(
     re.I,
 )
 
+# Some boards give a city with no state ("Los Angeles"). This fills the gap so
+# the State filter can see those roles. Only names that are unambiguous in a US
+# job posting, and only used when the source left the state blank.
+CITY_STATE = {
+    "los angeles": "CA", "san francisco": "CA", "san diego": "CA", "san jose": "CA",
+    "san mateo": "CA", "san bruno": "CA", "santa monica": "CA", "culver city": "CA",
+    "palo alto": "CA", "mountain view": "CA", "menlo park": "CA", "foster city": "CA",
+    "oakland": "CA", "berkeley": "CA", "sacramento": "CA", "new york": "NY",
+    "new york city": "NY", "brooklyn": "NY", "chicago": "IL", "boston": "MA",
+    "seattle": "WA", "austin": "TX", "dallas": "TX", "houston": "TX",
+    "san antonio": "TX", "denver": "CO", "atlanta": "GA", "philadelphia": "PA",
+    "pittsburgh": "PA", "washington": "DC", "miami": "FL", "orlando": "FL",
+    "tampa": "FL", "phoenix": "AZ", "detroit": "MI", "cleveland": "OH",
+    "columbus": "OH", "cincinnati": "OH", "nashville": "TN", "charlotte": "NC",
+    "raleigh": "NC", "minneapolis": "MN", "st. louis": "MO", "milwaukee": "WI",
+    "indianapolis": "IN", "salt lake city": "UT", "las vegas": "NV",
+    "portland": "OR", "baltimore": "MD", "richmond": "VA", "memphis": "TN",
+}
+
 
 def normalize(d, source):
     """Turn one raw posting (flat dict) into the shape the web page expects."""
@@ -300,6 +326,9 @@ def normalize(d, source):
                                 cand, re.I):
                 city = city or cand
             state = state or to_state(m.group(2))
+
+    if city and not state:
+        state = CITY_STATE.get(city.strip().lower(), "")
 
     field = pick(d, "workplace", "workplacetype", "remotetype", "remote",
                  "locationtype", "jobmode")
@@ -369,7 +398,9 @@ def normalize(d, source):
         "start": start,
         "duration": duration,
         "tags": extract_tags(title, desc),
-        "description": desc[:600],
+        # Long enough to reach the requirements section (the first 600 chars are
+        # usually just the pitch), short enough to keep jobs.json around 800 KB.
+        "description": desc[:1800],
     }
 
 
@@ -397,7 +428,8 @@ def fetch_aquent():
     out = []
     for e in els:
         j = normalize(flat(e), "Aquent")
-        if j and j["title"] and AQUENT_TITLE_RE.search(j["title"]):
+        if j and j["title"] and AQUENT_TITLE_RE.search(j["title"]) \
+                and not AQUENT_SKIP_RE.search(j["title"]):
             out.append(j)
     return out
 
@@ -924,7 +956,8 @@ def main():
             print(f"{name} failed: {e}", file=sys.stderr)
             got = [j for j in prev_jobs.values() if j["source"] == name]
             if name == "Aquent":  # keep the design-only rule on cached data too
-                got = [j for j in got if AQUENT_TITLE_RE.search(j["title"])]
+                got = [j for j in got if AQUENT_TITLE_RE.search(j["title"])
+                       and not AQUENT_SKIP_RE.search(j["title"])]
             elif name == "Company boards":
                 got = [j for j in got if ATS_TITLE_RE.search(j["title"])
                        and not ATS_SKIP_RE.search(j["title"])]

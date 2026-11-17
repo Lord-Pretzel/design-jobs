@@ -13,7 +13,7 @@ a{color:inherit}
 header{max-width:1100px;margin:0 auto;padding:28px 20px 8px}
 h1{margin:0;font-size:28px;letter-spacing:-.02em}
 #status{margin:4px 0 12px;color:var(--muted)}
-.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
 .tabs button{border:0;background:none;color:var(--muted);font:inherit;font-weight:600;padding:8px 14px;border-bottom:3px solid transparent;cursor:pointer}
 .tabs button[aria-selected=true]{color:var(--ink);border-color:var(--accent)}
 .grid{max-width:1100px;margin:0 auto;padding:16px 20px 48px;display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start}
@@ -78,6 +78,7 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
   <p id="status">Loading…</p>
   <div class="tabs" role="tablist">
     <button role="tab" id="t-all" aria-selected="true">All roles</button>
+    <button role="tab" id="t-new" aria-selected="false">New Listings (<span id="nc">0</span>)</button>
     <button role="tab" id="t-fav" aria-selected="false">Favorites (<span id="fc">0</span>)</button>
     <button role="tab" id="t-rank" aria-selected="false">Ranking</button>
   </div>
@@ -171,7 +172,7 @@ function mergeOrder(saved){
 let DATA,JOBS=[],BYID={},FAVS=store.get("jobfavs",{}),OFF=new Set(store.get("jobsrcoff",[])),TAB="all";
 let ORDER=mergeOrder(store.get("jobrank",[])),OFFRANK=new Set(store.get("jobrankoff",[])),PHR=store.get("jobrankphr",{})||{};
 if(!PHR||typeof PHR!=="object"||Array.isArray(PHR))PHR={};
-let WEIGHTS={},CRX={};
+let WEIGHTS={},CRX={},DSTAT={},DDF={};
 
 const CTRL=["q","st","city","rem","cat","tag","type","sort","age","only"];
 function saveFilters(){const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);store.set("jobfilters",o)}
@@ -196,6 +197,30 @@ function buildRx(){
 }
 function calcWeights(){const n=ORDER.length;WEIGHTS={};ORDER.forEach((id,i)=>WEIGHTS[id]=(n-i)/n)}
 
+/* Description evidence is weighted by how rare a phrase is. "figma" turns up in
+   most postings and proves nothing, while "wayfinding" in two is real evidence.
+   Without this, a longer description would lift almost every score at once. */
+function calcDescWeights(){
+  DSTAT={};DDF={};
+  const N=JOBS.length;
+  if(!N)return;
+  const maxIdf=Math.log(Math.max(2,N/2));
+  JOBS.forEach(j=>{j._D=norm((j.description||"")+" "+(j.tags||[]).join(" "))});
+  TAGS.forEach(t=>{
+    const seen=new Set(),list=[];
+    [...t.desc,...(PHR[t.id]||[])].forEach(p=>{
+      const key=norm(p);if(!key||seen.has(key))return;seen.add(key);
+      const rx=phraseRe(p);if(!rx)return;
+      let df=0;
+      for(const j of JOBS)if(rx.test(j._D))df++;
+      const w=Math.max(0,Math.min(1,Math.log(N/(1+df))/maxIdf));
+      DDF[key]={df,w};
+      list.push({rx,w});
+    });
+    DSTAT[t.id]=list;
+  });
+}
+
 /* Engineering titles can contain design words ("UI Engineer", "Design Quality
    Engineer"). They stay on the board as Unclassified rather than ranking as
    design roles. */
@@ -203,22 +228,26 @@ const TITLE_SKIP=/\b(engineer|engineering|developer|devops|architect|technician)
 
 /* ---------- score: title tag sets the base, extra title tags and description evidence nudge it up ---------- */
 function score(j){
-  const T=norm(j.title),D=norm((j.description||"")+" "+(j.tags||[]).join(" "));
+  const T=norm(j.title),D=j._D||norm((j.description||"")+" "+(j.tags||[]).join(" "));
   const tt=[],dt=[];
   const skip=TITLE_SKIP.test(j.title);
-  ORDER.forEach(id=>{const r=CRX[id];if(!r)return;
-    if(!skip&&r.t.some(x=>x.test(T)))tt.push(id);
-    else if(r.d.some(x=>x.test(D)))dt.push(id)});
+  ORDER.forEach(id=>{
+    const r=CRX[id];if(!r)return;
+    if(!skip&&r.t.some(x=>x.test(T))){tt.push(id);return}
+    let best=0;
+    (DSTAT[id]||[]).forEach(s=>{if(s.w>best&&s.rx.test(D))best=s.w});
+    if(best>0)dt.push({id,w:best});
+  });
   const base=tt.length?Math.max(...tt.map(id=>WEIGHTS[id])):(WEIGHTS.unclassified||0);
   const multi=Math.min(.10,.05*Math.max(0,tt.length-1));
-  const boost=dt.length?.15*Math.max(...dt.map(id=>WEIGHTS[id])):0;
+  const boost=dt.length?.15*Math.max(...dt.map(d=>WEIGHTS[d.id]*d.w)):0;
   j._score=Math.max(0,Math.min(100,Math.round(100*Math.min(1,.85*base+multi+boost))));
   j._tags=tt;
-  j._desc=dt;
+  j._desc=dt.map(d=>d.id);
   j._best=tt[0]||"unclassified";
   j._off=tt.length?tt.every(id=>OFFRANK.has(id)):OFFRANK.has("unclassified");
 }
-function recalc(){if(!JOBS.length)return;buildRx();calcWeights();JOBS.forEach(score);
+function recalc(){if(!JOBS.length)return;buildRx();calcWeights();calcDescWeights();JOBS.forEach(score);
   const c=$("#cat").value,g=$("#tag").value;fillCat();fillTag();if(c)$("#cat").value=c;if(g)$("#tag").value=g}
 function saveRank(){store.set("jobrank",ORDER);store.set("jobrankoff",[...OFFRANK]);store.set("jobrankphr",PHR)}
 
@@ -235,6 +264,7 @@ function fillCities(keep){const st=$("#st").value,c={};JOBS.forEach(j=>{if(j.cit
 function fillSources(){$("#srcs").className="f row";$("#srcs").innerHTML="<label>Sources</label>"+Object.entries(DATA.counts).map(([k,n])=>`<label><input type="checkbox" data-src="${esc(k)}" ${OFF.has(k)?"":"checked"}> ${esc(k)} (${n})</label>`).join("")}
 function fmt(d){return new Date(d+"T12:00:00").toLocaleDateString([],{month:"short",day:"numeric",year:"numeric"})}
 function ago(d){if(!d)return"";const n=Math.round((Date.now()-new Date(d+"T12:00:00"))/864e5);return n<=0?"today":n===1?"yesterday":n+" days ago"}
+const isNew=j=>!!j.first_seen&&j.first_seen===DATA.updated.slice(0,10);
 function card(j,gone){
   const where=[j.city,j.state].filter(Boolean).join(", ")||"Location not stated";
   const wl={remote:"Remote",hybrid:"Hybrid",onsite:"On-site",unknown:"Setup not stated"}[j.workplace];
@@ -245,7 +275,7 @@ function card(j,gone){
     <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
     <div class="meta">${esc(j.company)} · ${esc(where)}${j.posted?" · posted "+ago(j.posted):""}${j.pay?" · "+esc(j.pay):""}</div>
     ${when?`<div class="meta">${esc(when)}</div>`:""}
-    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&j.first_seen===DATA.updated.slice(0,10)?'<span class="tag new">New</span>':""}${ids.map(id=>`<button class="tag cat" data-tagid="${id}" title="Show only ${esc(LABEL[id])} roles">${esc(LABEL[id])}</button>`).join("")}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
+    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&isNew(j)?'<span class="tag new">New</span>':""}${ids.map(id=>`<button class="tag cat" data-tagid="${id}" title="Show only ${esc(LABEL[id])} roles">${esc(LABEL[id])}</button>`).join("")}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
   </div><div class="side"><button class="star" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved?"Remove from favorites":"Save to favorites"}">${saved?"★":"☆"}</button><small>Match Score</small><b>${j._score}</b><div class="bar"><i style="width:${j._score}%"></i></div></div></article>`}
 function elsewhere(q,city,st){
   const kw=q||"graphic designer",loc=city?`${city}, ${st}`:st;
@@ -256,10 +286,11 @@ function elsewhere(q,city,st){
 function render(){
   if(!DATA)return;
   $("#fc").textContent=Object.keys(FAVS).length;
-  const all=TAB==="all";
+  $("#nc").textContent=JOBS.filter(isNew).length;
+  const all=TAB==="all"||TAB==="new";
   $("#filters").style.display=all?"":"none";
   document.querySelector(".grid").style.gridTemplateColumns=all?"":"1fr";
-  ["all","fav","rank"].forEach(t=>$("#t-"+t).setAttribute("aria-selected",t===TAB));
+  ["all","new","fav","rank"].forEach(t=>$("#t-"+t).setAttribute("aria-selected",t===TAB));
   const upd=new Date(DATA.updated).toLocaleString([],{dateStyle:"medium",timeStyle:"short"});
   if(TAB==="fav")return renderFavs(upd);
   if(TAB==="rank")return renderRank(upd);
@@ -268,6 +299,7 @@ function render(){
   const wp=[...document.querySelectorAll("[name=wp]:checked")].map(x=>x.value);
   elsewhere($("#q").value.trim(),city,st);
   let r=JOBS.filter(j=>{
+    if(TAB==="new"&&!isNew(j))return false;
     if(OFF.has(j.source)||(only&&j._off)||!wp.includes(j.workplace))return false;
     if(cutoff&&j.posted&&j.posted<cutoff)return false;
     if(type&&j.type!==type||cat&&j._best!==cat)return false;
@@ -276,8 +308,8 @@ function render(){
     if(st||city){if(!j.state&&!j.city)return rem&&j.workplace==="remote";if(st&&j.state!==st||city&&j.city!==city)return false}
     return true});
   r.sort($("#sort").value==="new"?(a,b)=>(b.posted||"").localeCompare(a.posted||"")||b._score-a._score:(a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||""));
-  $("#status").textContent=`${r.length} of ${JOBS.length} roles · updated ${upd}`;
-  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the tag filters.</div>';
+  $("#status").textContent=TAB==="new"?`${r.length} of ${JOBS.filter(isNew).length} new roles · updated ${upd}`:`${r.length} of ${JOBS.length} roles · updated ${upd}`;
+  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):(TAB==="new"?'<div class="empty">No new listings right now. A role appears here on the day it first shows up in a refresh, then it moves to All roles.</div>':'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the tag filters.</div>');
 }
 
 function renderFavs(upd){
@@ -303,7 +335,7 @@ function renderRank(upd){
         </span>
       </div>
       ${has?`<details><summary>Phrases${custom.length?` · ${custom.length} added by you`:""}</summary>
-        <div class="phrs">${custom.map((p,k)=>`<span class="tag">${esc(p)}<button data-del="${id}" data-k="${k}" aria-label="Remove ${esc(p)}">×</button></span>`).join("")||'<span class="rmeta">No phrases added yet.</span>'}</div>
+        <div class="phrs">${custom.map((p,k)=>{const s=DDF[norm(p)]||{df:0,w:0};const sig=s.df===0?"not found in any description yet":`${s.df} description match${s.df===1?"":"es"} · ${s.w>=.6?"strong":s.w>=.3?"moderate":"weak"} signal`;return `<span class="tag" title="${sig}">${esc(p)}<button data-del="${id}" data-k="${k}" aria-label="Remove ${esc(p)}">×</button></span>`}).join("")||'<span class="rmeta">No phrases added yet.</span>'}</div>
         <div class="addphr"><input type="text" data-phr="${id}" placeholder="Add a phrase, e.g. wayfinding" aria-label="Add a phrase to ${esc(t.label)}"><button data-add="${id}">Add</button></div>
         <p class="rmeta">Title phrases: ${esc(t.title.join(", "))}</p>
         <p class="rmeta">Description phrases: ${esc(t.desc.join(", "))}</p>
@@ -311,7 +343,7 @@ function renderRank(upd){
     </div>`}).join("");
   const top=[...JOBS].sort((a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||"")).slice(0,5);
   $("#status").textContent=`${JOBS.length} roles scored · updated ${upd}`;
-  $("#list").innerHTML=`<div class="ranknote">Higher in this list means a higher Match Score. A role's <b>title</b> decides which tags it gets; description phrases only nudge the score. <b>Off</b> hides roles whose tags are all Off. Drag a row (or use ↑ ↓) to reorder. Saved in this browser only.</div>
+  $("#list").innerHTML=`<div class="ranknote">Higher in this list means a higher Match Score. A role's <b>title</b> decides which tags it gets; description phrases only nudge the score, and a phrase counts more when it is rare. <b>Off</b> hides roles whose tags are all Off. Drag a row (or use ↑ ↓) to reorder. Saved in this browser only.</div>
     <div class="tools"><button id="rexp">Export settings</button><button id="rimp">Import settings</button><button id="rreset">Reset ranking</button><input id="rimpf" type="file" accept=".json" hidden></div>
     <div id="rrows">${rows}</div>
     <h3 class="rprev">Top matches with this ranking</h3>
@@ -363,7 +395,7 @@ document.addEventListener("click",e=>{
   else if(t.dataset.off){const id=t.dataset.off;OFFRANK.has(id)?OFFRANK.delete(id):OFFRANK.add(id);saveRank();recalc();render()}
   else if(t.dataset.add){const inp=document.querySelector(`[data-phr="${t.dataset.add}"]`);addPhrase(t.dataset.add,inp?inp.value:"")}
   else if(t.dataset.del){delPhrase(t.dataset.del,Number(t.dataset.k))}
-  else if(t.id==="t-all"||t.id==="t-fav"||t.id==="t-rank"){TAB=t.id.slice(2);render()}
+  else if(t.id==="t-all"||t.id==="t-new"||t.id==="t-fav"||t.id==="t-rank"){TAB=t.id.slice(2);render()}
   else if(t.id==="rexp")exportSettings();
   else if(t.id==="rimp")$("#rimpf").click();
   else if(t.id==="rreset"){if(!confirm("Reset the ranking order, On/Off states, and your added phrases?"))return;
@@ -388,7 +420,7 @@ $("#list").addEventListener("drop",e=>{if(!DRAG)return;const r=e.target.closest(
   ORDER.splice(to,0,ORDER.splice(from,1)[0]);DRAG=null;saveRank();recalc();render()});
 
 fetch("jobs.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
-  DATA=d;JOBS=d.jobs;buildRx();calcWeights();JOBS.forEach(j=>{score(j);BYID[j.id]=j});
+  DATA=d;JOBS=d.jobs;buildRx();calcWeights();calcDescWeights();JOBS.forEach(j=>{score(j);BYID[j.id]=j});
   $("#st").innerHTML=opts("All states",tally(j=>j.state));
   fillCat();fillTag();
   fillSources();const keepCity=restore();fillCities(keepCity);
