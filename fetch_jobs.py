@@ -14,11 +14,14 @@ import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 OUT = Path(__file__).with_name("jobs.json")
 HEADERS = {"User-Agent": "personal-job-filter/1.0"}
+# Postings older than this are dropped from jobs.json. The page's "Posted
+# within" filter goes back 3 months, so this leaves a little slack.
+MAX_AGE_DAYS = 120
 
 _STATES = (
     "Alabama:AL,Alaska:AK,Arizona:AZ,Arkansas:AR,California:CA,Colorado:CO,"
@@ -677,12 +680,23 @@ def main():
             j["first_seen"] = old["first_seen"] if old else (today if prev else "")
             jobs[j["id"]] = j
 
+    # Keep the file small: the page's "Posted within" filter only goes back to
+    # 3 months, so anything older than this window is dropped here.
+    cutoff = (now.date() - timedelta(days=MAX_AGE_DAYS)).isoformat()
+    stale = [jid for jid, j in jobs.items() if j["posted"] and j["posted"] < cutoff]
+    for jid in stale:
+        del jobs[jid]
+    counts = {name: 0 for name in SOURCES}
+    for j in jobs.values():
+        counts[j["source"]] += 1
+
     OUT.write_text(json.dumps({
         "updated": now.isoformat(timespec="seconds"),
         "counts": counts,
         "jobs": list(jobs.values()),
     }, indent=1))
-    print(f"Saved {len(jobs)} jobs {counts}")
+    print(f"Saved {len(jobs)} jobs {counts}"
+          + (f" (dropped {len(stale)} older than {MAX_AGE_DAYS} days)" if stale else ""))
     # One dead feed must not stop the workflow from committing the other sources.
     sys.exit(0 if jobs else 1)
 

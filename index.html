@@ -78,6 +78,8 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
       <select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div>
     <div class="f"><label for="sort">Sort by</label>
       <select id="sort"><option value="score">Best match</option><option value="new">Newest</option></select></div>
+    <div class="f"><label for="age">Posted within</label>
+      <select id="age"><option value="90">3 months</option><option value="30">1 month</option><option value="14">2 weeks</option><option value="7">1 week</option><option value="">Any time</option></select></div>
     <div class="f row"><label><input id="only" type="checkbox" checked> Design-related roles only</label></div>
     <details><summary>Search other sites</summary><div id="else"></div></details>
   </aside>
@@ -112,7 +114,7 @@ function score(j){
 }
 const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 let DATA,JOBS=[],BYID={},FAVS=store.get("jobfavs",{}),OFF=new Set(store.get("jobsrcoff",[])),TAB="all";
-const CTRL=["q","st","city","rem","cat","tag","type","sort","only"];
+const CTRL=["q","st","city","rem","cat","tag","type","sort","age","only"];
 function saveFilters(){const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);store.set("jobfilters",o)}
 function restore(){const o=store.get("jobfilters",{});CTRL.forEach(k=>{if(!(k in o)||k==="city")return;const e=$("#"+k);if(e.type==="checkbox")e.checked=o[k];else e.value=o[k]});(o.wp||[]).forEach((v,i)=>{const e=document.querySelectorAll("[name=wp]")[i];if(e)e.checked=v});return o.city||""}
 function opts(label,counts){return `<option value="">${label}</option>`+Object.keys(counts).sort().map(k=>`<option value="${esc(k)}">${esc(k)} (${counts[k]})</option>`).join("")}
@@ -145,17 +147,19 @@ function render(){
   const upd=new Date(DATA.updated).toLocaleString([],{dateStyle:"medium",timeStyle:"short"});
   if(TAB==="fav")return renderFavs(upd);
   const q=$("#q").value.trim().toLowerCase(),st=$("#st").value,city=$("#city").value,type=$("#type").value,cat=$("#cat").value,tag=$("#tag").value,rem=$("#rem").checked,only=$("#only").checked;
+  const age=$("#age").value,cutoff=age?new Date(Date.now()-Number(age)*864e5).toISOString().slice(0,10):"";
   const wp=[...document.querySelectorAll("[name=wp]:checked")].map(x=>x.value);
   elsewhere($("#q").value.trim(),city,st);
   let r=JOBS.filter(j=>{
     if(OFF.has(j.source)||(only&&!j._score)||!wp.includes(j.workplace))return false;
+    if(cutoff&&j.posted&&j.posted<cutoff)return false;
     if(type&&j.type!==type||cat&&j._cat!==cat||tag&&!(j.tags||[]).includes(tag))return false;
     if(q&&!(j.title+" "+j.company+" "+(j.description||"")+" "+(j.tags||[]).join(" ")).toLowerCase().includes(q))return false;
     if(st||city){if(!j.state&&!j.city)return rem&&j.workplace==="remote";if(st&&j.state!==st||city&&j.city!==city)return false}
     return true});
   r.sort($("#sort").value==="new"?(a,b)=>(b.posted||"").localeCompare(a.posted||"")||b._score-a._score:(a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||""));
   $("#status").textContent=`${r.length} of ${JOBS.length} roles · updated ${upd}`;
-  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):'<div class="empty">No roles match these filters. Try another state, turn a source back on, or clear the skill filter.</div>';
+  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the skill filter.</div>';
 }
 function renderFavs(upd){
   const items=Object.values(FAVS).map(f=>{const live=BYID[f.id];if(live)return{j:live,gone:false};score(f);return{j:f,gone:true}});
