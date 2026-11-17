@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Design roles</title>
+<title>Design Opportunities</title>
 <style>
 :root{--bg:#F4F5F8;--surface:#fff;--ink:#151922;--muted:#5C6373;--line:#DFE2E9;--accent:#3A37E8;--new:#0E9F6E;--warn:#B54708;--chip:#ECEEF5;color-scheme:light}
 @media (prefers-color-scheme:dark){:root{--bg:#10121A;--surface:#181B26;--ink:#ECEFF6;--muted:#9AA2B5;--line:#2A2F3E;--accent:#8B89FF;--new:#34D399;--warn:#FDB022;--chip:#232837;color-scheme:dark}}
@@ -21,7 +21,7 @@ aside{position:sticky;top:12px;background:var(--surface);border:1px solid var(--
 aside label{display:block;margin:0 0 4px;font-weight:600;font-size:13px}
 aside .f{margin-bottom:14px}
 aside .row label{display:flex;gap:8px;align-items:center;font-weight:400;font-size:14px;margin:0 0 4px}
-input[type=search],select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+input[type=search],input[type=text],select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 details{font-size:14px}summary{cursor:pointer;font-weight:600;font-size:13px}
 details a{display:block;margin-top:6px}
@@ -46,17 +46,40 @@ button.tag{cursor:pointer}button.tag:hover{outline:1px solid var(--accent)}
 .empty{padding:32px;text-align:center;color:var(--muted);background:var(--surface);border:1px dashed var(--line);border-radius:12px}
 .tools{display:flex;gap:8px;margin-bottom:10px;align-items:center;color:var(--muted);font-size:13px;flex-wrap:wrap}
 .tools button{padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;cursor:pointer}
+.rrow{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:10px 12px;margin-bottom:8px}
+.rrow.dragging{opacity:.45}
+.rhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.rnum{color:var(--muted);font-variant-numeric:tabular-nums;min-width:18px;font-size:13px}
+.rname{font-weight:600}
+.rmeta{color:var(--muted);font-size:12px;margin:0}
+.racts{margin-left:auto;display:flex;gap:4px;align-items:center}
+.racts button{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;padding:2px 9px;font:inherit;font-size:13px;line-height:1.5;cursor:pointer}
+.racts button:disabled{opacity:.35;cursor:default}
+.racts button.off.on{background:var(--warn);border-color:var(--warn);color:#fff;font-weight:600}
+.rrow details{margin-top:8px}
+.phrs{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.phrs .tag{display:inline-flex;gap:5px;align-items:center;background:var(--accent);color:var(--surface)}
+.phrs .tag button{border:0;background:none;color:inherit;cursor:pointer;font:inherit;line-height:1;padding:0}
+.addphr{display:flex;gap:6px;margin-bottom:6px}
+.addphr input{flex:1}
+.addphr button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+.ranknote{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:13px;color:var(--muted)}
+.rprev{margin:18px 0 8px;font-size:15px}
+.prow{display:flex;gap:10px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;margin-bottom:6px;font-size:14px}
+.prow b{font-variant-numeric:tabular-nums;color:var(--accent);min-width:26px}
+.prow small{margin-left:auto;color:var(--muted);font-size:12px;text-align:right}
 footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);font-size:13px}
-@media (max-width:760px){.grid{grid-template-columns:1fr}aside{position:static}}
+@media (max-width:760px){.grid{grid-template-columns:1fr}aside{position:static}.prow small{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
 <header>
-  <h1>Design roles</h1>
+  <h1>Design Opportunities</h1>
   <p id="status">Loading…</p>
   <div class="tabs" role="tablist">
     <button role="tab" id="t-all" aria-selected="true">All roles</button>
     <button role="tab" id="t-fav" aria-selected="false">Favorites (<span id="fc">0</span>)</button>
+    <button role="tab" id="t-rank" aria-selected="false">Ranking</button>
   </div>
 </header>
 <div class="grid">
@@ -72,53 +95,142 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
     <div class="f"><label for="st">State</label><select id="st"></select></div>
     <div class="f"><label for="city">City</label><select id="city"></select></div>
     <div class="f row"><label><input id="rem" type="checkbox" checked> Keep remote roles with no location</label></div>
-    <div class="f"><label for="cat">Role type</label><select id="cat"></select></div>
-    <div class="f"><label for="tag">Skill or specialty</label><select id="tag"></select></div>
+    <div class="f"><label for="cat">Primary tag</label><select id="cat"></select></div>
+    <div class="f"><label for="tag">Also tagged with</label><select id="tag"></select></div>
     <div class="f"><label for="type">Employment</label>
       <select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div>
     <div class="f"><label for="sort">Sort by</label>
-      <select id="sort"><option value="score">Best match</option><option value="new">Newest</option></select></div>
+      <select id="sort"><option value="score">Best Match</option><option value="new">Newest</option></select></div>
     <div class="f"><label for="age">Posted within</label>
       <select id="age"><option value="90">3 months</option><option value="30">1 month</option><option value="14">2 weeks</option><option value="7">1 week</option><option value="">Any time</option></select></div>
-    <div class="f row"><label><input id="only" type="checkbox" checked> Design-related roles only</label></div>
+    <div class="f row"><label><input id="only" type="checkbox" checked> Hide roles with an Off tag</label></div>
     <details><summary>Search other sites</summary><div id="else"></div></details>
   </aside>
   <section id="list" aria-live="polite"></section>
 </div>
-<footer>Job data: <a href="https://aquent.com" target="_blank" rel="noopener">Aquent</a>, <a href="https://weworkremotely.com" target="_blank" rel="noopener">We Work Remotely</a>, <a href="https://dribbble.com/jobs" target="_blank" rel="noopener">Dribbble</a>, <a href="https://remoteok.com" target="_blank" rel="noopener">Remote OK</a>, <a href="https://jobicy.com" target="_blank" rel="noopener">Jobicy</a>, and <a href="https://himalayas.app" target="_blank" rel="noopener">Himalayas</a>. Work setup, tags, start dates, and durations are read from each posting’s text, so check the posting before you apply. Favorites are saved in this browser only.</footer>
+<footer>Job data: <a href="https://aquent.com" target="_blank" rel="noopener">Aquent</a>, <a href="https://weworkremotely.com" target="_blank" rel="noopener">We Work Remotely</a>, <a href="https://dribbble.com/jobs" target="_blank" rel="noopener">Dribbble</a>, <a href="https://remoteok.com" target="_blank" rel="noopener">Remote OK</a>, <a href="https://jobicy.com" target="_blank" rel="noopener">Jobicy</a>, and <a href="https://himalayas.app" target="_blank" rel="noopener">Himalayas</a>. Work setup, tags, start dates, and durations are read from each posting’s text, so check the posting before you apply. Favorites and your tag ranking are saved in this browser only.</footer>
 <script>
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const enc=encodeURIComponent;
-const TIERS=[
- {name:"UX/UI",w:10,re:/\b(ux|ui)\b|user (experience|interface)|product design|interaction design|design systems?/i},
- {name:"Package",w:8,re:/packag(e|ing)|dieline|structural design|label design/i},
- {name:"Web",w:7,re:/web ?design|website|digital design|front[- ]?end design|landing page/i},
- {name:"Brand",w:6,re:/brand(ing)? design|brand designer|creative brand|brand identity/i},
- {name:"Art direction",w:6,re:/art director|creative director/i},
- {name:"Production",w:5,re:/production (artist|designer)|pre-?press|layout|retouch/i},
- {name:"Illustration",w:5,re:/illustrat/i},
- {name:"Motion",w:5,re:/motion|animat|video/i},
- {name:"Graphic/Visual",w:5,re:/graphic|visual design|designer/i},
- {name:"Other design",w:4,re:/design/i}
+
+/* ---------- tag taxonomy: title phrases decide visibility, description phrases only nudge the score ---------- */
+const TAGS=[
+ {id:"ux",label:"UX/UI",
+  title:["ux","ui","ux ui","user experience","user interface","usability","experience designer","experience design","content designer","content design","design systems","design system","information architecture"],
+  desc:["figma","wireframe","prototype","prototyping","user research","usability","user testing","design system","information architecture","user flow","journey map","accessibility","wcag","sketch","figjam"]},
+ {id:"package",label:"Package Design",
+  title:["packaging designer","packaging design","packaging production","package designer","package design","dieline","label design","structural design","carton"],
+  desc:["dieline","packaging","shrink sleeve","carton","cpg","flexo","blister","label"]},
+ {id:"brand",label:"Branding",
+  title:["brand designer","brand design","branding","brand identity","visual identity","rebrand","brand creative","brand systems"],
+  desc:["brand guidelines","brand identity","visual identity","logo","rebrand","brand system","brand book","tone of voice"]},
+ {id:"ixd",label:"Interaction Design",
+  title:["interaction designer","interaction design","ixd","microinteraction","micro interaction"],
+  desc:["microinteraction","micro interaction","interaction design","prototyping"]},
+ {id:"product",label:"Product Design",
+  title:["product designer","product design"],
+  desc:["product design","design system","end to end design","zero to one"]},
+ {id:"print",label:"Print Design",
+  title:["print designer","print design","editorial designer","editorial design","layout artist","typesetter","prepress","pre press","publication designer","magazine designer","catalog design","print production"],
+  desc:["prepress","pre press","cmyk","offset print","bleed","large format","brochure","catalog","editorial","typesetting","print production","indesign","paper stock"]},
+ {id:"motion",label:"Motion",
+  title:["motion designer","motion design","motion graphics","motion graphic","animator","animation","video editor","video design","vfx","after effects","videographer"],
+  desc:["after effects","motion graphics","animation","keyframe","storyboard","premiere pro","cinema 4d","lottie"]},
+ {id:"cd",label:"Creative Director",
+  title:["creative director","art director","creative lead","head of creative","creative direction","head of design","design manager","design lead","design director","vp of design","director of design"],
+  desc:["creative direction","art direction","creative strategy","creative team","creative leadership"]},
+ {id:"social",label:"Social",
+  title:["social media designer","social designer","social graphic","social content creator","social media design","paid social designer","designer paid social"],
+  desc:["social media","instagram","tiktok","paid social","social content","reels"]},
+ {id:"graphic",label:"Graphic Design",
+  title:["graphic designer","graphic design","visual designer","visual design","digital designer","digital design","communications designer","production designer","production design","web designer","web design","visual specialist","visual consultant","2d graphic design","marketing designer","email designer","presentation designer"],
+  desc:["photoshop","illustrator","indesign","adobe creative suite","creative suite","print and digital","brand collateral","marketing collateral","campaign assets","typography","layout"]},
+ {id:"unclassified",label:"Unclassified",title:[],desc:[]}
 ];
-const BAD=/\b(writer|copywriter|engineer|recruiter|analyst|accountant|developer)\b/i;
-function score(j){
-  let best=0,cat="";
-  for(const t of TIERS) if(t.re.test(j.title)&&t.w>best){best=t.w;cat=t.name}
-  const d=(j.description||"")+" "+(j.tags||[]).join(" ");
-  let s=best+Math.min(4,TIERS.slice(0,3).filter(t=>t.re.test(d)).length+((j.tags||[]).length>2?1:0));
-  if(best&&BAD.test(j.title)) s-=6;
-  if(!best) s=0;
-  j._cat=cat; j._score=Math.max(0,Math.min(100,Math.round(s/14*100)));
-}
+const BYTAG={};TAGS.forEach(t=>BYTAG[t.id]=t);
+const LABEL={};TAGS.forEach(t=>LABEL[t.id]=t.label);
+const DEF_ORDER=TAGS.map(t=>t.id);
+
 const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+/* Merge a saved order with the current tag list: keep what the user arranged,
+   slot brand-new tags next to their default neighbours, drop tags that are gone. */
+function mergeOrder(saved){
+  const ids=DEF_ORDER;
+  const out=(Array.isArray(saved)?saved:[]).filter((id,i,a)=>ids.includes(id)&&a.indexOf(id)===i);
+  ids.forEach((id,i)=>{
+    if(out.includes(id))return;
+    let at=0;
+    for(let k=i-1;k>=0;k--){const p=out.indexOf(ids[k]);if(p>=0){at=p+1;break}}
+    out.splice(at,0,id);
+  });
+  return out;
+}
+
 let DATA,JOBS=[],BYID={},FAVS=store.get("jobfavs",{}),OFF=new Set(store.get("jobsrcoff",[])),TAB="all";
+let ORDER=mergeOrder(store.get("jobrank",[])),OFFRANK=new Set(store.get("jobrankoff",[])),PHR=store.get("jobrankphr",{})||{};
+if(!PHR||typeof PHR!=="object"||Array.isArray(PHR))PHR={};
+let WEIGHTS={},CRX={};
+
 const CTRL=["q","st","city","rem","cat","tag","type","sort","age","only"];
 function saveFilters(){const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);store.set("jobfilters",o)}
 function restore(){const o=store.get("jobfilters",{});CTRL.forEach(k=>{if(!(k in o)||k==="city")return;const e=$("#"+k);if(e.type==="checkbox")e.checked=o[k];else e.value=o[k]});(o.wp||[]).forEach((v,i)=>{const e=document.querySelectorAll("[name=wp]")[i];if(e)e.checked=v});return o.city||""}
+
+/* ---------- phrase matching: plain phrases, case-insensitive, word boundaries, plurals allowed ---------- */
+const norm=s=>String(s??"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+const escRe=s=>s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+function phraseRe(p){
+  const w=norm(p).split(" ").filter(Boolean);
+  if(!w.length)return null;
+  const body=w.map(x=>escRe(x)+"(?:s|es)?").join("\\s+");
+  return new RegExp("\\b"+body+"\\b");
+}
+function buildRx(){
+  CRX={};
+  TAGS.forEach(t=>{
+    const custom=PHR[t.id]||[];
+    CRX[t.id]={t:[...t.title,...custom].map(phraseRe).filter(Boolean),
+               d:[...t.desc,...custom].map(phraseRe).filter(Boolean)};
+  });
+}
+function calcWeights(){const n=ORDER.length;WEIGHTS={};ORDER.forEach((id,i)=>WEIGHTS[id]=(n-i)/n)}
+
+/* Engineering titles can contain design words ("UI Engineer", "Design Quality
+   Engineer"). They stay on the board as Unclassified rather than ranking as
+   design roles. */
+const TITLE_SKIP=/\b(engineer|engineering|developer|devops|architect|technician)\b/i;
+
+/* ---------- score: title tag sets the base, extra title tags and description evidence nudge it up ---------- */
+function score(j){
+  const T=norm(j.title),D=norm((j.description||"")+" "+(j.tags||[]).join(" "));
+  const tt=[],dt=[];
+  const skip=TITLE_SKIP.test(j.title);
+  ORDER.forEach(id=>{const r=CRX[id];if(!r)return;
+    if(!skip&&r.t.some(x=>x.test(T)))tt.push(id);
+    else if(r.d.some(x=>x.test(D)))dt.push(id)});
+  const base=tt.length?Math.max(...tt.map(id=>WEIGHTS[id])):(WEIGHTS.unclassified||0);
+  const multi=Math.min(.10,.05*Math.max(0,tt.length-1));
+  const boost=dt.length?.15*Math.max(...dt.map(id=>WEIGHTS[id])):0;
+  j._score=Math.max(0,Math.min(100,Math.round(100*Math.min(1,.85*base+multi+boost))));
+  j._tags=tt;
+  j._desc=dt;
+  j._best=tt[0]||"unclassified";
+  j._off=tt.length?tt.every(id=>OFFRANK.has(id)):OFFRANK.has("unclassified");
+}
+function recalc(){if(!JOBS.length)return;buildRx();calcWeights();JOBS.forEach(score);
+  const c=$("#cat").value,g=$("#tag").value;fillCat();fillTag();if(c)$("#cat").value=c;if(g)$("#tag").value=g}
+function saveRank(){store.set("jobrank",ORDER);store.set("jobrankoff",[...OFFRANK]);store.set("jobrankphr",PHR)}
+
 function opts(label,counts){return `<option value="">${label}</option>`+Object.keys(counts).sort().map(k=>`<option value="${esc(k)}">${esc(k)} (${counts[k]})</option>`).join("")}
 function tally(f){const c={};JOBS.forEach(j=>[].concat(f(j)).forEach(v=>{if(v)c[v]=(c[v]||0)+1}));return c}
+function tagCounts(){const c={};JOBS.forEach(j=>{if(!j._tags.length)c.unclassified=(c.unclassified||0)+1;j._tags.forEach(id=>c[id]=(c[id]||0)+1)});return c}
+function tagOptions(first){
+  const c=tagCounts();
+  return `<option value="">${first}</option>`+ORDER.filter(id=>c[id]).map(id=>`<option value="${id}">${esc(LABEL[id])} (${c[id]})</option>`).join("");
+}
+function fillCat(){$("#cat").innerHTML=tagOptions("All primary tags")}
+function fillTag(){$("#tag").innerHTML=tagOptions("Any tag")}
 function fillCities(keep){const st=$("#st").value,c={};JOBS.forEach(j=>{if(j.city&&(!st||j.state===st))c[j.city]=(c[j.city]||0)+1});$("#city").innerHTML=opts("All cities",c);if(keep&&c[keep])$("#city").value=keep}
 function fillSources(){$("#srcs").className="f row";$("#srcs").innerHTML="<label>Sources</label>"+Object.entries(DATA.counts).map(([k,n])=>`<label><input type="checkbox" data-src="${esc(k)}" ${OFF.has(k)?"":"checked"}> ${esc(k)} (${n})</label>`).join("")}
 function fmt(d){return new Date(d+"T12:00:00").toLocaleDateString([],{month:"short",day:"numeric",year:"numeric"})}
@@ -128,64 +240,157 @@ function card(j,gone){
   const wl={remote:"Remote",hybrid:"Hybrid",onsite:"On-site",unknown:"Setup not stated"}[j.workplace];
   const when=[j.start?(j.start==="ASAP"?"Starts ASAP":"Starts "+fmt(j.start)):"",j.duration?"Duration "+j.duration:""].filter(Boolean).join(" · ");
   const saved=!!FAVS[j.id];
+  const ids=j._tags&&j._tags.length?j._tags:["unclassified"];
   return `<article class="card${gone?" gone":""}"><div>
     <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
     <div class="meta">${esc(j.company)} · ${esc(where)}${j.posted?" · posted "+ago(j.posted):""}${j.pay?" · "+esc(j.pay):""}</div>
     ${when?`<div class="meta">${esc(when)}</div>`:""}
-    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&j.first_seen===DATA.updated.slice(0,10)?'<span class="tag new">New</span>':""}${j._cat?`<span class="tag cat">${esc(j._cat)}</span>`:""}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
-  </div><div class="side"><button class="star" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved?"Remove from favorites":"Save to favorites"}">${saved?"★":"☆"}</button><small>Match score</small><b>${j._score}</b><div class="bar"><i style="width:${j._score}%"></i></div></div></article>`}
+    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&j.first_seen===DATA.updated.slice(0,10)?'<span class="tag new">New</span>':""}${ids.map(id=>`<button class="tag cat" data-tagid="${id}" title="Show only ${esc(LABEL[id])} roles">${esc(LABEL[id])}</button>`).join("")}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
+  </div><div class="side"><button class="star" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved?"Remove from favorites":"Save to favorites"}">${saved?"★":"☆"}</button><small>Match Score</small><b>${j._score}</b><div class="bar"><i style="width:${j._score}%"></i></div></div></article>`}
 function elsewhere(q,city,st){
   const kw=q||"graphic designer",loc=city?`${city}, ${st}`:st;
   const remoteOnly=[...document.querySelectorAll("[name=wp]:checked")].map(x=>x.value).join()==="remote";
   const l=loc||(remoteOnly?"Remote":"");
   $("#else").innerHTML=[["Indeed",`https://www.indeed.com/jobs?q=${enc(kw)}&l=${enc(l)}`],["Google Jobs",`https://www.google.com/search?q=${enc(kw+" jobs"+(l?" in "+l:""))}&ibp=htl;jobs`],["Handshake (login)",`https://app.joinhandshake.com/stu/postings?query=${enc(kw)}`],["LinkedIn",`https://www.linkedin.com/jobs/search/?keywords=${enc(kw)}&location=${enc(l)}`]].map(([n,u])=>`<a href="${u}" target="_blank" rel="noopener">${n}</a>`).join("")}
+
 function render(){
+  if(!DATA)return;
   $("#fc").textContent=Object.keys(FAVS).length;
-  $("#filters").style.display=TAB==="all"?"":"none";
-  document.querySelector(".grid").style.gridTemplateColumns=TAB==="all"?"":"1fr";
-  $("#t-all").setAttribute("aria-selected",TAB==="all");$("#t-fav").setAttribute("aria-selected",TAB==="fav");
+  const all=TAB==="all";
+  $("#filters").style.display=all?"":"none";
+  document.querySelector(".grid").style.gridTemplateColumns=all?"":"1fr";
+  ["all","fav","rank"].forEach(t=>$("#t-"+t).setAttribute("aria-selected",t===TAB));
   const upd=new Date(DATA.updated).toLocaleString([],{dateStyle:"medium",timeStyle:"short"});
   if(TAB==="fav")return renderFavs(upd);
+  if(TAB==="rank")return renderRank(upd);
   const q=$("#q").value.trim().toLowerCase(),st=$("#st").value,city=$("#city").value,type=$("#type").value,cat=$("#cat").value,tag=$("#tag").value,rem=$("#rem").checked,only=$("#only").checked;
   const age=$("#age").value,cutoff=age?new Date(Date.now()-Number(age)*864e5).toISOString().slice(0,10):"";
   const wp=[...document.querySelectorAll("[name=wp]:checked")].map(x=>x.value);
   elsewhere($("#q").value.trim(),city,st);
   let r=JOBS.filter(j=>{
-    if(OFF.has(j.source)||(only&&!j._score)||!wp.includes(j.workplace))return false;
+    if(OFF.has(j.source)||(only&&j._off)||!wp.includes(j.workplace))return false;
     if(cutoff&&j.posted&&j.posted<cutoff)return false;
-    if(type&&j.type!==type||cat&&j._cat!==cat||tag&&!(j.tags||[]).includes(tag))return false;
+    if(type&&j.type!==type||cat&&j._best!==cat)return false;
+    if(tag){if(tag==="unclassified"){if(j._tags.length)return false}else if(!j._tags.includes(tag))return false}
     if(q&&!(j.title+" "+j.company+" "+(j.description||"")+" "+(j.tags||[]).join(" ")).toLowerCase().includes(q))return false;
     if(st||city){if(!j.state&&!j.city)return rem&&j.workplace==="remote";if(st&&j.state!==st||city&&j.city!==city)return false}
     return true});
   r.sort($("#sort").value==="new"?(a,b)=>(b.posted||"").localeCompare(a.posted||"")||b._score-a._score:(a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||""));
   $("#status").textContent=`${r.length} of ${JOBS.length} roles · updated ${upd}`;
-  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the skill filter.</div>';
+  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the tag filters.</div>';
 }
+
 function renderFavs(upd){
   const items=Object.values(FAVS).map(f=>{const live=BYID[f.id];if(live)return{j:live,gone:false};score(f);return{j:f,gone:true}});
   items.sort((a,b)=>a.gone-b.gone||b.j._score-a.j._score);
   $("#status").textContent=`${items.length} saved · ${items.filter(i=>i.gone).length} no longer listed · updated ${upd}`;
-  $("#list").innerHTML=`<div class="tools"><button id="exp">Export favorites</button><button id="imp">Import favorites</button><span>Back up favorites to move them to another device.</span><input id="impf" type="file" accept=".json" hidden></div>`+(items.length?items.map(i=>card(i.j,i.gone)).join(""):'<div class="empty">No favorites yet. Click the star on any role to save it here.</div>');
+  $("#list").innerHTML=`<div class="tools"><button id="rexp">Export settings</button><button id="rimp">Import settings</button><span>One file with your favorites, filters, and tag ranking.</span><input id="rimpf" type="file" accept=".json" hidden></div>`+(items.length?items.map(i=>card(i.j,i.gone)).join(""):'<div class="empty">No favorites yet. Click the star on any role to save it here.</div>');
 }
+
+function renderRank(upd){
+  const c=tagCounts();
+  const rows=ORDER.map((id,i)=>{
+    const t=BYTAG[id],off=OFFRANK.has(id),custom=PHR[id]||[],n=c[id]||0;
+    const has=t.title.length||t.desc.length;
+    return `<div class="rrow" draggable="true" data-id="${id}">
+      <div class="rhead">
+        <span class="rnum">${i+1}</span><span class="rname">${esc(t.label)}</span>
+        <span class="rmeta">${n} role${n===1?"":"s"} · weight ${(WEIGHTS[id]||0).toFixed(2)}</span>
+        <span class="racts">
+          <button data-up="${id}" ${i?"":"disabled"} title="Move up" aria-label="Move ${esc(t.label)} up">↑</button>
+          <button data-down="${id}" ${i<ORDER.length-1?"":"disabled"} title="Move down" aria-label="Move ${esc(t.label)} down">↓</button>
+          <button data-off="${id}" class="off${off?" on":""}" aria-pressed="${off}" title="${off?"Off: hidden unless every tag on a role is Off":"On: counted in the score"}">${off?"Off":"On"}</button>
+        </span>
+      </div>
+      ${has?`<details><summary>Phrases${custom.length?` · ${custom.length} added by you`:""}</summary>
+        <div class="phrs">${custom.map((p,k)=>`<span class="tag">${esc(p)}<button data-del="${id}" data-k="${k}" aria-label="Remove ${esc(p)}">×</button></span>`).join("")||'<span class="rmeta">No phrases added yet.</span>'}</div>
+        <div class="addphr"><input type="text" data-phr="${id}" placeholder="Add a phrase, e.g. wayfinding" aria-label="Add a phrase to ${esc(t.label)}"><button data-add="${id}">Add</button></div>
+        <p class="rmeta">Title phrases: ${esc(t.title.join(", "))}</p>
+        <p class="rmeta">Description phrases: ${esc(t.desc.join(", "))}</p>
+      </details>`:""}
+    </div>`}).join("");
+  const top=[...JOBS].sort((a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||"")).slice(0,5);
+  $("#status").textContent=`${JOBS.length} roles scored · updated ${upd}`;
+  $("#list").innerHTML=`<div class="ranknote">Higher in this list means a higher Match Score. A role's <b>title</b> decides which tags it gets; description phrases only nudge the score. <b>Off</b> hides roles whose tags are all Off. Drag a row (or use ↑ ↓) to reorder. Saved in this browser only.</div>
+    <div class="tools"><button id="rexp">Export settings</button><button id="rimp">Import settings</button><button id="rreset">Reset ranking</button><input id="rimpf" type="file" accept=".json" hidden></div>
+    <div id="rrows">${rows}</div>
+    <h3 class="rprev">Top matches with this ranking</h3>
+    ${top.map(j=>`<div class="prow"><b>${j._score}</b><span>${esc(j.title)}</span><small>${esc(j.company)} · ${esc(j.source)}</small></div>`).join("")}`;
+}
+
+function addPhrase(id,v){
+  const p=String(v||"").trim();if(!p)return;
+  const list=PHR[id]||(PHR[id]=[]);
+  if(list.some(x=>norm(x)===norm(p)))return;
+  list.push(p);saveRank();recalc();render();
+}
+function delPhrase(id,k){const l=PHR[id]||[];l.splice(k,1);if(!l.length)delete PHR[id];saveRank();recalc();render()}
+function moveTag(id,delta){const i=ORDER.indexOf(id),j=i+delta;if(i<0||j<0||j>=ORDER.length)return;ORDER.splice(j,0,ORDER.splice(i,1)[0]);saveRank();recalc();render()}
+
+function exportSettings(){
+  const f={};CTRL.forEach(k=>{const e=$("#"+k);f[k]=e.type==="checkbox"?e.checked:e.value});
+  f.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);
+  const data={version:2,exported:new Date().toISOString(),favorites:FAVS,filters:f,sources:[...OFF],
+    ranking:{order:ORDER,off:[...OFFRANK],phrases:PHR}};
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,1)],{type:"application/json"}));
+  a.download="design-opportunities-settings.json";a.click();
+}
+function importSettings(file){
+  file.text().then(txt=>{
+    let d;try{d=JSON.parse(txt)}catch(e){alert("That file couldn’t be read as a settings backup.");return}
+    if(d.favorites&&typeof d.favorites==="object"){FAVS=d.favorites;store.set("jobfavs",FAVS)}
+    if(Array.isArray(d.sources)){OFF=new Set(d.sources);store.set("jobsrcoff",[...OFF]);fillSources()}
+    if(d.ranking){
+      if(Array.isArray(d.ranking.order))ORDER=mergeOrder(d.ranking.order);
+      if(Array.isArray(d.ranking.off))OFFRANK=new Set(d.ranking.off);
+      if(d.ranking.phrases&&typeof d.ranking.phrases==="object")PHR=d.ranking.phrases;
+      saveRank();
+    }
+    if(d.filters&&typeof d.filters==="object"){store.set("jobfilters",d.filters);const c=restore();fillCities(c)}
+    recalc();render();
+  }).catch(()=>alert("That file couldn’t be read as a settings backup."));
+}
+
 document.addEventListener("click",e=>{
   const t=e.target;
   if(t.closest(".star")){const id=t.closest(".star").dataset.id;
     if(FAVS[id])delete FAVS[id];else{const j=BYID[id]||FAVS[id];FAVS[id]={...j,saved:new Date().toISOString().slice(0,10)}}
     store.set("jobfavs",FAVS);render()}
-  else if(t.dataset.tag){TAB="all";$("#tag").value=t.dataset.tag;saveFilters();render()}
-  else if(t.id==="t-all"||t.id==="t-fav"){TAB=t.id==="t-all"?"all":"fav";render()}
-  else if(t.id==="exp"){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(FAVS,null,1)],{type:"application/json"}));a.download="design-job-favorites.json";a.click()}
-  else if(t.id==="imp")$("#impf").click();
+  else if(t.dataset.tagid){TAB="all";$("#tag").value=t.dataset.tagid;saveFilters();render()}
+  else if(t.dataset.up){moveTag(t.dataset.up,-1)}
+  else if(t.dataset.down){moveTag(t.dataset.down,1)}
+  else if(t.dataset.off){const id=t.dataset.off;OFFRANK.has(id)?OFFRANK.delete(id):OFFRANK.add(id);saveRank();recalc();render()}
+  else if(t.dataset.add){const inp=document.querySelector(`[data-phr="${t.dataset.add}"]`);addPhrase(t.dataset.add,inp?inp.value:"")}
+  else if(t.dataset.del){delPhrase(t.dataset.del,Number(t.dataset.k))}
+  else if(t.id==="t-all"||t.id==="t-fav"||t.id==="t-rank"){TAB=t.id.slice(2);render()}
+  else if(t.id==="rexp")exportSettings();
+  else if(t.id==="rimp")$("#rimpf").click();
+  else if(t.id==="rreset"){if(!confirm("Reset the ranking order, On/Off states, and your added phrases?"))return;
+    ORDER=[...DEF_ORDER];OFFRANK=new Set();PHR={};saveRank();recalc();render()}
 });
 document.addEventListener("change",e=>{
   const t=e.target;
-  if(t.id==="impf"&&t.files[0]){t.files[0].text().then(x=>{try{Object.assign(FAVS,JSON.parse(x));store.set("jobfavs",FAVS);render()}catch(err){alert("That file couldn’t be read as a favorites backup.")}})}
+  if(t.id==="rimpf"&&t.files[0]){importSettings(t.files[0]);t.value=""}
 });
+document.addEventListener("keydown",e=>{
+  const id=e.target&&e.target.dataset?e.target.dataset.phr:null;
+  if(id&&e.key==="Enter"){e.preventDefault();addPhrase(id,e.target.value)}
+});
+/* drag to reorder the ranking */
+let DRAG=null;
+$("#list").addEventListener("dragstart",e=>{const r=e.target.closest(".rrow");if(!r)return;DRAG=r.dataset.id;r.classList.add("dragging")});
+$("#list").addEventListener("dragend",e=>{const r=e.target.closest(".rrow");if(r)r.classList.remove("dragging");DRAG=null});
+$("#list").addEventListener("dragover",e=>{if(DRAG)e.preventDefault()});
+$("#list").addEventListener("drop",e=>{if(!DRAG)return;const r=e.target.closest(".rrow");if(!r)return;e.preventDefault();
+  const from=ORDER.indexOf(DRAG),to=ORDER.indexOf(r.dataset.id);
+  if(from<0||to<0||from===to)return;
+  ORDER.splice(to,0,ORDER.splice(from,1)[0]);DRAG=null;saveRank();recalc();render()});
+
 fetch("jobs.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
-  DATA=d;JOBS=d.jobs;JOBS.forEach(j=>{score(j);BYID[j.id]=j});
+  DATA=d;JOBS=d.jobs;buildRx();calcWeights();JOBS.forEach(j=>{score(j);BYID[j.id]=j});
   $("#st").innerHTML=opts("All states",tally(j=>j.state));
-  $("#cat").innerHTML=opts("All role types",tally(j=>j._cat));
-  $("#tag").innerHTML=opts("Any skill",tally(j=>j.tags||[]));
+  fillCat();fillTag();
   fillSources();const keepCity=restore();fillCities(keepCity);
   $("#filters").addEventListener("input",e=>{
     const s=e.target.dataset.src;if(s){e.target.checked?OFF.delete(s):OFF.add(s);store.set("jobsrcoff",[...OFF])}

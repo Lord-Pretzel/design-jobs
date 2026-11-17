@@ -62,7 +62,21 @@ DESIGN_RE = re.compile(
 DESIGN_TITLE_RE = re.compile(
     r"\bdesign(?:er|ers)?\b|\bux\b|\bui\b|\bgraphic\b|\bvisual\b|\billustrat|"
     r"\bbrand\b|\bpackaging\b|\bmotion\b|\btypograph|\bart director\b|"
-    r"\bcreative director\b",
+    r"\bcreative director\b|\banimat|\bvideo editor\b|\bphotograph|\bretouch|"
+    r"\bprepress\b|\bpre-press\b|\btypeset|\blayout artist\b|"
+    r"\bconcept artist\b|\bstoryboard|\b3d artist\b|\bgame artist\b|"
+    r"\bcreative lead\b|\bdesign strateg|\bcreative technolog",
+    re.I,
+)
+# Aquent's feed is the agency's whole contract book, not a design feed, so it
+# needs its own (wider) design-adjacent title filter. Without it the site fills
+# up with pharmacists, recruiters, and Java developers.
+AQUENT_TITLE_RE = re.compile(
+    r"\bdesign(?:er|ers|ing)?\b|graphic|visual|\bux\b|\bui\b|illustrat|"
+    r"motion graphic|animat|video edit|photo|packag|dieline|retouch|"
+    r"layout|concept art|storyboard|typograph|prepress|pre[- ]press|"
+    r"art director|creative director|creative lead|creative technolog|"
+    r"design strateg|creative operations|user research|web design|\bartist\b",
     re.I,
 )
 
@@ -355,7 +369,12 @@ def fetch_aquent():
         raise RuntimeError("Could not find job entries in the Aquent feed")
     print("Sample Aquent posting fields:",
           json.dumps({k: v[:120] for k, v in flat(els[0]).items()}, indent=1))
-    return [j for j in (normalize(flat(e), "Aquent") for e in els) if j and j["title"]]
+    out = []
+    for e in els:
+        j = normalize(flat(e), "Aquent")
+        if j and j["title"] and AQUENT_TITLE_RE.search(j["title"]):
+            out.append(j)
+    return out
 
 
 def get_json(url):
@@ -629,6 +648,8 @@ def main():
         except Exception as e:  # keep yesterday's data for a source that fails
             print(f"{name} failed: {e}", file=sys.stderr)
             got = [j for j in prev_jobs.values() if j["source"] == name]
+            if name == "Aquent":  # keep the design-only rule on cached data too
+                got = [j for j in got if AQUENT_TITLE_RE.search(j["title"])]
         counts[name] = len(got)
         for j in got:
             old = prev_jobs.get(j["id"])
