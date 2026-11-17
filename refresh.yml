@@ -19,6 +19,7 @@ jobs:
       - name: Pull job postings
         run: python fetch_jobs.py
         env:
+          # Optional: Adzuna is skipped when these secrets are not set.
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
       - name: Save results
