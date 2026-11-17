@@ -35,6 +35,70 @@ _STATES = (
 NAMES = {p.split(":")[0].lower(): p.split(":")[1] for p in _STATES.split(",")}
 CODES = set(NAMES.values())
 US_NAMES = {"us", "usa", "united states", "united states of america"}
+US_ONLY = re.compile(r"\b(?:usa|u\.s\.?a?|united states|americas|north america)\b", re.I)
+US_CITY_HINTS = (
+    "new york city", "new york", "san francisco", "los angeles", "chicago",
+    "austin", "seattle", "boston", "washington d.c.", "washington, d.c.",
+    "denver", "atlanta", "miami", "portland", "san diego", "philadelphia",
+    "dallas", "houston", "phoenix", "minneapolis", "detroit", "pittsburgh",
+    "salt lake city", "raleigh", "charlotte", "nashville", "columbus",
+    "cincinnati", "cleveland", "st. louis", "kansas city", "milwaukee",
+    "sacramento", "san jose", "oakland", "brooklyn", "cambridge",
+    "palo alto", "menlo park", "mountain view", "sunnyvale", "irvine",
+    "santa monica", "culver city",
+)
+DESIGN_RE = re.compile(
+    r"\b(?:graphic|visual|product|ux|ui|web|brand|motion|packaging|print|"
+    r"interaction|digital|creative)\s*(?:design|designer)\b|"
+    r"\bdesign(?:er)?\b|figma|illustrat|art director|creative director",
+    re.I,
+)
+# Broad feeds tag almost every posting "design" (Remote OK) or keyword-match
+# unrelated slugs (Himalayas' "Instructional-Designer"), so those sources are
+# filtered on the job title instead.
+DESIGN_TITLE_RE = re.compile(
+    r"\bdesign(?:er|ers)?\b|\bux\b|\bui\b|\bgraphic\b|\bvisual\b|\billustrat|"
+    r"\bbrand\b|\bpackaging\b|\bmotion\b|\btypograph|\bart director\b|"
+    r"\bcreative director\b",
+    re.I,
+)
+
+
+def looks_us(loc):
+    """True when a location string is US-eligible or open remote."""
+    loc = (loc or "").strip()
+    if not loc:
+        return True
+    low = loc.lower()
+    if re.search(r"\b(?:remote|anywhere|worldwide|global)\b", low):
+        if re.search(r"\b(?:europe|emea|apac|asia|africa|latam|latin america)\b",
+                     low) and not US_ONLY.search(low):
+            return False
+        return True
+    if US_ONLY.search(low):
+        return True
+    if any(re.search(rf"\b{re.escape(name)}\b", low) for name in NAMES):
+        return True
+    m = re.search(r",\s*([A-Z]{2})\b", loc)
+    if m and m[1] in CODES:
+        return True
+    return any(city in low for city in US_CITY_HINTS)
+
+
+def is_design(title, tags="", desc=""):
+    """Loose design filter for broad feeds (Remote OK, Jobicy, Himalayas)."""
+    if DESIGN_RE.search(title or "") or DESIGN_RE.search(tags or ""):
+        return True
+    return bool(re.search(
+        r"\b(?:graphic|ux|ui|product|brand|web|motion|packaging|visual)\s+design\b",
+        desc or "", re.I))
+
+
+def money(v):
+    try:
+        return float(v or 0)
+    except (TypeError, ValueError):
+        return 0
 
 
 def fetch(url):
@@ -169,6 +233,12 @@ def extract_dates(desc, start_hint="", duration_hint=""):
 
 def pay_text(d, desc):
     """Readable pay, e.g. '$55-58 Hourly'. Hides bare numbers with no unit."""
+    pay = _pay_text(d, desc)
+    # Some feeds leave template placeholders ("[[cust_salaryMin]]") in the text.
+    return "" if re.search(r"\[\[|\]\]|\{\{", pay) else pay
+
+
+def _pay_text(d, desc):
     t = label(desc, r"(?:salary|pay rate)")
     if t:
         return t
@@ -217,7 +287,8 @@ def normalize(d, source):
     in_us = bool(state) or country in US_NAMES or "united states" in loc.lower()
     # Remote with no real place named ("Remote; Virtual", "Flexible / Remote").
     open_remote = (workplace == "remote" and not country and not re.sub(
-        r"flexible|remote|virtual|anywhere|work from home|[\W_]+", "", loc, flags=re.I))
+        r"flexible|remote|virtual|anywhere|worldwide|global|work from home|[\W_]+",
+        "", loc, flags=re.I))
     if not in_us and not open_remote:
         return None
 
@@ -308,20 +379,214 @@ def fetch_muse():
 
 
 def fetch_remotive():
-    """Remotive public API, design category (remote roles)."""
+    """Remotive public API, design category (remote roles).
+
+    Remotive's category/search filters currently return the whole feed, so the
+    design match is done here on the title.
+    """
     out = []
     for r in get_json("https://remotive.com/api/remote-jobs?category=design").get("jobs", []):
+        title = clean(r.get("title", ""))
+        if not DESIGN_TITLE_RE.search(title):
+            continue
         loc = r.get("candidate_required_location", "")
         us = re.search(r"usa|united states|\bus\b|north america|americas", loc, re.I)
         if not us and not re.search(r"worldwide|anywhere", loc, re.I):
             continue
-        out.append({"id": str(r.get("id")), "title": r.get("title", ""),
+        out.append({"id": str(r.get("id")), "title": title,
                     "url": r.get("url", ""), "company": r.get("company_name", ""),
                     "workplace": "remote", "country": "USA" if us else "",
                     "jobtype": r.get("job_type", ""), "salary": r.get("salary", ""),
                     "description": r.get("description", ""),
                     "date": r.get("publication_date", "")})
     return [j for j in (normalize(d, "Remotive") for d in out) if j and j["title"]]
+
+
+def fetch_weworkremotely():
+    """We Work Remotely's public design-category RSS feed."""
+    raw = fetch("https://weworkremotely.com/categories/remote-design-jobs.rss")
+    out = []
+    for item in ET.fromstring(raw).iter():
+        if local(item.tag) != "item":
+            continue
+        d = flat(item)
+        title = clean(d.get("title", ""))
+        company, sep, role = title.partition(": ")
+        if not sep:
+            company, role = "We Work Remotely", title
+        region = d.get("region", "")
+        low = region.lower()
+        us = bool(re.search(r"usa|united states|u\.s\.|americas|north america", low))
+        world = bool(re.search(r"anywhere|worldwide|global", low))
+        if region and not us and not world:
+            continue
+        if not DESIGN_TITLE_RE.search(role):
+            continue
+        out.append({
+            "id": d.get("guid") or d.get("link", ""),
+            "title": clean(role), "url": d.get("link", ""),
+            "company": clean(company), "location": "Remote",
+            "country": "US" if us else "", "state": d.get("state", ""),
+            "workplace": "remote", "jobtype": d.get("type", ""),
+            "description": d.get("description", ""), "date": d.get("pubdate", ""),
+        })
+    return [j for j in (normalize(d, "We Work Remotely") for d in out) if j and j["title"]]
+
+
+def fetch_dribbble():
+    """Dribbble's public jobs RSS feed."""
+    raw = fetch("https://dribbble.com/jobs.rss")
+    out = []
+    for item in ET.fromstring(raw).iter():
+        if local(item.tag) != "item":
+            continue
+        d = flat(item)
+        title = clean(d.get("title", ""))
+        m = re.match(r"^(.*?) is hiring for a position of (.*)$", title, re.I)
+        if m:
+            company, rest = clean(m[1]), clean(m[2])
+            role, loc = (rest.rsplit(" in ", 1) if " in " in rest else (rest, ""))
+            if role.lower().endswith(" anywhere"):
+                role, loc = role[:-9].strip(), "Remote"
+        else:
+            company, role, loc = clean(d.get("creator", "")), title, ""
+        if not role or "closed" in role.lower():
+            continue
+        if not DESIGN_TITLE_RE.search(role):
+            continue
+        loc = clean(loc)
+        if loc and not looks_us(loc):
+            continue
+        remote = not loc or bool(re.search(r"remote|anywhere", loc, re.I))
+        out.append({
+            "id": d.get("guid") or d.get("link", ""),
+            "title": clean(role), "url": d.get("link", ""),
+            "company": company, "location": "Remote" if remote else loc,
+            "country": "US" if looks_us(loc) else "",
+            "workplace": "remote" if remote else "",
+            "description": "", "date": d.get("pubdate", ""),
+        })
+    return [j for j in (normalize(d, "Dribbble") for d in out) if j and j["title"]]
+
+
+def fetch_remoteok():
+    """Remote OK public API. The footer links back to Remote OK as required."""
+    out = []
+    for r in get_json("https://remoteok.com/api"):
+        if not isinstance(r, dict) or not r.get("id") or not r.get("position"):
+            continue
+        title = clean(r.get("position", ""))
+        tags = " ".join(str(t).lower() for t in (r.get("tags") or []))
+        # Remote OK tags nearly every posting "design", so filter on the title.
+        if not DESIGN_TITLE_RE.search(title):
+            continue
+        loc = (r.get("location") or "").strip()
+        if not looks_us(loc):
+            continue
+        lo, hi = money(r.get("salary_min")), money(r.get("salary_max"))
+        out.append({
+            "id": str(r["id"]), "title": title,
+            "url": r.get("apply_url") or r.get("url", ""),
+            "company": clean(r.get("company", "")),
+            "location": "Remote" if not loc or re.search(
+                r"worldwide|anywhere", loc, re.I) else loc,
+            "country": "US" if looks_us(loc) else "",
+            "workplace": "remote", "jobtype": tags,
+            "salary": f"${lo:,.0f}-{hi:,.0f} / year" if lo and hi else "",
+            "description": r.get("description", ""), "date": r.get("date", ""),
+        })
+    return [j for j in (normalize(d, "Remote OK") for d in out) if j and j["title"]]
+
+
+JOBICY_INDUSTRIES = ("design-multimedia", "web-app-design")
+
+
+def fetch_jobicy():
+    """Jobicy public API, US remote jobs in its two design industries.
+
+    The footer credits Jobicy and every link goes to the Jobicy posting, as
+    their API terms require.
+    """
+    out, seen = [], set()
+    for industry in JOBICY_INDUSTRIES:
+        url = f"https://jobicy.com/api/jobs?count=100&geo=usa&industry={industry}"
+        for r in get_json(url).get("jobs", []):
+            jid = str(r.get("id", ""))
+            if not jid or jid in seen:
+                continue
+            seen.add(jid)
+            title = clean(r.get("jobTitle", ""))
+            industries = " ".join(r.get("jobIndustry") or [])
+            desc = r.get("jobDescription", "")
+            if not is_design(title, industries, desc[:400]):
+                continue
+            geo = r.get("jobGeo", "")
+            if not looks_us(geo):
+                continue
+            cur = r.get("salaryCurrency") or ""
+            lo, hi = money(r.get("salaryMin")), money(r.get("salaryMax"))
+            period = r.get("salaryPeriod") or ""
+            salary = f"{cur} {lo:,.0f}-{hi:,.0f} / {period}".strip() if lo and hi else ""
+            out.append({
+                "id": jid, "title": title,
+                "url": r.get("url", ""), "company": clean(r.get("companyName", "")),
+                "location": "Remote", "country": "US",
+                "workplace": "remote", "jobtype": " ".join(r.get("jobType") or []),
+                "salary": salary, "description": desc, "date": r.get("pubDate", ""),
+            })
+        time.sleep(0.5)
+    return [j for j in (normalize(d, "Jobicy") for d in out) if j and j["title"]]
+
+
+HIMALAYAS_SEARCHES = [("designer", 3), ("design", 2)]
+
+
+def fetch_himalayas():
+    """Himalayas search API for US-eligible design roles.
+
+    Links use the posting's applicationLink unchanged, per their API terms.
+    """
+    out, seen = [], set()
+    for query, pages in HIMALAYAS_SEARCHES:
+        for page in range(1, pages + 1):
+            url = (f"https://himalayas.app/jobs/api/search?q={query}"
+                   f"&country=US&sort=recent&page={page}")
+            try:
+                jobs = get_json(url).get("jobs", [])
+            except Exception as e:
+                print(f"Himalayas {query} page {page} failed: {e}", file=sys.stderr)
+                break
+            for r in jobs:
+                jid = str(r.get("guid") or r.get("applicationLink") or "")
+                if not jid or jid in seen:
+                    continue
+                seen.add(jid)
+                title = clean(r.get("title", ""))
+                desc = r.get("description", "")
+                if not DESIGN_TITLE_RE.search(title):
+                    continue
+                locs = r.get("locationRestrictions") or []
+                if locs and not any(looks_us(x) for x in locs):
+                    continue
+                cur = r.get("currency") or ""
+                lo, hi = money(r.get("minSalary")), money(r.get("maxSalary"))
+                period = r.get("salaryPeriod") or ""
+                salary = f"{cur} {lo:,.0f}-{hi:,.0f} / {period}".strip() if lo and hi else ""
+                ts = r.get("pubDate")
+                date = (datetime.fromtimestamp(ts, timezone.utc).date().isoformat()
+                        if isinstance(ts, (int, float)) else "")
+                out.append({
+                    "id": jid, "title": title,
+                    "url": r.get("applicationLink", ""),
+                    "company": clean(r.get("companyName", "")),
+                    "location": "Remote", "country": "US",
+                    "workplace": "remote", "jobtype": r.get("employmentType", ""),
+                    "salary": salary, "description": desc, "date": date,
+                })
+            time.sleep(0.5)
+            if len(jobs) < 20:
+                break
+    return [j for j in (normalize(d, "Himalayas") for d in out) if j and j["title"]]
 
 
 ADZUNA_SEARCHES = ["graphic designer", "ux designer", "ui designer",
@@ -380,6 +645,11 @@ SOURCES = {
     "Aquent": fetch_aquent,
     "The Muse": fetch_muse,
     "Remotive": fetch_remotive,
+    "We Work Remotely": fetch_weworkremotely,
+    "Dribbble": fetch_dribbble,
+    "Remote OK": fetch_remoteok,
+    "Jobicy": fetch_jobicy,
+    "Himalayas": fetch_himalayas,
 }
 if os.environ.get("ADZUNA_APP_ID") and os.environ.get("ADZUNA_APP_KEY"):
     SOURCES["Adzuna"] = fetch_adzuna
@@ -394,13 +664,12 @@ def main():
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
 
-    jobs, counts, failed = {}, {}, False
+    jobs, counts = {}, {}
     for name, fn in SOURCES.items():
         try:
             got = fn()
         except Exception as e:  # keep yesterday's data for a source that fails
             print(f"{name} failed: {e}", file=sys.stderr)
-            failed = True
             got = [j for j in prev_jobs.values() if j["source"] == name]
         counts[name] = len(got)
         for j in got:
@@ -414,7 +683,8 @@ def main():
         "jobs": list(jobs.values()),
     }, indent=1))
     print(f"Saved {len(jobs)} jobs {counts}")
-    sys.exit(1 if failed and not jobs else 0)
+    # One dead feed must not stop the workflow from committing the other sources.
+    sys.exit(0 if jobs else 1)
 
 
 if __name__ == "__main__":
