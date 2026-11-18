@@ -1,16 +1,85 @@
 {
- "updated": "2026-11-17T21:00:39+00:00",
+ "updated": "2026-11-18T11:46:30+00:00",
  "counts": {
-  "Aquent": 60,
-  "Company boards": 167,
+  "Aquent": 62,
+  "Company boards": 166,
   "Coroflot": 8,
-  "We Work Remotely": 12,
+  "We Work Remotely": 11,
   "Dribbble": 29,
-  "Remote OK": 3,
-  "Jobicy": 14,
-  "Himalayas": 50
+  "Remote OK": 2,
+  "Jobicy": 11,
+  "Himalayas": 46
  },
  "jobs": [
+  {
+   "id": "Aquent:https://aquent.com/find-work/214565",
+   "source": "Aquent",
+   "title": "Motion Graphics Designer [214565]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214565",
+   "city": "New York",
+   "state": "NY",
+   "workplace": "onsite",
+   "type": "Contract",
+   "posted": "2026-11-17",
+   "pay": "up to $45.02/hr",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Motion",
+    "Adobe CC",
+    "Branding",
+    "Illustration",
+    "Social"
+   ],
+   "description": "Partner with Aquent to join the creative force behind one of the world\u2019s leading entertainment and media companies. We are seeking a talented motion design professional to collaborate with a multi-faceted creative team, bringing high-impact media assets and stunning visuals to life for a premier global streaming platform. In this role, you will have a direct hand in shaping how millions of consumers experience and engage with world-class entertainment content, making a highly visible impact from day one. The Opportunity In this dynamic creative role, you will collaborate closely with copywriters, strategists, designers, art directors, and creative directors to craft cinematic-quality motion assets. Your work will directly amplify brand campaigns across major digital and social platforms, capturing the attention of new audiences worldwide. From animating logos to building comprehensive motion toolkits, your creativity will define the visual rhythm and energy of high-profile marketing campaigns. Key Responsibilities Design, animate, and produce high-impact motion graphics and visual assets for diverse digital and social media campaigns. Collaborate seamlessly with cross-functional creative teams, including copywriters, art directors, and strategists, to align visual storytelling with campaign goals. Develop and build comprehensive motion toolkits, including lower thirds, transitions, supers, and logo animations. Execute expert-level 2D animation, compositing, rotoscoping, and asset preparation. Gather and share creative inspiration to push the boundaries of design trends, technology, and processes. Manage multiple projects simultaneously, maintaining a high level of accuracy, quality control, and strict adherence to deadlines. What You Bring 4+ years of professional exper",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Aquent:https://aquent.com/find-work/214558",
+   "source": "Aquent",
+   "title": "Drone UX Designer [214558]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214558",
+   "city": "Saint Paul",
+   "state": "MN",
+   "workplace": "onsite",
+   "type": "Contract",
+   "posted": "2026-11-17",
+   "pay": "DOE",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Prototyping"
+   ],
+   "description": "Aquent Studios is looking for a cutting-edge UX Designer to help lead the end-to-end user experience for one of our top clients\u2019 advanced agricultural technology platform, which spans touchscreen interfaces, physical controls, and operator workflows. NOTE: This role is located onsite at our client\u2019s facility in St. Paul, MN. This role will design intuitive experiences for planning, setup, operation, monitoring, diagnostics, and troubleshooting while accounting for the demands of reliable field use. In this role, you will will work closely with our client\u2019s engineering and product teams to prototype and validate concepts using representative hardware and real-world scenarios, conduct competitive research, and iterate designs through user and field testing toward production readiness. Responsibilities: \u2022 Own the end-to-end user experience for an advanced agricultural technology platform, including touchscreen and physical control interfaces. \u2022 Design intuitive workflows for job planning, route and mission setup, operation, monitoring, and completion of field application tasks. \u2022 Design experiences for system diagnostics, health monitoring, alerts, and user-guided troubleshooting. \u2022 Develop workflows that support reliable operation in connected, offline, and manually controlled environments. \u2022 Partner closely with engineering and product teams to define and refine software interfaces and physical controls for operator-facing hardware. \u2022 Create prototypes and validate concepts through hands-on testing with representative hardware and real-world operating scenarios. \u2022 Research and evaluate competitive and adjacent products to establish UX benchmarks, identify usability best practices, and uncover opportunities for differentiation. \u2022 Iterate designs through user testing, fiel",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Aquent:https://aquent.com/find-work/214557",
+   "source": "Aquent",
+   "title": "Packaging Production Artist [214557]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214557",
+   "city": "Naperville",
+   "state": "IL",
+   "workplace": "hybrid",
+   "type": "Contract",
+   "posted": "2026-11-17",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Packaging",
+    "Adobe CC",
+    "Branding",
+    "Illustration",
+    "Print"
+   ],
+   "description": "Schedule & Location Approximately 30 hours per week Mainly remote Preference for candidates in the Chicago area who are willing to come onsite to Naperville periodically In-office days are Mondays and Thursdays Position Overview Seeking a Production Designer with a keen eye for brand consistency who can quickly and efficiently produce packaging layouts for children\u2019s toys and accessories within established brand standards. The ideal candidate excels at production design and brings strong technical precision, including a deep understanding of print production. A packaging-focused portfolio that shows a clear command of brand guidelines is required. This role calls for a detail-oriented self-starter with excellent communication skills. With weekly deadlines, strong time management and the ability to prioritize tasks are essential. Skills & Qualifications Skills include mid to expert-level of the Adobe Creative Suite including Illustrator, Photoshop, and Acrobat. GoVisually will be utilized for the review process. Degree or certificate in Graphic Design, Visual Communications, or equivalent hands-on experience in print production. Key Responsibilities Brand Compliance Ensure all packaging layouts strictly adhere to established brand guidelines. File Preparation & Formatting Format and build clean packaging print files to brand specifications. Quality Assurance & Proofing Conduct thorough pre-flight checks for die line accuracy, bleeds, high-res image resolutions, font, and color accuracy. Structure Properly name, organize project files and source assets for future retrieval or updates Collaboration & Troubleshooting Work with client to resolve technical bottlenecks. Brand Compliance Ensure all packaging layouts strictly adhere to established brand guidelines. File Preparat",
+   "first_seen": "2026-11-18"
+  },
   {
    "id": "Aquent:https://aquent.com/find-work/214535",
    "source": "Aquent",
@@ -144,10 +213,9 @@
    "duration": "",
    "tags": [
     "Design systems",
-    "Accessibility",
     "Editorial"
    ],
-   "description": "The Developer Services design team creates experiences that help developers build, deploy, and manage applications and services in the cloud. We\u2019re focused on making complex technical workflows feel simpler, more intuitive, and more connected. As AI changes how developers work, we\u2019re exploring new ways to help customers accomplish their goals without needing to understand every tool, service, or underlying technology. We\u2019re looking for a Senior Content Designer who combines exceptional writing and content strategy skills with an AI-first mindset. You\u2019ll help simplify complex developer experiences while exploring how AI can make high-quality content design more scalable and accessible across our team. Responsibilities \u2022 Design clear, useful product content across developer tools and experiences, including navigation, onboarding, guidance, notifications, error messages, and AI-powered interactions. \u2022 Simplify complex technical concepts by translating developer terminology, product capabilities, and technical workflows into language customers can easily understand and act on. \u2022 Think beyond individual strings and screens to improve end-to-end customer journeys, information architecture, terminology, and overall product comprehension. \u2022 Develop scalable content patterns and guidance that reinforce our voice, terminology, and design standards while creating consistency across products. \u2022 Help build and manage a content design AI agent that enables designers and product teams to independently create, evaluate, and refine UX content using established standards and best practices. \u2022 Continuously improve the agent\u2019s effectiveness by maintaining its guidance and knowledge sources, evaluating output quality, identifying gaps, and incorporating feedback from the team. \u2022 Use AI flue",
+   "description": "We are partnering with a world-renowned technology leader dedicated to empowering developers and organizations worldwide to build, deploy, and manage the next generation of cloud applications. Through this collaboration with Aquent, you will join a pioneering team that is redefining how technical users interact with cutting-edge cloud platforms and developer tools. This is an extraordinary opportunity to make a massive impact at a global scale, helping shape the future of technology by making complex developer workflows simpler, more intuitive, and powered by advanced artificial intelligence. The Opportunity In this dynamic and forward-thinking role, you will be at the forefront of the AI revolution, merging exceptional UX writing and content strategy with an AI-first mindset. You will have the unique opportunity to simplify highly complex technical concepts and transform end-to-end developer journeys into seamless, user-friendly experiences. Beyond traditional content design, you will play a pivotal role in building and managing an innovative content design AI agent, empowering product teams to scale high-quality content independently. Your work will directly influence how developers worldwide build for the cloud, making this a highly impactful position where your creativity and technical curiosity will thrive. Key Responsibilities Design clear, useful product content across developer tools and experiences, including navigation, onboarding, guidance, notifications, error messages, and AI-powered interactions. Simplify complex technical concepts by translating developer terminology, product capabilities, and technical workflows into clear, actionable language. Improve end-to-end customer journeys, information architecture, terminology, and overall product comprehension.",
    "first_seen": "2026-11-17"
   },
   {
@@ -169,7 +237,7 @@
     "Prototyping",
     "Accessibility"
    ],
-   "description": "Imagine designing experiences that touch millions of players worldwide, shaping how they interact with one of the most beloved and iconic gaming franchises in history. In this role, you will have the unique opportunity to collaborate with a passionate, world-class team to craft intuitive, accessible, and visually compelling interfaces across both mobile and desktop platforms. Partnering with Aquent, you will bring your creative vision to life, directly impacting the player journey and helping to define the future of interactive entertainment. About the Opportunity Aquent has partnered with a global technology leader and its premier gaming studio to find a talented designer ready to elevate user experiences to the next level. This studio is dedicated to fostering creativity, community, and innovation, creating virtual worlds where players of all ages can build, explore, and connect. By joining this team, you will contribute to a culture that values inclusive design, collaborative problem-solving, and high-quality craftsmanship. The Role and Your Impact We are seeking a dynamic and collaborative designer to help shape the next generation of experiences for a legendary gaming franchise. Working closely with design leadership, product managers, and engineers, you will transform complex requirements into seamless, buildable user journeys. Your work will span mobile and desktop platforms, ensuring that every interaction feels cohesive, engaging, and accessible to a diverse global audience. Key Responsibilities Partner with design leadership to drive design work from early concept through launch across mobile and desktop platforms. Collaborate with product managers and engineers to define product direction and translate requirements into clear, intuitive user experiences. Crea",
+   "description": "Imagine shaping the interactive experiences of millions of players worldwide for one of the most iconic and beloved gaming franchises in history. In this dynamic role, you will have the unique opportunity to collaborate with a passionate, world-class team to craft intuitive, accessible, and visually compelling interfaces across both mobile and desktop platforms. Partnering with Aquent, you will bring your creative vision to life, directly impacting the player journey and helping to define the future of interactive entertainment. About the Opportunity Aquent has partnered with a premier global gaming studio dedicated to fostering creativity, community, and innovation. This studio creates expansive virtual worlds where players of all ages can build, explore, and connect. By joining this team, you will contribute to a culture that values inclusive design, collaborative problem-solving, and high-quality craftsmanship, all while enjoying the support and advocacy of Aquent as your talent partner. The Role and Your Impact We are seeking a collaborative and forward-thinking designer to help shape the next generation of experiences for a legendary gaming franchise. Working closely with design leadership, product managers, and engineers, you will transform complex requirements into seamless, buildable user journeys. Your work will span mobile and desktop platforms, ensuring that every interaction feels cohesive, engaging, and accessible to a diverse global audience. Key Responsibilities Partner with design leadership to drive design work from early concept through launch across mobile and desktop platforms. Collaborate with product managers and engineers to define product direction and translate requirements into clear, intuitive user experiences. Create user flows, wireframes, i",
    "first_seen": "2026-11-17"
   },
   {
@@ -668,7 +736,7 @@
     "Branding",
     "Presentations"
    ],
-   "description": "Aquent has partnered with a leading global beauty and personal care brand known for its iconic products and captivating retail experiences to find a detail-oriented creative collaborator who will bring brand stories to life. In this role, you will have a direct hand in shaping the visual narrative of a world-class brand, ensuring that every display captivates customers and meets the highest standards of presentation. By transforming creative concepts into tangible, engaging retail experiences, your work will directly influence how millions of customers interact with and experience these beloved products. About the Role Step into a dynamic, hands-on environment where your creativity and precision will shine! Working closely with a collaborative visual merchandising team, you will help set up, maintain, and refresh product displays within an innovative prototype retail environment. This is an incredible opportunity to showcase your eye for detail, contribute to high-profile creative projects, and see the immediate, tangible impact of your work in a supportive and energetic atmosphere. If you love beauty products and have a passion for visual storytelling, this role offers the perfect stage to grow your career and make a visible difference every day. What You Will Do Support the setup, teardown, and ongoing maintenance of merchandising displays within a prototype store environment to ensure alignment with brand standards. Arrange fixtures and wall cabinets according to detailed visual merchandising guidelines. Install marketing materials, signage, and visual elements on fixtures and within display areas. Coordinate and gather product samples needed for upcoming displays and visual updates. Apply product representation stickers to simulate new products that are still in dev",
+   "description": "Aquent has partnered with a leading global beauty and personal care brand known for its iconic products and captivating retail experiences to find a detail-oriented creative collaborator who will bring vibrant brand stories to life. In this dynamic role, you will have a direct hand in shaping the visual narrative of a world-class brand, ensuring that every display captivates customers and meets the highest standards of presentation. By transforming creative concepts into tangible, engaging retail experiences, your work will directly influence how millions of customers interact with and experience these beloved products. About the Opportunity Step into a dynamic, hands-on environment where your creativity and precision will shine! Working closely with a collaborative visual merchandising team, you will help set up, maintain, and refresh product displays within an innovative prototype retail environment. This is an incredible opportunity to showcase your eye for detail, contribute to high-profile creative projects, and see the immediate, tangible impact of your work in a supportive and energetic atmosphere. If you love beauty products and have a passion for visual storytelling, this role offers the perfect stage to grow your career and make a visible difference every day. What You Will Do Support the setup, teardown, and ongoing maintenance of merchandising displays within a prototype store environment to ensure alignment with brand standards. Arrange fixtures and wall cabinets according to detailed visual merchandising guidelines. Install marketing materials, signage, and visual elements on fixtures and within display areas. Coordinate and gather product samples needed for upcoming displays and visual updates. Apply product representation stickers to simulate new product",
    "first_seen": "2026-11-17"
   },
   {
@@ -692,7 +760,7 @@
     "Presentations",
     "3D"
    ],
-   "description": "Aquent has partnered with a globally recognized fashion and beauty retail powerhouse to find an exceptional design visionary who will shape the future of physical retail experiences across iconic consumer brands. In this dynamic leadership role, you will have the unique opportunity to define the creative direction, architectural standards, and immersive environments for flagship stores and innovative retail spaces worldwide, leaving a lasting, visible imprint on how millions of customers interact with these beloved brands. The Opportunity We are seeking an accomplished retail design leader who blends high-level conceptual thinking with deep architectural expertise. Partnering with our client through Aquent, you will bridge the gap between creative artistry and commercial execution, translating brand strategies into breathtaking, scalable physical environments. From designing high-profile flagship locations to pioneering temporary pop-ups, you will lead the evolution of the brand\u2019s physical identity while mentoring a talented creative team. What You\u2019ll Do Lead the creative vision and design evolution of retail store concepts across established fashion and beauty brands. Develop compelling store concepts that translate brand identity into distinctive, immersive physical environments. Own and evolve the organization\u2019s retail Design Standards Bible, establishing comprehensive guidelines for layouts, fixtures, materials, lighting, and customer journeys. Direct the conceptual design for flagship stores, temporary retail environments, pop-ups, and strategic retail initiatives. Translate innovative flagship concepts into scalable design standards that can be seamlessly implemented across multiple markets. Partner cross-functionally with procurement, real estate, construction, v",
+   "description": "As a visionary design leader, you will have the unparalleled opportunity to shape the future of physical retail experiences for some of the world\u2019s most iconic fashion and beauty brands. In this dynamic role, your creative direction and architectural expertise will directly influence how millions of customers interact with beloved brands globally, transforming strategic visions into breathtaking, immersive physical spaces. About the Opportunity & Our Partner Aquent has partnered with a globally recognized fashion and beauty retail powerhouse to find an exceptional design leader to champion their next generation of physical retail environments. Our client is dedicated to pushing the boundaries of experiential retail, creating memorable consumer journeys across their portfolio of iconic brands. By joining forces with Aquent, you will gain access to premier career opportunities with industry leaders who value innovation, creativity, and design excellence. The Role and Your Impact In this high-impact leadership position, you will bridge the gap between creative artistry and commercial execution. You will lead the creative vision and design evolution of retail store concepts, from high-profile global flagship locations to innovative temporary pop-ups. By mentoring a talented internal creative team and collaborating with cross-functional partners, you will establish and evolve the design standards that define the physical identity of world-class brands. What You\u2019ll Do Lead the creative vision and design evolution of retail store concepts across established fashion and beauty brands. Develop compelling store concepts that translate brand identity into distinctive, immersive physical environments. Own and evolve the organization\u2019s retail Design Standards Bible, establishing com",
    "first_seen": "2026-11-17"
   },
   {
@@ -807,7 +875,7 @@
     "Presentations",
     "E-commerce"
    ],
-   "description": "Aquent is partnering with a leading global enterprise that is revolutionizing the retail landscape through innovative technology and unparalleled customer experiences. In this pivotal leadership role, you will have a profound and direct impact on the digital journeys of millions of global users daily, shaping the future of commerce by driving user experience strategy and fostering a culture of design excellence. The Opportunity We are seeking an exceptional leader to step into a key role driving user experience strategy and execution across a significant product portfolio. You will empower a talented team of designers, collaborate closely with cross-functional product and engineering leaders, and ensure that every digital interaction is intuitive, accessible, and highly impactful. Your vision will directly translate into tangible improvements that resonate with users on a global scale, fostering innovation and design excellence at every step. Key Responsibilities Define and champion user experience roadmaps and design strategies that expertly balance business objectives, technical feasibility, and critical customer needs. Establish, scale, and govern robust design frameworks, interaction patterns, and comprehensive design systems across native mobile (iOS/Android) and web platforms. Drive end-to-end design consistency across multi-disciplinary teams, collaborating closely with Engineering Architects and Product Managers. Monitor industry trends, emerging technologies, and competitive benchmarks to anticipate user needs and inspire continuous design innovation. Oversee the entire UX lifecycle for complex initiatives, from user journeys and information architecture to wireframes, high-fidelity prototypes, and detailed design specifications. Guide teams in executing qualit",
+   "description": "Aquent is partnering with a leading global retail technology pioneer that is revolutionizing the commerce landscape through innovative technology and unparalleled customer experiences. In this pivotal leadership role, you will have a profound and direct impact on the digital journeys of millions of global users daily, shaping the future of commerce by driving user experience strategy and fostering a culture of design excellence. The Opportunity We are seeking an exceptional, visionary leader to step into a key role driving user experience strategy and execution across a significant product portfolio. In this position, you will empower a talented team of designers, collaborate closely with cross-functional product and engineering leaders, and ensure that every digital interaction is intuitive, accessible, and highly impactful. Your vision will directly translate into tangible improvements that resonate with users on a global scale, fostering innovation and design excellence at every step of the journey. Key Responsibilities Define and champion user experience roadmaps and design strategies that expertly balance business objectives, technical feasibility, and critical customer needs. Establish, scale, and govern robust design frameworks, interaction patterns, and comprehensive design systems across native mobile (iOS/Android) and web platforms. Drive end-to-end design consistency across multi-disciplinary teams, collaborating closely with Engineering Architects and Product Managers. Monitor industry trends, emerging technologies, and competitive benchmarks to anticipate user needs and inspire continuous design innovation. Oversee the entire UX lifecycle for complex initiatives, from user journeys and information architecture to wireframes, high-fidelity prototypes, and de",
    "first_seen": "2026-11-17"
   },
   {
@@ -825,7 +893,7 @@
    "start": "",
    "duration": "",
    "tags": [],
-   "description": "Aquent has partnered with a leading global enterprise organization at the forefront of retail innovation to find a visionary researcher who will shape the future of groundbreaking products from the ground up. In this highly strategic role, you will have a massive, tangible impact on the direction of new product offerings and revenue streams, acting as the architect of understanding to uncover critical insights that directly inform what gets built next. About the Company Our client is a global retail pioneer dedicated to transforming the shopping experience through cutting-edge technology and customer-centric design. By continuously exploring new market opportunities and incubating next-generation solutions, they strive to redefine how millions of people interact with products and services daily. Partnering with Aquent, they are building a collaborative, fast-paced environment where innovation thrives and customer needs drive every strategic decision. About the Role In this dynamic position, you will move beyond standard usability testing to lead ambiguous discovery initiatives from inception to strategic impact. You will act as a vital thought partner to product management and business leaders, helping to evaluate, prioritize, and sequence high-stakes product bets. If you are highly curious about business models, product-market fit, and pairing user needs with viable enterprise solutions, this is your opportunity to drive 0-to-1 product development in a highly collaborative and forward-thinking environment. What You\u2019ll Do Lead end-to-end qualitative and mixed-methods research to validate early venture concepts, explore net-new market opportunities, and map customer workflows. Act as a strategic thought partner to Product Management and Business leaders, helping to evalu",
+   "description": "Are you ready to shape the future of groundbreaking products from the ground up? In this highly strategic role, you will have a massive, tangible impact on the direction of new product offerings and revenue streams for a global industry leader, acting as the architect of understanding to uncover critical insights that directly inform what gets built next. About the Opportunity Aquent has partnered with a leading global pioneer dedicated to transforming customer experiences through cutting-edge technology and customer-centric design. By continuously exploring new market opportunities and incubating next-generation solutions, this organization strives to redefine how millions of people interact with products and services daily. Partnering with Aquent, they are building a collaborative, fast-paced environment where innovation thrives and customer needs drive every strategic decision. The Opportunity to Make an Impact In this dynamic position, you will move beyond standard usability testing to lead ambiguous discovery initiatives from inception to strategic impact. You will act as a vital thought partner to product management and business leaders, helping to evaluate, prioritize, and sequence high-stakes product bets. If you are highly curious about business models, product-market fit, and pairing user needs with viable enterprise solutions, this is your opportunity to drive 0-to-1 product development in a highly collaborative and forward-thinking environment. What You\u2019ll Do Lead end-to-end qualitative and mixed-methods research to validate early venture concepts, explore net-new market opportunities, and map customer workflows. Act as a strategic thought partner to Product Management and Business leaders, helping to evaluate, prioritize, and sequence product bets. Devise c",
    "first_seen": "2026-11-17"
   },
   {
@@ -849,7 +917,7 @@
     "Social",
     "Art direction"
    ],
-   "description": "Aquent is partnering with a premier academic medical institution dedicated to advancing global health through groundbreaking research, innovative medical education, and compassionate care to find a talented digital creator for an exciting freelance opportunity. In this role, your designs will directly shape how this world-class organization connects with its community, students, and stakeholders, playing a pivotal role in elevating their brand presence and driving engagement that supports scientific discovery and educational excellence. The Opportunity In this dynamic freelance position, you will collaborate closely with an in-house creative team to elevate digital marketing initiatives from concept to execution. You will have the unique opportunity to design and build custom, responsive email campaigns that capture attention and drive action. By developing reusable, modular templates, you will empower the broader team with efficient, high-quality assets, ensuring a cohesive and compelling brand experience across multiple digital touchpoints. Key Responsibilities Design and build custom, responsive email newsletters and campaigns natively within Constant Contact to maximize audience engagement. Develop modular, locked-down templates within Constant Contact and Marq, establishing easily maintainable and scalable design systems for the team. Create eye-catching digital assets for social media platforms and other digital channels, maintaining strict brand consistency. Manage the design lifecycle from initial brainstorming and conceptualization through to final handoff, keeping stakeholders updated on timelines and revisions. Collaborate with Art Directors and creative peers to contribute to a unified, impactful, and forward-thinking visual strategy. Must-Have Qualification",
+   "description": "Aquent has partnered with a premier academic medical institution dedicated to advancing global health through groundbreaking research, innovative medical education, and compassionate care to find a talented digital creator for an exciting freelance opportunity. In this role, your designs will directly shape how this world-class organization connects with its community, students, and stakeholders, playing a pivotal role in elevating their brand presence and driving engagement that supports scientific discovery and educational excellence. The Opportunity In this dynamic freelance position, you will collaborate closely with an in-house creative team to elevate digital marketing initiatives from concept to execution. You will have the unique opportunity to design and build custom, responsive email campaigns that capture attention and drive action. By developing reusable, modular templates, you will empower the broader team with efficient, high-quality assets, ensuring a cohesive and compelling brand experience across multiple digital touchpoints. Key Responsibilities Design and build custom, responsive email newsletters and campaigns natively within Constant Contact to maximize audience engagement. Develop modular, locked-down templates within Constant Contact and Marq, establishing easily maintainable and scalable design systems for the team. Create eye-catching digital assets for social media platforms and other digital channels, maintaining strict brand consistency. Manage the design lifecycle from initial brainstorming and conceptualization through to final handoff, keeping stakeholders updated on timelines and revisions. Collaborate with Art Directors and creative peers to contribute to a unified, impactful, and forward-thinking visual strategy. Must-Have Qualification",
    "first_seen": "2026-11-17"
   },
   {
@@ -892,7 +960,7 @@
     "E-commerce",
     "Web"
    ],
-   "description": "Step into a transformative role where your insights will directly shape the digital future for millions of users daily. Aquent has partnered with a global retail and eCommerce pioneer to find a visionary research leader to transform complex data into seamless, intuitive experiences. In this dynamic position, you will do far more than analyze behavior\u2014you will actively steer the product roadmap, mentor emerging talent, and collaborate with cross-functional teams to design inclusive, world-class digital products that simplify lives on a massive scale. About Our Partner Our client is a globally recognized retail powerhouse dedicated to delivering exceptional value and innovative digital experiences. In partnership with Aquent, they foster a culture of excellence, continuous learning, and belonging, where diverse perspectives are celebrated and every team member is empowered to bring their best self to work. Committed to integrity and servant leadership, they strive to make a positive, regenerative impact on both their associates and the global communities they serve. The Opportunity and Your Impact As a strategic consultant and subject matter expert on multi-channel customer behavior, you will lead proactive, broad-based research programs that translate complex data into actionable recommendations. By driving customer-centric strategies and pre-empting gaps in the product experience, you will build consensus among product managers, designers, and senior leadership, directly influencing key revenue-driving digital platforms and elevating the overall user journey. Key Responsibilities Design, execute, and oversee comprehensive primary research programs (qualitative and quantitative) including field studies, focus groups, surveys, and usability testing. Analyze complex data s",
+   "description": "Step into a transformative role where your insights will directly shape the digital future for millions of users daily, partnering with a global retail and eCommerce pioneer to transform complex data into seamless, intuitive experiences. In this dynamic position, you will do far more than analyze behavior\u2014you will actively steer the product roadmap, mentor emerging talent, and collaborate with cross-functional teams to design inclusive, world-class digital products that simplify lives on a massive scale. About Our Partner Our client is a globally recognized retail powerhouse dedicated to delivering exceptional value and innovative digital experiences. In partnership with Aquent, they foster a culture of excellence, continuous learning, and belonging, where diverse perspectives are celebrated and every team member is empowered to bring their best self to work. Committed to integrity and servant leadership, they strive to make a positive, regenerative impact on both their associates and the global communities they serve. The Opportunity and Your Impact As a strategic consultant and subject matter expert on multi-channel customer behavior, you will lead proactive, broad-based research programs that translate complex data into actionable recommendations. By driving customer-centric strategies and pre-empting gaps in the product experience, you will build consensus among product managers, designers, and leadership, directly influencing key revenue-driving digital platforms and elevating the overall user journey. Key Responsibilities Design, execute, and oversee comprehensive primary research programs (qualitative and quantitative) including field studies, focus groups, surveys, and usability testing. Analyze complex data sets, draw insightful conclusions, and deliver compell",
    "first_seen": "2026-11-17"
   },
   {
@@ -911,9 +979,10 @@
    "duration": "",
    "tags": [
     "Figma",
-    "Prototyping"
+    "Prototyping",
+    "Design systems"
    ],
-   "description": "This role is onsite in Bentonville, Arkansas and relocation assistance will be provided. As a Senior UX Designer, you will lead the development and enhancement of user experience strategies by conducting comprehensive research, analyzing data, and synthesizing insights to inform design solutions. This role requires collaboration with stakeholders to align business goals with user needs, driving innovative interaction and visual designs. You will create prototypes, manage usability testing, and ensure design consistency across platforms. Your expertise will support the delivery of customer-centric products that optimize usability and engagement while fostering effective partnerships to achieve strategic objectives within a dynamic environment. About the team: The AI Assistance & Support team designs advanced AI solutions that enhance associate experiences across stores and corporate locations. Leveraging expertise in user experience design, stakeholder management, and user research, the team develops intuitive interaction models and customer journey maps. They utilize prototyping and AI systems to improve usability and foster innovation. Collaborating closely with business partners, the team translates research insights into actionable strategies that boost engagement and operational efficiency. Committed to delivering thoughtful, data-driven design solutions, the team supports business goals while elevating the overall user experience. What you\u2019ll do: Conduct user research including interviews, surveys, and contextual inquiries to identify experience gaps and inform design strategies. Develop and refine interaction designs and user journeys based on data analysis and emerging consumption trends. Collaborate with stakeholders to align design solutions with business goals",
+   "description": "Aquent has partnered with a global retail pioneer dedicated to helping millions of people save money and live better. As an industry leader in technology and customer experience, this organization is constantly innovating to redefine the future of commerce and workplace productivity. By joining forces with Aquent, you will gain access to exceptional career opportunities with top-tier brands that value innovation, collaboration, and professional growth. Are you ready to shape the future of artificial intelligence and transform how thousands of people interact with technology every day? In this highly impactful role, you will lead the design of cutting-edge AI solutions and intelligent assistants that streamline complex workflows and elevate user experiences. You will have the unique opportunity to bridge the gap between advanced technology and human-centric design, driving innovation that directly impacts operational efficiency and user engagement on a massive scale. What You\u2019ll Do Conduct comprehensive user research, including interviews, surveys, and contextual inquiries, to uncover experience gaps and drive design strategies. Develop and refine intuitive interaction designs and user journeys based on data analysis and emerging technology trends. Collaborate closely with cross-functional stakeholders to align design solutions with strategic business goals and clearly communicate complex technical concepts. Create high-fidelity prototypes and detailed design specifications using Figma, ensuring seamless consistency with established style guides and usability standards. Lead usability testing sessions, analyze user feedback, and iterate on designs to maximize user satisfaction and product effectiveness. Manage key partnerships and provide expert guidance to support evolv",
    "first_seen": "2026-11-17"
   },
   {
@@ -983,30 +1052,6 @@
     "Retouching"
    ],
    "description": "Aquent is proud to partner with a pioneering technology company that is completely redefining the digital imaging landscape by transforming everyday photos into stunning, authentic portraits. This trailblazing organization blends artistic intuition with cutting-edge generative AI to help millions of people capture and perceive their best selves on a global scale. By joining forces with this innovative team, you will have the unique opportunity to serve as the aesthetic heartbeat and technical architect of a rapidly growing platform, making an immediate, highly visible impact on the future of visual self-expression. The Opportunity We are seeking a visionary creator who can translate nuanced human preferences into scalable, production-ready generative pipelines. In this dynamic, high-ownership role, you will bridge the gap between art and engineering, working side-by-side with world-class researchers and engineers to establish the visual standards for light, skin tone, color, and composition across the platform. You will have the creative freedom to innovate without administrative layers, allowing you to curate, test, and ship creative looks and portrait modes directly to a rapidly growing global user base. What You Will Do Define the aesthetic standard for exceptional portraiture, balancing flattering visual enhancements with strict identity preservation. Design, optimize, and maintain advanced node-based workflows, model architectures, LoRAs, and prompt systems powering production generative outputs. Establish structured benchmarking systems and visual quality-review frameworks to objectively evaluate and iterate on model performance. Partner closely with full-stack and mobile engineers to curate, test, and ship creative looks and portrait modes directly to users. Cham",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Aquent:https://aquent.com/find-work/214053",
-   "source": "Aquent",
-   "title": "Graphic Designer [214053]",
-   "company": "Aquent",
-   "url": "https://aquent.com/find-work/214053",
-   "city": "Beaverton",
-   "state": "OR",
-   "workplace": "onsite",
-   "type": "Contract",
-   "posted": "2026-10-27",
-   "pay": "up to $44.00/hr",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Adobe CC",
-    "Packaging",
-    "Branding",
-    "Illustration",
-    "Print"
-   ],
-   "description": "Aquent is proud to partner with a global leader in consumer goods and design innovation to find a visionary creative ready to make a lasting impact. In this dynamic role, you will shape the visual identity of iconic products from initial concept to the global consumer, directly influencing how a world-renowned brand connects with its audience. Your creativity will not only define appearances but also fuel groundbreaking design that resonates on a global scale. The Opportunity As a key creative force, you will utilize your advanced design expertise to craft original visual concepts that embody the core design ethos of the brand. You will drive innovation across diverse mediums, collaborating with cross-functional teams to bring inspiring products to life. This is your chance to step into a pivotal role where your strategic vision and hands-on skills will directly contribute to the evolution of products that engage millions worldwide. What You\u2019ll Do Craft original designs for products, communications, and collateral that align with the brand\u2019s core design ethos. Engage in ideation sessions, concept development, and strategic branding initiatives. Lead critical team projects and manage individual design tasks spanning print, packaging, 3-D retail displays, event signage, logo systems, imagery, video, and collateral. Leverage computerized systems and advanced design tools to optimize workflow and output throughout the entire design process. Oversee projects from initial concept through final production and distribution, ensuring adherence to timelines, budgets, and quality standards. Collaborate closely with product management teams to align on strategic objectives, update designs to meet specifications, and source line art. Estimate project development costs, propose innov",
    "first_seen": "2026-11-17"
   },
   {
@@ -1266,7 +1311,7 @@
     "Print",
     "Presentations"
    ],
-   "description": "Aquent is proud to partner with a global leader in professional services and innovation to find a talented creative professional who will shape compelling visual narratives and drive impactful brand experiences. In this dynamic role, you will have the unique opportunity to elevate digital campaigns, collaborate with cross-functional teams, and directly influence how audiences engage with a world-class brand across diverse social and paid media platforms. The Opportunity Our partner thrives on creativity, strategic thinking, and an unwavering commitment to excellence. By joining this high-performing team, you will step into an environment where your design expertise will not only define the aesthetic of major campaigns but also mentor peers and lead key creative initiatives. This is a space where your strategic insights are transformed into visually stunning, effective digital stories that inspire action. Your Impact & Responsibilities Cultivate strong relationships with internal stakeholders to deeply understand business objectives and translate them into high-impact visual strategies. Collaborate seamlessly with cross-disciplinary teams and creative leadership to execute strategic design solutions. Conduct expert design consultations to conceptualize and execute social and paid media solutions that align with strategic goals. Develop and co-develop creative briefs, storyboards, mood boards, and layouts that effectively communicate persuasive and inclusive design ideas. Design clear, visually compelling pitches and presentations that captivate and inform various stakeholders. Mentor creative project team members, fostering their conceptual skills and providing constructive feedback to achieve an overarching project vision. Act as a project manager for assigned initiativ",
+   "description": "Aquent is proud to partner with a global leader in professional services and innovation to find a visionary creative professional who will shape compelling visual narratives and drive deeply impactful brand experiences. In this dynamic role, you will have the unique opportunity to elevate high-profile digital campaigns, collaborate with cross-functional teams, and directly influence how global audiences engage with a world-class brand across diverse social and paid media platforms. The Opportunity & Your Impact Step into an environment where creativity meets strategic thinking and an unwavering commitment to excellence. By joining this high-performing team, your design expertise will not only define the aesthetic of major campaigns but also mentor peers and lead key creative initiatives. This is a space where your strategic insights are transformed into visually stunning, effective digital stories that inspire action and drive real business results. What You\u2019ll Do Cultivate strong relationships with internal stakeholders to deeply understand business objectives and translate them into high-impact visual strategies. Collaborate seamlessly with cross-disciplinary teams and creative leadership to execute strategic design solutions. Conduct expert design consultations to conceptualize and execute social and paid media solutions that align with strategic goals. Develop and co-develop creative briefs, storyboards, mood boards, and layouts that effectively communicate persuasive and inclusive design ideas. Design clear, visually compelling pitches and presentations that captivate and inform various stakeholders. Mentor creative project team members, fostering their conceptual skills and providing constructive feedback to achieve an overarching project vision. Act as a project ",
    "first_seen": "2026-11-17"
   },
   {
@@ -1485,16 +1530,16 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:codeandtheory:8746136002",
+   "id": "Company boards:codeandtheory:8759578002",
    "source": "Company boards",
    "title": "Senior Designer (US)",
    "company": "Code and Theory",
-   "url": "https://www.codeandtheory.com/careers/8746136002?gh_jid=8746136002",
-   "city": "Baltimore",
-   "state": "MD",
-   "workplace": "onsite",
+   "url": "https://www.codeandtheory.com/careers/8759578002?gh_jid=8759578002",
+   "city": "New York",
+   "state": "NY",
+   "workplace": "remote",
    "type": "Unknown",
-   "posted": "2026-08-25",
+   "posted": "2026-08-28",
    "pay": "",
    "start": "",
    "duration": "",
@@ -1509,16 +1554,16 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:codeandtheory:8759578002",
+   "id": "Company boards:codeandtheory:8746136002",
    "source": "Company boards",
    "title": "Senior Designer (US)",
    "company": "Code and Theory",
-   "url": "https://www.codeandtheory.com/careers/8759578002?gh_jid=8759578002",
-   "city": "New York",
-   "state": "NY",
-   "workplace": "remote",
+   "url": "https://www.codeandtheory.com/careers/8746136002?gh_jid=8746136002",
+   "city": "Baltimore",
+   "state": "MD",
+   "workplace": "onsite",
    "type": "Unknown",
-   "posted": "2026-08-28",
+   "posted": "2026-08-25",
    "pay": "",
    "start": "",
    "duration": "",
@@ -2358,30 +2403,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8932573002",
-   "source": "Company boards",
-   "title": "Brand Design Manager, Growth",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8932573002?gh_jid=8932573002",
-   "city": "Seattle",
-   "state": "WA",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "posted": "2026-11-05",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
-    "Packaging",
-    "Motion"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you'll do Brex is looking for a Manager, Brand Design (Growth) to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, content design, operations, and marketing strategists. Our team\u2019s mission is to build a category-defining brand and meaningfully move key business metrics by delivering world-class creative. Rep",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:brex:8932572002",
    "source": "Company boards",
    "title": "Brand Design Manager, Growth",
@@ -2430,16 +2451,16 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782440002",
+   "id": "Company boards:brex:8932573002",
    "source": "Company boards",
-   "title": "Senior Brand Designer",
+   "title": "Brand Design Manager, Growth",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782440002?gh_jid=8782440002",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.brex.com/careers/8932573002?gh_jid=8932573002",
+   "city": "Seattle",
+   "state": "WA",
    "workplace": "onsite",
    "type": "Unknown",
-   "posted": "2026-09-03",
+   "posted": "2026-11-05",
    "pay": "",
    "start": "",
    "duration": "",
@@ -2447,10 +2468,10 @@
     "Branding",
     "Figma",
     "Adobe CC",
-    "Prototyping",
-    "Packaging"
+    "Packaging",
+    "Motion"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Senior Brand Designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, content design, operations, and marketing strategists. Our team\u2019s mission is to build a category-defining brand and meaningfully move key business metrics by delivering world-class creative. Your role wi",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you'll do Brex is looking for a Manager, Brand Design (Growth) to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, content design, operations, and marketing strategists. Our team\u2019s mission is to build a category-defining brand and meaningfully move key business metrics by delivering world-class creative. Rep",
    "first_seen": "2026-11-17"
   },
   {
@@ -2478,26 +2499,27 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8935731002",
+   "id": "Company boards:brex:8782440002",
    "source": "Company boards",
-   "title": "Senior Product Designer, T&E",
+   "title": "Senior Brand Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8935731002?gh_jid=8935731002",
+   "url": "https://www.brex.com/careers/8782440002?gh_jid=8782440002",
    "city": "New York",
    "state": "NY",
    "workplace": "onsite",
    "type": "Unknown",
-   "posted": "2026-11-09",
+   "posted": "2026-09-03",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
+    "Branding",
+    "Figma",
+    "Adobe CC",
     "Prototyping",
-    "Design systems",
-    "Packaging",
-    "Email"
+    "Packaging"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team for designers who want to build, not just talk about building. We ship constantly, use AI to move faster, and care deeply about craft. Product designers at Brex partner closely with Product, Engineering, Research, Data, and Go-to-Market teams to solve high-stakes problems for ambitious companies that rely on Brex to run their finances. What you\u2019ll do As a Senior Product Designer, you\u2019ll lead ambiguous, cross-functional product work from problem definition through sh",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Senior Brand Designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, content design, operations, and marketing strategists. Our team\u2019s mission is to build a category-defining brand and meaningfully move key business metrics by delivering world-class creative. Your role wi",
    "first_seen": "2026-11-17"
   },
   {
@@ -2524,27 +2546,26 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782403002",
+   "id": "Company boards:brex:8935731002",
    "source": "Company boards",
-   "title": "Staff Brand Designer",
+   "title": "Senior Product Designer, T&E",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8935731002?gh_jid=8935731002",
+   "city": "New York",
+   "state": "NY",
    "workplace": "onsite",
    "type": "Unknown",
-   "posted": "2026-09-03",
+   "posted": "2026-11-09",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
     "Prototyping",
-    "Packaging"
+    "Design systems",
+    "Packaging",
+    "Email"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, content design, operations, and marketing strategists. Our team\u2019s mission is to build a category-defining brand and meaningfully move key business metrics by delivering world-class creative. Your role wil",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team for designers who want to build, not just talk about building. We ship constantly, use AI to move faster, and care deeply about craft. Product designers at Brex partner closely with Product, Engineering, Research, Data, and Go-to-Market teams to solve high-stakes problems for ambitious companies that rely on Brex to run their finances. What you\u2019ll do As a Senior Product Designer, you\u2019ll lead ambiguous, cross-functional product work from problem definition through sh",
    "first_seen": "2026-11-17"
   },
   {
@@ -2572,25 +2593,25 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782407002",
+   "id": "Company boards:brex:8782403002",
    "source": "Company boards",
-   "title": "Staff Brand Designer, Interactive",
+   "title": "Staff Brand Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
+   "city": "San Francisco",
+   "state": "CA",
    "workplace": "onsite",
    "type": "Unknown",
-   "posted": "2026-09-08",
+   "posted": "2026-09-03",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
     "Branding",
     "Figma",
+    "Adobe CC",
     "Prototyping",
-    "Design systems",
-    "Accessibility"
+    "Packaging"
    ],
    "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, content design, operations, and marketing strategists. Our team\u2019s mission is to build a category-defining brand and meaningfully move key business metrics by delivering world-class creative. Your role wil",
    "first_seen": "2026-11-17"
@@ -2620,13 +2641,37 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8777938002",
+   "id": "Company boards:brex:8782407002",
+   "source": "Company boards",
+   "title": "Staff Brand Designer, Interactive",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
+   "city": "New York",
+   "state": "NY",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "posted": "2026-09-08",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Accessibility"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, content design, operations, and marketing strategists. Our team\u2019s mission is to build a category-defining brand and meaningfully move key business metrics by delivering world-class creative. Your role wil",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:brex:8777949002",
    "source": "Company boards",
    "title": "Staff Product Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8777938002?gh_jid=8777938002",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.brex.com/careers/8777949002?gh_jid=8777949002",
+   "city": "San Francisco",
+   "state": "CA",
    "workplace": "onsite",
    "type": "Unknown",
    "posted": "2026-09-02",
@@ -2664,13 +2709,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8777949002",
+   "id": "Company boards:brex:8777938002",
    "source": "Company boards",
    "title": "Staff Product Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8777949002?gh_jid=8777949002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8777938002?gh_jid=8777938002",
+   "city": "New York",
+   "state": "NY",
    "workplace": "onsite",
    "type": "Unknown",
    "posted": "2026-09-02",
@@ -4514,6 +4559,28 @@
    "first_seen": "2026-11-17"
   },
   {
+   "id": "Company boards:airbnb:8394407",
+   "source": "Company boards",
+   "title": "Creative Director Copy, Social",
+   "company": "Airbnb",
+   "url": "https://careers.airbnb.com/positions/8394407?gh_jid=8394407",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "posted": "2026-11-17",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Social",
+    "Email"
+   ],
+   "description": "Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way. The Community You Will Join: The Creative Director, Copy, will report to the Director, Brand Creative, and be based remotely in the United States (see details below). You will be responsible for creating and leading full-scale integrated campaigns from concept to completion, helping to raise the bar of creative excellence in our team. The Difference You Will Make: Airbnb is looking for an experienced and visionary creative leader with a strong background in social media to join the Creative Team, our internal, multi-disciplinary team of creatives. This team stewards the brand and focuses on creating meaningful engagements between our brand and the rapidly growing extended community. We are a global team connected to every department in the company as well as to outside agencies, production companies, and creatives. Together with these partners, we develop concrete, creative solutions to sometimes vague or ambiguous problems. Candidates must demonstrate a strong track record of developing campaigns and content. They will be partnering closely with brand management professionals, and overseeing all aspects of the creative process from start to finish, so in-house experience is a plus. Candidates must be comfortable guiding a team through the process of translating research, company goals, and high-level strategic direction into inspiring and successful creative solutions. Our ideal candidate has a portfolio of varied",
+   "first_seen": "2026-11-18"
+  },
+  {
    "id": "Company boards:instacart:8394152",
    "source": "Company boards",
    "title": "Senior Product Designer II - Commerce & Retailer Platform",
@@ -4562,28 +4629,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:waymo:8140602",
-   "source": "Company boards",
-   "title": "Head of Industrial Design",
-   "company": "Waymo",
-   "url": "https://careers.withwaymo.com/jobs?gh_jid=8140602",
-   "city": "Mountain View",
-   "state": "CA",
-   "workplace": "hybrid",
-   "type": "Unknown",
-   "posted": "2026-09-08",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Prototyping",
-    "Packaging",
-    "Branding"
-   ],
-   "description": "Waymo is an autonomous driving technology company with the mission to be the world's most trusted driver. Since its start as the Google Self-Driving Car Project in 2009, Waymo has focused on building the Waymo Driver\u2014The World's Most Experienced Driver\u2122\u2014to improve access to mobility while saving thousands of lives now lost to traffic crashes. The Waymo Driver powers Waymo\u2019s fully autonomous ride-hail service and can also be applied to a range of vehicle platforms and product use cases. The Waymo Driver has provided over ten million rider-only trips, enabled by its experience autonomously driving over 100 million miles on public roads and tens of billions in simulation across 15+ U.S. states. Passionate about aesthetics and product innovation, Waymo\u2019s Industrial Design Team is responsible for envisioning the future of mobility and autonomous driving technology. The Design Team develops and applies cohesive design language to the Waymo Driver, delivering an exceptional customer experience with best-in-class product quality. The Industrial Design Team creates smart and elegant solutions that pave the future of mobility while prioritizing our riders\u2019 needs & safety. We are involved in every step of the engineering and product development process to optimize Waymo\u2019s technology and delight the rider\u2019s journey. The team is a unique fusion of creatives and innovators with the opportunity to pioneer a new industry. This role follows a hybrid work schedule and you will report to a Head of Design and Consumer Research You will: Lead the Industrial Design studio across vehicle exterior, interior cabin, CMF, and hardware sensor integration programs Drive physical design execution from strategic vision through Class-A surfacing, physical prototyping, and production launch Interface a",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:calm:8924756002",
    "source": "Company boards",
    "title": "Senior Product Designer",
@@ -4605,30 +4650,6 @@
     "Branding"
    ],
    "description": "About Calm Calm is the leading mental health brand on a mission to make the world happier and healthier. Known for its flagship consumer app\u2014ranked #1 in its category with over 180 million downloads and availability in ten languages across 190 countries\u2014Calm helps people sleep better, stress less, and live more mindfully through content and tools from experts and beloved celebrity voices. Building on this foundation, Calm has created a broader portfolio including evidence-based solutions like Calm Health , offered through employers, health plans and providers, designed to expand access to mental health and sleep support, boost benefits engagement, and drive positive health outcomes. Today, Calm supports more than 3,500 organizations and reaches over 42 million covered lives through Calm Health. Calm has been recognized as a TIME100 Most Influential Company and one of Fast Company\u2019s Brands That Matter . Learn more at calm.com . What We Do At Calm we believe in making relaxation, better sleep, and mindfulness accessible to the entire world, and we hope you will help us achieve our mission. The Product & Design team is responsible for delivering Calm to our customers, ensuring that it is easy to use, supports their goals, and maintains a high level of quality across web, iOS, Android platforms. As a Senior Product Designer on our Consumer team, you'll shape experiences used by tens of millions of people to sleep better, stress less, and live more mindfully. People often reach for Calm in their most vulnerable moments, so the craft of what we make (how it looks, moves, and feels) matters enormously. This is a builder's role in the truest sense: you'll use AI and modern prototyping tools to move from insight to interactive prototype to shipped experience, not as a shortcut o",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Company boards:whoop:02584ffc-aac0-4c83-8c31-3f5f60ebe01d",
-   "source": "Company boards",
-   "title": "Senior Industrial Design, Lead",
-   "company": "WHOOP",
-   "url": "https://jobs.ashbyhq.com/whoop/02584ffc-aac0-4c83-8c31-3f5f60ebe01d",
-   "city": "Boston",
-   "state": "MA",
-   "workplace": "onsite",
-   "type": "Full-time",
-   "posted": "2026-07-20",
-   "pay": "",
-   "start": "",
-   "duration": "Ongoing",
-   "tags": [
-    "Prototyping",
-    "Design systems",
-    "Packaging",
-    "Branding",
-    "Motion"
-   ],
-   "description": "At WHOOP, we're on a mission to unlock and inspire performance for life. We build products that help people better understand their bodies, improve performance, recover smarter, and build healthier habits through continuous health monitoring and actionable insights. Our products sit at the intersection of hardware, software, data science, sport, health, fashion, and culture. The Creative org defines how WHOOP is felt in the world. We are responsible for the physical manifestations of the brand, from hardware, bands, and accessories to collaborations, retail environments, pop-ups, and in-store moments. We operate with high taste, deep craft, and exacting standards. This is a design team built on trust, candor, and a shared obsession with quality. We are empowered to initiate, to challenge, and to lead. Our mandate is simple and uncompromising: to deliver best-in-class design across every physical touchpoint and to make WHOOP unmistakable through clarity, restraint, and excellence. We are looking for a Senior Industrial Design, Lead to help define the future of WHOOP hardware and wearable experiences. This role is for a designer who can move fluidly between vision and execution, shaping product strategy while obsessing over the details of form, fit, material, finish, comfort, manufacturing, and long-term user behavior. As Senior Industrial Design, Lead, you will own and drive industrial design across next-generation WHOOP products, accessories, and wearable systems. You will lead concept development, translate insights into compelling physical experiences, and partner deeply with Product, Engineering, Research, CMF, Apparel, Manufacturing, Brand, and Marketing teams to bring world-class products to market. This person will help define how WHOOP shows up on the body, in sp",
    "first_seen": "2026-11-17"
   },
   {
@@ -5115,30 +5136,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:nextdoor:8140477",
-   "source": "Company boards",
-   "title": "Lead, Design",
-   "company": "Nextdoor",
-   "url": "https://about.nextdoor.com/careers-list/?gh_jid=8140477",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Unknown",
-   "posted": "2026-08-19",
-   "pay": "",
-   "start": "",
-   "duration": "3 months",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Packaging",
-    "Motion"
-   ],
-   "description": "#Team Nextdoor Nextdoor (NYSE: NXDR) is the essential neighborhood network. Neighbors, public agencies, and businesses use Nextdoor to connect around local information that matters in more than 350,000 neighborhoods across 11 countries. Nextdoor builds innovative technology to foster local community, share important news, and create neighborhood connections at scale. Download the app and join the neighborhood at nextdoor.com . Meet Your Future Neighbors As a Lead Designer on Nextdoor's Consumer Product team, you'll help shape the future of how neighbors connect with one another, their neighborhoods, and local businesses and events. You'll join a collaborative team of designers, product managers, engineers, and researchers working to evolve and improve the experience across our platform. We're hiring a player-coach to lead craft for Consumer Design, someone who runs a rigorous crit, coaches designers toward their next level, and holds the line when speed and quality trade off, while still shipping hands-on work themselves. Deeply human-centered and mission-driven, you're excited to create digital experiences that strengthen real-world connections and empower neighbors to build stronger communities. At Nextdoor, we operate in an AI-first environment and expect every team member to actively use AI tools as part of their workflow. We aren't looking for prompt engineers; we\u2019re looking for people who use tools like Claude, Gemini, ChatGPT, and Glean to challenge their own thinking and take full ownership of AI-assisted outputs. We also offer a warm and inclusive work environment that embraces a hybrid employment model, blending an in office presence and work from home experience for our valued employees. The hiring team will go over these expectations with you if you are bein",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:nextdoor:8140473",
    "source": "Company boards",
    "title": "Lead, Design",
@@ -5160,6 +5157,30 @@
     "Motion"
    ],
    "description": "#Team Nextdoor Nextdoor (NYSE: NXDR) is the essential neighborhood network. Neighbors, public agencies, and businesses use Nextdoor to connect around local information that matters in more than 350,000 neighborhoods across 11 countries. Nextdoor builds innovative technology to foster local community, share important news, and create neighborhood connections at scale. Download the app and join the neighborhood at nextdoor.com . Meet Your Future Neighbors As a Lead Designer on Nextdoor's Consumer Product team, you'll help shape the future of how neighbors connect with one another, their neighborhoods, and local businesses and events. You'll join a collaborative team of designers, product managers, engineers, and researchers working to evolve and improve the experience across our platform. We're hiring a Design Leader to lead craft for Consumer Design, someone who runs a rigorous crit, coaches designers toward their next level, and holds the line when speed and quality trade off, while still shipping hands-on work themselves. Deeply human-centered and mission-driven, you're excited to create digital experiences that strengthen real-world connections and empower neighbors to build stronger communities. At Nextdoor, we operate in an AI-first environment and expect every team member to actively use AI tools as part of their workflow. We aren't looking for prompt engineers; we\u2019re looking for people who use tools like Claude, Gemini, ChatGPT, and Glean to challenge their own thinking and take full ownership of AI-assisted outputs. We also offer a warm and inclusive work environment that embraces a hybrid employment model, blending an in office presence and work from home experience for our valued employees. The hiring team will go over these expectations with you if you are bei",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:nextdoor:8140477",
+   "source": "Company boards",
+   "title": "Lead, Design",
+   "company": "Nextdoor",
+   "url": "https://about.nextdoor.com/careers-list/?gh_jid=8140477",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "posted": "2026-08-19",
+   "pay": "",
+   "start": "",
+   "duration": "3 months",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Packaging",
+    "Motion"
+   ],
+   "description": "#Team Nextdoor Nextdoor (NYSE: NXDR) is the essential neighborhood network. Neighbors, public agencies, and businesses use Nextdoor to connect around local information that matters in more than 350,000 neighborhoods across 11 countries. Nextdoor builds innovative technology to foster local community, share important news, and create neighborhood connections at scale. Download the app and join the neighborhood at nextdoor.com . Meet Your Future Neighbors As a Lead Designer on Nextdoor's Consumer Product team, you'll help shape the future of how neighbors connect with one another, their neighborhoods, and local businesses and events. You'll join a collaborative team of designers, product managers, engineers, and researchers working to evolve and improve the experience across our platform. We're hiring a player-coach to lead craft for Consumer Design, someone who runs a rigorous crit, coaches designers toward their next level, and holds the line when speed and quality trade off, while still shipping hands-on work themselves. Deeply human-centered and mission-driven, you're excited to create digital experiences that strengthen real-world connections and empower neighbors to build stronger communities. At Nextdoor, we operate in an AI-first environment and expect every team member to actively use AI tools as part of their workflow. We aren't looking for prompt engineers; we\u2019re looking for people who use tools like Claude, Gemini, ChatGPT, and Glean to challenge their own thinking and take full ownership of AI-assisted outputs. We also offer a warm and inclusive work environment that embraces a hybrid employment model, blending an in office presence and work from home experience for our valued employees. The hiring team will go over these expectations with you if you are bein",
    "first_seen": "2026-11-17"
   },
   {
@@ -5488,30 +5509,6 @@
     "Branding"
    ],
    "description": "Headquarters: United States URL: https://www.workiva.com/latam/ Workiva is looking for a Principal Experience Designer to shape the visual future of Unify, our enterprise design system. Unify powers the components, patterns, templates, accessibility standards, and shared experiences used across Workiva\u2019s B2B platform. This is a dual-focus principal role. Roughly 60\u201370% of your time will be spent leading Unify\u2019s visual design direction: evolving its visual language, shaping token architecture, and creating the reference designs and guidance that help teams build consistently. The remaining 30\u201340% will focus on high-visibility visual work for major conferences, marketing partnerships, and executive audiences. That work is not separate from the system, it\u2019s part of the broader ecosystem of design in which Unify lives. You will bring exceptional visual craft, strong systems thinking, and a practical point of view on how design systems need to evolve for AI-assisted design and prototyping. What you\u2019ll do Define and evolve Unify\u2019s visual language across typography, color, spacing, iconography, motion, and brand expression. Partner with the components sub-team and the patterns and templates sub-team to ensure visual design is applied consistently and intentionally across every asset. Partner with product design, product mgmt and engineering teams to ensure product experience decisions translate faithfully from system to production. Maintain a scalable, semantic token architecture that supports consistent experiences across products and over time. Create and maintain a library of reference designs, full-screen examples that demonstrate how Unify should be applied in real product experiences. Own visual usage guidance and documentation that make intended use, constraints, and qu",
-   "first_seen": ""
-  },
-  {
-   "id": "We Work Remotely:https://weworkremotely.com/remote-jobs/current-senior-product-designer-webflow-temp-to-perm",
-   "source": "We Work Remotely",
-   "title": "Senior Product Designer (Webflow) Temp to Perm",
-   "company": "Current",
-   "url": "https://weworkremotely.com/remote-jobs/current-senior-product-designer-webflow-temp-to-perm",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Part-time",
-   "posted": "2026-10-19",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Web",
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility"
-   ],
-   "description": "Headquarters: Remote (US) Senior Product Designer (Webflow) At Current At Current, Senior Product Designers (Webflow) lead the design and delivery of engaging digital experiences across multiple client engagements. You'll partner closely with cross-functional teams across strategy, production, engineering, and client services to create thoughtful, user-centered websites that are both beautifully designed and expertly built in Webflow. Senior Product Designers are strategic, hands-on creators. You're equally comfortable conducting UX discovery, designing polished experiences in Figma, and building production-ready websites in Webflow. You own projects from concept through launch, partnering with engineering only when advanced custom development or integrations are required. What You'll Do Lead UX and visual design across websites and digital experiences for multiple client engagements Partner with strategy, production, engineering, and client stakeholders to define user experience and creative direction Create user flows, wireframes, prototypes, and high-fidelity designs in Figma Design and build responsive, production-ready websites directly in Webflow Develop scalable design systems, reusable components, and CMS structures in Webflow Translate business goals into intuitive, accessible, and conversion-focused digital experiences Collaborate with engineers on advanced functionality, integrations, and custom development when needed Optimize websites for usability, accessibility, responsiveness, and SEO Conduct UX reviews and recommend improvements based on best practices and user insights Stay current on UX trends, accessibility standards, and evolving Webflow capabilities What You'll Bring 5\u20137 years of UX/UI, Product, or Digital Design experience, ideally within an agenc",
    "first_seen": ""
   },
   {
@@ -6180,27 +6177,6 @@
    "first_seen": ""
   },
   {
-   "id": "Remote OK:1136687",
-   "source": "Remote OK",
-   "title": "Brand Protection & Marketplace Compliance Analyst",
-   "company": "MultiplyMii",
-   "url": "https://remoteOK.com/remote-jobs/remote-brand-protection-marketplace-compliance-analyst-multiplymii-1136687",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-08-14",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Branding",
-    "E-commerce"
-   ],
-   "description": "Position Type : Full-time Location: Philippines (Remote) Schedule: Mon-Fri, EST About the Company Our client is a global leader in swimming pool technology, specializing in robotic pool cleaners, pool safety products, water treatment solutions, and related pool equipment for residential and commercial customers. With a strong international presence and a network of distributors, subsidiaries, and partners across multiple markets, our client serves customers worldwide through a variety of sales and distribution channels. About the Role Our client is looking for a Brand Protection & Marketplace Compliance Analyst to monitor online marketplaces and digital channels across North America and Europe. The role focuses on identifying unauthorized sellers, marketplace and distribution violations, misuse of brand assets, and other compliance issues. You will conduct online research, analyze seller and product data, maintain accurate records, and prepare reports that provide actionable insights to the business. Responsibilities Monitor Amazon, eBay, Walmart, BestBuy, Home Depot, AliExpress, Temu, and other major marketplaces. Research products and identify new or unauthorized sellers. Classify sellers and verify their authorization status. Identify MAP, distribution, territory, and marketplace compliance issues. Monitor unauthorized use of logos, images, trademarks, and product content. Collect evidence such as URLs, screenshots, seller information, and product details. Maintain accurate seller databases and internal records. Prepare daily reports and monthly Voice of Consumer reports. Build and maintain dashboards tracking brand-protection metrics. Identify opportunities to improve research and reporting processes. Competencies and Qualifications Must-Have 3+ years of experience ",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Jobicy:162739",
    "source": "Jobicy",
    "title": "Head of Design",
@@ -6444,77 +6420,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Jobicy:155002",
-   "source": "Jobicy",
-   "title": "Head of Brand & Creative",
-   "company": "Atomic",
-   "url": "https://jobicy.com/jobs/155002-head-of-brand-creative-2",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-11",
-   "pay": "",
-   "start": "",
-   "duration": "Ongoing",
-   "tags": [
-    "Branding",
-    "Packaging",
-    "Social",
-    "Email",
-    "Presentations"
-   ],
-   "description": "About Golden Child Golden Child is redefining pet nutrition through an uncompromising focus on health, quality, and culinary craftsmanship. A Miami-based startup, we bring together veterinary nutrition expertise, classically trained chefs, and supply chain specialists to develop food held to human-grade standards. Our chef-crafted, science-backed Mains and functional Drizzles are designed to support lifelong health. We\u2019re building a brand for people whose dogs are family, grounded in the care that goes into their food and the pleasure of the life they share. The Role Golden Child is looking for a Head of Brand & Creative to lead the next chapter of the brand and build the team that brings it to life. You will own Golden Child\u2019s creative direction across packaging, campaigns, content, digital experiences, and physical activations. Your immediate focus will be carrying our evolving brand direction through the rebrand and relaunch, while establishing the creative capabilities we need as the business grows. Our ambition includes packaging people want in their homes, original films that reveal the people and decisions behind our recipes, and experiences that bring dog owners together. You\u2019ll connect those expressions through a recognizable point of view, with food and the relationship between dogs and their people at the center. This is a highly hands-on role. You\u2019ll move between setting brand strategy and shaping the work itself: developing concepts, directing shoots, reviewing packaging proofs, refining copy, and helping the team get projects out into the world. You will work closely with our CMO and founding team, alongside Growth, Culinary, Veterinary Nutrition, Product, and Operations. What You\u2019ll Own 1. Brand Strategy & Creative Direction Own Golden Child\u2019s positioning",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Jobicy:152896",
-   "source": "Jobicy",
-   "title": "Freelance Product and Brand Designers \u2013 Join Our Network",
-   "company": "Instrument",
-   "url": "https://jobicy.com/jobs/152896-freelance-product-and-brand-designers-join-our-network",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "posted": "2026-11-11",
-   "pay": "USD 50-110 / hourly",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Branding",
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Motion"
-   ],
-   "description": "Instrument is a digitally native design and technology company built to help brands unlock their full potential. Since 2005, our team of makers, thinkers, and storytellers has partnered with leading brands like Google, Nike, Uber, \u014cURA, and Eventbrite to craft digital experiences that create impact and drive results. Unlike traditional agencies, we don\u2019t just design\u2014we build. Our work lives at the intersection of taste and technology, powered by curiosity, thoughtful curation, and a commitment to delivering the most fitting solution for every brief. We bring this to life across three core offerings: Brand, Marketing, and Product. As a member of our freelance network, you\u2019ll collaborate with our teams to bring bold ideas to life\u2014whether launching new brands, building digital products, or shaping experiences that move people. We welcome collaborators from all backgrounds and experiences who share our curiosity, creativity, and care for craft. We believe great work comes from diverse perspectives and shared purpose. If you\u2019re passionate about learning, experimenting, and making work that matters, we\u2019d love to hear from you. We're building our network of freelance Product Designers, Brand Designers, and Visual Designers who are interested in partnering with Instrument on future engagements. Our work spans digital products, websites, brand experiences, campaigns, storytelling, and emerging digital platforms. As a result, we're looking for designers with a variety of backgrounds who are comfortable collaborating across disciplines and contributing at different stages of the design process. While project needs vary, we're particularly interested in connecting with designers who are available to support opportunities in the near term. What You Might Work On Designing digital pr",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Jobicy:152864",
-   "source": "Jobicy",
-   "title": "Senior Product Designer",
-   "company": "Tremendous",
-   "url": "https://jobicy.com/jobs/152864-senior-product-designer-9",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-11",
-   "pay": "USD 200,000-265,000 / yearly",
-   "start": "",
-   "duration": "12-16 weeks",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility"
-   ],
-   "description": "Tremendous is the global platform built for businesses to send thousands of payouts to anyone, anywhere, for free. We're trusted by 20,000 organizations like Atlassian, MIT, and United Way to deliver gift cards and money to millions of recipients worldwide. Our customers (researchers, marketers, HR teams, nonprofits, and platform businesses) rave about how fast and easy Tremendous is to use. Check out our ratings on G2 . Tremendous is profitable and growing without outside investors. We\u2019re a fully remote, high-documentation, low-meeting culture, which means more time for what matters in both your professional and personal life. The team agrees\u2013 our employee NPS is in the high 80s. Design at Tremendous We design experiences that make complex systems feel straightforward and intuitive by taking our time to get things right. We favor depth and scale over speed, while raising the bar for quality so our product stays ahead of the competition. We\u2019re a place for designers who care about doing things well. About the role We're hiring a Senior Product Designer to own design for one of our product areas. You'll join a small team of product designers led by our Director of Product Design, and you'll be embedded in a squad with a product manager and several engineers. Half of our product is used by recipients who never chose us, so the experience has to be self-evident. The other half is a powerful dashboard and API used by everyone from mom-and-pop shops to Google. With one designer per squad, you'll have direct ownership of the experiences you ship. What you'll do Craft rational, elegant, and intuitive interfaces. We care about implementation ease as much as we care about pixel-perfection. Own the content. Designers at Tremendous own the product copy in their designs. Strategic i",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Himalayas:https://himalayas.app/companies/lemon-io/jobs/senior-ui-ux-designer",
    "source": "Himalayas",
    "title": "Senior UI & UX Designer",
@@ -6537,6 +6442,356 @@
    ],
    "description": "helps companies in the US and Europe hire experienced engineers & designers, from funded startups to teams like Klarna, Retool, and Pinterest. We\u2019ve been doing this since 2015, and more than 1,500 companies have hired engineers through us. New roles for Senior Designers come in all the time, and several are open right now. Two ways to work with clients Contract: most roles are contract-based. You join the client\u2019s team and work as part of it. Direct hire: some clients hire designers full-time, and we support you through the process. Because companies trust our vetting, applying through is often a shortcut. You get to the client faster than going through their full hiring process on your own. What you get Competitive rate, based on your seniority and skills We find the projects. No client hunting or rate negotiations. We match you manually based on your skills and preferences. Flexible schedule. Work async or with a small overlap with the team\u2019s hours. No micromanagement, no screen trackers Direct work with clients, most of them with technical backgrounds Ongoing support from your application through every project, plus a community of engineers from 75+ countries Who we\u2019re looking for Senior UI & UX Designers: 5+ years of experience in UI & UX Design 3+ years of commercial experience with Figma & 5+ years with Prototyping, OR 5+ years of commercial experience with Figma & 3+ years with Prototyping Experience with Adobe is required Experience in Product design is a must Senior Graphic Designers: 5+ years of experience in Graphic Design 5+ years of commercial experience with Adobe Creative Suite & Adobe Illustrator Strong design craft \u2014 as a Senior Designer, you're expected to build polished, production-ready work from scratch, with a solid grasp of design systems, compone",
    "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/peraton/jobs/website-designer",
+   "source": "Himalayas",
+   "title": "Website Designer",
+   "company": "Peraton",
+   "url": "https://himalayas.app/companies/peraton/jobs/website-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-18",
+   "pay": "USD 66,000-106,000 / annual",
+   "start": "",
+   "duration": "Ongoing",
+   "tags": [
+    "Web",
+    "Adobe CC",
+    "Accessibility",
+    "Illustration",
+    "Presentations"
+   ],
+   "description": "Peraton Overview Peraton is a next-generation national security company that drives missions of consequence spanning the globe and extending to the farthest reaches of the galaxy. As the world\u2019s leading mission capability integrator and transformative enterprise IT provider, we deliver trusted, highly differentiated solutions and technologies to protect our nation and allies. Peraton operates at the critical nexus between traditional and nontraditional threats across all domains: land, sea, space, air, and cyberspace. The company serves as a valued partner to essential government agencies and supports every branch of the U.S. armed forces. Each day, our employees do the can\u2019t be done by solving the most daunting challenges facing our customers. Visit peraton.com to learn how we\u2019re keeping people around the world safe and secure. Responsibilities Peraton is seeking Website Designer to join our team of qualified, diverse individuals in transforming the future of technology and public health. This position will become part of Peraton \u2019s team that supports the Centers of Disease Control and Prevention (CDC). The qualified applicant will provide web production support which includes daily posting and updating of content, materials, and web pages to internal and external-facing web sites. The applicant will be responsible for designing, developing, and maintaining content-based websites; applying current agency and team standards; developing applicable documentation; communicating status to appropriate personnel; providing quality work; and working independently within a team environment. Roles and Responsibilities: Leverages experience to offer suggestions on information architecture, web content and layout, user experience, search engine optimization, Section 508 compliance",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/acumatica/jobs/senior-product-designer-6671354269",
+   "source": "Himalayas",
+   "title": "Senior Product Designer",
+   "company": "Acumatica",
+   "url": "https://himalayas.app/companies/acumatica/jobs/senior-product-designer-6671354269?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-18",
+   "pay": "USD 120,000-135,000 / annual",
+   "start": "",
+   "duration": "Ongoing",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Accessibility",
+    "Email"
+   ],
+   "description": "The Senior Product Designer owns the end-to-end user experience of Acumatica applications, shapes workflows, and aligns them with the product vision. As an active member of the discovery team, they collaborate with the Product Manager, Business Analyst, Engineering Lead, and backend developers to translate business requirements into validated, scalable solutions. This role includes building working prototypes for Business Analysts to specify from and for backend developers to connect services to, modeling system behavior, writing clear behavioral specifications for engineers and AI agents, and ensuring AI-generated output meets quality and accessibility standards. The Senior Product Designer also mentors team members, leads cross-functional design sprints, and links design work to measurable business outcomes. MAJOR ROLES & RESPONSIBILITIES Discovery & Validation: Understanding Users and Problems Conduct and synthesize user research and competitive analysis, including emerging UX patterns and AI capabilities, to inform design direction Validate early concepts with users through working prototypes before committing to full design or engineering effort Lead usability and UX acceptance testing to ensure the experience functions as designed. Define success metrics such as task completion, error rate, CSAT, and adoption with product managers. Identify and raise UX defects before release. Interactive Systems Design: Designing Behavior, Not Just Screens Own end-to-end UX for assigned epics, including AI-surfaced and headless experiences. Partner with the Engineering Lead to assess feasibility and trade-offs. Model user flows, screen and component states, and transitions, defining how the UI responds to user input, validation, system events, and API responses Design for non-det",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/nuvemrx/jobs/principal-product-designer",
+   "source": "Himalayas",
+   "title": "Principal Product Designer",
+   "company": "Nuvem",
+   "url": "https://himalayas.app/companies/nuvemrx/jobs/principal-product-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-18",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Prototyping",
+    "Design systems",
+    "Accessibility"
+   ],
+   "description": "Principal Product Designer US Remote | Full-Time Who We Are: Nuvem Rx helps community health providers deliver on their mission by simplifying the complexity of pharmacy operations \u2014with a suite of scalable solutions that integrate software, intelligence and expert support that can illuminate savings, expand access, and elevate patient care. What We Are Looking For: At Nuvem Rx, we know high standards must be maintained to deliver impact at scale, and we want to work with people that embody our core values: Mission Always: Every choice is a chance to service our customer. Every choice is a chance to serve -and make healthcare better for all. We don\u2019t just check boxes- we make choices that serve people and move the mission forward. Be A Pioneer : Find the problem. Invent the Solution. We don\u2019t wait for direction\u2014we take initiative, stay resourceful, and create what\u2019s needed - not just what\u2019s expected. Pioneers chart new territory with vision, courage, and grit. We learn quickly and turn challenges into momentum. Do the Right Thing the Right Way : We lead with care, respect, and compliance\u2014and we don\u2019t cut corners. We solve the right problems the right way, always balancing speed with thoughtfulness, and outcomes with ethics. Stronger Together: Own Your Role. Play for the Team. We bring diverse voices together to solve hard problems with humility and shared ownership. We challenge each other with respect, hold each other accountable, and strive to be the best for the team\u2014not just on the team. Because we are a fast-growing company with a bold mission and a lot of work to do, every employee of Nuvem Rx must also have growth company DNA , which requires either success working in a fast-paced VC/PE-backed early-stage company with high expectations or the underlying qualities",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/autodesk/jobs/principal-conversation-designer-autodesk-assistant-canada-us",
+   "source": "Himalayas",
+   "title": "Principal Conversation Designer, Autodesk Assistant (Canada/US)",
+   "company": "Autodesk",
+   "url": "https://himalayas.app/companies/autodesk/jobs/principal-conversation-designer-autodesk-assistant-canada-us?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Part-time",
+   "posted": "2026-11-18",
+   "pay": "USD 130,000-232,320 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Prototyping",
+    "Design systems",
+    "Packaging"
+   ],
+   "description": "Job Requisition ID # 26WD102128 Position Overview At Autodesk , we help our customers design and make anything. The Experience Foundations team creates the systems, standards, and experiences that enable that mission, particularly as AI transforms how customers work across increasingly connected products and workflows. Within Experience Foundations for AEC (Architecture, Engineering, and Construction), we are seeking a Principal Conversation Designer to join our content strategy team for Autodesk Assistant. This person will design and evolve the conversational and agentic experiences that shape how customers interact with AI across Autodesk products. This role requires deep expertise in conversation design, interaction design, and human-centered AI. The ideal candidate understands how language, interaction patterns, model behavior, and product context work together to create experiences that are clear, capable, and trustworthy. Working across Product, Design, Engineering, AI Research, Content, and other disciplines, they will translate emerging AI capabilities into reusable conversational patterns that work across products and complex customer workflows. Responsibilities Design and evolve conversational and agentic interaction patterns for Autodesk Assistant, including action controls, progress visibility, citations, grounding, and related trust patterns Design conversation architectures, dialogue flows, and turn-level behaviors that shape how Assistant responds, clarifies, follows up, and takes action Shape Assistant voice, tone, and behavior, including prompt guidance that supports a consistent experience across Autodesk products Design error, repair, fallback, and recovery patterns for uncertain, incomplete, or incorrect AI responses Prototype and evaluate generative",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/altius-search-group/jobs/sprinkler-design-manager",
+   "source": "Himalayas",
+   "title": "Sprinkler Design Manager",
+   "company": "Altius Search Group",
+   "url": "https://himalayas.app/companies/altius-search-group/jobs/sprinkler-design-manager?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Part-time",
+   "posted": "2026-11-18",
+   "pay": "$95,000\u2013$125,000 annually, depending on experience Additional Compensation: Prof",
+   "start": "",
+   "duration": "",
+   "tags": [],
+   "description": "Altius Search Group is the recruiting partner for a growing fire protection engineering and design company seeking a Sprinkler Design Manager to lead and expand its sprinkler design business. This is a hands-on leadership opportunity for an experienced designer who wants to build a team, develop client relationships and help shape a growing business. You will oversee design projects from proposal through completion, establish technical and quality standards, and recruit and mentor key team members. Key Responsibilities Business and Project Leadership Lead the sprinkler design business, supporting growth through proposals, estimates and client relationship development. Manage multiple projects from initial concept through completed design. Coordinate with project managers, architects, contractors and clients to establish scope, requirements and design objectives. Maintain project schedules, budgets and quality standards. Team Development Recruit, lead and mentor sprinkler system designers and other key design personnel. Guide the team through technical challenges and review work for accuracy, completeness and code compliance. Establish clear expectations, encourage collaboration and improve design processes. Technical Design and Compliance Develop and review detailed drawings, hydraulic calculations, specifications and supporting documentation for fire sprinkler systems. Use AutoSPRINK to produce accurate designs and evaluate system flow and pressure requirements. Ensure designs comply with applicable NFPA standards, building codes, local requirements and project specifications. Serve as a technical resource for clients and project partners. Quality Assurance Establish and maintain CAD standards, design specifications and quality review procedures. Review drawings, calcu",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/logistics-management-institute/jobs/senior-product-designer-clearance-required",
+   "source": "Himalayas",
+   "title": "Senior Product Designer - Clearance Required",
+   "company": "Logistics Management Institute",
+   "url": "https://himalayas.app/companies/logistics-management-institute/jobs/senior-product-designer-clearance-required?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "posted": "2026-11-18",
+   "pay": "USD 150,000-200,000 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Accessibility"
+   ],
+   "description": "Overview LMI is hiring a Senior Product Designer to shape software around the way national security users work. You will own research and interaction design for complex workflows, working directly with users and engineers from early discovery through initial deployment. You will influence what the team builds and stay involved as designs become working software. You will join a multidisciplinary team within LMI's National Security organization. Work spans technical discovery, rapid prototypes, and selected deployments through initial operational use. The team develops reusable capabilities and transfers them to LMI program or product teams for sustained delivery. LMI is a new breed of digital solutions provider dedicated to accelerating government impact with innovation and speed. Investing in technology and prototypes ahead of need, LMI brings commercial-grade platforms and mission-ready AI to federal agencies at commercial speed. Leveraging our mission-ready technology and solutions, proven expertise in federal deployment, and strategic relationships, we enhance outcomes for the government, efficiently and effectively. With a focus on agility and collaboration, LMI serves the defense, space, healthcare, and energy sectors\u2014helping agencies navigate complexity and outpace change. Headquartered in Tysons, Virginia, LMI is committed to delivering impactful results that strengthen missions and drive lasting value. Responsibilities Research user tasks, decisions, and operating conditions through interviews, observation, and review of existing workflows. Turn findings into clear information architecture, interaction flows, and prototypes that help the team test an approach early. Design interfaces for complex data and decisions, including search, tables, filters, maps, and m",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/the-n2-company/jobs/advertisement-designer",
+   "source": "Himalayas",
+   "title": "Advertisement Designer",
+   "company": "The N2 Company",
+   "url": "https://himalayas.app/companies/the-n2-company/jobs/advertisement-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-18",
+   "pay": "USD 45,000-45,000 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Adobe CC",
+    "Illustration",
+    "Motion",
+    "Print",
+    "Editorial"
+   ],
+   "description": "At the N2 Company, our vision is \" to be the most respected franchise in the nation, to share stories that build community, and to provide meaningful work for our team\". About Us The N2 Company is America\u2019s leading publisher of community magazines. We\u2019re proud of our award-winning media brands \u2013 they reach millions of readers in nearly every state and help great businesses connect with ideal clients \u2013 but we\u2019re even more proud to provide supportive and fulfilling remote work opportunities for our people. About The Role Are you looking for an opportunity to put your creative skills to work? Do you have a passion for creating high-quality print ads for clients? Does the potential of growing your skill set appeal to you? If you answered yes, then we have an incredible opportunity for you as an Advertisement Designer within our Design team! Our Advertisement Designers bring their attention to detail, strong desire to learn, and positive attitudes to N2\u2019s Design team. This is a fully remote position. Interviews will be conducted via phone and video calls. The salary is $45,000 annually, with opportunities for growth and advancement. The Role in Action Design clean, eye-catching advertisements using client-provided text and assets in Adobe Illustrator. Produce fast, accurate design work while meeting daily and weekly goals. Ensure all ads align with team standards and proper specifications. Collaborate with other designers to maintain consistency and uphold quality standards. Use outstanding written communication with a customer-service mindset. Receive constructive feedback and apply it to workflows as needed Contribute to a high-performing, positive, supportive team culture. The Ideal Candidate We\u2019re looking for someone who\u2019ll hit the ground running with: Basic competence i",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-entry",
+   "source": "Himalayas",
+   "title": "Video Editor, Direct Response Ads (Entry)",
+   "company": "Whiskey Library",
+   "url": "https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-entry?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Contract",
+   "posted": "2026-11-18",
+   "pay": "USD 500-1,000 / monthly",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Adobe CC"
+   ],
+   "description": "Type: Full-time, 40 hours a week, contract, month to month Location: Remote, any country. You must work US Eastern hours. Pay: $500 to $1,000 a month (USD), paid monthly, plus bonuses. Raises are tied to output and ad performance. Whiskey Library is a US bourbon subscription club with over 10,000 members. Members take a 90-second palate quiz and get a monthly Bourbon Mystery Box of full-size bottles. Our growth runs on direct response video ads on Meta and TikTok, and editors are at the center of it. This is the entry point to editor, senior editor and creative strategy roles on our team. What you'll do Edit short vertical (9:16) ads for Meta and TikTok from raw creator and product footage, to a launch-ready standard. Make hook variations: same ad body, new opening, so we can test what stops the scroll. Add captions, on-screen text, music and sound so every ad works with the sound off. Take feedback fast, apply it, and show what changed. What you bring Basic to solid skills in Premiere Pro, CapCut, DaVinci Resolve or Final Cut Pro. Short-form work you can show. You know the difference between an ad that sells and a video that only looks good, or you are eager to learn it. Reliable, clear communicator, available full-time on US Eastern hours. Non-negotiables A portfolio of work you personally edited. No portfolio, no review. Full-time and exclusive: this is your only job, with no other employers or freelance clients. Do the trial before you are considered. Bonus on top of base pay $50 for any ad you edit that spends over $2,500 in a single month, paid per ad. Three ads over $2,500 in a month = $150. Tracked monthly. How hiring works Apply on this page with your portfolio. Shortlisted editors do a trial: one complete, finished ad cut from our raw footage. Everyone does th",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-performance",
+   "source": "Himalayas",
+   "title": "Video Editor, Direct Response Ads (Performance)",
+   "company": "Whiskey Library",
+   "url": "https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-performance?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Contract",
+   "posted": "2026-11-18",
+   "pay": "USD 1,000-1,500 / monthly",
+   "start": "",
+   "duration": "",
+   "tags": [],
+   "description": "Type: Full-time, 40 hours a week, contract, month to month Location: Remote, any country. You must work US Eastern hours. Pay: $1,000 to $1,500 a month (USD), paid monthly, plus bonuses. Raises are tied to output and ad performance. Whiskey Library is a US bourbon subscription club with over 10,000 members. Members take a 90-second palate quiz and get a monthly Bourbon Mystery Box of full-size bottles. Our growth runs on direct response video ads on Meta and TikTok, and editors are at the center of it. What you'll do Edit direct response ads start to finish: clip selection, hooks, fast pacing, captions, proof callouts, calls to action and export. Build new versions of ads that already work, starting with new hooks and openings. Deliver several finished ads a week, and flag early if a deadline might slip. Push back on footage and suggest better cuts. What you bring Proven experience editing paid ads that ran on Meta or TikTok. Add a short note on each ad's goal. Strong retention skills: hooks, pacing, pattern interrupts, captions that work without sound. Fast, careful and proactive. Non-negotiables A portfolio of paid ads or direct response work you personally edited. No portfolio, no review. Full-time and exclusive: this is your only job, with no other employers or freelance clients. Do the trial before you are considered. Bonus on top of base pay $50 for any ad you edit that spends over $2,500 in a single month, paid per ad. Three ads over $2,500 in a month = $150. Tracked monthly. How hiring works Apply on this page with your portfolio. Shortlisted editors do a trial: one complete, finished ad cut from our raw footage. Everyone does the trial before being considered. Trial edits will not run as live ads unless you are hired. Short call with the team. Offer. How to app",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/careerswift/jobs/product-designer-ux-ui-6363142903",
+   "source": "Himalayas",
+   "title": "Product Designer (UX/UI)",
+   "company": "Careerswift",
+   "url": "https://himalayas.app/companies/careerswift/jobs/product-designer-ux-ui-6363142903?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-18",
+   "pay": "USD 60,000-80,000 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Web"
+   ],
+   "description": "CareerSwift is a technology company focused on making the job search process simpler, faster, and more effective. Our platform combines AI-powered tools and practical career solutions to help job seekers create stronger applications, improve their professional profiles, and navigate their job search with greater confidence. We are growing our product team and are looking for a thoughtful and user-focused Product Designer (UX/UI) to help us create simple, intuitive, and engaging experiences across the CareerSwift platform. About the Role As a Product Designer (UX/UI) , you will work across the product design process, from understanding user needs and mapping user flows to creating wireframes, prototypes, and polished interfaces. You will collaborate closely with Product Managers, Business Analysts, and Engineering teams to turn product requirements into practical and user-friendly experiences. Your work will directly contribute to how job seekers interact with CareerSwift's AI-powered tools and services. Responsibilities Design intuitive user experiences and interfaces across the CareerSwift platform. Create user flows, wireframes, prototypes, and high-fidelity designs. Work with Product and Engineering teams to translate requirements into effective design solutions. Conduct basic user research and use feedback to identify opportunities for improvement. Maintain and contribute to design systems, reusable components, and UI guidelines. Review implemented designs and collaborate with developers to ensure design quality. Iterate on designs based on user feedback, product goals, and performance insights. What We Are Looking For 1\u20133 years of experience in product design, UX/UI design, or a related field. Strong portfolio demonstrating web or digital product design. Proficienc",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-senior-lead",
+   "source": "Himalayas",
+   "title": "Video Editor, Direct Response Ads (Senior / Lead)",
+   "company": "Whiskey Library",
+   "url": "https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-senior-lead?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Contract",
+   "posted": "2026-11-18",
+   "pay": "USD 1,500-3,000 / monthly",
+   "start": "",
+   "duration": "",
+   "tags": [],
+   "description": "Type: Full-time, 40 hours a week, contract, month to month Location: Remote, any country. You must work US Eastern hours. Pay: $1,500 to $3,000 a month (USD), paid monthly, plus bonuses. The top of the range is for an editor who lifts the whole team's output, not just their own. Whiskey Library is a US bourbon subscription club with over 10,000 members. Members take a 90-second palate quiz and get a monthly Bourbon Mystery Box of full-size bottles. Our growth runs on direct response video ads on Meta and TikTok, and editors are at the center of it. What you'll do Own the hardest, highest-value edits: new concepts, iterations of winning ads, and the ads we put the most spend behind. Set the editing standard: hook discipline, pacing, caption style, proof callouts, sound and export quality. Review other editors' work, give feedback they can use, and help build our editing playbook. Work with the creative strategist to read results, find what worked, and turn it into the next round of edits. What you bring 3+ years editing direct response short-form ads, with a portfolio of ads that ran and performed. Spend, sales, CPA and winners you cut are welcome. Engagement numbers alone do not count. Expert in your editing tool, fast without being sloppy, and able to run your own deadlines across several campaigns. Lead-level communication and ownership. Non-negotiables A portfolio of paid ads or direct response work you personally edited. No portfolio, no review. Full-time and exclusive: this is your only job, with no other employers or freelance clients. Available full-time on US Eastern hours. Do the trial before you are considered. Senior editors do it too: we hire off the edit, not the resume. Bonus on top of base pay $50 for any ad you edit that spends over $2,500 in a single mo",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/rts-management-inc/jobs/merchandise-designer",
+   "source": "Himalayas",
+   "title": "Merchandise Designer",
+   "company": "RTS Management, Inc.",
+   "url": "https://himalayas.app/companies/rts-management-inc/jobs/merchandise-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Part-time",
+   "posted": "2026-11-18",
+   "pay": "USD 75,000-85,000 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Adobe CC",
+    "Accessibility",
+    "Packaging",
+    "Branding",
+    "Illustration"
+   ],
+   "description": "RTS is an enthusiast culture company that builds at the intersection of gaming, creators, and brands. From global live events to bespoke branded content, we exist to create meaningful connections between fans and the worlds they love. Our team brings deep expertise across partnership sales and marketing, talent management, event production, media, community building, and IP development. For over 20 years, The Evolution Championship Series (Evo), has produced the largest and longest-running fighting game tournament conventions in the world. Our events are rallying points where fans, publishers, developers, and brands celebrate fighting games and the communities that love them. Beyond our established live events, Evo\u2019s mission continues to evolve to create, celebrate, and renew fighting game fandom. Role Overview The Merchandise Designer is responsible for developing original merchandise concepts and artwork for Evo\u2019s global events, collaborations, and product programs. Working closely with the Creative Director and Merchandise Manager, this role translates Evo\u2019s brand, event identities, fighting game culture, and creative direction into products that feel considered, collectible, and distinctly Evo. Evo merchandise is defined by clean, premium execution and thoughtful details. The goal is to create products that feel elevated and special while remaining accessible\u2014not merchandise that relies simply on logo-slaps, obvious gaming or esports tropes, or whichever aesthetic is currently trending. This role requires someone equally comfortable with graphic design and illustration, with enough range to develop work across different events, collaborations, audiences, and visual directions. Reporting Structure You will report to Evo's Creative Director. Key Responsibilities Desig",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/aecom/jobs/utility-infra-design-engineer-specialist-7590456435",
+   "source": "Himalayas",
+   "title": "Utility Infra Design Engineer / Specialist",
+   "company": "AECOM",
+   "url": "https://himalayas.app/companies/aecom/jobs/utility-infra-design-engineer-specialist-7590456435?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-18",
+   "pay": "USD 90,000-120,000 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Packaging",
+    "3D"
+   ],
+   "description": "Job Description AECOM is seeking a highly motivated West Coast Utility Infrastructure Telecom Design QC Engineer / Specialist to support the planning, design, and quality assurance of telecommunications outside plant infrastructure programs.This role will focus on the design and modeling of underground conduit systems supporting fiber optic networks, data center connectivity, metro fiber deployments, and utility infrastructure projects. The successful candidate will possess practical experience designing underground conduit networks, duct banks, handholes, manholes, and associated civil infrastructure. The position requires proficiency with Civil 3D and related engineering software for developing, reviewing, and validating designs throughout project lifecycles. This is a fully remote position requiring the ability to collaborate with multidisciplinary engineering teams, utility stakeholders, permitting agencies, and construction personnel across multiple geographic regions. Key Responsibilities Underground Telecommunications Infrastructure Design: Develop and review underground OSP designs for fiber optic network deployments. Design conduit systems, duct banks, manholes, handholes, roadway crossings, and utility corridors. Perform route evaluation and constructability assessments for greenfield and brownfield projects. Incorporate utility conflicts, right-of-way constraints, environmental considerations, and permitting requirements into design solutions. Support the development of construction drawings, profile sheets, details, and permit packages. Engineering Review and Quality Assurance: Perform technical reviews of Utility Infrastructure Telecom Design QC packages. Verify compliance with client standards, engineering requirements, and construction criteria. Review co",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/nitrogen/jobs/product-designer-investments-insurance",
+   "source": "Himalayas",
+   "title": "Product Designer, Investments & Insurance",
+   "company": "Nitrogen",
+   "url": "https://himalayas.app/companies/nitrogen/jobs/product-designer-investments-insurance?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-17",
+   "pay": "USD 115,000-130,000 / annual",
+   "start": "",
+   "duration": "3 weeks",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Social",
+    "Web"
+   ],
+   "description": "WHAT WE DO Nitrogen equips financial advisors with a suite of AI-powered products that showcase the value of their advice so they can attract clients and keep them fearless. Since launching Riskalyze in 2011, we've been on a mission to create what we call Catalyst Moments \u2014 those powerful instances when an advisor leads a client from confused and fearful to confident and fearless. Nitrogen is a connected suite of advisor products designed to showcase the value of advice in every client meeting. Combining agentic AI with Risk Alignment, Insurance Alignment, Investment Research, Income Planning, Tax Intelligence, and Legacy Planning, with trusted, deterministic analytics to turn complex financial insights into persuasive visuals. The result: clearer conversations, stronger relationships, and advisors who can prove their value in every client meeting. Trusted by tens of thousands of advisors, backed by an industry-leading Net Promoter Score of 71, and the first wealthtech company to earn ISO 42001 certification, Nitrogen is built on fifteen years of advisor data and half a trillion dollars in assets on platform. We invented the Risk Number\u00ae, built on a Nobel Prize-winning academic framework, and we champion the Fearless Investing Movement \u2014 because a world empowered to invest fearlessly starts with empowered advisors. WHY DESIGN MATTERS AT NITROGEN The last mile of financial advice isn't more data; it's clarity. It's the moment someone goes from confused to fearless. At Nitrogen , we help financial advisors showcase the value of advice in every client interaction. A lot of that comes down to great design. An advisor can have powerful analytics, but if their client can't understand what it means for their future, it doesn't really help them. Our job is to make that part cle",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/renesas-electronics/jobs/altium-designer-trainer-and-content-creator",
+   "source": "Himalayas",
+   "title": "Altium Designer Trainer and Content Creator",
+   "company": "Renesas Electronics",
+   "url": "https://himalayas.app/companies/renesas-electronics/jobs/altium-designer-trainer-and-content-creator?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Part-time",
+   "posted": "2026-11-17",
+   "pay": "USD 118,000-141,000 / annual",
+   "start": "",
+   "duration": "Ongoing",
+   "tags": [
+    "Packaging",
+    "Presentations"
+   ],
+   "description": "About the role: The Trainer and Content Developer is a member of the Altium Training team responsible for delivering high quality, industry leading training on Altium Designer and related solutions. This role combines certified Instructor Led Training delivery with active participation in training content development, reviewing, and ongoing maintenance across both ILT (instructor-led training) and on-demand formats. This position is intended for an experienced PCB design professional with strong hands on Altium Designer experience who is comfortable delivering technical training to professional engineering audiences. The role requires a high level of technical competence, strong communication skills, and the ability to deliver consistent, high quality training experiences aligned with approved course content and learning objectives. Customer training is a critical component of Altium\u2019s long term success. This role directly supports customer adoption and best practice usage through professional, technically accurate, and engaging training delivery. A day in the life of our Trainer and Content Developer: Training Delivery Deliver certified Instructor Led Training across the full Altium training portfolio, both online and onsite. Complete and maintain certification across all ILT courses prior to independent delivery. Deliver training using approved course materials and defined learning objectives. Demonstrate Altium Designer workflows and features using practical, real world experience and knowledge. Adapt delivery style to suit different customer experience levels while maintaining consistency. Represent Altium professionally in all customer interactions. Technical Expertise Maintain strong hands on proficiency with Altium Designer, including advanced functionality. Appl",
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/nitrogen/jobs/senior-product-designer-design-systems",
+   "source": "Himalayas",
+   "title": "Senior Product Designer, Design Systems",
+   "company": "Nitrogen",
+   "url": "https://himalayas.app/companies/nitrogen/jobs/senior-product-designer-design-systems?utm_source=api",
+   "city": "",
+   "state": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "posted": "2026-11-17",
+   "pay": "USD 140,000-150,000 / annual",
+   "start": "",
+   "duration": "3 weeks",
+   "tags": [
+    "Design systems",
+    "Figma",
+    "Prototyping",
+    "Accessibility",
+    "Branding"
+   ],
+   "description": "WHAT WE DO Nitrogen equips financial advisors with a suite of AI-powered products that showcase the value of their advice so they can attract clients and keep them fearless. Since launching Riskalyze in 2011, we've been on a mission to create what we call Catalyst Moments \u2014 those powerful instances when an advisor leads a client from confused and fearful to confident and fearless. Nitrogen is a connected suite of advisor products designed to showcase the value of advice in every client meeting. Combining agentic AI with Risk Alignment, Insurance Alignment, Investment Research, Income Planning, Tax Intelligence, and Legacy Planning, with trusted, deterministic analytics to turn complex financial insights into persuasive visuals. The result: clearer conversations, stronger relationships, and advisors who can prove their value in every client meeting. Trusted by tens of thousands of advisors, backed by an industry-leading Net Promoter Score of 71, and the first wealthtech company to earn ISO 42001 certification, Nitrogen is built on fifteen years of advisor data and half a trillion dollars in assets on platform. We invented the Risk Number\u00ae, built on a Nobel Prize-winning academic framework, and we champion the Fearless Investing Movement \u2014 because a world empowered to invest fearlessly starts with empowered advisors. WHY DESIGN MATTERS AT NITROGEN The last mile of financial advice isn't more data; it's clarity. It's the moment someone goes from confused to fearless. At Nitrogen , we help financial advisors showcase the value of advice in every client interaction. A lot of that comes down to great design. An advisor can have powerful analytics, but if their client can't understand what it means for their future, it doesn't really help them. Our job is to make that part cle",
+   "first_seen": "2026-11-18"
   },
   {
    "id": "Himalayas:https://himalayas.app/companies/vg-systems-llc-a-hubzone-company/jobs/part-time-graphic-design-social-media-specialist",
@@ -6675,30 +6930,6 @@
     "Design systems"
    ],
    "description": "Product Designer Remote (US) | Full-time | Salary + Equity About the Role We\u2019re looking for a Product Designer to help define how people interact with our product in an AI-native world. This is not a traditional design role where you receive fully scoped tickets and produce polished mockups in isolation. You\u2019ll work directly with engineering, product, and customers to shape the core product experience from first principles. You\u2019ll design workflows where AI is not a bolt-on feature, but a fundamental part of how users think, decide, create, automate, and get work done. You should be excited by ambiguity, fast iteration, and the opportunity to help build product experiences that feel dramatically better than the SaaS tools people are used to today. We care about taste, speed, craft, product thinking, and your ability to turn messy product ideas into simple, useful, elegant experiences. What You\u2019ll Do You\u2019ll help shape and execute design across our core product experience, from early discovery through shipped products. This includes: Designing AI-native workflows that help users move faster, reduce manual work, and trust the system Translating complex product, data, and automation concepts into intuitive user experiences Partnering closely with engineering and product to rapidly prototype, test, and ship new ideas Creating flows, wireframes, prototypes, interaction models, and high-fidelity product designs Defining UX patterns for AI-assisted experiences, including agents, copilots, approvals, suggestions, generated outputs, human-in-the-loop review, and automation transparency Talking to users, watching how they work, and using those insights to improve the product Building and maintaining a lightweight design system that helps us move quickly without sacrificing quality ",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/acoustic/jobs/senior-brand-designer",
-   "source": "Himalayas",
-   "title": "Senior Brand Designer",
-   "company": "Acoustic",
-   "url": "https://himalayas.app/companies/acoustic/jobs/senior-brand-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-16",
-   "pay": "USD 120,000-145,000 / annual",
-   "start": "",
-   "duration": "16 weeks",
-   "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
-    "Illustration",
-    "Motion"
-   ],
-   "description": "About Acoustic At Acoustic , we believe people can feel when a brand is paying attention. Our customer engagement platform helps B2C marketers put that belief into practice by bringing customer behavior, product insights, campaign context, and messaging tools like email, SMS, WhatsApp, and mobile push together in one place. This helps busy marketers understand what deserves their attention now and act while it still matters. Our audience knows marketing. They recognize a good idea, notice the details, and have seen plenty of software companies make the same promises. That gives us a creative challenge worth taking on: tell Acoustic \u2019s story clearly and distinctively, with copy and visuals that reflect the people, decisions, and everyday realities behind the work. About the role You notice when a typeface changes the mood or an unexpected image makes an idea click. You\u2019ve rewatched a video just to figure out how they pulled off that transition. As our Senior Brand Designer, you\u2019ll put those instincts to work for an audience of marketers who know good work when they see it and expect us to make some. We rebranded this year and now comes the fun part: discovering everything our brand can do. We want to push the boundaries of B2B marketing with work our audience looks forward to seeing. You\u2019ll have real room to shape how we get there. Motion graphics and video will be central to your work, along with design for our website, campaigns, social media, and events. You\u2019ll report to the Director of Brand & Content, who owns brand strategy and creative direction. As a close creative partner, you\u2019ll turn that direction into design: pitching ideas, adapting our visual identity for new formats and channels, and taking projects from concept through production. Bring your opinions. We ",
    "first_seen": "2026-11-17"
   },
   {
@@ -7196,30 +7427,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Himalayas:https://himalayas.app/companies/onit/jobs/senior-product-designer",
-   "source": "Himalayas",
-   "title": "Senior Product Designer",
-   "company": "Onit",
-   "url": "https://himalayas.app/companies/onit/jobs/senior-product-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "posted": "2026-11-15",
-   "pay": "USD 135,000-150,000 / annual",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility",
-    "Packaging"
-   ],
-   "description": "About Onit : We're redefining the future of legal operations through the power of AI. Our cutting-edge platform streamlines enterprise legal management, matter management, spend management and contract lifecycle processes, transforming manual workflows into intelligent, automated solutions. We\u2019re a team of innovators using AI at the core to help legal departments become faster, smarter, and more strategic. As we continue to grow and expand the capabilities of our new AI-centric platform, we\u2019re looking for bold thinkers and builders who are excited to shape the next chapter of legal tech. If you're energized by meaningful work, love solving complex problems, and want to help modernize how legal teams operate, we\u2019d love to meet you. Position Summary The Senior Product Designer is a highly skilled, hands-on contributor who plays a key role in shaping intuitive, user-centered digital experiences across one or more products or initiatives. This role balances strong design craft with thoughtful problem-solving, collaborating closely with product management, engineering, and research to translate complex requirements into elegant, effective solutions. We expect you will bring an interest in AI, both as an integral tool for solving customer problems, but also in your everyday work. As a Senior Product Designer, you will own significant portions of the product experience end-to-end, from discovery through execution, while contributing to broader design strategy and standards. You\u2019ll bring a user-first mindset, leverage data and research, and help raise design quality through collaboration, critique, and example. This role is ideal for a designer who excels at execution, enjoys solving complex UX challenges, and is ready to influence product direction without requiring broad orga",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Himalayas:https://himalayas.app/companies/brightspeed/jobs/senior-product-designer",
    "source": "Himalayas",
    "title": "Senior Product Designer",
@@ -7265,398 +7472,6 @@
     "Illustration"
    ],
    "description": "RR Donnelley is adding a Presentation Designer to their team! In this role, you will be responsible for creating templates, backgrounds, and presentations incorporating information graphics, charts, metaphorical graphics, and diagrams for high-level clients - primarily using PowerPoint and secondly Adobe Creative Suite software. Presentations will range from RFPs to Company's pitches and any internal materials. We are hiring for either 1st shift: 8am-5pm or 2nd shift: 2pm-10pm AZ time to support EST time change . Pay Rate: $32.69 hourly / $68,000 annually Must be able to work overtime and training may be on a different shift. Responsibilities: Produce high-quality pitch books, presentations, and client memoranda Import and revise graphics files as necessary Create and edit multi-page/multi-section documents using templates and style sheets for pitchbooks, graphs, charts, presentations, and other print/design projects Attention to detail with emphasis on accuracy and quality, and a critical eye in terms of aesthetics Collaborate with team members on complex or special projects Maintain all job and production tracking data via a propriety RRD Tracking tool Coordinate workflow within the team, including prioritizing jobs and delegating duties to associates Monitor workflow to ensure jobs are completed efficiently, accurately, and within deadlines Assess incoming requests selecting the best resources for successful completion Handle sensitive and/or confidential documents and information Train new employees on policies and procedures Communicate with manager and client on job or deadline issues. Assist with monthly metrics and reporting May work with motion graphics and multimedia work Other duties as assigned Bachelor's degree in area of business, or equivalent experience ",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/pacvue/jobs/graphic-design-intern",
-   "source": "Himalayas",
-   "title": "Graphic Design Intern",
-   "company": "Pacvue",
-   "url": "https://himalayas.app/companies/pacvue/jobs/graphic-design-intern?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Unknown",
-   "posted": "2026-11-15",
-   "pay": "USD 20-20 / hourly",
-   "start": "",
-   "duration": "12 weeks",
-   "tags": [
-    "Branding",
-    "Print"
-   ],
-   "description": "Title: Graphic Design Intern | Team: Marketing We\u2019re looking for a creative, detail-oriented Graphic Design Intern to support our brand and product marketing initiatives while assisting with day-to-day production needs across the design team. In this role, you\u2019ll gain hands-on experience developing marketing collateral and contributing to cross-functional creative projects\u2014contributing to real-world projects that support our brand and communication efforts. Project Scope: The intern will support a range of brand and product marketing efforts, including: Designing and updating brand and product marketing collateral (digital and print) Assisting with production design tasks such as resizing, formatting, and versioning creative assets Supporting campaign development through layout design and asset creation Collaborating with marketing and design team members to execute creative concepts Preparing files for print and digital distribution Maintaining brand consistency across all touchpoints Organizing and managing design files and shared asset libraries Deliverables/Milestones: By the end of the internship, the intern will have: Designed and finalized a suite of brand and/or product marketing collateral pieces Contributed to at least one event (digital, print, or multi-channel) Delivered production-ready files aligned with brand standards Created templated assets that support team scalability and efficiency Learning Objectives: Through this experience, the intern will: Gain hands-on experience working within established brand guidelines Develop practical production design skills for both print and digital formats Learn cross-functional collaboration within marketing and creative teams Strengthen time management and project workflow skills in a professional setting Build a de",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/bask-health/jobs/junior-ux-designer",
-   "source": "Himalayas",
-   "title": "Junior UX Designer",
-   "company": "Bask Health",
-   "url": "https://himalayas.app/companies/bask-health/jobs/junior-ux-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-15",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility",
-    "Illustration"
-   ],
-   "description": "About Bask Health Bask Health is a software platform that enables entrepreneurs, doctors, and healthcare businesses to launch, manage, and grow direct-to-consumer telehealth businesses. Our platform brings together patient experiences, clinical workflows, pharmacy operations, and commerce tools in one place. We're an entrepreneurial, product-focused engineering team that values ownership, technical excellence, and building software that solves real problems. Engineers work closely with product teams and company leadership, take features from idea to production, and have a direct role in shaping the platform. Engineering at Bask is AI-first and builder-led. We use tools like Cursor and Claude Code throughout development while maintaining high standards for reliability, testing, and software quality. About the Role We're looking for a Junior UX Designer to help create intuitive, accessible, and user-friendly experiences across Bask Health 's software platform. Bask Health enables entrepreneurs, doctors, and healthcare businesses to launch, manage, and grow direct-to-consumer telehealth businesses. Our platform brings together merchant tools, patient experiences, clinical workflows, pharmacy operations, and commerce capabilities. As a Junior UX Designer, you'll help improve how users navigate our products, understand information, and complete important tasks. This is an early-career design role focused on user experience, interaction design, wireframing, prototyping, and usability improvements. You'll work alongside experienced product designers, product managers, engineers, and UX researchers to identify user experience challenges and develop practical design solutions. Your work may involve merchant onboarding, administrative dashboards, patient questionnaires, account s",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/kpi-solutions/jobs/autocad-designer-warehouse-racking-systems-2d-design",
-   "source": "Himalayas",
-   "title": "AutoCAD Designer - Warehouse Racking Systems (2D Design)",
-   "company": "KPI Solutions",
-   "url": "https://himalayas.app/companies/kpi-solutions/jobs/autocad-designer-warehouse-racking-systems-2d-design?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-15",
-   "pay": "",
-   "start": "",
-   "duration": "Ongoing",
-   "tags": [
-    "Packaging"
-   ],
-   "description": "We are seeking a detail-oriented and motivated Entry-Level AutoCAD Designer to join our engineering/design team. The successful candidate will create accurate 2D warehouse storage layouts and rack installation drawings using AutoCAD. This role involves designing material handling and pallet storage systems, including Selective Pallet Rack, Push Back Rack, Drive-In Rack, Pallet Flow Rack, and rack modules, while ensuring compliance with customer speci\ufb01cations, industry standards, and company design practices. This position is ideal for recent graduates or individuals beginning their career in drafting, CAD design, or warehouse storage system design. Seasoned designers are more than welcomed to also inquire. Key Responsibilities \u2022Prepare detailed 2D AutoCAD drawings for warehouse racking systems. \u2022Design warehouse layouts based on customer \ufb02oor plans and project requirements. \u2022Create rack elevations, plan views, sections, and installation drawings. \u2022Produce accurate layouts for: oSelective Pallet Rack oPush Back Rack oDrive-In Rack oPallet Flow Rack oRack Modules \u2022Modify existing drawings based on engineering or customer revisions. \u2022Ensure drawings meet company drafting standards and project speci\ufb01cations. \u2022Verify dimensions, rack capacities, aisle widths, clearances, and storage con\ufb01gurations. \u2022Generate bill of materials (BOMs) and drawing packages for manufacturing and installation. \u2022Coordinate with sales, engineering, project managers, and estimation teams. \u2022Maintain organized project \ufb01les and drawing revisions. \u2022Review customer markups and implement design changes accurately. \u2022Support quality control by checking drawings for accuracy and completeness. \u2022Follow warehouse safety guidelines and applicable rack design standards. Requirements \u2022Basic knowledge of AutoCAD 2D.",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/xperteez-technology/jobs/2d-graphic-design-image-editing-expert-gimp-remote",
-   "source": "Himalayas",
-   "title": "2D Graphic Design & Image Editing Expert (GIMP), Remote",
-   "company": "Xperteez Technology",
-   "url": "https://himalayas.app/companies/xperteez-technology/jobs/2d-graphic-design-image-editing-expert-gimp-remote?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "posted": "2026-11-15",
-   "pay": "USD 21-70 / hourly",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Retouching"
-   ],
-   "description": "Role Title: 2D Graphic Design & Image Editing Expert (GIMP) Role Type: Contract Location: Remote In this role, you will use GIMP to complete real-world image editing tasks, record your screen, and explain your workflows step by step. Your expertise will help improve how AI systems understand and perform creative tasks. Scope of Work Perform image editing, photo retouching, and graphic design tasks using GIMP. Work with layers, backgrounds, colors, and other image editing tools. Demonstrate real-world GIMP workflows through screen recordings. Clearly explain and document each step of your editing process. Review image editing tasks and provide feedback to support AI model improvement. Ensure accuracy and quality in all completed tasks. Preferred Qualifications Strong hands-on experience using GIMP for professional image editing or graphic design. Must have access to GIMP and be comfortable recording and sharing your screen. Good understanding of image manipulation, photo retouching, and layer management. Ability to explain technical workflows clearly. Strong attention to detail and communication skills. Professional background in graphic design, digital art, or image editing. Experience documenting creative workflows or reviewing AI-generated images. Originally posted on Himalayas",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/vi/jobs/senior-ux-ui-designer-for-product-freelance",
-   "source": "Himalayas",
-   "title": "Senior UX/UI Designer for Product (Freelance)",
-   "company": "Vi",
-   "url": "https://himalayas.app/companies/vi/jobs/senior-ux-ui-designer-for-product-freelance?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "posted": "2026-11-15",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility"
-   ],
-   "description": "Description Senior UX/UI Designer for Product (Freelance) Vi is the market-leading Enterprise-AI platform for health, serving the world\u2019s largest health organizations - from Fortune 500 health providers to pharma and consumer brands -helping them maximize patient activation, engagement, operational excellence and health outcomes. Vi offers four main product lines: Activate, Engage, Operate and Pulse. Backed by $125M+ in R&D, our powerful platform serves over 190 million members daily - and growing. We are based in New York, Austin, Nashville, and Tel Aviv Role Summary Vi is looking for a senior freelance UX/UI designer to design the agentic dashboard for Vi Operate. Vi already has an established design style guide and look and feel. You will take those standards, extend them, and turn them into complete, production-ready dashboards and product flows. You will work closely with our VP Creative Director and with Vi 's product and delivery teams to make sure every design meets product requirements. The role starts as a project-based engagement, with room to grow across Vi 's product suite. Key Responsibilities Design the agentic dashboards for Vi Operate, from user flows and wireframes to high-fidelity screens and interactive prototypes Apply Vi 's established design style guide consistently across every screen, state and component Extend and improve the design system as new capabilities and patterns are needed Design clear interfaces for agentic AI workflows, showing what agents are doing, what needs human review and the results they deliver Work with the Creative Director on visual direction, and with product and delivery teams to turn requirements into designs Prepare clean, well-organized files and specs for a smooth handoff to engineering Use AI design and prototyping",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/passion-for-life-inc/jobs/elearning-curriculum-design-specialist-volunteer",
-   "source": "Himalayas",
-   "title": "eLearning/Curriculum Design Specialist (Volunteer)",
-   "company": "Passion for Life, Inc.",
-   "url": "https://himalayas.app/companies/passion-for-life-inc/jobs/elearning-curriculum-design-specialist-volunteer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Unknown",
-   "posted": "2026-11-15",
-   "pay": "",
-   "start": "",
-   "duration": "6 months",
-   "tags": [
-    "Presentations"
-   ],
-   "description": "Job Description As a growing non-profit organization, we\u2019re dedicated to improving our policies, procedures, and practices while maintaining a supportive, family-oriented work environment. We\u2019re looking for a candidate who is: Passionate, self-motivated and deadline driven bringing their unique skill set and ideas to the table. Confident and comfortable working in a fast-paced environment with ambiguity. Capable of handling multiple responsibilities with ease. A solution focused impact player that can solve challenges individually and as a team. Who should apply: If you\u2019re looking for an opportunity that fosters the growth and development of under-resourced youths in the Atlanta area, apply for this position! A genuine interest in empowering and inspiring young people will be an asset in this role. If you seek an organization that supports the growth and development of all team members, you should apply for this role at Passion for Life. If you resonate with the organization's goal of helping students discover their passions and build fulfilling careers. Responsibilities: Develop high energy, fun interactive workshops, full semester career development class, and summer camp curriculum to create creative experiential learning. Create instructional materials for facilitators and coaches. Materials include classes, student guides, training manuals, teaching guides, and videos. Research and identify learning activities and technologies that can be incorporated in training programs. Collaborate closely with the curriculum development team and the training delivery team. Assist with needs analysis by collecting and organizing feedback on existing training programs and materials. Required Skills: Creative and Innovative mindset. Passion for creating unique learning experiences",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/shamrockadvisory/jobs/remote-junior-graphic-designer",
-   "source": "Himalayas",
-   "title": "Remote Junior Graphic Designer",
-   "company": "shamrockadvisory",
-   "url": "https://himalayas.app/companies/shamrockadvisory/jobs/remote-junior-graphic-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Part-time",
-   "posted": "2026-11-15",
-   "pay": "120000 - 177000Experience: 1 - 2 years Originally posted on Himalayas",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Adobe CC",
-    "Packaging",
-    "Illustration",
-    "Motion",
-    "Presentations"
-   ],
-   "description": "Job Overview We are looking for a Assistant Graphic Designer to create graphics with top-notch designing skills. You should have up-to-date knowledge of designs that speak visually. The design should have a huge impact on the consumer. You will have to work on various design projects like books, magazines, product packaging, websites, exhibitions material, and other business promotional materials. If your goal is to attract and inspire the audience, then we will like to meet you. Responsibilities Document a design brief to update the client and all the stakeholders. Develop a project implementation plan and the budget breakup. Use creativity to build new ideas and design concepts as per the client\u2019s needs. Edit and adjust design drafts with recommendations for final approval. Create the visual concept of pictures, art, and designs to reflect the desired theme and tone of the communications. Knowledge of font size and style to enhance the readability of text and images. Test the resolution of the graphics over various media and screen sizes. Build a healthy relationship with clients, designers, copywriters, and other team members. Assist the hiring manager and train design team. Coordinate with the sales team and the other designers to have deeper insights into client requirements. Update technical knowledge through design workshops, review professional publications and participate in professional webinars. Requirements Bachelor's degree in Graphic Designing or relevant field. 3+ years of working experience as a Graphic Designer, Illustrator or a related role in the Design Department. Professional certifications in Illustrator, Photoshop, Computer-aided design (CAD) or Indesign training course will be preferred. Outstanding Graphic Design Portfolio. Highly creative and v",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/fortive/jobs/ux-ui-designer",
-   "source": "Himalayas",
-   "title": "UX/UI Designer",
-   "company": "Fortive",
-   "url": "https://himalayas.app/companies/fortive/jobs/ux-ui-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-15",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Adobe CC",
-    "Prototyping",
-    "Design systems",
-    "Accessibility"
-   ],
-   "description": "The UX/UI Designer is responsible for creating intuitive, user-centered designs for healthcare SaaS applications. This role collaborates with cross-functional teams\u2014including product managers, engineers, and clinicians\u2014to deliver innovative solutions that enhance user experience and align with strategic goals. Key Responsibilities: User-Centered Design & Research Conduct user interviews, usability testing, and persona development Apply empathy-driven design thinking to healthcare workflows Translate research insights into actionable design improvements Prototyping & Interaction Design Create wireframes, mockups, and high-fidelity prototypes using tools like Figma and Adobe XD Design user flows and interaction models that support clinical and administrative tasks Iterate designs based on feedback from users and stakeholders Design Systems & Consistency Build and maintain design systems and component libraries Ensure consistency across products through reusable components and style guides Collaborate with engineering to align design libraries with code libraries Cross-Functional Collaboration Partner with product managers, developers, and stakeholders to align design with business strategy Facilitate workshops and iterative design sessions to co-create solutions Communicate design rationale and user needs effectively across teams Accessibility & Compliance Awareness Design for accessibility following WCAG standards Ensure UI components meet usability and legal standards for diverse user populations Incorporate healthcare compliance requirements such as HIPAA into design decisions Required Qualifications: Education & Experience Guidelines Bachelor\u2019s Degree in relevant field 1-3 years of relevant work experience Proficiency in design tools: Figma, Sketch, Adobe XD Strong un",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/clera/jobs/founding-product-designer-engineer-4714369289",
-   "source": "Himalayas",
-   "title": "Founding Product Designer/Engineer",
-   "company": "Clera",
-   "url": "https://himalayas.app/companies/clera/jobs/founding-product-designer-engineer-4714369289?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Part-time",
-   "posted": "2026-11-15",
-   "pay": "$160,000 to $220,000 annually. Visa sponsorship is not available. Location On-si",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Prototyping",
-    "Design systems",
-    "Web"
-   ],
-   "description": "About the Role As the first dedicated product design hire at an AI company, you will shape how the product looks, feels, and works. You will partner with company leadership and engineering to build intuitive interfaces that help operators work with AI agents. What You'll Do Take product ideas from sketches through user flows and frontend implementation. Design and build interfaces that make complex workflows clear and help users understand what to do next. Explore interaction patterns that make AI agents understandable, useful, and easy to trust. Create reusable components and design system patterns that help the team ship consistently. Work with customers to understand their needs, test prototypes, and improve the product based on feedback. Partner with backend engineers to bring designs into production. What We're Looking For At least 4 years of experience designing and building products at fast-growing startups, or exceptional early-career work demonstrating strong product judgment and shipping ability. An original portfolio or personal website showing contemporary UI/UX work you personally took from idea to production, with clear ownership of user flows and interface decisions. Strong visual and interaction design judgment, and the ability to explain the business logic behind designed workflows. Production React and TypeScript skills to implement the interfaces you design. Experience working directly with customers and iterating based on feedback. Systems thinking, initiative, and comfort moving incomplete ideas forward in a fast-paced environment. Interest in AI and agent experiences, complex operational interfaces, and B2B workflow tools. Compensation & Benefits Base salary: $160,000 to $220,000 annually. Visa sponsorship is not available. Location On-site in New ",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/clera/jobs/founding-design-engineer-2879948021",
-   "source": "Himalayas",
-   "title": "Founding Design Engineer",
-   "company": "Clera",
-   "url": "https://himalayas.app/companies/clera/jobs/founding-design-engineer-2879948021?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-15",
-   "pay": "",
-   "start": "",
-   "duration": "Ongoing",
-   "tags": [
-    "Motion"
-   ],
-   "description": "About the Role Join a small, early-stage consumer technology team building mobile apps. You will own product work from the initial sketch through implementation, release, and ongoing improvement. What You'll Do Build and ship mobile features from early concepts through app release. Design and implement polished, native-feeling screens, including motion and haptics. Develop product experiences that encourage users to return. Use product data and conversations with users to identify what to improve or remove. Continue working on products after launch and iterate based on how people use them. What We're Looking For Experience shipping consumer mobile apps with real users and work that can be reviewed in an app store or similar. Experience building a consumer app with Flutter, Dart, or Swift, and working knowledge of mobile development with Flutter, Swift, or Kotlin. Ability to own an app across design, coding, data, and release. Strong visual and interaction design skills, paired with the ability to implement those designs in code. Experience building products at a startup and making independent progress without relying on detailed specifications. Experience using product data and user feedback to guide post-launch decisions. Familiarity with Firebase and TypeScript. Compensation & Benefits Visa sponsorship is available. Location On-site in Palo Alto, United States. Candidates must be based in Palo Alto or willing to relocate. Originally posted on Himalayas",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/clario/jobs/solutions-design-analyst-4267547187",
-   "source": "Himalayas",
-   "title": "Solutions Design Analyst",
-   "company": "Clario",
-   "url": "https://himalayas.app/companies/clario/jobs/solutions-design-analyst-4267547187?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Part-time",
-   "posted": "2026-11-14",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [],
-   "description": "At Clario , part of Thermo Fisher Scientific, we are seeking a detail-oriented and collaborative Solutions Design Analyst to join our team. In this role, you will be responsible for delivering high-quality eCOA (electronic Clinical Outcome Assessment) solution designs for our pharmaceutical and biotechnology clients. You will work closely with cross-functional teams to review study protocols, translate client requirements into optimized solution designs, and ensure accurate and efficient project delivery aligned with clinical objectives. What You\u2019ll Be Doing Coordinate the overall Solutions Design Process for client studies. Review clinical trial protocols to identify solution needs and define study-specific eCOA designs. Gather sponsor requirements and recommend Clario \u2019s best design components to meet study needs. Create and maintain design specifications ensuring consistency across data capture, delivery, and database structures. Collaborate with Project Management, Data Management, Product, and Clinical Systems Translation & Licensing (CSTL) to align on requirements and data integrity. Present solution designs during internal and external milestone meetings. Support project scoping, change control, and testing processes as needed. Contribute to product and process improvement initiatives. Maintain organized documentation and support study tracking efforts. What We Look For Bachelor\u2019s degree (BS/BA) or equivalent; degree in science or healthcare-related field preferred. Minimum 3 years of experience in clinical trials or equivalent role. Must be based in the Eastern Time (ET) zone (EST/EDT). Ability to interpret clinical trial documentation such as protocols, questionnaires, and data models. Proven experience in translating client requirements into design specificati",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/yo-ai-labs/jobs/digital-illustrator-remote",
-   "source": "Himalayas",
-   "title": "Digital Illustrator- Remote",
-   "company": "YO AI Labs",
-   "url": "https://himalayas.app/companies/yo-ai-labs/jobs/digital-illustrator-remote?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Unknown",
-   "posted": "2026-11-14",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Adobe CC",
-    "Illustration",
-    "Motion"
-   ],
-   "description": "Job Description: Krita Expert Role Type: Contractor Location: Remote About the Role We are seeking experienced Krita specialists to support an AI training project. You will use Krita to complete practical digital illustration and design tasks while documenting your workflows to help improve how AI systems understand digital art and illustration. Key Responsibilities Create and edit digital illustrations and artwork using Krita. Work on digital painting, character design, and concept art. Use brushes, layers, masks, and color management tools. Create and refine 2D animations and visual assets. Complete advanced Krita tasks and explain workflows step by step. Develop clear instructions and detailed prompts for digital art workflows. Required Qualifications Strong professional hands-on experience with Krita. Experience in digital painting, illustration, and concept art. Good understanding of brushes, layers, masks, and digital art techniques. Ability to create high-quality digital artwork and visual assets. Access to Krita and ability to record your screen while completing tasks. English proficiency at B2 level or higher. Ability to explain creative workflows clearly. Preferred Qualifications A portfolio showcasing digital illustration or concept art. Master's degree or PhD in Fine Arts, Graphic Design, or a related field. Experience in data annotation, RLHF, or AI model evaluation. Background in character design, 2D animation, or game art. Professional experience in digital illustration or graphic design. Originally posted on Himalayas",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/stantec/jobs/civil-designer",
-   "source": "Himalayas",
-   "title": "Civil Designer",
-   "company": "Stantec",
-   "url": "https://himalayas.app/companies/stantec/jobs/civil-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-14",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Packaging",
-    "3D"
-   ],
-   "description": "Your Key Responsibilities Perform and assist with all aspects of civil engineering design including layout/geometry, grading, drainage, paving, water, sewer, and erosion control. Under the direction of a senior engineer, assist in preparing submission packages, supporting calculations, quantity estimates, project schedules, and other duties. Utilize Autodesk Civil 3D to develop surface models, corridor models, utility models and site layouts. Utilize UFC criteria for the development of site plans. Preparing UFGS specifications based on the drawing package and design requirements. Originally posted on Himalayas",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/publicis-groupe/jobs/designer",
-   "source": "Himalayas",
-   "title": "Designer",
-   "company": "Publicis Groupe",
-   "url": "https://himalayas.app/companies/publicis-groupe/jobs/designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "posted": "2026-11-14",
-   "pay": "",
-   "start": "",
-   "duration": "12 weeks",
-   "tags": [
-    "Figma",
-    "Adobe CC",
-    "Illustration",
-    "Social",
-    "Email"
-   ],
-   "description": "Company description Hi there\u2014at Razorfish, we\u2019re leaders in what's next. Since the dawn of the internet, we\u2019ve helped brands move first through every era of transformation, defining what digital means for business and now leading brands into the age of AI. Everyone has a prediction. Razorfish has a track record. Named a Most Innovative Agency three years running (2024\u20132026) by Campaign US, our work reflects a proven ability not just to anticipate what\u2019s coming, but to help our clients actively shape the future. No matter the trend or cultural moment, delivering real business impact wouldn\u2019t be possible without our people. We bring together curious, driven, and diverse thinkers who challenge convention, push boundaries, and hold a high bar for creative excellence. If you\u2019re motivated to work alongside top performers, push the boundaries of what\u2019s possible, and help define where technology, business, and marketing are headed next\u2014this is the place to do it. Join us at razorfish.com. Overview Join a team of professionals working on a high-profile client developing key visuals across their in-app advertisement and digital campaigns. As a Designer, you will follow the direction of senior staff to create art across different channels. Collaborate with the standing team and connect with our client contacts to bring their goals to life. Responsibilities Execute art and exhibit strong key visual development Assist in executing concepts for campaign and campaign partnerships across video, social, web, email and more Work under the direction of project design leads to develop layouts, site grids, typography, colors etc. Assist in the creation of mood and storyboards Assist in selecting photos and photo-touching Leverage regulated AI tools as needed for visuals and illustrations Su",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/punchcut/jobs/design-engineer-contract-mid-level",
-   "source": "Himalayas",
-   "title": "Design Engineer- Contract (Mid-level)",
-   "company": "Punchcut",
-   "url": "https://himalayas.app/companies/punchcut/jobs/design-engineer-contract-mid-level?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "posted": "2026-11-17",
-   "pay": "60-90 hour Originally posted on Himalayas",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Motion",
-    "Web"
-   ],
-   "description": "Punchcut is looking for a designer who codes, or a developer who designs, to join us on a contract basis. You should have a strong understanding of user-centered design and be comfortable working independently and in collaboration with other designers. You are passionate about data-integrated front-end prototypes or prototyping interactive experiences in emerging user interface paradigms and technologies such as generative AI, spatial computing, AI, VR/AR/MR, automotive, and voice. You feel comfortable hacking and prototyping in a fast-paced, collaborative, creative design studio environment. RESPONSIBILITIES Conceptualize and rapidly prototype distinctive digital experiences Support with the creation, evaluation, and execution of new tools, workflows, and frameworks for designing with emerging technology Deliver distinctive, cutting-edge experiences for our clients, their customers, and the general public Work with teams across multiple offices, collaborating with multiple disciplines Constantly over-deliver, surprise and amaze collaborators and clients alike Collaborate daily with a team of designers, technologists, and creative team members Create conceptual diagrams, use cases, and storyboards QUALIFICATIONS Ability to rapidly develop proof-of-concept demos to solve design problems and validate novel interactions across platforms Ability to craft high-fidelity interactive prototypes following project timeline You\u2019re a delight to work with on a team, but you\u2019re comfortable working alone through most design and development puzzles Strong interpersonal, communication, and problem-solving skills Sense of humor and positive, flexible attitude BONUS Experience working with generative AI APIs Experience coding in Unity and prototyping XR experiences Experience building Fig",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/walmart-com/jobs/usa-senior-ux-designer",
-   "source": "Himalayas",
-   "title": "(USA) Senior UX Designer",
-   "company": "Walmart - Internal",
-   "url": "https://himalayas.app/companies/walmart-com/jobs/usa-senior-ux-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-14",
-   "pay": "USD 117,000-234,000 / annual",
-   "start": "",
-   "duration": "Ongoing",
-   "tags": [
-    "Prototyping",
-    "Design systems",
-    "Accessibility",
-    "E-commerce",
-    "Web"
-   ],
-   "description": "Position Summary... Role summary: As a Senior UX Designer for Walmart Connect, you will design measurement and reporting experiences for our omnichannel ad platforms. Our users range from small businesses to the world's largest multinational brands, and you will turn dense data and complex workflows into clear insights for all of them. You will translate strategy into a cohesive UX vision and partner with research, product, and engineering. You will create prototypes, manage usability testing, and deliver actionable insights to inform design decisions. You will balance business goals with user needs while defining the future of advertiser reporting. About the team: Join our award-winning design team dedicated to shaping the future of retail through design excellence. We create compelling experiences that enhance the daily lives of millions of customers, whether at home, in stores, or on the go. Walmart Connect is the closed-loop media business of the largest omnichannel retailer in the US, helping advertisers of every size accelerate shared growth by reaching their desired customers no matter where, how, or when they shop. Our team values user-centered design, cross-functional collaboration, and innovative solutions that deliver impact. What you'll do... What you'll do: Design measurement and reporting experiences, including dashboards and data visualization, that help advertisers act on insights. Partner with design research to uncover needs of advertisers, from small businesses to global brands. Translate strategy into a cohesive UX vision and shippable designs for your area of ownership. Bring AI into the product and use it to work in new ways. Prototype, test, and iterate rapidly based on real advertiser feedback. Lead a program of work and mentor fellow designers. ",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/worldwide-mission-critical/jobs/data-center-construction-senior-electrical-design-engineer",
-   "source": "Himalayas",
-   "title": "Data Center Construction Senior Electrical Design Engineer",
-   "company": "Worldwide Mission Critical",
-   "url": "https://himalayas.app/companies/worldwide-mission-critical/jobs/data-center-construction-senior-electrical-design-engineer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-17",
-   "pay": "",
-   "start": "",
-   "duration": "Ongoing",
-   "tags": [
-    "Presentations"
-   ],
-   "description": "ABOUT WORLDWIDE MISSION CRITICAL Worldwide Mission Critical is a global owner\u2019s representation and project management company dedicated to the mission-critical industry, helping companies deliver their data centers on time and under budget. Founded on the principle that the right team of experienced data center professionals will deliver great projects, our ability to provide oversight for all aspects of a project sets us apart. Summary As a Senior Electrical Design Engineer, you will serve as a technical authority in the planning, design, and execution of advanced electrical systems for large-scale, mission-critical data center infrastructure. Drawing on 10+ years of hands-on experience in the A/E industry, you will lead cross-functional teams, drive design excellence, and serve as a trusted partner to internal stakeholders, engineers of record, and construction teams. This role demands deep expertise in high and medium voltage systems, a passion for innovation, and a commitment to delivering exceptional results on complex, high-stakes projects. Primary Responsibilities You will serve as the senior technical lead for electrical design on complex, large-scale data center and mission-critical infrastructure projects, guiding projects from concept through commissioning and final turnover. You will lead and oversee a team of electrical engineers and designers, establishing consistent design standards, reviewing deliverables, and fostering a culture of continuous improvement and technical excellence. You will act as the primary liaison between internal departments, engineers of record (EoR), external consultants, and contractors to resolve complex electrical design challenges and drive timely, code-compliant solutions. You will oversee the development, review, and quality c",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/worldwide-mission-critical/jobs/data-center-construction-electrical-design-engineer",
-   "source": "Himalayas",
-   "title": "Data Center Construction Electrical Design Engineer",
-   "company": "Worldwide Mission Critical",
-   "url": "https://himalayas.app/companies/worldwide-mission-critical/jobs/data-center-construction-electrical-design-engineer?utm_source=api",
-   "city": "",
-   "state": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "posted": "2026-11-17",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Packaging",
-    "Presentations"
-   ],
-   "description": "ABOUT WORLDWIDE MISSION CRITICAL Worldwide Mission Critical is a global owner\u2019s representation and project management company dedicated to the mission-critical industry, helping companies deliver their data centers on time and under budget. Founded on the principle that the right team of experienced data center professionals will deliver great projects, our ability to provide oversight for all aspects of a project sets us apart. Summary As an Electrical Design Engineer, you will play a critical role in guiding the planning, coordination, and execution of advanced electrical systems on large-scale infrastructure projects. You will work cross-functionally with internal teams and external partners to ensure that all designs are technically robust, code-compliant, and aligned with project objectives. Your focus will be on delivering reliable, efficient, and scalable electrical solutions while upholding safety, quality, cost, and schedule commitments. Primary Responsibilities You will serve as a key liaison between internal departments, external consultants, contractors, and the Engineer of Record (EoR) to troubleshoot and resolve electrical design challenges. You will lead the development and review of electrical documents, including one-line diagrams, load calculations, panel schedules, submittals, technical studies, and RFIs. You will research and develop emerging trends and new technologies to optimize electrical systems and infrastructure in data centers, enhancing efficiency, reliability, and scalability. You will be responsible for ensuring the timely delivery of design packages by identifying bottlenecks, introducing efficiencies, and proactively managing evolving project requirements. You will ensure electrical systems meet all applicable codes and standards (NEC, I",
    "first_seen": "2026-11-17"
   }
  ]
