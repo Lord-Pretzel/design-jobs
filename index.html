@@ -17,7 +17,7 @@ h1{margin:0;font-size:28px;letter-spacing:-.02em}
 .tabs button{border:0;background:none;color:var(--muted);font:inherit;font-weight:600;padding:8px 14px;border-bottom:3px solid transparent;cursor:pointer}
 .tabs button[aria-selected=true]{color:var(--ink);border-color:var(--accent)}
 .grid{max-width:1100px;margin:0 auto;padding:16px 20px 48px;display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start}
-aside{position:sticky;top:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+aside{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow-y:auto;overscroll-behavior:contain;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
 aside label{display:block;margin:0 0 4px;font-weight:600;font-size:13px}
 aside .f{margin-bottom:14px}
 aside .row label{display:flex;gap:8px;align-items:center;font-weight:400;font-size:14px;margin:0 0 4px}
@@ -75,7 +75,7 @@ button.tag{cursor:pointer}button.tag:hover{outline:1px solid var(--accent)}
 .prow b{font-variant-numeric:tabular-nums;color:var(--accent);min-width:26px}
 .prow small{margin-left:auto;color:var(--muted);font-size:12px;text-align:right}
 footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);font-size:13px}
-@media (max-width:760px){.grid{grid-template-columns:1fr}aside{position:static}.prow small{margin-left:0;width:100%}}
+@media (max-width:760px){.grid{grid-template-columns:1fr}aside{position:static;max-height:none;overflow:visible}.prow small{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
