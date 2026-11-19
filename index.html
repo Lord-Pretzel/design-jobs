@@ -31,6 +31,9 @@ details.dd>summary::-webkit-details-marker{display:none}
 details.dd>summary::after{content:"▾";color:var(--muted)}
 details.dd[open]>summary::after{content:"▴"}
 .ddbody{border-top:1px solid var(--line);padding:8px 10px 4px;max-height:240px;overflow:auto}
+.ddtools{display:flex;gap:12px;margin-bottom:6px}
+.ddtools button{border:0;background:none;color:var(--accent);font:inherit;font-size:13px;font-weight:600;cursor:pointer;padding:0}
+.ddtools button:hover{text-decoration:underline}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px;display:grid;grid-template-columns:1fr 84px;gap:12px}
 .card.gone{opacity:.6}
 .card h2{margin:0;font-size:17px;line-height:1.3}
@@ -93,7 +96,7 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
   <aside id="filters">
     <div class="f"><label for="q">Search</label><input id="q" type="search" placeholder="Figma, packaging, brand…"></div>
     <div class="f" id="srcs"></div>
-    <div class="f"><label>Work setup</label><details class="dd" id="wpdd"><summary>All</summary><div class="ddbody row">
+    <div class="f"><label>Work setup</label><details class="dd" id="wpdd"><summary>All</summary><div class="ddbody row"><div class="ddtools"><button type="button" data-chk="all">Select all</button><button type="button" data-chk="none">Clear all</button></div>
       <label><input type="checkbox" name="wp" value="remote" checked> Remote</label>
       <label><input type="checkbox" name="wp" value="hybrid" checked> Hybrid</label>
       <label><input type="checkbox" name="wp" value="onsite" checked> On-site</label>
@@ -278,11 +281,12 @@ function tagOptions(first){
 function fillCat(){$("#cat").innerHTML=tagOptions("All primary tags")}
 function fillTag(){$("#tag").innerHTML=tagOptions("Any tag")}
 function fillCities(keep){const st=$("#st").value,c={};JOBS.forEach(j=>{if(j.city&&(!st||j.state===st))c[j.city]=(c[j.city]||0)+1});$("#city").innerHTML=opts("All cities",c);if(keep&&c[keep])$("#city").value=keep}
-function fillSources(){$("#srcs").innerHTML='<label>Sources</label><details class="dd" id="srcdd"><summary>All</summary><div class="ddbody row">'+Object.entries(DATA.counts).map(([k,n])=>`<label><input type="checkbox" data-src="${esc(k)}" ${OFF.has(k)?"":"checked"}> ${esc(k)} (${n})</label>`).join("")+'</div></details>'}
+const DDTOOLS='<div class="ddtools"><button type="button" data-chk="all">Select all</button><button type="button" data-chk="none">Clear all</button></div>';
+function fillSources(){$("#srcs").innerHTML='<label>Sources</label><details class="dd" id="srcdd"><summary>All</summary><div class="ddbody row">'+DDTOOLS+Object.entries(DATA.counts).map(([k,n])=>`<label><input type="checkbox" data-src="${esc(k)}" ${OFF.has(k)?"":"checked"}> ${esc(k)} (${n})</label>`).join("")+'</div></details>'}
 function fillIndustry(){
   const c=tally(j=>j.industry||"Not stated");
   const names=Object.keys(c).sort((a,b)=>(a==="Not stated")-(b==="Not stated")||a.localeCompare(b));
-  $("#inds").innerHTML='<label>Industry</label><details class="dd" id="inddd"><summary>All</summary><div class="ddbody row">'+names.map(k=>`<label><input type="checkbox" data-ind="${esc(k)}" ${OFFIND.has(k)?"":"checked"}> ${esc(k)} (${c[k]})</label>`).join("")+'</div></details>'}
+  $("#inds").innerHTML='<label>Industry</label><details class="dd" id="inddd"><summary>All</summary><div class="ddbody row">'+DDTOOLS+names.map(k=>`<label><input type="checkbox" data-ind="${esc(k)}" ${OFFIND.has(k)?"":"checked"}> ${esc(k)} (${c[k]})</label>`).join("")+'</div></details>'}
 function ddLabels(){
   const sum=(id,total,off)=>{const s=document.querySelector("#"+id+">summary");if(s)s.textContent=off?`${total-off} of ${total} selected`:"All"};
   const ks=Object.keys(DATA.counts);sum("srcdd",ks.length,ks.filter(k=>OFF.has(k)).length);
@@ -425,6 +429,8 @@ document.addEventListener("click",e=>{
   else if(t.dataset.off){const id=t.dataset.off;OFFRANK.has(id)?OFFRANK.delete(id):OFFRANK.add(id);saveRank();recalc();render()}
   else if(t.dataset.add){const inp=document.querySelector(`[data-phr="${t.dataset.add}"]`);addPhrase(t.dataset.add,inp?inp.value:"")}
   else if(t.dataset.del){delPhrase(t.dataset.del,Number(t.dataset.k))}
+  else if(t.dataset.chk){const on=t.dataset.chk==="all";
+    t.closest(".ddbody").querySelectorAll("input[type=checkbox]").forEach(cb=>{if(cb.checked!==on){cb.checked=on;cb.dispatchEvent(new Event("input",{bubbles:true}))}})}
   else if(t.id==="t-all"||t.id==="t-new"||t.id==="t-fav"||t.id==="t-rank"){TAB=t.id.slice(2);render()}
   else if(t.id==="rexp")exportSettings();
   else if(t.id==="rimp")$("#rimpf").click();
