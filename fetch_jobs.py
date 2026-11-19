@@ -304,9 +304,74 @@ CITY_STATE = {
 }
 
 
+def fix_text(t):
+    """Unescape HTML entities and repair text that was decoded with the wrong encoding."""
+    t = html.unescape(t or "")
+    try:
+        t = t.encode("latin-1").decode("utf-8")
+    except (UnicodeEncodeError, UnicodeDecodeError):
+        pass
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def ends(text, head, tail):
+    """Start and end of a long text. The end usually holds requirements and pay."""
+    return text if len(text) <= head + tail else text[:head] + " … " + text[-tail:]
+
+
+INDUSTRIES = [
+    ("Healthcare & Wellness", 1.0, r"health ?care|pharma|biotech|medical|hospital|clinical|patient|therapeutic|medicine|\bhealth\b|wellness"),
+    ("Finance & Insurance", 1.0, r"financ|\bbank|fintech|insurance|invest|wealth|payments?\b|credit|lending|mortgage"),
+    ("Technology & Software", 0.6, r"software|saas|\bb2b\b|cloud|\bai\b|artificial intelligence|machine learning|tech(?:nology)? company|startup|\bapp\b"),
+    ("Retail & E-commerce", 1.0, r"retail|e-?commerce|shopify|marketplace|storefront|online store"),
+    ("Consumer Goods", 1.0, r"consumer goods|\bcpg\b|packaged goods|\bfood\b|beverage|beauty|skincare|cosmetic|fashion|apparel|winery|\bwine\b|spirits|brewery|snack|footwear|\btoys?\b|\bpet\b"),
+    ("Media & Entertainment", 0.8, r"\bmedia\b|entertainment|\bfilm\b|television|\btv\b|\bmusic\b|publishing|streaming|broadcast|\bnews\b|magazine"),
+    ("Gaming", 1.2, r"video games?|gaming|esports|game studio"),
+    ("Education", 1.0, r"education|universit|\bcollege\b|\bschools?\b|edtech|curriculum"),
+    ("Nonprofit", 1.2, r"non-?profit|foundation|charit|\bngo\b|advocacy"),
+    ("Real Estate", 1.2, r"real estate|proptech|brokerage|\bhousing\b"),
+    ("Industrial & Manufacturing", 1.0, r"manufactur|industrial|construction|aerospace|automotive|\benergy\b|logistics|supply chain|utilities"),
+    ("Travel & Hospitality", 1.0, r"\btravel|hospitality|\bhotels?\b|airline|tourism|restaurant|resort|cruise"),
+    ("Agency & Consulting", 0.8, r"\bagency\b|consultancy|consulting|advertising|design studio|creative studio"),
+]
+INDUSTRY_RX = [(n, w, re.compile(p, re.I)) for n, w, p in INDUSTRIES]
+# Companies on the tracked boards, where the industry is already known.
+_BY_CO = {
+    "Agency & Consulting": "IDEO|Huge|Code and Theory|R/GA|Landor|Design Bridge|Ogilvy|AKQA|MetaLab|Instrument|Hush|Method",
+    "Technology & Software": "Figma|Linear|Notion|Webflow|Vercel|Supabase|PostHog|Sentry|Miro|Zapier|Airtable|Lattice|Descript|Runway|ClickUp|Thumbtack|Asana|Intercom|Datadog|Databricks|Snowflake|MongoDB|Cloudflare|GitLab|Twilio|Dropbox|Samsara|Palantir|Amplitude|Cohere|Perplexity|OpenAI|Anthropic|Gusto|Waymo|Lyft|Nextdoor|Reddit|Discord|Pinterest",
+    "Finance & Insurance": "Stripe|Brex|Mercury|Plaid|Chime|Circle|Coinbase|Robinhood|Betterment|SoFi|Wealthfront|Carta|Ramp",
+    "Retail & E-commerce": "Poshmark|Instacart|Everlane",
+    "Consumer Goods": "Glossier|Away",
+    "Healthcare & Wellness": "Calm|WHOOP|Peloton",
+    "Media & Entertainment": "Spotify|Substack|Patreon|Medium|Kickstarter|Morning Brew|The Athletic|Hearst",
+    "Gaming": "Roblox|Riot Games|Epic Games|Twitch",
+    "Education": "Duolingo",
+    "Travel & Hospitality": "Airbnb",
+    "Industrial & Manufacturing": "Flexport",
+}
+COMPANY_INDUSTRY = {n.lower(): k for k, v in _BY_CO.items() for n in v.split("|")}
+
+
+def classify_industry(company, title, desc):
+    """Best-guess industry from the company and the posting text, else 'Not stated'."""
+    known = COMPANY_INDUSTRY.get((company or "").lower())
+    if known:
+        return known
+    low = f"{company} {title} {desc}".lower()
+    # Staffing postings often name the client's field: "our healthcare client".
+    hints = " ".join(re.findall(
+        r"(?:our|a|an|leading|global)\s+([a-z][a-z &/-]{2,30}?)\s+(?:client|company|brand)\b", low))
+    best, best_score = "Not stated", 0
+    for name, w, rx in INDUSTRY_RX:
+        score = (min(len(rx.findall(low)), 5) + 3 * len(rx.findall(hints))) * w
+        if score > best_score:
+            best, best_score = name, score
+    return best if best_score >= 2 else "Not stated"
+
+
 def normalize(d, source):
     """Turn one raw posting (flat dict) into the shape the web page expects."""
-    title = pick(d, "title", "jobtitle", "job_title", "positiontitle")
+    title = fix_text(pick(d, "title", "jobtitle", "job_title", "positiontitle"))
     url = pick(d, "url", "link", "applyurl", "apply_url", "joburl")
     desc = clean(pick(d, "description", "summary", "body", "jobdescription"))
     city = pick(d, "city")
@@ -341,7 +406,7 @@ def normalize(d, source):
     elif re.search(r"on[- ]?site|in[- ]person|\boffice\b", field, re.I):
         workplace = "onsite"
     else:
-        text = " ".join([field, title, loc, desc[:1500]]).lower()
+        text = " ".join([field, title, loc, ends(desc, 1500, 800)]).lower()
         if "hybrid" in text:
             workplace = "hybrid"
         elif re.search(r"\bremote\b|work from home|telecommut", text):
@@ -366,7 +431,7 @@ def normalize(d, source):
     raw_type = " ".join([pick(d, "jobtype", "employmenttype", "employment_type",
                               "type", "worktype", "placementtype"),
                          fuzzy(d, r"placement|employment|job_?type|work_?type"),
-                         label(desc, "placement type"), desc[:300]]).lower()
+                         label(desc, "placement type"), ends(desc, 300, 600)]).lower()
     if re.search(r"\b(contract|temporary|temp|freelance)\b", raw_type):
         jtype = "Contract"
     elif "part" in raw_type and "time" in raw_type:
@@ -381,16 +446,18 @@ def normalize(d, source):
         desc,
         label(desc, "start date") or fuzzy(d, r"start"),
         label(desc, "duration") or fuzzy(d, r"duration|length|term"))
+    company = pick(d, "company", "employer", "companyname") or source
     return {
         "id": f"{source}:{job_id}",
         "source": source,
         "title": title,
-        "company": pick(d, "company", "employer", "companyname") or source,
+        "company": company,
         "url": url,
         "city": city,
         "state": state,
         "workplace": workplace,
         "type": jtype,
+        "industry": classify_industry(company, title, desc),
         "posted": to_date(pick(d, "date", "postdate", "posteddate", "posted",
                                "pubdate", "publisheddate", "datecreated",
                                "dateposted", "createddate")),
@@ -398,9 +465,9 @@ def normalize(d, source):
         "start": start,
         "duration": duration,
         "tags": extract_tags(title, desc),
-        # Long enough to reach the requirements section (the first 600 chars are
-        # usually just the pitch), short enough to keep jobs.json around 800 KB.
-        "description": desc[:1800],
+        # The start and the end of the posting: the opening is the pitch, and the
+        # end usually holds requirements, pay and start date. Keeps jobs.json near 1 MB.
+        "description": ends(desc, 800, 1600),
     }
 
 
