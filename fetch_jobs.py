@@ -304,6 +304,63 @@ CITY_STATE = {
 }
 
 
+# Non-US roles are kept only from sources that publish an employer's own postings
+# (company career boards, Aquent, Coroflot). Open aggregators stay US-only.
+NONUS_SOURCES = {"Aquent", "Company boards", "Coroflot"}
+_COUNTRIES = [
+    ("Canada", r"canada|\b(?:ontario|quebec|british columbia|alberta|manitoba|toronto|vancouver|montreal|ottawa|calgary)\b"),
+    ("United Kingdom", r"united kingdom|\buk\b|\bu\.k\.|england|scotland|wales|northern ireland|\blondon\b|manchester|edinburgh|glasgow|bristol|leeds"),
+    ("Ireland", r"\bireland\b|\bdublin\b"),
+    ("Australia", r"australia|sydney|melbourne|brisbane|\bperth\b|canberra"),
+    ("New Zealand", r"new zealand|auckland"),
+    ("Singapore", r"singapore"),
+    ("India", r"\bindia\b|bangalore|bengaluru|mumbai|\bdelhi\b|hyderabad|\bpune\b|chennai"),
+    ("South Africa", r"south africa|cape town|johannesburg"),
+    ("Germany", r"germany|\bberlin\b|munich|hamburg"),
+    ("Netherlands", r"netherlands|amsterdam|rotterdam"),
+    ("France", r"\bfrance\b|\bparis\b"),
+    ("Spain", r"\bspain\b|madrid|barcelona"),
+    ("Portugal", r"portugal|lisbon"),
+    ("Sweden", r"sweden|stockholm"),
+    ("Denmark", r"denmark|copenhagen"),
+    ("Switzerland", r"switzerland|zurich|geneva"),
+    ("Poland", r"poland|warsaw|krakow"),
+    ("Philippines", r"philippines|\bmanila\b"),
+    ("Mexico", r"\bmexico\b"),
+    ("Brazil", r"brazil|sao paulo"),
+    ("Japan", r"\bjapan\b|tokyo"),
+    ("United Arab Emirates", r"united arab emirates|\buae\b|dubai|abu dhabi"),
+    ("Israel", r"\bisrael\b|tel aviv"),
+]
+COUNTRY_RX = [(n, re.compile(p, re.I)) for n, p in _COUNTRIES]
+ENGLISH_WORDS = re.compile(r"\b(?:the|and|to|of|a|in|for|with|you|our|will|we|is|are)\b", re.I)
+SCAM_RX = re.compile(
+    r"whatsapp|telegram|western union|wire transfer|gift cards?|processing fee|training fee|"
+    r"crypto(?:currency)? payment|@(?:gmail|yahoo|outlook|hotmail|proton\w*)\.|"
+    r"earn \$?\d[\d,]*\s*(?:per|a|/)\s*(?:day|week)|"
+    r"no experience (?:needed|required).{0,40}(?:earn|weekly|daily)", re.I)
+
+
+def detect_country(loc, country_field=""):
+    """Name of a non-US country found in a location string, else ''."""
+    text = f"{loc} {country_field}"
+    for name, rx in COUNTRY_RX:
+        if rx.search(text):
+            return name
+    return ""
+
+
+def looks_english(text):
+    words = re.findall(r"[A-Za-z\u00C0-\u00FF']+", text[:2000])
+    if len(words) < 12:
+        return True  # too short to judge; the title and place already read as English
+    return len(ENGLISH_WORDS.findall(" ".join(words))) / len(words) >= 0.18
+
+
+def scam_signals(text):
+    return bool(SCAM_RX.search(text))
+
+
 def fix_text(t):
     """Unescape HTML entities and repair text that was decoded with the wrong encoding."""
     t = html.unescape(t or "")
@@ -392,7 +449,8 @@ def normalize(d, source):
                 city = city or cand
             state = state or to_state(m.group(2))
 
-    if city and not state:
+    nonus = "" if state else detect_country(loc, country)
+    if city and not state and not nonus:
         state = CITY_STATE.get(city.strip().lower(), "")
 
     field = pick(d, "workplace", "workplacetype", "remotetype", "remote",
@@ -426,7 +484,12 @@ def normalize(d, source):
         r"flexible|remote|virtual|anywhere|worldwide|global|work from home|[\W_]+",
         "", loc, flags=re.I))
     if not in_us and not open_remote:
-        return None
+        if not (nonus and source in NONUS_SOURCES):
+            return None
+        if scam_signals(f"{title} {desc}") or not looks_english(f"{title} {desc}"):
+            return None
+    else:
+        nonus = ""
 
     raw_type = " ".join([pick(d, "jobtype", "employmenttype", "employment_type",
                               "type", "worktype", "placementtype"),
@@ -455,6 +518,7 @@ def normalize(d, source):
         "url": url,
         "city": city,
         "state": state,
+        "country": nonus,
         "workplace": workplace,
         "type": jtype,
         "industry": classify_industry(company, title, desc),
