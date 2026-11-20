@@ -58,6 +58,11 @@ button.tag{cursor:pointer}button.tag:hover{outline:1px solid var(--accent)}
 .tools button{padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;cursor:pointer}
 .rrow{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:10px 12px;margin-bottom:8px}
 .rrow.dragging{opacity:.45}
+.rrow.over-top{box-shadow:0 -3px 0 var(--accent)}
+.rrow.over-bottom{box-shadow:0 3px 0 var(--accent)}
+.grip{cursor:grab;color:var(--muted);font-size:18px;line-height:1;user-select:none;padding:0 2px}
+.grip:active{cursor:grabbing}
+.clr{margin-top:10px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;cursor:pointer}
 .rhead{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .rnum{color:var(--muted);font-variant-numeric:tabular-nums;min-width:18px;font-size:13px}
 .rname{font-weight:600}
@@ -106,7 +111,7 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
     <div class="f" id="inds"></div>
     <div class="f two"><div><label for="cat">Primary tag</label><select id="cat"></select></div><div><label for="tag">Also tagged with</label><select id="tag"></select></div></div>
     <div class="f two"><div><label for="type">Employment</label><select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div><div><label for="age">Posted within</label><select id="age"><option value="90">3 months</option><option value="30">1 month</option><option value="14">2 weeks</option><option value="7">1 week</option><option value="">Any time</option></select></div></div>
-    <div class="f two"><div><label for="st">State</label><select id="st"></select></div><div><label for="city">City</label><select id="city"></select></div></div>
+    <div class="f two"><div><label for="st">Location</label><select id="st"></select></div><div><label for="city">City</label><select id="city"></select></div></div>
     <div class="f"><label for="sort">Sort by</label><select id="sort"><option value="score">Best Match</option><option value="new">Newest</option></select></div>
     <div class="f"><details class="dd" id="moredd"><summary>More options</summary><div class="ddbody row">
       <label><input id="rem" type="checkbox" checked> Keep remote roles with no location</label>
@@ -132,6 +137,9 @@ const TAGS=[
  {id:"package",label:"Package Design",
   title:["packaging designer","packaging design","packaging production","package designer","package design","dieline","label design","structural design","carton"],
   desc:["dieline","packaging","shrink sleeve","carton","cpg","flexo","blister","label"]},
+ {id:"exp",label:"Experiential Design",
+  title:["experiential designer","experiential design","environmental designer","environmental design","environmental graphic","environmental graphics","wayfinding","signage","exhibit designer","exhibit design","exhibition designer","exhibition design","spatial designer","spatial design","retail designer","retail design","event designer","set designer","immersive designer","installation designer","themed entertainment","show designer"],
+  desc:["wayfinding","signage","environmental graphics","environmental design","exhibit design","exhibition design","experiential","immersive","trade show","pop up","brand activation","themed entertainment","museum","spatial design","fabrication"]},
  {id:"brand",label:"Branding",
   title:["brand designer","brand design","branding","brand identity","visual identity","rebrand","brand creative","brand systems"],
   desc:["brand guidelines","brand identity","visual identity","logo","rebrand","brand system","brand book","tone of voice"]},
@@ -150,6 +158,9 @@ const TAGS=[
  {id:"motion",label:"Motion",
   title:["motion designer","motion design","motion graphics","motion graphic","animator","animation","video editor","video design","vfx","after effects","videographer"],
   desc:["after effects","motion graphics","animation","keyframe","storyboard","premiere pro","cinema 4d","lottie"]},
+ {id:"3d",label:"3D Design",
+  title:["3d designer","3d design","3d artist","3d modeler","3d modeller","3d visualizer","3d visualization","3d generalist","3d animator","cgi artist","cgi designer","product visualization"],
+  desc:["blender","cinema 4d","c4d","maya","3ds max","zbrush","substance painter","octane","redshift","keyshot","3d modeling","3d rendering","unreal engine"]},
  {id:"cd",label:"Creative Director",
   title:["creative director","art director","creative lead","head of creative","creative direction","head of design","design manager","design lead","design director","vp of design","director of design"],
   desc:["creative direction","art direction","creative strategy","creative team","creative leadership"]},
@@ -165,6 +176,9 @@ const BYTAG={};TAGS.forEach(t=>BYTAG[t.id]=t);
 const LABEL={};TAGS.forEach(t=>LABEL[t.id]=t.label);
 const DEF_ORDER=TAGS.map(t=>t.id);
 
+const safeUrl=u=>/^https?:\/\//i.test(u||"")?u:"#";
+const stripInternal=o=>{const r={};for(const k in o)if(k[0]!=="_")r[k]=o[k];return r};
+function saveFavs(){const o={};for(const id in FAVS)o[id]=stripInternal(FAVS[id]);store.set("jobfavs",o)}
 const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 
 /* Merge a saved order with the current tag list: keep what the user arranged,
@@ -186,6 +200,8 @@ let ORDER=mergeOrder(store.get("jobrank",[])),OFFRANK=new Set(store.get("jobrank
 if(!PHR||typeof PHR!=="object"||Array.isArray(PHR))PHR={};
 let WEIGHTS={},CRX={},DSTAT={},DDF={};
 let OFFIND=new Set(store.get("jobindoff",[]));
+Object.keys(FAVS).forEach(k=>{FAVS[k]=stripInternal(FAVS[k])});
+let QT;
 
 const CTRL=["q","st","city","rem","cat","tag","type","sort","age","only","eng","nonus"];
 function saveFilters(){const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);store.set("jobfilters",o)}
@@ -287,6 +303,12 @@ function fillLocations(){
 }
 function fillCities(keep){const c={};JOBS.forEach(j=>{if(j.city&&inLoc(j)&&(!j.country||$("#nonus").checked))c[j.city]=(c[j.city]||0)+1});$("#city").innerHTML=opts("All cities",c);if(keep&&c[keep])$("#city").value=keep}
 const DDTOOLS='<div class="ddtools"><button type="button" data-chk="all">Select all</button><button type="button" data-chk="none">Clear all</button></div>';
+function clearFilters(){
+  $("#q").value="";["st","city","cat","tag","type","age","sort"].forEach(k=>{$("#"+k).selectedIndex=0});
+  $("#rem").checked=true;$("#only").checked=true;$("#eng").checked=false;$("#nonus").checked=false;
+  document.querySelectorAll("[name=wp]").forEach(x=>x.checked=true);
+  OFF.clear();OFFIND.clear();store.set("jobsrcoff",[]);store.set("jobindoff",[]);
+  fillSources();fillIndustry();fillLocations();fillCities();saveFilters();render()}
 function fillSources(){$("#srcs").innerHTML='<label>Sources</label><details class="dd" id="srcdd"><summary>All</summary><div class="ddbody row">'+DDTOOLS+Object.entries(DATA.counts).map(([k,n])=>`<label><input type="checkbox" data-src="${esc(k)}" ${OFF.has(k)?"":"checked"}> ${esc(k)} (${n})</label>`).join("")+'</div></details>'}
 function fillIndustry(){
   const c=tally(j=>j.industry||"Not stated");
@@ -308,7 +330,7 @@ function card(j,gone){
   const saved=!!FAVS[j.id];
   const ids=j._tags&&j._tags.length?j._tags:["unclassified"];
   return `<article class="card${gone?" gone":""}"><div>
-    <h2><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
+    <h2><a href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
     <div class="meta">${esc(j.company)} · ${esc(where)}${j.posted?" · posted "+ago(j.posted):""}${j.pay?" · "+esc(j.pay):""}</div>
     ${when?`<div class="meta">${esc(when)}</div>`:""}
     <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&isNew(j)?'<span class="tag new">New</span>':""}${ids.map(id=>`<button class="tag cat" data-tagid="${id}" title="Show only ${esc(LABEL[id])} roles">${esc(LABEL[id])}</button>`).join("")}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
@@ -347,7 +369,7 @@ function render(){
     return true});
   r.sort($("#sort").value==="new"?(a,b)=>(b.posted||"").localeCompare(a.posted||"")||b._score-a._score:(a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||""));
   $("#status").textContent=TAB==="new"?`${r.length} of ${JOBS.filter(isNew).length} new roles · updated ${upd}`:`${r.length} of ${nonus?JOBS.length:JOBS.filter(j=>!j.country).length} roles · updated ${upd}`;
-  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):(TAB==="new"?'<div class="empty">No new listings right now. A role appears here on the day it first shows up in a refresh, then it moves to All roles.</div>':'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the tag filters.</div>');
+  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):(TAB==="new"?'<div class="empty">No new listings right now. A role appears here on the day it first shows up in a refresh, then it moves to All roles.</div>':'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the tag filters.<br><button id="clrf" class="clr">Clear filters</button></div>');
 }
 
 function renderFavs(upd){
@@ -358,13 +380,14 @@ function renderFavs(upd){
 }
 
 function renderRank(upd){
+  const open=new Set([...document.querySelectorAll("#list .rrow details[open]")].map(d=>d.closest(".rrow").dataset.id));
   const c=tagCounts();
   const rows=ORDER.map((id,i)=>{
     const t=BYTAG[id],off=OFFRANK.has(id),custom=PHR[id]||[],n=c[id]||0;
     const has=t.title.length||t.desc.length;
-    return `<div class="rrow" draggable="true" data-id="${id}">
+    return `<div class="rrow" data-id="${id}">
       <div class="rhead">
-        <span class="rnum">${i+1}</span><span class="rname">${esc(t.label)}</span>
+        <span class="grip" title="Drag to reorder" aria-hidden="true">⠿</span><span class="rnum">${i+1}</span><span class="rname">${esc(t.label)}</span>
         <span class="rmeta">${n} role${n===1?"":"s"} · weight ${(WEIGHTS[id]||0).toFixed(2)}</span>
         <span class="racts">
           <button data-up="${id}" ${i?"":"disabled"} title="Move up" aria-label="Move ${esc(t.label)} up">↑</button>
@@ -386,6 +409,7 @@ function renderRank(upd){
     <div id="rrows">${rows}</div>
     <h3 class="rprev">Top matches with this ranking</h3>
     ${top.map(j=>`<div class="prow"><b>${j._score}</b><span>${esc(j.title)}</span><small>${esc(j.company)} · ${esc(j.source)}</small></div>`).join("")}`;
+  open.forEach(id=>{const d=document.querySelector(`#list .rrow[data-id="${id}"] details`);if(d)d.open=true});
 }
 
 function addPhrase(id,v){
@@ -393,6 +417,7 @@ function addPhrase(id,v){
   const list=PHR[id]||(PHR[id]=[]);
   if(list.some(x=>norm(x)===norm(p)))return;
   list.push(p);saveRank();recalc();render();
+  const f=document.querySelector(`[data-phr="${id}"]`);if(f)f.focus();
 }
 function delPhrase(id,k){const l=PHR[id]||[];l.splice(k,1);if(!l.length)delete PHR[id];saveRank();recalc();render()}
 function moveTag(id,delta){const i=ORDER.indexOf(id),j=i+delta;if(i<0||j<0||j>=ORDER.length)return;ORDER.splice(j,0,ORDER.splice(i,1)[0]);saveRank();recalc();render()}
@@ -400,7 +425,7 @@ function moveTag(id,delta){const i=ORDER.indexOf(id),j=i+delta;if(i<0||j<0||j>=O
 function exportSettings(){
   const f={};CTRL.forEach(k=>{const e=$("#"+k);f[k]=e.type==="checkbox"?e.checked:e.value});
   f.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);
-  const data={version:2,exported:new Date().toISOString(),favorites:FAVS,filters:f,sources:[...OFF],industries:[...OFFIND],
+  const data={version:2,exported:new Date().toISOString(),favorites:Object.fromEntries(Object.entries(FAVS).map(([k,v])=>[k,stripInternal(v)])),filters:f,sources:[...OFF],industries:[...OFFIND],
     ranking:{order:ORDER,off:[...OFFRANK],phrases:PHR}};
   const a=document.createElement("a");
   a.href=URL.createObjectURL(new Blob([JSON.stringify(data,null,1)],{type:"application/json"}));
@@ -409,7 +434,7 @@ function exportSettings(){
 function importSettings(file){
   file.text().then(txt=>{
     let d;try{d=JSON.parse(txt)}catch(e){alert("That file couldn’t be read as a settings backup.");return}
-    if(d.favorites&&typeof d.favorites==="object"){FAVS=d.favorites;store.set("jobfavs",FAVS)}
+    if(d.favorites&&typeof d.favorites==="object"){FAVS=d.favorites;saveFavs()}
     if(Array.isArray(d.sources)){OFF=new Set(d.sources);store.set("jobsrcoff",[...OFF]);fillSources()}
     if(Array.isArray(d.industries)){OFFIND=new Set(d.industries);store.set("jobindoff",[...OFFIND]);fillIndustry()}
     if(d.ranking){
@@ -426,14 +451,15 @@ function importSettings(file){
 document.addEventListener("click",e=>{
   const t=e.target;
   if(t.closest(".star")){const id=t.closest(".star").dataset.id;
-    if(FAVS[id])delete FAVS[id];else{const j=BYID[id]||FAVS[id];FAVS[id]={...j,saved:new Date().toISOString().slice(0,10)}}
-    store.set("jobfavs",FAVS);render()}
+    if(FAVS[id])delete FAVS[id];else{const j=BYID[id]||FAVS[id];FAVS[id]=stripInternal({...j,saved:new Date().toISOString().slice(0,10)})}
+    saveFavs();render()}
   else if(t.dataset.tagid){TAB="all";$("#tag").value=t.dataset.tagid;saveFilters();render()}
   else if(t.dataset.up){moveTag(t.dataset.up,-1)}
   else if(t.dataset.down){moveTag(t.dataset.down,1)}
   else if(t.dataset.off){const id=t.dataset.off;OFFRANK.has(id)?OFFRANK.delete(id):OFFRANK.add(id);saveRank();recalc();render()}
   else if(t.dataset.add){const inp=document.querySelector(`[data-phr="${t.dataset.add}"]`);addPhrase(t.dataset.add,inp?inp.value:"")}
   else if(t.dataset.del){delPhrase(t.dataset.del,Number(t.dataset.k))}
+  else if(t.id==="clrf"){clearFilters()}
   else if(t.dataset.chk){const on=t.dataset.chk==="all";
     t.closest(".ddbody").querySelectorAll("input[type=checkbox]").forEach(cb=>{if(cb.checked!==on){cb.checked=on;cb.dispatchEvent(new Event("input",{bubbles:true}))}})}
   else if(t.id==="t-all"||t.id==="t-new"||t.id==="t-fav"||t.id==="t-rank"){TAB=t.id.slice(2);render()}
@@ -450,15 +476,26 @@ document.addEventListener("keydown",e=>{
   const id=e.target&&e.target.dataset?e.target.dataset.phr:null;
   if(id&&e.key==="Enter"){e.preventDefault();addPhrase(id,e.target.value)}
 });
-/* drag to reorder the ranking */
-let DRAG=null;
-$("#list").addEventListener("dragstart",e=>{const r=e.target.closest(".rrow");if(!r)return;DRAG=r.dataset.id;r.classList.add("dragging")});
-$("#list").addEventListener("dragend",e=>{const r=e.target.closest(".rrow");if(r)r.classList.remove("dragging");DRAG=null});
-$("#list").addEventListener("dragover",e=>{if(DRAG)e.preventDefault()});
-$("#list").addEventListener("drop",e=>{if(!DRAG)return;const r=e.target.closest(".rrow");if(!r)return;e.preventDefault();
-  const from=ORDER.indexOf(DRAG),to=ORDER.indexOf(r.dataset.id);
-  if(from<0||to<0||from===to)return;
-  ORDER.splice(to,0,ORDER.splice(from,1)[0]);DRAG=null;saveRank();recalc();render()});
+/* drag to reorder the ranking: grab the ⠿ handle and drop on the line that appears */
+let DRAG=null,DROP=null;
+const clearDrop=()=>document.querySelectorAll(".rrow.over-top,.rrow.over-bottom").forEach(r=>r.classList.remove("over-top","over-bottom"));
+document.addEventListener("mousedown",e=>{const g=e.target.closest&&e.target.closest(".grip");if(g)g.closest(".rrow").draggable=true});
+document.addEventListener("mouseup",()=>document.querySelectorAll(".rrow[draggable=true]").forEach(r=>r.draggable=false));
+$("#list").addEventListener("dragstart",e=>{const r=e.target.closest&&e.target.closest(".rrow");if(!r)return;DRAG=r.dataset.id;e.dataTransfer.effectAllowed="move";e.dataTransfer.setData("text/plain",DRAG);r.classList.add("dragging")});
+$("#list").addEventListener("dragend",()=>{document.querySelectorAll(".rrow").forEach(r=>{r.classList.remove("dragging");r.draggable=false});clearDrop();DRAG=null;DROP=null});
+$("#list").addEventListener("dragover",e=>{
+  if(!DRAG)return;e.preventDefault();
+  if(e.clientY<90)scrollBy(0,-16);else if(e.clientY>innerHeight-90)scrollBy(0,16);
+  const r=e.target.closest(".rrow");clearDrop();
+  if(!r||r.dataset.id===DRAG){DROP=null;return}
+  const b=r.getBoundingClientRect(),below=e.clientY>b.top+b.height/2;
+  r.classList.add(below?"over-bottom":"over-top");DROP={id:r.dataset.id,below}});
+$("#list").addEventListener("drop",e=>{
+  if(!DRAG||!DROP)return;e.preventDefault();
+  let to=ORDER.indexOf(DROP.id)+(DROP.below?1:0);const from=ORDER.indexOf(DRAG);
+  if(from<0||to<0)return;
+  const item=ORDER.splice(from,1)[0];if(from<to)to--;ORDER.splice(to,0,item);
+  DRAG=null;DROP=null;saveRank();recalc();render()});
 
 fetch("jobs.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
   DATA=d;JOBS=d.jobs;buildRx();calcWeights();calcDescWeights();JOBS.forEach(j=>{score(j);BYID[j.id]=j});
@@ -466,6 +503,7 @@ fetch("jobs.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(
   fillCat();fillTag();
   fillSources();fillIndustry();const keepCity=restore();fillCities(keepCity);
   $("#filters").addEventListener("input",e=>{
+    if(e.target.id==="q"){clearTimeout(QT);QT=setTimeout(()=>{saveFilters();render()},150);return}
     const s=e.target.dataset.src;if(s){e.target.checked?OFF.delete(s):OFF.add(s);store.set("jobsrcoff",[...OFF])}
     const n=e.target.dataset.ind;if(n){e.target.checked?OFFIND.delete(n):OFFIND.add(n);store.set("jobindoff",[...OFFIND])}
     if(e.target.id==="nonus")fillLocations();

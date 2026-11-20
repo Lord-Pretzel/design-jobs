@@ -14,6 +14,7 @@ import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -65,7 +66,8 @@ DESIGN_TITLE_RE = re.compile(
     r"\bcreative director\b|\banimat|\bvideo editor\b|\bphotograph|\bretouch|"
     r"\bprepress\b|\bpre-press\b|\btypeset|\blayout artist\b|"
     r"\bconcept artist\b|\bstoryboard|\b3d artist\b|\bgame artist\b|"
-    r"\bcreative lead\b|\bdesign strateg|\bcreative technolog",
+    r"\bcreative lead\b|\bdesign strateg|\bcreative technolog|\b3d\b|wayfinding|"
+    r"signage|experiential|\bexhibit",
     re.I,
 )
 # Aquent's feed is the agency's whole contract book, not a design feed, so it
@@ -76,7 +78,8 @@ AQUENT_TITLE_RE = re.compile(
     r"motion graphic|animat|video edit|photo|packag|dieline|retouch|"
     r"layout|concept art|storyboard|typograph|prepress|pre[- ]press|"
     r"art director|creative director|creative lead|creative technolog|"
-    r"design strateg|creative operations|user research|web design|\bartist\b",
+    r"design strateg|creative operations|user research|web design|\bartist\b|"
+    r"\b3d\b|wayfinding|signage|experiential|exhibit|environmental",
     re.I,
 )
 # Hardware engineering slips past the rule above when the role name itself
@@ -86,6 +89,25 @@ AQUENT_SKIP_RE = re.compile(
     r"\bfirmware\b|\bpcb\b|\bfpga\b|electrical engineer|mechanical engineer",
     re.I,
 )
+
+# Design in the CAD, chip, construction and learning-and-development senses.
+NON_GRAPHIC_RE = re.compile(
+    r"\bpcb\b|\bsram\b|layout design engineer|mechanical|\bbim\b|\bvdc\b|"
+    r"virtual design and construction|sprinkler|instructional|learning design|"
+    r"\bcivil\b|\belectrical\b|\bhvac\b|plumbing|piping|\bsteel\b|process design|"
+    r"task designer|terminal-bench|verification|firmware|semiconductor|\bchip\b|"
+    r"\basic\b|\bfpga\b|\bcad\b|drafter|drafting",
+    re.I,
+)
+AQUENT_SKIP_RE = re.compile(AQUENT_SKIP_RE.pattern + "|" + NON_GRAPHIC_RE.pattern, re.I)
+OPEN_FEEDS = {"Himalayas", "Remote OK", "We Work Remotely", "Dribbble", "Jobicy"}
+
+
+def title_ok(source, title):
+    """One shared title rule for every source."""
+    if NON_GRAPHIC_RE.search(title or ""):
+        return False
+    return not (source in OPEN_FEEDS and OPEN_SKIP_RE.search(title or ""))
 
 
 def looks_us(loc):
@@ -125,9 +147,9 @@ def money(v):
         return 0
 
 
-def fetch(url):
+def fetch(url, timeout=30):
     req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=60) as r:
+    with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
 
@@ -238,21 +260,30 @@ def parse_any_date(s):
     return ""
 
 
-def extract_dates(desc, start_hint="", duration_hint=""):
-    """Start date and duration: from labeled fields first, then the posting text."""
+def extract_dates(desc, start_hint="", duration_hint="", contract=False):
+    """Start date and duration. Duration is only read for contract-style roles,
+    and only next to words like contract or assignment, so parental leave,
+    vacation and vesting periods are never mistaken for it."""
     start = parse_any_date(start_hint)
     if not start:
         m = re.search(r"start(?:\s*date)?\s*[:\-]?\s*([A-Za-z]{3,9}\.? \d{1,2},? \d{4}"
                       r"|\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|ASAP|immediate\w*)", desc, re.I)
         start = parse_any_date(m[1]) if m else ""
     if duration_hint:
-        return start, duration_hint[:30]
-    m = re.search(r"(\d{1,2}(?:\s*[-–]\s*\d{1,2})?\+?\s*(?:weeks?|months?))", desc, re.I)
+        return start, duration_hint[:30].strip(" .;,")
+    if not contract:
+        return start, ""
+    num = r"(\d{1,2}(?:\s*[-–]\s*\d{1,2})?\+?\s*(?:weeks?|months?))"
+    m = (re.search(r"(?:contract|assignment|engagement|duration|term|project)"
+                   r"(?:\s+(?:length|duration|term))?\s*(?:of|is|:|-|–)?\s*"
+                   r"(?:approximately|approx\.?|about|up to)?\s*" + num, desc, re.I)
+         or re.search(num + r"\s*(?:contract|assignment|engagement|project|temp)", desc, re.I))
     if m:
-        duration = m[1].strip()
-    else:
-        duration = "Ongoing" if re.search(r"\b(ongoing|long[- ]term)\b", desc, re.I) else ""
-    return start, duration
+        return start, m[1].strip()
+    if re.search(r"\b(?:ongoing|long[- ]term)\s+(?:contract|assignment|engagement)|"
+                 r"(?:contract|temp)[- ]to[- ]hire", desc, re.I):
+        return start, "Ongoing"
+    return start, ""
 
 
 def pay_text(d, desc):
@@ -262,10 +293,18 @@ def pay_text(d, desc):
     return "" if re.search(r"\[\[|\]\]|\{\{", pay) else pay
 
 
+MONEY_RX = re.compile(
+    r"\$\s?\d[\d,]*(?:\.\d+)?\s*[kK]?"
+    r"(?:\s*(?:-|–|—|to)\s*\$?\s?\d[\d,]*(?:\.\d+)?\s*[kK]?)?"
+    r"(?:\s*(?:USD|per hour|/\s*hour|/\s*hr|hourly|per year|annually|/\s*year|/\s*yr|a year|an hour))?",
+    re.I)
+
+
 def _pay_text(d, desc):
     t = label(desc, r"(?:salary|pay rate)")
-    if t:
-        return t
+    m = MONEY_RX.search(t) if t else None
+    if m:
+        return m.group(0).strip()
     unit = fuzzy(d, r"(period|unit|interval|frequency|basis)")
     lo = fuzzy(d, r"(salary|pay|rate|comp).*min|min.*(salary|pay|rate|comp)")
     hi = fuzzy(d, r"(salary|pay|rate|comp).*max|max.*(salary|pay|rate|comp)")
@@ -273,7 +312,10 @@ def _pay_text(d, desc):
         return f"${lo}-{hi} / {unit}"
     v = pick(d, "salary", "compensation", "pay", "payrate", "salaryrange", "rate")
     if v and not re.fullmatch(r"[\d.,]+", v.strip()):
-        return v
+        m = MONEY_RX.search(v)
+        if m:
+            return m.group(0).strip()
+        return v if len(v) <= 40 else ""
     if v and unit:
         return f"${v} / {unit}"
     return ""
@@ -377,7 +419,7 @@ def ends(text, head, tail):
 
 
 INDUSTRIES = [
-    ("Healthcare & Wellness", 1.0, r"health ?care|pharma|biotech|medical|hospital|clinical|patient|therapeutic|medicine|\bhealth\b|wellness"),
+    ("Healthcare & Wellness", 1.0, r"health ?care|pharma|biotech|medical|hospital|clinical|patient|therapeutic|medicine|health system|digital health"),
     ("Finance & Insurance", 1.0, r"financ|\bbank|fintech|insurance|invest|wealth|payments?\b|credit|lending|mortgage"),
     ("Technology & Software", 0.6, r"software|saas|\bb2b\b|cloud|\bai\b|artificial intelligence|machine learning|tech(?:nology)? company|startup|\bapp\b"),
     ("Retail & E-commerce", 1.0, r"retail|e-?commerce|shopify|marketplace|storefront|online store"),
@@ -385,7 +427,7 @@ INDUSTRIES = [
     ("Media & Entertainment", 0.8, r"\bmedia\b|entertainment|\bfilm\b|television|\btv\b|\bmusic\b|publishing|streaming|broadcast|\bnews\b|magazine"),
     ("Gaming", 1.2, r"video games?|gaming|esports|game studio"),
     ("Education", 1.0, r"education|universit|\bcollege\b|\bschools?\b|edtech|curriculum"),
-    ("Nonprofit", 1.2, r"non-?profit|foundation|charit|\bngo\b|advocacy"),
+    ("Nonprofit", 1.2, r"non-?profit|charit|\bngo\b|advocacy"),
     ("Real Estate", 1.2, r"real estate|proptech|brokerage|\bhousing\b"),
     ("Industrial & Manufacturing", 1.0, r"manufactur|industrial|construction|aerospace|automotive|\benergy\b|logistics|supply chain|utilities"),
     ("Travel & Hospitality", 1.0, r"\btravel|hospitality|\bhotels?\b|airline|tourism|restaurant|resort|cruise"),
@@ -414,10 +456,13 @@ def classify_industry(company, title, desc):
     known = COMPANY_INDUSTRY.get((company or "").lower())
     if known:
         return known
-    low = f"{company} {title} {desc}".lower()
+    # Benefits text at the end ("health, vision, dental") is not the industry, so the
+    # company, title and opening carry the score. Client phrases count anywhere.
+    low = f"{company} {title} {desc[:700]}".lower()
+    full = f"{company} {title} {desc}".lower()
     # Staffing postings often name the client's field: "our healthcare client".
     hints = " ".join(re.findall(
-        r"(?:our|a|an|leading|global)\s+([a-z][a-z &/-]{2,30}?)\s+(?:client|company|brand)\b", low))
+        r"(?:our|a|an|leading|global)\s+([a-z][a-z &/-]{2,30}?)\s+(?:client|company|brand)\b", full))
     best, best_score = "Not stated", 0
     for name, w, rx in INDUSTRY_RX:
         score = (min(len(rx.findall(low)), 5) + 3 * len(rx.findall(hints))) * w
@@ -426,12 +471,38 @@ def classify_industry(company, title, desc):
     return best if best_score >= 2 else "Not stated"
 
 
+def classify_type(t, from_text=False):
+    """Contract / Part-time / Full-time from a type field, or (stricter) from posting text."""
+    if from_text:
+        if re.search(r"contract (?:position|role|opportunity|assignment|basis)|"
+                     r"(?:contract|temp)[- ]to[- ]hire|temporary (?:position|role|assignment)|"
+                     r"\bfreelance\b|\b\d+[- ](?:month|week)s? contract", t):
+            return "Contract"
+    elif re.search(r"\b(?:contract|contractor|temporary|temp|freelance)\b", t):
+        return "Contract"
+    if re.search(r"\bpart[- _]?time\b", t):
+        return "Part-time"
+    if re.search(r"\bfull[- _]?time\b|\bperm(?:anent)?\b", t):
+        return "Full-time"
+    return ""
+
+
+def clean_city(c):
+    """Drop 'Hybrid - ' style prefixes and cut-off brackets; reject non-cities."""
+    c = re.sub(r"^\s*(?:hybrid|on-?site|remote)\s*[-–:]\s*", "", c or "", flags=re.I)
+    c = re.sub(r"\s*\([^)]*$", "", c).strip(" -–,")
+    return "" if re.search(r"\b(remote|hybrid|anywhere)\b", c, re.I) else c
+
+
 def normalize(d, source):
     """Turn one raw posting (flat dict) into the shape the web page expects."""
     title = fix_text(pick(d, "title", "jobtitle", "job_title", "positiontitle"))
-    url = pick(d, "url", "link", "applyurl", "apply_url", "joburl")
+    url = pick(d, "url", "link", "applyurl", "apply_url", "joburl").strip()
+    if not re.match(r"https?://", url, re.I):
+        return None
     desc = clean(pick(d, "description", "summary", "body", "jobdescription"))
-    city = pick(d, "city")
+    raw_city = pick(d, "city")
+    city = clean_city(raw_city)
     state = to_state(pick(d, "state", "region", "province", "statecode"))
     loc = pick(d, "location", "joblocation", "locations")
     country = pick(d, "country", "countrycode").strip().lower()
@@ -446,10 +517,12 @@ def normalize(d, source):
             cand = m.group(1).strip()
             if not re.fullmatch(r"remote|anywhere|flexible|virtual|hybrid|on-?site",
                                 cand, re.I):
-                city = city or cand
+                city = city or clean_city(cand)
             state = state or to_state(m.group(2))
 
-    nonus = "" if state else detect_country(loc, country)
+    place = loc or raw_city
+    first_place = re.split(r"\s*(?:[•|;]|\bor\b|\band\b|/)\s*", place)[0]
+    nonus = "" if state else detect_country(first_place, country)
     if city and not state and not nonus:
         state = CITY_STATE.get(city.strip().lower(), "")
 
@@ -496,24 +569,19 @@ def normalize(d, source):
     else:
         nonus = ""
 
-    raw_type = " ".join([pick(d, "jobtype", "employmenttype", "employment_type",
-                              "type", "worktype", "placementtype"),
-                         fuzzy(d, r"placement|employment|job_?type|work_?type"),
-                         label(desc, "placement type"), ends(desc, 300, 600)]).lower()
-    if re.search(r"\b(contract|temporary|temp|freelance)\b", raw_type):
-        jtype = "Contract"
-    elif "part" in raw_type and "time" in raw_type:
-        jtype = "Part-time"
-    elif re.search(r"full[-_ ]?time|perm", raw_type):
-        jtype = "Full-time"
-    else:
-        jtype = "Unknown"
+    struct = " ".join([pick(d, "jobtype", "employmenttype", "employment_type",
+                            "type", "worktype", "placementtype"),
+                       fuzzy(d, r"placement|employment|job_?type|work_?type"),
+                       label(desc, "placement type")]).lower()
+    jtype = (classify_type(struct) or classify_type(ends(desc, 300, 600).lower(), True)
+             or "Unknown")
 
     job_id = pick(d, "id", "jobid", "referencenumber", "reference", "guid") or url
     start, duration = extract_dates(
         desc,
         label(desc, "start date") or fuzzy(d, r"start"),
-        label(desc, "duration") or fuzzy(d, r"duration|length|term"))
+        label(desc, "duration") or fuzzy(d, r"duration|length|term"),
+        jtype == "Contract")
     company = pick(d, "company", "employer", "companyname") or source
     return {
         "id": f"{source}:{job_id}",
@@ -554,7 +622,7 @@ def find_jobs(root):
 
 
 def fetch_aquent():
-    raw = fetch("https://aquent.com/feeds/jobs.xml")
+    raw = fetch("https://aquent.com/feeds/jobs.xml", timeout=90)
     els = find_jobs(ET.fromstring(raw))
     if not els:
         print(raw[:1500].decode("utf-8", "replace"))
@@ -867,7 +935,8 @@ ATS_BOARDS = [
 ATS_TITLE_RE = re.compile(
     r"\bdesign(?:er|ers|ing)?\b|\bux\b|\bui\b|graphic|visual|illustrat|brand|packag|"
     r"\bmotion\b|animat|art director|creative|typograph|retouch|video edit|"
-    r"concept art|storyboard|3d artist|\bartist\b",
+    r"concept art|storyboard|\b3d\b|wayfinding|signage|experiential|exhibit|"
+    r"environmental graphic|\bartist\b",
     re.I,
 )
 # Titles that only look like design work: chip and hardware design, game design,
@@ -893,6 +962,10 @@ ATS_SKIP_RE = re.compile(
     r"\beditor\b|editorial director",
     re.I,
 )
+
+# Open feeds use the company-board skip list, minus "editor": a video editor is a Motion role.
+OPEN_SKIP_RE = re.compile(
+    ATS_SKIP_RE.pattern.replace(r"\beditor\b|editorial director", "editorial director"), re.I)
 
 
 def _greenhouse(slug):
@@ -954,12 +1027,20 @@ _ATS = {"greenhouse": _greenhouse, "ashby": _ashby, "lever": _lever}
 def fetch_company_boards():
     """Every studio, agency and design-led company we track, as one source."""
     out, ok, failed = [], 0, 0
-    for slug, name, platform in ATS_BOARDS:
+
+    def pull(board):
         try:
-            rows = _ATS[platform](slug)
+            return _ATS[board[2]](board[0]), None
         except Exception as e:  # a board that moved must not sink the source
+            return None, e
+
+    # The boards sit on different hosts, so a few at a time is polite and much faster.
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        pulled = list(pool.map(pull, ATS_BOARDS))
+    for (slug, name, platform), (rows, err) in zip(ATS_BOARDS, pulled):
+        if err:
             failed += 1
-            print(f"  board {name} failed: {e}", file=sys.stderr)
+            print(f"  board {name} failed: {err}", file=sys.stderr)
             continue
         ok += 1
         kept = 0
@@ -1097,6 +1178,7 @@ def main():
             elif name == "Company boards":
                 got = [j for j in got if ATS_TITLE_RE.search(j["title"])
                        and not ATS_SKIP_RE.search(j["title"])]
+        got = [j for j in got if title_ok(name, j["title"])]
         counts[name] = len(got)
         for j in got:
             old = prev_jobs.get(j["id"])
