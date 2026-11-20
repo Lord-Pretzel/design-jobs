@@ -19,7 +19,8 @@ h1{margin:0;font-size:28px;letter-spacing:-.02em}
 .grid{max-width:1100px;margin:0 auto;padding:16px 20px 48px;display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start}
 aside{position:sticky;top:12px;max-height:calc(100vh - 24px);overflow-y:auto;overscroll-behavior:contain;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
 aside label{display:block;margin:0 0 4px;font-weight:600;font-size:13px}
-aside .f{margin-bottom:14px}
+aside .f{margin-bottom:10px}
+aside .two{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 aside .row label{display:flex;gap:8px;align-items:center;font-weight:400;font-size:14px;margin:0 0 4px}
 input[type=search],input[type=text],select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -78,7 +79,7 @@ button.tag{cursor:pointer}button.tag:hover{outline:1px solid var(--accent)}
 .prow b{font-variant-numeric:tabular-nums;color:var(--accent);min-width:26px}
 .prow small{margin-left:auto;color:var(--muted);font-size:12px;text-align:right}
 footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);font-size:13px}
-@media (max-width:760px){.grid{grid-template-columns:1fr}aside{position:static;max-height:none;overflow:visible}.prow small{margin-left:0;width:100%}}
+@media (max-width:760px){.grid{grid-template-columns:1fr}aside{position:static;max-height:none;overflow:visible}aside .two{grid-template-columns:1fr}.prow small{margin-left:0;width:100%}}
 </style>
 </head>
 <body>
@@ -103,23 +104,17 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
       <label><input type="checkbox" name="wp" value="unknown" checked> Not stated</label>
     </div></details></div>
     <div class="f" id="inds"></div>
-    <div class="f"><label for="st">Location</label><select id="st"></select></div>
-    <div class="f"><label for="city">City</label><select id="city"></select></div>
-    <div class="f"><label for="cat">Primary tag</label><select id="cat"></select></div>
-    <div class="f"><label for="tag">Also tagged with</label><select id="tag"></select></div>
-    <div class="f"><label for="type">Employment</label>
-      <select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div>
-    <div class="f"><label for="sort">Sort by</label>
-      <select id="sort"><option value="score">Best Match</option><option value="new">Newest</option></select></div>
-    <div class="f"><label for="age">Posted within</label>
-      <select id="age"><option value="90">3 months</option><option value="30">1 month</option><option value="14">2 weeks</option><option value="7">1 week</option><option value="">Any time</option></select></div>
+    <div class="f two"><div><label for="cat">Primary tag</label><select id="cat"></select></div><div><label for="tag">Also tagged with</label><select id="tag"></select></div></div>
+    <div class="f two"><div><label for="type">Employment</label><select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div><div><label for="age">Posted within</label><select id="age"><option value="90">3 months</option><option value="30">1 month</option><option value="14">2 weeks</option><option value="7">1 week</option><option value="">Any time</option></select></div></div>
+    <div class="f two"><div><label for="st">State</label><select id="st"></select></div><div><label for="city">City</label><select id="city"></select></div></div>
+    <div class="f"><label for="sort">Sort by</label><select id="sort"><option value="score">Best Match</option><option value="new">Newest</option></select></div>
     <div class="f"><details class="dd" id="moredd"><summary>More options</summary><div class="ddbody row">
       <label><input id="rem" type="checkbox" checked> Keep remote roles with no location</label>
       <label><input id="only" type="checkbox" checked> Hide roles with an Off tag</label>
       <label><input id="eng" type="checkbox"> Show engineering roles</label>
       <label><input id="nonus" type="checkbox"> Include non-US roles (English-friendly)</label>
     </div></details></div>
-    <details><summary>Search other sites</summary><div id="else"></div></details>
+    <div class="f"><details><summary>Search other sites</summary><div id="else"></div></details></div>
   </aside>
   <section id="list" aria-live="polite"></section>
 </div>
