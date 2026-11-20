@@ -602,9 +602,9 @@ def normalize(d, source):
         "start": start,
         "duration": duration,
         "tags": extract_tags(title, desc),
-        # The start and the end of the posting: the opening is the pitch, and the
-        # end usually holds requirements, pay and start date. Keeps jobs.json near 1 MB.
-        "description": ends(desc, 800, 1600),
+        # Keep more of the opening (role & responsibilities) and the tail (pay &
+        # requirements) while staying near ~1 MB for jobs.json.
+        "description": ends(desc, 1600, 800),
     }
 
 

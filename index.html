@@ -132,7 +132,7 @@ const enc=encodeURIComponent;
 /* ---------- tag taxonomy: title phrases decide visibility, description phrases only nudge the score ---------- */
 const TAGS=[
  {id:"ux",label:"UX/UI",
-  title:["ux","ui","ux ui","user experience","user interface","usability","experience designer","experience design","content designer","content design","design systems","design system","information architecture"],
+  title:["ux","ui","ux ui","user experience","user interface","usability","experience designer","experience design","content designer","content design","design systems","design system","information architecture","design strategist","design strategy"],
   desc:["figma","wireframe","prototype","prototyping","user research","usability","user testing","design system","information architecture","user flow","journey map","accessibility","wcag","sketch","figjam"]},
  {id:"package",label:"Package Design",
   title:["packaging designer","packaging design","packaging production","package designer","package design","dieline","label design","structural design","carton"],
@@ -159,7 +159,7 @@ const TAGS=[
   title:["motion designer","motion design","motion graphics","motion graphic","animator","animation","video editor","video design","vfx","after effects","videographer"],
   desc:["after effects","motion graphics","animation","keyframe","storyboard","premiere pro","cinema 4d","lottie"]},
  {id:"3d",label:"3D Design",
-  title:["3d designer","3d design","3d artist","3d modeler","3d modeller","3d visualizer","3d visualization","3d generalist","3d animator","cgi artist","cgi designer","product visualization"],
+  title:["3d designer","3d design","3d artist","3d modeler","3d modeller","3d visualizer","3d visualization","3d generalist","3d animator","cgi artist","cgi designer","product visualization","concept artist","concept art","game artist","3d visual artist"],
   desc:["blender","cinema 4d","c4d","maya","3ds max","zbrush","substance painter","octane","redshift","keyshot","3d modeling","3d rendering","unreal engine"]},
  {id:"cd",label:"Creative Director",
   title:["creative director","art director","creative lead","head of creative","creative direction","head of design","design manager","design lead","design director","vp of design","director of design"],
@@ -168,7 +168,7 @@ const TAGS=[
   title:["social media designer","social designer","social graphic","social content creator","social media design","paid social designer","designer paid social"],
   desc:["social media","instagram","tiktok","paid social","social content","reels"]},
  {id:"graphic",label:"Graphic Design",
-  title:["graphic designer","graphic design","visual designer","visual design","digital designer","digital design","communications designer","production designer","production design","visual specialist","visual consultant","2d graphic design","marketing designer","email designer","presentation designer"],
+  title:["graphic designer","graphic design","visual designer","visual design","digital designer","digital design","communications designer","production designer","production design","visual specialist","visual consultant","2d graphic design","marketing designer","email designer","presentation designer","retoucher","retouching","creative technologist","creative technology"],
   desc:["photoshop","illustrator","indesign","adobe creative suite","creative suite","print and digital","brand collateral","marketing collateral","campaign assets","typography","layout"]},
  {id:"unclassified",label:"Unclassified",title:[],desc:[]}
 ];
@@ -266,10 +266,16 @@ function score(j){
   ORDER.forEach(id=>{
     const r=CRX[id];if(!r)return;
     if(!skip&&r.t.some(x=>x.test(T))){tt.push(id);return}
-    let best=0;
-    (DSTAT[id]||[]).forEach(s=>{if(s.w>best&&s.rx.test(D))best=s.w});
-    if(best>0)dt.push({id,w:best});
+    let best=0,hits=0;
+    (DSTAT[id]||[]).forEach(s=>{if(s.rx.test(D)){hits++;if(s.w>best)best=s.w}});
+    if(best>0)dt.push({id,w:best,hits});
   });
+  if(!tt.length&&!j._eng){
+    dt.filter(d=>d.hits>=2||d.w>=0.4)
+      .sort((a,b)=>(b.hits*b.w)-(a.hits*a.w))
+      .slice(0,2)
+      .forEach(d=>tt.push(d.id));
+  }
   const base=tt.length?Math.max(...tt.map(id=>WEIGHTS[id])):(WEIGHTS.unclassified||0);
   const multi=Math.min(.10,.05*Math.max(0,tt.length-1));
   const boost=dt.length?.15*Math.max(...dt.map(d=>WEIGHTS[d.id]*d.w)):0;
@@ -404,7 +410,7 @@ function renderRank(upd){
     </div>`}).join("");
   const top=[...JOBS].sort((a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||"")).slice(0,5);
   $("#status").textContent=`${JOBS.length} roles scored · updated ${upd}`;
-  $("#list").innerHTML=`<div class="ranknote">Higher in this list means a higher Match Score. A role's <b>title</b> decides which tags it gets; description phrases only nudge the score, and a phrase counts more when it is rare. <b>Off</b> hides roles whose tags are all Off. Drag a row (or use ↑ ↓) to reorder. Saved in this browser only.</div>
+  $("#list").innerHTML=`<div class="ranknote">Higher in this list means a higher Match Score. A role's <b>title</b> decides which tags it gets (falling back to description phrases when a title is generic); description phrases also nudge the score, and a phrase counts more when it is rare. <b>Off</b> hides roles whose tags are all Off. Drag a row (or use ↑ ↓) to reorder. Saved in this browser only.</div>
     <div class="tools"><button id="rexp">Export settings</button><button id="rimp">Import settings</button><button id="rreset">Reset ranking</button><input id="rimpf" type="file" accept=".json" hidden></div>
     <div id="rrows">${rows}</div>
     <h3 class="rprev">Top matches with this ranking</h3>
