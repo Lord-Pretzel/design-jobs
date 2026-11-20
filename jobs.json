@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T00:27:59+00:00",
+ "updated": "2026-11-20T03:10:31+00:00",
  "counts": {
   "Aquent": 68,
   "Company boards": 173,
@@ -8,7 +8,7 @@
   "Dribbble": 29,
   "Remote OK": 2,
   "Jobicy": 12,
-  "Himalayas": 40
+  "Himalayas": 42
  },
  "jobs": [
   {
@@ -2789,31 +2789,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8935731002",
-   "source": "Company boards",
-   "title": "Senior Product Designer, T&E",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8935731002?gh_jid=8935731002",
-   "city": "New York",
-   "state": "NY",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-11-09",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Prototyping",
-    "Design systems",
-    "Packaging",
-    "Email"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 ross-functional partners throughout the product development process. Ability to facilitate discussions, synthesize inputs, communicate tradeoffs, and build alignment across stakeholders. Comfort operating in a fast-moving environment where priorities evolve and designers are expected to bias toward learning, iteration, and shipped impact. Clear communication, strong feedback habits, and a collaborative approach to improving both your own work and the work of others. Bonus points Experience designing financial products, developer tools, enterprise software, or other complex B2B workflows. Experience using AI tools for prototyping, research synthesis, design exploration, or day-to-day workflow acceleration. Experience contributing to or evolving a design system at scale. Experience conducting or partnering on generative and evaluative research. Strong ability to translate complex product, technical, or business constraints into simple customer experiences. Compensation The expected salary range for this role is $192,000 - $240,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:brex:8919847002",
    "source": "Company boards",
    "title": "Senior Product Designer, T&E",
@@ -2839,29 +2814,28 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782403002",
+   "id": "Company boards:brex:8935731002",
    "source": "Company boards",
-   "title": "Staff Brand Designer",
+   "title": "Senior Product Designer, T&E",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8935731002?gh_jid=8935731002",
+   "city": "New York",
+   "state": "NY",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-09-03",
+   "posted": "2026-11-09",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
     "Prototyping",
-    "Packaging"
+    "Design systems",
+    "Packaging",
+    "Email"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 to raise the quality and effectiveness of brand execution Requirements 7+ years of experience in brand design or art direction, with a strong focus on identity systems and brand evolution A portfolio demonstrating strategic thinking, system design, and high-quality execution across identities and campaigns Deep expertise in typography, color, composition, and building scalable visual systems Strong ability to articulate design decisions and build alignment with cross-functional partners and senior stakeholders Experience working across multiple workstreams in fast-paced, evolving environments Fluency in Figma and Adobe Creative Suite, with comfort prototyping and iterating quickly Practical experience using AI tools in the creative process with sound judgment on when and how to apply them Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 ross-functional partners throughout the product development process. Ability to facilitate discussions, synthesize inputs, communicate tradeoffs, and build alignment across stakeholders. Comfort operating in a fast-moving environment where priorities evolve and designers are expected to bias toward learning, iteration, and shipped impact. Clear communication, strong feedback habits, and a collaborative approach to improving both your own work and the work of others. Bonus points Experience designing financial products, developer tools, enterprise software, or other complex B2B workflows. Experience using AI tools for prototyping, research synthesis, design exploration, or day-to-day workflow acceleration. Experience contributing to or evolving a design system at scale. Experience conducting or partnering on generative and evaluative research. Strong ability to translate complex product, technical, or business constraints into simple customer experiences. Compensation The expected salary range for this role is $192,000 - $240,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -2891,29 +2865,29 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782407002",
+   "id": "Company boards:brex:8782403002",
    "source": "Company boards",
-   "title": "Staff Brand Designer, Interactive",
+   "title": "Staff Brand Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-09-08",
+   "posted": "2026-09-03",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
     "Branding",
     "Figma",
+    "Adobe CC",
     "Prototyping",
-    "Design systems",
-    "Accessibility"
+    "Packaging"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 ear judgment. Be able to show work, get decisions made, and turn interactive ideas into business impact through excellent execution. Requirements 8+ years of experience in interactive or digital design roles. Expert in Figma for systems, components, and prototyping. Comfortable working in code (HTML, CSS, JavaScript) and collaborating closely with engineers. Experience with modern interactive tools (Framer, Spline, WebGL/Three.js, GSAP, or similar). Familiarity with headless CMS workflows (Sanity or similar) to design within real content structures. Strong eye for typography, layout, motion, and visual hierarchy. Portfolio of shipped interactive work that demonstrates taste, technical fluency, and business impact. Bonus points Background working with creative agencies or in-house teams for consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 to raise the quality and effectiveness of brand execution Requirements 7+ years of experience in brand design or art direction, with a strong focus on identity systems and brand evolution A portfolio demonstrating strategic thinking, system design, and high-quality execution across identities and campaigns Deep expertise in typography, color, composition, and building scalable visual systems Strong ability to articulate design decisions and build alignment with cross-functional partners and senior stakeholders Experience working across multiple workstreams in fast-paced, evolving environments Fluency in Figma and Adobe Creative Suite, with comfort prototyping and iterating quickly Practical experience using AI tools in the creative process with sound judgment on when and how to apply them Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -2940,6 +2914,56 @@
     "Accessibility"
    ],
    "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 ear judgment. Be able to show work, get decisions made, and turn interactive ideas into business impact through excellent execution. Requirements 8+ years of experience in interactive or digital design roles. Expert in Figma for systems, components, and prototyping. Comfortable working in code (HTML, CSS, JavaScript) and collaborating closely with engineers. Experience with modern interactive tools (Framer, Spline, WebGL/Three.js, GSAP, or similar). Familiarity with headless CMS workflows (Sanity or similar) to design within real content structures. Strong eye for typography, layout, motion, and visual hierarchy. Portfolio of shipped interactive work that demonstrates taste, technical fluency, and business impact. Bonus points Background working with creative agencies or in-house teams for consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:brex:8782407002",
+   "source": "Company boards",
+   "title": "Staff Brand Designer, Interactive",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
+   "city": "New York",
+   "state": "NY",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-09-08",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Accessibility"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 ear judgment. Be able to show work, get decisions made, and turn interactive ideas into business impact through excellent execution. Requirements 8+ years of experience in interactive or digital design roles. Expert in Figma for systems, components, and prototyping. Comfortable working in code (HTML, CSS, JavaScript) and collaborating closely with engineers. Experience with modern interactive tools (Framer, Spline, WebGL/Three.js, GSAP, or similar). Familiarity with headless CMS workflows (Sanity or similar) to design within real content structures. Strong eye for typography, layout, motion, and visual hierarchy. Portfolio of shipped interactive work that demonstrates taste, technical fluency, and business impact. Bonus points Background working with creative agencies or in-house teams for consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:brex:8777938002",
+   "source": "Company boards",
+   "title": "Staff Product Designer",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8777938002?gh_jid=8777938002",
+   "city": "New York",
+   "state": "NY",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-09-02",
+   "pay": "",
+   "start": "",
+   "duration": "Ongoing",
+   "tags": [
+    "Figma",
+    "Packaging",
+    "Email"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 ization, p artnering with Engineering, Product, Operations, and Data teams to define and launch new products and features Requirements Strong written and verbal communication skills, with a talent for detailed articulations of strategy, process, and leading cross-functional meetings to align teams Experience working cross-functionally with engineering, marketing, design, and product management teams Strong ability to craft a clear narrative and paint a vision that communicates and aligns teams Passion for team building and development 10+ years of experience as a product designer Experience building customer-facing products from 0 to 1 Bonus points Experience working with tools including but not limited to Figma, Jira, Looker, Slack, Google Apps, Salesforce, Chrome Console Experience working on products in both B2B and B2C companies Experience writing/editing/contributing to documentation, training materials, and help articles to support product launches Compensation The expected salary range for this role is $240,000 - $300,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -2974,30 +2998,6 @@
    "url": "https://www.brex.com/careers/8777949002?gh_jid=8777949002",
    "city": "San Francisco",
    "state": "CA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-09-02",
-   "pay": "",
-   "start": "",
-   "duration": "Ongoing",
-   "tags": [
-    "Figma",
-    "Packaging",
-    "Email"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. \u2026 ization, p artnering with Engineering, Product, Operations, and Data teams to define and launch new products and features Requirements Strong written and verbal communication skills, with a talent for detailed articulations of strategy, process, and leading cross-functional meetings to align teams Experience working cross-functionally with engineering, marketing, design, and product management teams Strong ability to craft a clear narrative and paint a vision that communicates and aligns teams Passion for team building and development 10+ years of experience as a product designer Experience building customer-facing products from 0 to 1 Bonus points Experience working with tools including but not limited to Figma, Jira, Looker, Slack, Google Apps, Salesforce, Chrome Console Experience working on products in both B2B and B2C companies Experience writing/editing/contributing to documentation, training materials, and help articles to support product launches Compensation The expected salary range for this role is $240,000 - $300,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Company boards:brex:8777938002",
-   "source": "Company boards",
-   "title": "Staff Product Designer",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8777938002?gh_jid=8777938002",
-   "city": "New York",
-   "state": "NY",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -3887,14 +3887,14 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:samsara:8358689",
+   "id": "Company boards:samsara:8358687",
    "source": "Company boards",
    "title": "Lead Product Designer",
    "company": "Samsara",
-   "url": "https://www.samsara.com/company/careers/roles/8358689?gh_jid=8358689",
+   "url": "https://www.samsara.com/company/careers/roles/8358687?gh_jid=8358687",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
    "type": "Unknown",
    "industry": "Technology & Software",
@@ -3910,17 +3910,17 @@
     "Web"
    ],
    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations\u2122 Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Samsara, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global economy. Representing more than 40% of global GDP, these industries are the infrastructure of our planet, including agriculture, construction, field services, transportation, and manufacturing \u2014 and we are excited to help digitally transform their operations at scale. Working at Samsara means you\u2019ll help define the future of physical operations and be on a team that\u2019s shaping an exciting array of product  \u2026 ed work location, if applicable. Belonging at Samsara At Samsara, we welcome everyone regardless of their background. All qualified applicants will receive consideration for employment without regard to race, color, religion, national origin, sex, gender, gender identity, sexual orientation, protected veteran status, disability, age, and other characteristics protected by law. We depend on the unique approaches of our team members to help us solve complex problems and want to ensure that Samsara is a place where people from all backgrounds can make an impact. Accommodations Samsara is an inclusive work environment, and we are committed to ensuring equal opportunity in employment for qualified persons with disabilities. Please email accessibleinterviewing@samsara.com or click here if you require any reasonable accommodations throughout the recruiting process. Our Commitment to Authenticity We use Tofu , a fraud detection tool, to validate the authenticity of applications and protect against identity fraud. This ensures we are connecting with real people and allows us to prioritize genuine candidates. Please see Samsara\u2019s Candidate Privacy Notice for more information. Fraudulent Employment Offers Samsara is aware of scams involving fake job interviews and offers. Please know we do not charge fees to applicants at any stage of the hiring process. Official communication about your application will only come from emails ending in @samsara.com, @us-greenhouse-mail.io or @mail3.guide.co. For more information regarding fraudulent employment offers, please visit our blog post here .",
-   "first_seen": "2026-11-19"
+   "first_seen": "2026-11-20"
   },
   {
-   "id": "Company boards:samsara:8358704",
+   "id": "Company boards:samsara:8358690",
    "source": "Company boards",
    "title": "Staff Product Designer",
    "company": "Samsara",
-   "url": "https://www.samsara.com/company/careers/roles/8358704?gh_jid=8358704",
+   "url": "https://www.samsara.com/company/careers/roles/8358690?gh_jid=8358690",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
    "type": "Unknown",
    "industry": "Technology & Software",
@@ -3936,7 +3936,7 @@
     "Web"
    ],
    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations\u2122 Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Samsara, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global economy. Representing more than 40% of global GDP, these industries are the infrastructure of our planet, including agriculture, construction, field services, transportation, and manufacturing \u2014 and we are excited to help digitally transform their operations at scale. Working at Samsara means you\u2019ll help define the future of physical operations and be on a team that\u2019s shaping an exciting array of product  \u2026 ed work location, if applicable. Belonging at Samsara At Samsara, we welcome everyone regardless of their background. All qualified applicants will receive consideration for employment without regard to race, color, religion, national origin, sex, gender, gender identity, sexual orientation, protected veteran status, disability, age, and other characteristics protected by law. We depend on the unique approaches of our team members to help us solve complex problems and want to ensure that Samsara is a place where people from all backgrounds can make an impact. Accommodations Samsara is an inclusive work environment, and we are committed to ensuring equal opportunity in employment for qualified persons with disabilities. Please email accessibleinterviewing@samsara.com or click here if you require any reasonable accommodations throughout the recruiting process. Our Commitment to Authenticity We use Tofu , a fraud detection tool, to validate the authenticity of applications and protect against identity fraud. This ensures we are connecting with real people and allows us to prioritize genuine candidates. Please see Samsara\u2019s Candidate Privacy Notice for more information. Fraudulent Employment Offers Samsara is aware of scams involving fake job interviews and offers. Please know we do not charge fees to applicants at any stage of the hiring process. Official communication about your application will only come from emails ending in @samsara.com, @us-greenhouse-mail.io or @mail3.guide.co. For more information regarding fraudulent employment offers, please visit our blog post here .",
-   "first_seen": "2026-11-19"
+   "first_seen": "2026-11-20"
   },
   {
    "id": "Company boards:flexport:8337877",
@@ -5314,32 +5314,6 @@
    "first_seen": "2026-11-19"
   },
   {
-   "id": "Company boards:instacart:8394152",
-   "source": "Company boards",
-   "title": "Senior Product Designer II - Commerce & Retailer Platform",
-   "company": "Instacart",
-   "url": "https://instacart.careers/job/?gh_jid=8394152",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Unknown",
-   "industry": "Retail & E-commerce",
-   "posted": "2026-11-16",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility",
-    "Branding"
-   ],
-   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size  \u2026 asively to diverse stakeholders. A track record of working in ambiguous spaces and bringing clarity through design strategy and thoughtful execution. 8+ years of professional experience in product design with a strong portfolio showcasing interaction design, visual craft and systems thinking. Mastery of user-centric design processes, from concept ideation and prototyping to developer-ready assets. Preferred Qualifications Experience working in marketplace environments or designing for multi-sided ecosystems. Experience with white-label, multi-brand or themeable products, where partners customize experiences within system constraints. Experience designing for savings-focused or transactional products such as discounts, promotions, loyalty membership workflows. #LI-remote Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please rea d more about our benefits offerings here . For US based candidates, the base pay ranges for a successful candidate are listed below. CA, NY, CT, NJ $203,000 \u2014 $214,000 USD WA $194,000 \u2014 $205,000 USD OR, DE, ME, MA, MD, NH, RI, VT, DC, PA, VA, CO, TX, IL, HI $185,000 \u2014 $195,000 USD All other states $169,000 \u2014 $178,500 USD",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:instacart:8394157",
    "source": "Company boards",
    "title": "Senior Product Designer II - Commerce & Retailer Platform",
@@ -5364,6 +5338,32 @@
    ],
    "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size  \u2026 ility to articulate complex design ideas persuasively to diverse stakeholders. A track record of working in ambiguous spaces and bringing clarity through design strategy and thoughtful execution. 8+ years of professional experience in product design with a strong portfolio showcasing interaction design, visual craft and systems thinking. Mastery of user-centric design processes, from concept ideation and prototyping to developer-ready assets. Preferred Qualifications Experience working in marketplace environments or designing for multi-sided ecosystems. Experience with white-label, multi-brand or themeable products, where partners customize experiences within system constraints. Experience designing for savings-focused or transactional products such as discounts, promotions, loyalty membership workflows. #LI-remote Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Currently, we are only hiring in the following provinces: Ontario, Alberta, British Columbia, and Nova Scotia. Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please read more about our benefits offerings here . For Canadian based candidates, the base pay ranges for a successful candidate are listed below. CAN $171,000 \u2014 $180,500 CAD",
    "first_seen": "2026-11-19"
+  },
+  {
+   "id": "Company boards:instacart:8394152",
+   "source": "Company boards",
+   "title": "Senior Product Designer II - Commerce & Retailer Platform",
+   "company": "Instacart",
+   "url": "https://instacart.careers/job/?gh_jid=8394152",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "industry": "Retail & E-commerce",
+   "posted": "2026-11-16",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Accessibility",
+    "Branding"
+   ],
+   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size  \u2026 asively to diverse stakeholders. A track record of working in ambiguous spaces and bringing clarity through design strategy and thoughtful execution. 8+ years of professional experience in product design with a strong portfolio showcasing interaction design, visual craft and systems thinking. Mastery of user-centric design processes, from concept ideation and prototyping to developer-ready assets. Preferred Qualifications Experience working in marketplace environments or designing for multi-sided ecosystems. Experience with white-label, multi-brand or themeable products, where partners customize experiences within system constraints. Experience designing for savings-focused or transactional products such as discounts, promotions, loyalty membership workflows. #LI-remote Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please rea d more about our benefits offerings here . For US based candidates, the base pay ranges for a successful candidate are listed below. CA, NY, CT, NJ $203,000 \u2014 $214,000 USD WA $194,000 \u2014 $205,000 USD OR, DE, ME, MA, MD, NH, RI, VT, DC, PA, VA, CO, TX, IL, HI $185,000 \u2014 $195,000 USD All other states $169,000 \u2014 $178,500 USD",
+   "first_seen": "2026-11-17"
   },
   {
    "id": "Company boards:instacart:8191763",
@@ -7029,7 +7029,7 @@
    "start": "",
    "duration": "",
    "tags": [],
-   "description": "Overview A fast-growing AI data company is hiring supply chain practitioners to design expert-level Terminal-Bench tasks for evaluating AI agents. You will turn real planning work into end-to-end challenges, each with files, a working solution and an automated correctness check. The goal is to build a benchmark grounded in real operations work. ***THIS IS A TASK BASED COMPENSATION MODEL. PLEASE CHECK THE APPLICATION QUESTIONS FOR MORE DETAILS.*** Responsibilities \u00e2\u0080\u00a2 Design expert-level Terminal-Bench tasks by turning a real supply chain task from your work into a challenge an AI agent solves end to end. \u00e2\u0080\u00a2 Define the files, data exports and systems each task runs on, such as ERP, MES and WMS extracts, so the scenario reflects realistic planning conditions. \u00e2\u0080\u00a2 Write a working solution fo \u2026  unambiguous, data consistent and the solution and verification reproducible in a command-line environment. Skills/Experience \u00e2\u0080\u00a2 3+ years of hands-on supply chain or production planning work (not only studying, selling or managing it), or a PhD with active research in the subfield \u00e2\u0080\u00a2 Did the work within the last 3 years and can name the systems, tools, data and rules used \u00e2\u0080\u00a2 Personally executed a process where each case is decided by written rules such as SOPs, planning rules or constraints \u00e2\u0080\u00a2 Worked inside systems of record (ERP, WMS) and with their exports or reports \u00e2\u0080\u00a2 Can describe edge cases, data inconsistencies and common planner errors, and how a mistake would be caught \u00e2\u0080\u00a2 Technical fluency in Python or another language and the command line, plus files, CSV/JSON, APIs or databases \u00e2\u0080\u00a2 Available to start around November 4, 2026 Nice-to-have \u00e2\u0080\u00a2 Automated or audited the process with scripts, SQL, RPA or rules engines \u00e2\u0080\u00a2 5+ years in the same process family \u00e2\u0080\u00a2 Docker, Git and experience writing tests \u00e2\u0080\u00a2 Hands-on experience with SAP or other ERPs and TMS/WMS platforms \u00e2\u0080\u00a2 Advanced Excel skills Process \u00e2\u0080\u00a2 Task-based engagement paid per task, with each task taking about 60 to 75 minutes \u00e2\u0080\u00a2 Vetting task instead of a live interview \u00e2\u0080\u00a2 Tasks are reviewed by the client before approval Please mention the word **EXELLENT** and tag RNTEuNTcuMTQ0LjE0Ng== when applying to show you read the job post completely (#RNTEuNTcuMTQ0LjE0Ng==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+   "description": "Overview A fast-growing AI data company is hiring supply chain practitioners to design expert-level Terminal-Bench tasks for evaluating AI agents. You will turn real planning work into end-to-end challenges, each with files, a working solution and an automated correctness check. The goal is to build a benchmark grounded in real operations work. ***THIS IS A TASK BASED COMPENSATION MODEL. PLEASE CHECK THE APPLICATION QUESTIONS FOR MORE DETAILS.*** Responsibilities \u00e2\u0080\u00a2 Design expert-level Terminal-Bench tasks by turning a real supply chain task from your work into a challenge an AI agent solves end to end. \u00e2\u0080\u00a2 Define the files, data exports and systems each task runs on, such as ERP, MES and WMS extracts, so the scenario reflects realistic planning conditions. \u00e2\u0080\u00a2 Write a working solution fo \u2026 ructions unambiguous, data consistent and the solution and verification reproducible in a command-line environment. Skills/Experience \u00e2\u0080\u00a2 3+ years of hands-on supply chain or production planning work (not only studying, selling or managing it), or a PhD with active research in the subfield \u00e2\u0080\u00a2 Did the work within the last 3 years and can name the systems, tools, data and rules used \u00e2\u0080\u00a2 Personally executed a process where each case is decided by written rules such as SOPs, planning rules or constraints \u00e2\u0080\u00a2 Worked inside systems of record (ERP, WMS) and with their exports or reports \u00e2\u0080\u00a2 Can describe edge cases, data inconsistencies and common planner errors, and how a mistake would be caught \u00e2\u0080\u00a2 Technical fluency in Python or another language and the command line, plus files, CSV/JSON, APIs or databases \u00e2\u0080\u00a2 Available to start around November 4, 2026 Nice-to-have \u00e2\u0080\u00a2 Automated or audited the process with scripts, SQL, RPA or rules engines \u00e2\u0080\u00a2 5+ years in the same process family \u00e2\u0080\u00a2 Docker, Git and experience writing tests \u00e2\u0080\u00a2 Hands-on experience with SAP or other ERPs and TMS/WMS platforms \u00e2\u0080\u00a2 Advanced Excel skills Process \u00e2\u0080\u00a2 Task-based engagement paid per task, with each task taking about 60 to 75 minutes \u00e2\u0080\u00a2 Vetting task instead of a live interview \u00e2\u0080\u00a2 Tasks are reviewed by the client before approval Please mention the word **EXELLENT** and tag RNTcuMTU0LjYuNQ== when applying to show you read the job post completely (#RNTcuMTU0LjYuNQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
    "first_seen": ""
   },
   {
@@ -7051,7 +7051,7 @@
    "tags": [
     "Packaging"
    ],
-   "description": "Overview We are building a benchmark that tests how well AI agents handle real expert work in a terminal. We are hiring ML inference and serving experts to turn real, paid tasks from their jobs into expert-level Terminal-Bench challenges. Each task includes the environment, a working solution, and an automated check that proves the result is correct. ***THIS IS A TASK BASED COMPENSATION MODEL. PLEASE CHECK THE APPLICATION QUESTIONS FOR MORE DETAILS.*** Responsibilities \u00e2\u0080\u00a2 Design expert-level Terminal-Bench tasks that turn real, paid ML inference work from your own experience into challenges an AI agent must solve end to end. \u00e2\u0080\u00a2 Define the files, systems and environments each task runs on, such as model serving with streaming, so the challenge is realistic, reproducible and command-line s \u2026 -level, fair and objectively gradable. Skills/Experience \u00e2\u0080\u00a2 3+ years doing ML inference or serving work hands-on (not only studying, selling or managing it), or a PhD plus active research in the subfield \u00e2\u0080\u00a2 Did this work in the last 3 years and can name the systems, tools, data and rules used \u00e2\u0080\u00a2 Trained, served or evaluated models at real scale (multi-GPU or production serving), not only notebooks or API calls \u00e2\u0080\u00a2 Hands-on with PyTorch or JAX internals and serving stacks such as vLLM, SGLang or TensorRT-LLM \u00e2\u0080\u00a2 Can explain how ML results go wrong without errors (numerical drift, metric bugs) and how to catch them \u00e2\u0080\u00a2 Technical fluency in Python and the command line, and with files, CSV/JSON, APIs or databases \u00e2\u0080\u00a2 Availability to start by early November 2026 and complete tasks of about 60 to 75 minutes each Nice-to-have \u00e2\u0080\u00a2 AI lab or LLM infrastructure experience \u00e2\u0080\u00a2 Contributions to PyTorch, vLLM or SGLang \u00e2\u0080\u00a2 GPU profiling experience \u00e2\u0080\u00a2 Docker and Git proficiency \u00e2\u0080\u00a2 Experience writing automated tests Process \u00e2\u0080\u00a2 Task vetting instead of an interview: complete a vetting task so the client can assess your task design \u00e2\u0080\u00a2 Paid per task; each task takes about 60 to 75 minutes \u00e2\u0080\u00a2 Work is delivered task by task, with reviewer feedback on submissions \u00e2\u0080\u00a2 Expected start in early November 2026 Please mention the word **ASTONISHED** and tag RNTEuNTcuMTQ0LjE0Ng== when applying to show you read the job post completely (#RNTEuNTcuMTQ0LjE0Ng==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+   "description": "Overview We are building a benchmark that tests how well AI agents handle real expert work in a terminal. We are hiring ML inference and serving experts to turn real, paid tasks from their jobs into expert-level Terminal-Bench challenges. Each task includes the environment, a working solution, and an automated check that proves the result is correct. ***THIS IS A TASK BASED COMPENSATION MODEL. PLEASE CHECK THE APPLICATION QUESTIONS FOR MORE DETAILS.*** Responsibilities \u00e2\u0080\u00a2 Design expert-level Terminal-Bench tasks that turn real, paid ML inference work from your own experience into challenges an AI agent must solve end to end. \u00e2\u0080\u00a2 Define the files, systems and environments each task runs on, such as model serving with streaming, so the challenge is realistic, reproducible and command-line s \u2026 s expert-level, fair and objectively gradable. Skills/Experience \u00e2\u0080\u00a2 3+ years doing ML inference or serving work hands-on (not only studying, selling or managing it), or a PhD plus active research in the subfield \u00e2\u0080\u00a2 Did this work in the last 3 years and can name the systems, tools, data and rules used \u00e2\u0080\u00a2 Trained, served or evaluated models at real scale (multi-GPU or production serving), not only notebooks or API calls \u00e2\u0080\u00a2 Hands-on with PyTorch or JAX internals and serving stacks such as vLLM, SGLang or TensorRT-LLM \u00e2\u0080\u00a2 Can explain how ML results go wrong without errors (numerical drift, metric bugs) and how to catch them \u00e2\u0080\u00a2 Technical fluency in Python and the command line, and with files, CSV/JSON, APIs or databases \u00e2\u0080\u00a2 Availability to start by early November 2026 and complete tasks of about 60 to 75 minutes each Nice-to-have \u00e2\u0080\u00a2 AI lab or LLM infrastructure experience \u00e2\u0080\u00a2 Contributions to PyTorch, vLLM or SGLang \u00e2\u0080\u00a2 GPU profiling experience \u00e2\u0080\u00a2 Docker and Git proficiency \u00e2\u0080\u00a2 Experience writing automated tests Process \u00e2\u0080\u00a2 Task vetting instead of an interview: complete a vetting task so the client can assess your task design \u00e2\u0080\u00a2 Paid per task; each task takes about 60 to 75 minutes \u00e2\u0080\u00a2 Work is delivered task by task, with reviewer feedback on submissions \u00e2\u0080\u00a2 Expected start in early November 2026 Please mention the word **ASTONISHED** and tag RNTcuMTU0LjYuNQ== when applying to show you read the job post completely (#RNTcuMTU0LjYuNQ==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
    "first_seen": ""
   },
   {
@@ -7368,6 +7368,122 @@
    ],
    "description": "helps companies in the US and Europe hire experienced engineers & designers, from funded startups to teams like Klarna, Retool, and Pinterest. We\u2019ve been doing this since 2015, and more than 1,500 companies have hired engineers through us. New roles for Senior Designers come in all the time, and several are open right now. Two ways to work with clients Contract: most roles are contract-based. You join the client\u2019s team and work as part of it. Direct hire: some clients hire designers full-time, and we support you through the process. Because companies trust our vetting, applying through is often a shortcut. You get to the client faster than going through their full hiring process on your own. What you get Competitive rate, based on your seniority and skills We find the projects. No client h \u2026 nterprise Software Engineering, React & Python, React & Golang, Golang, React & Java, React & Ruby, Ruby, PHP & Vue, Vue & Node.js, React & .NET, Android & iOS, iOS & Swift, Flutter & Firebase, Solutions Engineer, Blockchain (Ethereum/Ethers.js/Wagmi/Viem/Solana), Angular & Node.js, Vue & .NET, Python & Vue, DevOps, MLOps, Data Science, Angular & PHP, Angular & .NET, Symfony & React, Symfony & Vue, Symfony & An gular, Python, Symfony & JavaScript & Next.js & TypeScript, Data Analysis, React & PHP, Data Engineering, Project Management, Product Management, QA Automation, QA Manual, Embedded Software Engineering, React Native & Node, React Native & React, React Native & Ruby, React Native & Python, WordPress, Android, Angular, Python & Node, React & Node.js, Node & TypeScript, Java & Spring, Svelte & Python, Svelte & Node.js, Svelte & TypeScript, Rust, Shopify & JavaScript, Vue & Nuxt, PHP & Laravel, Animation, React & Node & React Native, .NET & C#, Electron, Scala, C++, Unreal Engine & C++, Python & LLM, Unity, or Machine Learning Engineering and more. Reach out and we'll match you. We do not provide visa assistance, and our cooperation model does not include the benefits typically offered with direct hire. We work with developers from 75+ countries across Europe, Latin America, North America (the U.S. and Canada), selected countries in Asia (Japan, Singapore, South Korea, the Philippines, Indonesia, Malaysia, Vietnam, Thailand, and Israel), Oceania (Australia, New Zealand, and Papua New Guinea), and Africa (including Morocco and South Africa). Originally posted on Himalayas",
    "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/leland/jobs/design-coach",
+   "source": "Himalayas",
+   "title": "Design Coach",
+   "company": "Leland",
+   "url": "https://himalayas.app/companies/leland/jobs/design-coach?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "industry": "Technology & Software",
+   "posted": "2026-11-20",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Prototyping",
+    "Branding",
+    "Motion"
+   ],
+   "description": "Leland is building the home for ambition in the age of AI. We connect people with the experts, programs, and communities they need to land the job, get into the school, or upskill for a world being rewritten by AI. We help businesses become AI-native through training, hiring, and infrastructure. Since our founding in 2021, we've helped tens of thousands of people reach their most ambitious goals and raised $19M from world-class investors. Ambition is sacred to us, and we've built a product that takes that seriously. We're seeking an experienced Design Coach to work with clients looking to break into or grow within design roles. This role includes teaching core design thinking, user experience design, and user interface design skills, as well as helping clients build strong wireframing, prototyping, and visual design abilities. Coaches also guide clients on branding and applying emerging tools like AI fundamentals, AI graphics creation, AI product design, and user research & insights automation to their design work. On the career side, coaches offer resume review, LinkedIn review, and cover letter guidance, plus interview prep, networking strategy, salary negotiation, and promotion strategy tailored to design roles, along with broader skill building and support for those pursuing freelancing opportunities. Ideal candidates have hands-on experience in design (as a UX/UI designer, product designer, or industry professional), a strong portfolio and track record of shipping thoughtful design work, and a clear, structured approach to coaching clients through both technical and career growth. Coaches set their own hours and rates, host sessions virtually, and partner with our team to deliver a high-quality, supportive experience for every client. Why Leland ? The chance to join a world-class team helping people achieve their career and educational dreams Work in a collaborative, high-energy environment where your contributions have a direct impact Operate in a fast-paced, AI-native environment We don't hire people who merely want to work for a great company; we hire people who want to make a great company Leland is an equal opportunity employer. We encourage candidates of all backgrounds and demographics to apply. Originally posted on Himalayas",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/leland/jobs/interior-design-coach",
+   "source": "Himalayas",
+   "title": "Interior Design Coach",
+   "company": "Leland",
+   "url": "https://himalayas.app/companies/leland/jobs/interior-design-coach?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "industry": "Technology & Software",
+   "posted": "2026-11-20",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [],
+   "description": "Leland is building the home for ambition in the age of AI. We connect people with the experts, programs, and communities they need to land the job, get into the school, or upskill for a world being rewritten by AI. We help businesses become AI-native through training, hiring, and infrastructure. Since our founding in 2021, we've helped tens of thousands of people reach their most ambitious goals and raised $19M from world-class investors. Ambition is sacred to us, and we've built a product that takes that seriously. We're seeking an experienced interior design coach to work with clients looking to transform their living spaces, as well as aspiring designers looking to break into the field. This role includes helping clients with style discovery & exploration, mood board & concept development, color & material selection, and room layout & space planning, as well as lighting design and furniture & decor sourcing. Coaches also provide budget planning and renovation & remodel guidance for personal projects, while helping aspiring designers build their skills and navigate a career in the industry. Coaches support general exploration for clients still discovering their design goals or career direction. Ideal candidates have hands-on interior design experience, prior coaching or consulting experience, and a clear, structured approach to helping clients bring their vision to life. Coaches set their own hours and rates, host sessions virtually, and partner with our team to deliver a high-quality, supportive experience for every client. Why Leland ? The chance to join a world-class team helping people achieve their career and educational dreams Work in a collaborative, high-energy environment where your contributions have a direct impact Operate in a fast-paced, AI-native environment We don't hire people who merely want to work for a great company; we hire people who want to make a great company Leland is an equal opportunity employer. We encourage candidates of all backgrounds and demographics to apply. Originally posted on Himalayas",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/remotejobsone/jobs/ai-video-editor-premiere-pro-after-effects-remote-worldwide",
+   "source": "Himalayas",
+   "title": "AI Video Editor (Premiere Pro & After Effects) \u2013 Remote (Worldwide)",
+   "company": "RemoteJobsOne",
+   "url": "https://himalayas.app/companies/remotejobsone/jobs/ai-video-editor-premiere-pro-after-effects-remote-worldwide?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "industry": "Technology & Software",
+   "posted": "2026-11-20",
+   "pay": "USD 20-40 / hourly",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Adobe CC",
+    "Motion",
+    "Email"
+   ],
+   "description": "IMPORTANT: after you apply, please check your email. We sendyou a link to complete your application \u2014 it is not considered until that laststep is done. If you do not see it, check your spam folder. This is a fully remote position , open to candidates based in 55 countries, including Bangladesh, United States, United Kingdom, Canada, Germany, India, France, Netherlands. Pay: $20\u2013$40/hr Role Title: AI Video Editor (Premiere Pro & After Effects) Role Type: Contractor Location: Remote We are engaging AI Video Editors (Premiere Pro & After Effects) to contribute to a customer's project focused on video data annotation and AI training. In this role, you'll apply your expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-qualit \u2026 ledge is what matters. Scope of Work Compare and evaluate AI-generated videos using professional video editing expertise, identifying and selecting higher-quality outputs. Document detailed written feedback explaining selection decisions, focusing on editing techniques, transitions, pacing, composition, motion graphics, visual effects, and storytelling. Use your video editing, visual effects, and motion graphics knowledge to evaluate video quality and provide clear feedback. Identify editing inconsistencies, visual artifacts, technical issues, and areas for improvement in AI-generated video content. Contribute to the refinement of video quality standards and evaluation guidelines to support AI model development and training. Demonstrate strong attention to detail, technical judgment, and a meticulous approach when evaluating video editing quality. Preferred Qualifications Proficiency with Adobe Premiere Pro and After Effects, including effects, transitions, keyframing, and compositing. Experience in professional video editing, motion graphics, and visual storytelling. Professional expertise in video editing, filmmaking, motion graphics, visual effects, or related creative video production disciplines. Proven background as a director, cinematographer, video editor, VFX artist, or motion graphics specialist is highly valued. Previous AI Training experiences. How to apply Apply here with your profile. We will then email you a link to complete yourapplication on the hiring platform \u2014 your application is only considered oncethat final step is done. Originally posted on Himalayas",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/affinipay/jobs/enablement-program-manager-learning-strategy-design-effectiveness",
+   "source": "Himalayas",
+   "title": "Enablement Program Manager - Learning Strategy, Design & Effectiveness",
+   "company": "AffiniPay",
+   "url": "https://himalayas.app/companies/affinipay/jobs/enablement-program-manager-learning-strategy-design-effectiveness?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "industry": "Healthcare & Wellness",
+   "posted": "2026-11-20",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Packaging"
+   ],
+   "description": "It's a new day with a new opportunity at 8am! About the role: The Enablement Program Manager leads the strategy, design, and development of learning programs that help sales teams build skills, improve performance, and drive business results. Working closely with Sales Leadership, Sales Operations, and cross-functional partners, this role translates business priorities into effective learning strategies, curricula, and experiences, with a focus on improving qualification and win rates. This is a hands-on, collaborative role that also contributes to program management, rollout, and facilitation as business needs evolve. About us: At 8am, our vision is to power a world where professionals thrive. We start every day on a mission to empower professionals with the most trusted, innovative techn \u2026 volunteer service, and company-sponsored volunteer events (both local and virtually). Engagement: Virtual and in-person team-building events, quarterly award recognition through our Rise & Shine Award of Excellence Program, and our peer-to-peer appreciation platform. At 8am, we don\u2019t just offer benefits, we create an environment where people can thrive, grow, and make a real impact every day. Diversity, equity & inclusion at 8am At 8am, we recognize that innovation occurs with a strong team of people who are diverse in background, personality, talent and ideas. Experience comes in many forms and ensuring a diverse and inclusive workplace where we continue to learn from each other is an integral part of our culture. We are committed to creating a welcoming and transparent environment for all that embraces those differences through education, equal access to opportunities and information, inclusionary programs, and community outreach. Security advisory Our hiring teams at 8am are dedicated to recruiting top talent that share our passion for serving the professional services industry through innovative financial technology. As such, our Talent Acquisition Team only follows legitimate hiring practices. We will always communicate with our candidates using emails with the 8am domain and will never ask for sensitive/personal data during the application process. All interviews take place over phone call, Zoom/Google Meet or in person. All offers are communicated verbally by our Talent Acquisition Specialists with a written offer letter as a follow up. Originally posted on Himalayas",
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/the-athletic/jobs/senior-designer",
+   "source": "Himalayas",
+   "title": "Senior Designer",
+   "company": "The Athletic",
+   "url": "https://himalayas.app/companies/the-athletic/jobs/senior-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "industry": "Media & Entertainment",
+   "posted": "2026-11-20",
+   "pay": "USD 80,000-90,000 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Adobe CC",
+    "Prototyping",
+    "Design systems",
+    "Accessibility"
+   ],
+   "description": "About Us Powered by one of the largest global newsrooms in sports media, The Athletic brings sports fans the most comprehensive stories about the teams, sports and athletes they love. The Athletic \u2019s newsroom of 500+ full-time staff delivers in-depth coverage of hundreds of professional and college teams across more than 47 North American markets and all 20 football clubs in the English Premier League, as well as many Championship clubs. About the Role As a Senior Designer, you'll play a key role in shaping the creative direction and development of The Athletic 's commercial design output. Combining exceptional visual design and art direction with strong UI/UX expertise, you'll create distinctive work across branded content, commercial products, and advertising experiences and events. You' \u2026 ive content during the application and interview process. If you are a candidate for a technical role, we will let you know what specific tools you are permitted to use for your technical assessment. The Athletic Media Company is an equal opportunity employer and enthusiastically encourages people from all backgrounds and experiences to apply. The Athletic will consider all applicants without regard to race, religion, color, national origin, ancestry, physical and/or mental disability, medical condition, genetic information, marital status, sex, gender, gender identity, gender expression, transgender status, age, sexual orientation, military or veteran status, or any other protected characteristic under applicable law. Click here to review our Applicant Privacy Notice , which describes how and when The Athletic Media Company collects, uses, and shares certain personal information of job applicants and prospective employees. Beware of fraudulent job recruiting schemes! Our recruiters use exclusively, and our team members will use an email address with @ domain. We do not conduct interviews via text or instant message and we do not ask candidates to download software, to purchase equipment through us, or to provide sensitive personally identifiable information, such as bank accounts or social security numbers. If you have been contacted by someone claiming to be a member of the recruiting/HR team at The Athletic but operating from a different email address about a job offer, please report it as potential job fraud to the law enforcement and to . Originally posted on Himalayas",
+   "first_seen": "2026-11-20"
   },
   {
    "id": "Himalayas:https://himalayas.app/companies/playstation-global/jobs/principal-ux-designer",
@@ -8192,121 +8308,51 @@
    "first_seen": "2026-11-19"
   },
   {
-   "id": "Himalayas:https://himalayas.app/companies/autodesk/jobs/principal-conversation-designer-autodesk-assistant-canada-us",
+   "id": "Himalayas:https://himalayas.app/companies/leland/jobs/database-design-development-coach",
    "source": "Himalayas",
-   "title": "Principal Conversation Designer, Autodesk Assistant (Canada/US)",
-   "company": "Autodesk",
-   "url": "https://himalayas.app/companies/autodesk/jobs/principal-conversation-designer-autodesk-assistant-canada-us?utm_source=api",
+   "title": "Database Design & Development Coach",
+   "company": "Leland",
+   "url": "https://himalayas.app/companies/leland/jobs/database-design-development-coach?utm_source=api",
    "city": "",
    "state": "",
    "country": "",
    "workplace": "remote",
-   "type": "Part-time",
+   "type": "Unknown",
    "industry": "Technology & Software",
-   "posted": "2026-11-19",
-   "pay": "USD 130,000-232,320 / annual",
+   "posted": "2026-11-20",
+   "pay": "",
    "start": "",
    "duration": "",
    "tags": [
-    "Prototyping",
-    "Design systems",
-    "Packaging"
+    "Motion"
    ],
-   "description": "Job Requisition ID # 26WD102128 Position Overview At Autodesk , we help our customers design and make anything. The Experience Foundations team creates the systems, standards, and experiences that enable that mission, particularly as AI transforms how customers work across increasingly connected products and workflows. Within Experience Foundations for AEC (Architecture, Engineering, and Construction), we are seeking a Principal Conversation Designer to join our content strategy team for Autodesk Assistant. This person will design and evolve the conversational and agentic experiences that shape how customers interact with AI across Autodesk products. This role requires deep expertise in conversation design, interaction design, and human-centered AI. The ideal candidate understands how lang \u2026 elps build a better world designed and made for all. Ready to shape the world and your future? Join us! Benefits From health and financial benefits to time away and everyday wellness, we give Autodesk ers the best, so they can do their best work. Learn more about our benefits in the U.S. by visiting Salary transparency Salary is one part of Autodesk \u2019s competitive compensation package. For U.S.-based roles, we expect a starting base salary between $130,000 and $232,320. Offers are based on the candidate\u2019s experience and geographic location, and may exceed this range. In addition to base salaries, our compensation package may include annual cash bonuses, commissions for sales roles, stock grants, and a comprehensive benefits package. Equal Employment Opportunity At Autodesk , we're building a diverse workplace and an inclusive culture to give more people the chance to imagine, design, and make a better world. Autodesk is proud to be an equal opportunity employer and considers all qualified applicants for employment without regard to race, color, religion, age, sex, sexual orientation, gender, gender identity, national origin, disability, veteran status or any other legally protected characteristic. We also consider for employment all qualified applicants regardless of criminal histories, consistent with applicable law. Belonging We take pride in cultivating a culture of belonging where everyone can thrive. Learn more here: In-Person Onboarding and Identity Verification This role may require in-person onboarding and/or in-person ID verification. Originally posted on Himalayas",
-   "first_seen": "2026-11-18"
+   "description": "Leland is building the home for ambition in the age of AI. We connect people with the experts, programs, and communities they need to land the job, get into the school, or upskill for a world being rewritten by AI. We help businesses become AI-native through training, hiring, and infrastructure. Since our founding in 2021, we've helped tens of thousands of people reach their most ambitious goals and raised $19M from world-class investors. Ambition is sacred to us, and we've built a product that takes that seriously. We're seeking an experienced Database Design & Development Coach to work with clients looking to break into or grow within database design and development roles. This role includes teaching core database design, database development, and data modeling skills, as well as helping clients strengthen database optimization and data management practices. Coaches also guide clients on applying emerging tools like AI fundamentals and AI automation to their database work. On the career side, coaches offer resume review, LinkedIn review, and cover letter guidance, along with behavioral and technical interview prep tailored to database roles, plus networking strategy, salary negotiation, promotion strategy, broader skill building, and support for those pursuing freelancing opportunities. Ideal candidates have hands-on experience in database design or development (as a database engineer, administrator, or industry professional), a strong track record of building efficient and reliable data systems, and a clear, structured approach to coaching clients through both technical and career growth. Coaches set their own hours and rates, host sessions virtually, and partner with our team to deliver a high-quality, supportive experience for every client. Why Leland ? The chance to join a world-class team helping people achieve their career and educational dreams Work in a collaborative, high-energy environment where your contributions have a direct impact Operate in a fast-paced, AI-native environment We don't hire people who merely want to work for a great company; we hire people who want to make a great company Leland is an equal opportunity employer. We encourage candidates of all backgrounds and demographics to apply. Originally posted on Himalayas",
+   "first_seen": "2026-11-20"
   },
   {
-   "id": "Himalayas:https://himalayas.app/companies/altius-search-group/jobs/sprinkler-design-manager",
+   "id": "Himalayas:https://himalayas.app/companies/dealer-tire/jobs/brand-specialist",
    "source": "Himalayas",
-   "title": "Sprinkler Design Manager",
-   "company": "Altius Search Group",
-   "url": "https://himalayas.app/companies/altius-search-group/jobs/sprinkler-design-manager?utm_source=api",
+   "title": "Brand Specialist",
+   "company": "Dealer Tire",
+   "url": "https://himalayas.app/companies/dealer-tire/jobs/brand-specialist?utm_source=api",
    "city": "",
    "state": "",
    "country": "",
    "workplace": "remote",
    "type": "Part-time",
-   "industry": "Not stated",
-   "posted": "2026-11-19",
-   "pay": "$95,000\u2013$125,000 annually, depending on experience Additional Compensation: Prof",
-   "start": "",
-   "duration": "",
-   "tags": [],
-   "description": "Altius Search Group is the recruiting partner for a growing fire protection engineering and design company seeking a Sprinkler Design Manager to lead and expand its sprinkler design business. This is a hands-on leadership opportunity for an experienced designer who wants to build a team, develop client relationships and help shape a growing business. You will oversee design projects from proposal through completion, establish technical and quality standards, and recruit and mentor key team members. Key Responsibilities Business and Project Leadership Lead the sprinkler design business, supporting growth through proposals, estimates and client relationship development. Manage multiple projects from initial concept through completed design. Coordinate with project managers, architects, contr \u2026 ns, specifications and supporting documentation for fire sprinkler systems. Use AutoSPRINK to produce accurate designs and evaluate system flow and pressure requirements. Ensure designs comply with applicable NFPA standards, building codes, local requirements and project specifications. Serve as a technical resource for clients and project partners. Quality Assurance Establish and maintain CAD standards, design specifications and quality review procedures. Review drawings, calculations and documents before submission. Identify and resolve design issues to reduce errors and deliver consistent, accurate work. Present design solutions, explain technical requirements and address client questions or requested changes. Requirements Required Qualifications NICET Level III or higher certification in Water-Based Systems Layout. At least five years of fire sprinkler system design experience, including hydraulic calculations and proficiency with AutoSPRINK. Demonstrated experience leading and developing a design team. Strong knowledge of applicable NFPA standards, the International Building Code and regulatory requirements. Clear written and verbal communication skills. Strong attention to detail, analytical judgment and problem-solving ability. Ability to manage competing priorities and deliver work on schedule. Preferred Experience Experience designing deluge and water spray systems. Highlights Base Salary: $95,000\u2013$125,000 annually, depending on experience Additional Compensation: Profit sharing, performance bonuses and potential ownership opportunity Originally posted on Himalayas",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/logistics-management-institute/jobs/senior-product-designer-clearance-required",
-   "source": "Himalayas",
-   "title": "Senior Product Designer - Clearance Required",
-   "company": "Logistics Management Institute",
-   "url": "https://himalayas.app/companies/logistics-management-institute/jobs/senior-product-designer-clearance-required?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Contract",
    "industry": "Industrial & Manufacturing",
-   "posted": "2026-11-19",
-   "pay": "USD 150,000-200,000 / annual",
+   "posted": "2026-11-20",
+   "pay": "USD 72,000-80,000 / annual",
    "start": "",
    "duration": "",
    "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility"
-   ],
-   "description": "Overview LMI is hiring a Senior Product Designer to shape software around the way national security users work. You will own research and interaction design for complex workflows, working directly with users and engineers from early discovery through initial deployment. You will influence what the team builds and stay involved as designs become working software. You will join a multidisciplinary team within LMI's National Security organization. Work spans technical discovery, rapid prototypes, and selected deployments through initial operational use. The team develops reusable capabilities and transfers them to LMI program or product teams for sustained delivery. LMI is a new breed of digital solutions provider dedicated to accelerating government impact with innovation and speed. Investin \u2026 nts. Strong skills in Figma or a comparable design tool, interactive prototyping, information architecture, and usability testing. Experience designing accessible interfaces and reusable components for data-rich applications. Working understanding of responsive behavior and component-based frontends, with the ability to collaborate closely with software engineers. Ability to explain design decisions, resolve competing user needs, and adapt an approach to technical and operational constraints. T ravel up to 50% for user engagement, deployment support, and forward deployed delivery. Preferred Qualifications Experience with defense, intelligence, logistics, manufacturing, autonomy operations, or other complex operational environments. Experience designing AI-assisted workflows, including source transparency, human review, and error recovery. Experience using AI-assisted or code-based prototyping, or working knowledge of HTML, CSS, and React components. Experience applying WCAG or Section 508 requirements and contributing to a maintained design system. An active U.S. government security clearance. Target salary range is $150,000 - 200,000 Disclaimer: The salary range displayed represents the typical salary range for this position and is not a guarantee of compensation. Individual salaries are determined by various factors including, but not limited to location, internal equity, business considerations, client contract requirements, and candidate qualifications, such as education, experience, skills, and security clearances. Job Locations US-Remote Originally posted on Himalayas",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/the-n2-company/jobs/advertisement-designer",
-   "source": "Himalayas",
-   "title": "Advertisement Designer",
-   "company": "The N2 Company",
-   "url": "https://himalayas.app/companies/the-n2-company/jobs/advertisement-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "industry": "Healthcare & Wellness",
-   "posted": "2026-11-19",
-   "pay": "USD 45,000-45,000 / annual",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Adobe CC",
-    "Illustration",
+    "Branding",
+    "Packaging",
     "Motion",
-    "Print",
-    "Editorial"
+    "Presentations"
    ],
-   "description": "At the N2 Company, our vision is \" to be the most respected franchise in the nation, to share stories that build community, and to provide meaningful work for our team\". About Us The N2 Company is America\u2019s leading publisher of community magazines. We\u2019re proud of our award-winning media brands \u2013 they reach millions of readers in nearly every state and help great businesses connect with ideal clients \u2013 but we\u2019re even more proud to provide supportive and fulfilling remote work opportunities for our people. About The Role Are you looking for an opportunity to put your creative skills to work? Do you have a passion for creating high-quality print ads for clients? Does the potential of growing your skill set appeal to you? If you answered yes, then we have an incredible opportunity for you as a \u2026 hile we take immense pride in the work we do, we believe our culture is what truly sets us apart. If you\u2019re looking for a supportive, drama-free workplace that values both excellence and kindness, we\u2019d love to hear from you. (Brilliant jerks need not apply.) N2 is proud to provide equal employment opportunities (EEO) to all team members and applicants for employment without regard to race, color, natural hairstyles, religion, gender, sexual orientation, gender identity or expression, pregnancy, parental status, national origin, age, disability, genetic information (including family medical history), HIV / AIDs status (or other medical or health conditions), status as a victim of domestic violence, assault, or stalking, marital status, political affiliation, military service, amnesty, or status as a covered veteran in accordance with applicable federal, state, and local laws. N2 conforms to the spirit, as well as complies with, applicable state and local laws governing nondiscrimination in employment in every location in which the company has facilities. These protections extend to all management practices and decisions, including recruitment and hiring, appraisal systems, promotions, training, and career development programs. Consistent with these obligations, EEO also provides reasonable accommodations to employees and applicants with disabilities and for sincerely held religious beliefs, observances, and practices. Remote We are a nationwide business that honors God, strengthens the family, and creates financial wealth for everyone involved. Originally posted on Himalayas",
-   "first_seen": "2026-11-18"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-entry",
-   "source": "Himalayas",
-   "title": "Video Editor, Direct Response Ads (Entry)",
-   "company": "Whiskey Library",
-   "url": "https://himalayas.app/companies/whiskey-library/jobs/video-editor-direct-response-ads-entry?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "industry": "Not stated",
-   "posted": "2026-11-18",
-   "pay": "USD 500-1,000 / monthly",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Adobe CC"
-   ],
-   "description": "Type: Full-time, 40 hours a week, contract, month to month Location: Remote, any country. You must work US Eastern hours. Pay: $500 to $1,000 a month (USD), paid monthly, plus bonuses. Raises are tied to output and ad performance. Whiskey Library is a US bourbon subscription club with over 10,000 members. Members take a 90-second palate quiz and get a monthly Bourbon Mystery Box of full-size bottles. Our growth runs on direct response video ads on Meta and TikTok, and editors are at the center of it. This is the entry point to editor, senior editor and creative strategy roles on our team. What you'll do Edit short vertical (9:16) ads for Meta and TikTok from raw creator and product footage, to a launch-ready standard. Make hook variations: same ad body, new opening, so we can test what stops the scroll. Add captions, on-screen text, music and sound so every ad works with the sound off. Take feedback fast, apply it, and show what changed. What you bring Basic to solid skills in Premiere Pro, CapCut, DaVinci Resolve or Final Cut Pro. Short-form work you can show. You know the difference between an ad that sells and a video that only looks good, or you are eager to learn it. Reliable, clear communicator, available full-time on US Eastern hours. Non-negotiables A portfolio of work you personally edited. No portfolio, no review. Full-time and exclusive: this is your only job, with no other employers or freelance clients. Do the trial before you are considered. Bonus on top of base pay $50 for any ad you edit that spends over $2,500 in a single month, paid per ad. Three ads over $2,500 in a month = $150. Tracked monthly. How hiring works Apply on this page with your portfolio. Shortlisted editors do a trial: one complete, finished ad cut from our raw footage. Everyone does the trial before being considered. Trial edits will not run as live ads unless you are hired. Short call with the team. Offer. How to apply (required) Apply on this page. Add a link to your portfolio: ads or direct response videos you personally edited. Your portfolio is all we need to see. Do not send separate sample videos. Answer the short questions on pay, hours and exclusivity. Applications without a portfolio link are not reviewed. Originally posted on Himalayas",
-   "first_seen": "2026-11-18"
+   "description": "Who We Are We\u2019re Dealer Tire , a family-owned, international distributor of tires and parts established in 1918 in Cleveland, OH. We\u2019re laser focused on helping the world\u2019s largest and most trusted auto manufacturers grow their tire business\u2014in fact, we\u2019ve sold more than 60 million tires to date. We\u2019re a thriving company, and we\u2019re looking for driven individuals to join our team. That\u2019s where you come in! Base Pay Range: $72,000-$80,000 As a Brand Specialist, your essential job functions will include the following: Strategy Lead development of OEM marketing plans to achieve and/or exceed business goals and financial targets. Develop marketing plans that give focused direction to teams/agencies to develop world-class programs that build equity and deliver results. Ensure integration of all  \u2026 creening before beginning work. This position is targeted to be closed on: Why Dealer Tire : An amazing opportunity to join a growing organization, built on the efforts of hard working, innovative, and team-oriented people. The compensation offered for this position will depend on qualifications, experience, and geographic location. The total compensation package may also include commission, bonus or profit sharing. Sign on bonus is subject to state and local laws, terms and conditions, including employment status and length-of-service requirements. We offer a competitive & comprehensive benefit package including: paid time off, medical, dental, vision, and 401k match (50% on the dollar up to 7% of employee contribution). For more information on our benefit offerings, please visit our Dealer Tire Family of Companies Benefits Highlights Booklet. EOE Statement: Dealer Tire is an Equal Employment Opportunity (EEO) employer and does not discriminate on the basis of race, color, national origin, religion, gender, age, veteran status, political affiliation, sexual orientation, marital status or disability (in compliance with the Americans with Disabilities Act*), or any other legally protected status, with respect to employment opportunities. *ADA Disclosure: Any candidate who feels that they may need an accommodation to complete this application, or any portions of same, based on the impact of a disability should contact Dealer Tire \u2019s Human Resources Department to discuss your specific needs. Please feel free to contact us at 1-800-933-2537 x6550. Originally posted on Himalayas",
+   "first_seen": "2026-11-20"
   }
  ]
 }
