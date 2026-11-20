@@ -483,16 +483,16 @@ def normalize(d, source):
     open_remote = (workplace == "remote" and not country and not re.sub(
         r"flexible|remote|virtual|anywhere|worldwide|global|work from home|[\W_]+",
         "", loc, flags=re.I))
-    if not in_us and not open_remote:
-        # Non-US jobs are only allowed when they are remote.
+    if nonus:
+        # Keep only remote international roles.
         if workplace != "remote":
             return None
-
-        if not (nonus and source in NONUS_SOURCES):
+        if source not in NONUS_SOURCES:
             return None
-
         if scam_signals(f"{title} {desc}") or not looks_english(f"{title} {desc}"):
             return None
+    elif not in_us and not open_remote:
+        return None
     else:
         nonus = ""
 
