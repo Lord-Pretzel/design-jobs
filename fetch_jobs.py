@@ -484,8 +484,13 @@ def normalize(d, source):
         r"flexible|remote|virtual|anywhere|worldwide|global|work from home|[\W_]+",
         "", loc, flags=re.I))
     if not in_us and not open_remote:
+        # Non-US jobs are only allowed when they are remote.
+        if workplace != "remote":
+            return None
+
         if not (nonus and source in NONUS_SOURCES):
             return None
+
         if scam_signals(f"{title} {desc}") or not looks_english(f"{title} {desc}"):
             return None
     else:
