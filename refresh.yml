@@ -2,8 +2,8 @@ name: Refresh jobs
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # 11:00 UTC = 6:00 AM Eastern (7:00 AM during daylight time)
-    - cron: "0 23 * * *"   # 6 pm eastern
+    - cron: "0 10 * * *"   # 10:00 UTC = 5:00 AM Eastern (7:00 AM during daylight time)
+    - cron: "0 22 * * *"   # 5 pm eastern
   workflow_dispatch:        # lets you run it by hand from the Actions tab
 
 permissions:
