@@ -112,6 +112,7 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
     <div class="f two"><div><label for="cat">Primary tag</label><select id="cat"></select></div><div><label for="tag">Also tagged with</label><select id="tag"></select></div></div>
     <div class="f two"><div><label for="type">Employment</label><select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div><div><label for="age">Posted within</label><select id="age"><option value="90">3 months</option><option value="30">1 month</option><option value="14">2 weeks</option><option value="7">1 week</option><option value="">Any time</option></select></div></div>
     <div class="f two"><div><label for="st">Location</label><select id="st"></select></div><div><label for="city">City</label><select id="city"></select></div></div>
+    <div class="f two"><div><label for="start">Starts</label><select id="start"><option value="">Any time</option><option value="30">Within 1 month</option><option value="60">Within 2 months</option><option value="90">Within 3 months</option><option value="known">Has a start date</option></select></div><div><label for="sdate">On or after</label><input id="sdate" type="date"></div></div>
     <div class="f"><label for="sort">Sort by</label><select id="sort"><option value="score">Best Match</option><option value="new">Newest</option></select></div>
     <div class="f"><details class="dd" id="moredd"><summary>More options</summary><div class="ddbody row">
       <label><input id="rem" type="checkbox" checked> Keep remote roles with no location</label>
@@ -203,7 +204,7 @@ let OFFIND=new Set(store.get("jobindoff",[]));
 Object.keys(FAVS).forEach(k=>{FAVS[k]=stripInternal(FAVS[k])});
 let QT;
 
-const CTRL=["q","st","city","rem","cat","tag","type","sort","age","only","eng","nonus"];
+const CTRL=["q","st","city","rem","cat","tag","type","sort","age","only","eng","nonus","start","sdate"];
 function saveFilters(){const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);store.set("jobfilters",o)}
 function restore(){const o=store.get("jobfilters",{});CTRL.forEach(k=>{if(!(k in o)||k==="city")return;const e=$("#"+k);if(e.type==="checkbox")e.checked=o[k];else e.value=o[k]});(o.wp||[]).forEach((v,i)=>{const e=document.querySelectorAll("[name=wp]")[i];if(e)e.checked=v});return o.city||""}
 
@@ -298,6 +299,16 @@ function tagOptions(first){
 }
 function fillCat(){$("#cat").innerHTML=tagOptions("All primary tags")}
 function fillTag(){$("#tag").innerHTML=tagOptions("Any tag")}
+/* Start-date filter. Jobs with no stated start date are hidden whenever a start filter is on.
+   "ASAP" counts as starting today. */
+function inStart(j,sel,from){
+  if(!sel&&!from)return true;
+  const s=j.start==="ASAP"?new Date().toISOString().slice(0,10):j.start;
+  if(!s)return false;
+  if(sel==="known")return !from||s>=from;
+  if(sel){const end=new Date(Date.now()+Number(sel)*864e5).toISOString().slice(0,10);if(s>end)return false}
+  return !from||s>=from;
+}
 function inLoc(j){const v=$("#st").value;return !v||(v.startsWith("C:")?j.country===v.slice(2):j.state===v)}
 function fillLocations(){
   const cur=$("#st").value,nonus=$("#nonus").checked;
@@ -310,7 +321,7 @@ function fillLocations(){
 function fillCities(keep){const c={};JOBS.forEach(j=>{if(j.city&&inLoc(j)&&(!j.country||$("#nonus").checked))c[j.city]=(c[j.city]||0)+1});$("#city").innerHTML=opts("All cities",c);if(keep&&c[keep])$("#city").value=keep}
 const DDTOOLS='<div class="ddtools"><button type="button" data-chk="all">Select all</button><button type="button" data-chk="none">Clear all</button></div>';
 function clearFilters(){
-  $("#q").value="";["st","city","cat","tag","type","age","sort"].forEach(k=>{$("#"+k).selectedIndex=0});
+  $("#q").value="";["st","city","cat","tag","type","age","start","sort"].forEach(k=>{$("#"+k).selectedIndex=0});$("#sdate").value="";
   $("#rem").checked=true;$("#only").checked=true;$("#eng").checked=false;$("#nonus").checked=false;
   document.querySelectorAll("[name=wp]").forEach(x=>x.checked=true);
   OFF.clear();OFFIND.clear();store.set("jobsrcoff",[]);store.set("jobindoff",[]);
@@ -360,6 +371,7 @@ function render(){
   if(TAB==="rank")return renderRank(upd);
   const q=$("#q").value.trim().toLowerCase(),st=$("#st").value,city=$("#city").value,type=$("#type").value,cat=$("#cat").value,tag=$("#tag").value,rem=$("#rem").checked,only=$("#only").checked,eng=$("#eng").checked,nonus=$("#nonus").checked;
   const age=$("#age").value,cutoff=age?new Date(Date.now()-Number(age)*864e5).toISOString().slice(0,10):"";
+  const startSel=$("#start").value,sdate=$("#sdate").value;
   const wp=[...document.querySelectorAll("[name=wp]:checked")].map(x=>x.value);
   ddLabels();
   elsewhere($("#q").value.trim(),city,st.replace(/^C:/,""));
@@ -368,6 +380,7 @@ function render(){
     if(OFF.has(j.source)||(only&&j._off)||!wp.includes(j.workplace))return false;
     if(OFFIND.has(j.industry||"Not stated")||(!eng&&j._eng)||(!nonus&&j.country))return false;
     if(cutoff&&j.posted&&j.posted<cutoff)return false;
+    if(!inStart(j,startSel,sdate))return false;
     if(type&&j.type!==type||cat&&j._best!==cat)return false;
     if(tag){if(tag==="unclassified"){if(j._tags.length)return false}else if(!j._tags.includes(tag))return false}
     if(q&&!(j.title+" "+j.company+" "+(j.description||"")+" "+(j.tags||[]).join(" ")).toLowerCase().includes(q))return false;
