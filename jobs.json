@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-23T21:36:30+00:00",
+ "updated": "2026-11-23T23:39:32+00:00",
  "counts": {
   "Aquent": 70,
-  "Company boards": 174,
+  "Company boards": 172,
   "Coroflot": 9,
   "We Work Remotely": 13,
   "Dribbble": 28,
@@ -3032,32 +3032,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782405002",
-   "source": "Company boards",
-   "title": "Staff Brand Designer",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8782405002?gh_jid=8782405002",
-   "city": "New York",
-   "state": "NY",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-09-03",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
-    "Prototyping",
-    "Packaging"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026 Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:brex:8782403002",
    "source": "Company boards",
    "title": "Staff Brand Designer",
@@ -3084,13 +3058,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782404002",
+   "id": "Company boards:brex:8782405002",
    "source": "Company boards",
-   "title": "Staff Brand Designer, Interactive",
+   "title": "Staff Brand Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782404002?gh_jid=8782404002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8782405002?gh_jid=8782405002",
+   "city": "New York",
+   "state": "NY",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -3102,11 +3076,11 @@
    "tags": [
     "Branding",
     "Figma",
+    "Adobe CC",
     "Prototyping",
-    "Design systems",
-    "Accessibility"
+    "Packaging"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026  consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026 Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -3122,6 +3096,32 @@
    "type": "Unknown",
    "industry": "Finance & Insurance",
    "posted": "2026-09-08",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Accessibility"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026  consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:brex:8782404002",
+   "source": "Company boards",
+   "title": "Staff Brand Designer, Interactive",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8782404002?gh_jid=8782404002",
+   "city": "San Francisco",
+   "state": "CA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-09-03",
    "pay": "",
    "start": "",
    "duration": "",
@@ -4080,14 +4080,14 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:samsara:8358689",
+   "id": "Company boards:samsara:8358687",
    "source": "Company boards",
    "title": "Lead Product Designer",
    "company": "Samsara",
-   "url": "https://www.samsara.com/company/careers/roles/8358689?gh_jid=8358689",
+   "url": "https://www.samsara.com/company/careers/roles/8358687?gh_jid=8358687",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
    "type": "Unknown",
    "industry": "Technology & Software",
@@ -4622,13 +4622,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792844002",
+   "id": "Company boards:twitch:8792309002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
-   "city": "Seattle",
-   "state": "WA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -4647,13 +4647,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792309002",
+   "id": "Company boards:twitch:8792844002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -5044,30 +5044,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:riotgames:8368570",
-   "source": "Company boards",
-   "title": "Principal 3D Environment Artist - VALORANT, Maps",
-   "company": "Riot Games",
-   "url": "https://www.riotgames.com/en/work-with-us/job/8368570?gh_jid=8368570",
-   "city": "Los Angeles",
-   "state": "CA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Gaming",
-   "posted": "2026-11-17",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "3D",
-    "Adobe CC",
-    "Art direction"
-   ],
-   "description": "As part of the Environment Art team, you will channel your knowledge of concepting, modeling, and texturing to help tell stories through visually compelling environments. Working within both design and technical constraints you will build optimized environments that elevate the purpose and mood of the game. Your craft expertise and eye for structure, form, shape language, and design will help develop and build fantastic new worlds for our players to explore. As Principal 3D Environment Artist for Maps on VALORANT, you will create environment assets for Maps, ensuring its cohesion in style and quality supports VALORANT art direction. You will partner closely with your cross-discipline team to deliver iconic, creative, and resonant experiences that amplify competitive gameplay for players. You will report directly into the Environment Art Director. Responsibilities: Establish the craft quality bar for the look and feel of 3D environment assets ranging from hard surface structures to organic foliage, including the technical requirements needed to realize the VALORANT IP in new and creative ways Use your understanding of optimized systems for asset creation, taking into account efficiency, speed, and cross dependencies, to ensure the art is within technical performance targets Full ownership of art from design blockout to polish Work directly with the design team to make sure art meets the requirements of gameplay, metrics and technical constraints Work with and establish the Environment Art workflow keeping in mind gameplay, technical constraints and art direction Creating env \u2026 dinance, and the Washington Fair Chance Act. Per the Los Angeles County Fair Chance Ordinance, the following core duties may create a basis for disqualifying candidates with relevant criminal histories: Safeguarding confidential and sensitive Company data Communication with others, including Rioters and third parties such as vendors, and/or players, including minors Accessing Company assets, secure digital systems, and networks Ensuring a safe interactive environment for players and other Rioters These duties are directly related to essential operations, safety, trust, and compliance obligations within our organization. Please note that job duties may evolve based on business needs and additional responsibilities may be assigned as necessary to maintain operational efficiency and security.",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:riotgames:8354628",
    "source": "Company boards",
    "title": "Principal VFX Artist - Unpublished R&D Product",
@@ -5116,29 +5092,6 @@
     "Motion"
    ],
    "description": "Riot Visual Designers craft the best player experiences through their knowledge of systemic design, graphic design, interactivity, layout, typography, color theory, and illustration. Designers collaborate with cross disciplinary teams and act as both artistic and design problem solvers. They understand players and ask questions about the what, who, and how when solving for an interface or communication challenge. As a Principal Visual Design Artist on an unpublished R&D title, you will be responsible for all aspects of Visual Design in an early-stage R&D game. We need your help to produce assets of the highest quality so our players can immerse themselves in our world. You'll report to the Visual Design Lead and collaborate with other artists to establish the style of the game's user interface. You'll also work collaboratively with engineers, designers, and producers, and together will give new, delightful experiences to our players. Responsibilities: Work with the team to create a visual style that satisfies the creative goals - establishing a unique visual identity for the game\u2019s UI Create visually balanced and intuitive interfaces that show an excellent grasp of readability, hierarchy, platform and player behavior patterns Guide the planning of UI work, working with artists and designers to build on the creative vision Create assets through each stage of development, taking ideas from concept to in-game implementation Use deep knowledge of systemic design, graphic design, interactivity, layout, typography, color theory, and illustration to create seamless player experien \u2026 dinance, and the Washington Fair Chance Act. Per the Los Angeles County Fair Chance Ordinance, the following core duties may create a basis for disqualifying candidates with relevant criminal histories: Safeguarding confidential and sensitive Company data Communication with others, including Rioters and third parties such as vendors, and/or players, including minors Accessing Company assets, secure digital systems, and networks Ensuring a safe interactive environment for players and other Rioters These duties are directly related to essential operations, safety, trust, and compliance obligations within our organization. Please note that job duties may evolve based on business needs and additional responsibilities may be assigned as necessary to maintain operational efficiency and security.",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Company boards:riotgames:8368573",
-   "source": "Company boards",
-   "title": "Senior 3D Environment Artist - VALORANT, Maps",
-   "company": "Riot Games",
-   "url": "https://www.riotgames.com/en/work-with-us/job/8368573?gh_jid=8368573",
-   "city": "Los Angeles",
-   "state": "CA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Gaming",
-   "posted": "2026-11-17",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "3D",
-    "Art direction"
-   ],
-   "description": "As part of the Environment Art team, you will channel your knowledge of concepting, modeling, and texturing to help tell stories through visually compelling environments. Working within both design and technical constraints you will build optimized environments that elevate the purpose and mood of the game. Your craft expertise and eye for structure, form, shape language, and design will help develop and build fantastic new worlds for our players to explore. VALORANT is Riot\u2019s take on a character-based tactical shooter. As a 3D Environment Artist III on the VALORANT team, you will report to the Environment Art Director and will help create the handcrafted visual style of the project. Additionally, you will find the right balance between creating a beautiful world, while keeping gameplay constraints in mind. You\u2019ll also help to oversee the creation of environments through modeling, sculpting, texturing, world building and lighting. Responsibilities: Adapt to the look and feel of stylized environments from VALORANT Create 3D assets ranging from modular building kits, hard surface structures, organic objects to foliage Influence asset creation pipeline with your understanding of optimized low poly asset creation such as modular kits to take into account efficiency, speed, and cross dependencies Work with various materials from hand-painted diffuse to PBR workflows Work on lighting for various environments (Interior/Exterior) Full ownership of art from design blockout to polish Creating environment art that not only meets the high visual bar from art direction, but also is perf \u2026 dinance, and the Washington Fair Chance Act. Per the Los Angeles County Fair Chance Ordinance, the following core duties may create a basis for disqualifying candidates with relevant criminal histories: Safeguarding confidential and sensitive Company data Communication with others, including Rioters and third parties such as vendors, and/or players, including minors Accessing Company assets, secure digital systems, and networks Ensuring a safe interactive environment for players and other Rioters These duties are directly related to essential operations, safety, trust, and compliance obligations within our organization. Please note that job duties may evolve based on business needs and additional responsibilities may be assigned as necessary to maintain operational efficiency and security.",
    "first_seen": "2026-11-17"
   },
   {
@@ -5404,16 +5357,16 @@
    "first_seen": "2026-11-19"
   },
   {
-   "id": "Company boards:instacart:8394152",
+   "id": "Company boards:instacart:8394157",
    "source": "Company boards",
    "title": "Senior Product Designer II - Commerce & Retailer Platform",
    "company": "Instacart",
-   "url": "https://instacart.careers/job/?gh_jid=8394152",
+   "url": "https://instacart.careers/job/?gh_jid=8394157",
    "city": "",
    "state": "",
-   "country": "",
+   "country": "Canada",
    "workplace": "remote",
-   "type": "Unknown",
+   "type": "Full-time",
    "industry": "Retail & E-commerce",
    "posted": "2026-11-16",
    "pay": "",
@@ -5426,7 +5379,7 @@
     "Accessibility",
     "Branding"
    ],
-   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. Overview Every day, millions of people use Instacart to get the essentials they need, and along the way they discover new ways to save and earn rewards. Our payments, loyalty, offers and retailer storefront teams power those moments, with a mission to make affordability and financial ease accessible to all through experiences that feel seamless and rewarding. Instacart powers grocery shopping in two ways: the Instacart marketplace, where customers shop across many retailer \u2026 highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please rea d more about our benefits offerings here . For US based candidates, the base pay ranges for a successful candidate are listed below. CA, NY, CT, NJ $203,000 \u2014 $214,000 USD WA $194,000 \u2014 $205,000 USD OR, DE, ME, MA, MD, NH, RI, VT, DC, PA, VA, CO, TX, IL, HI $185,000 \u2014 $195,000 USD All other states $169,000 \u2014 $178,500 USD",
+   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. Overview Every day, millions of people use Instacart to get the essentials they need, and along the way they discover new ways to save and earn rewards. Our payments, loyalty, offers and retailer storefront teams power those moments, with a mission to make affordability and financial ease accessible to all through experiences that feel seamless and rewarding. Instacart powers grocery shopping in two ways: the Instacart marketplace, where customers shop across many retailer \u2026 ship workflows. #LI-remote Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Currently, we are only hiring in the following provinces: Ontario, Alberta, British Columbia, and Nova Scotia. Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please read more about our benefits offerings here . For Canadian based candidates, the base pay ranges for a successful candidate are listed below. CAN $171,000 \u2014 $180,500 CAD",
    "first_seen": "2026-11-23"
   },
   {
