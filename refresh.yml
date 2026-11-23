@@ -2,8 +2,12 @@ name: Refresh jobs
 
 on:
   schedule:
-    - cron: "0 10 * * *"   # 10:00 UTC = 5:00 AM Eastern (7:00 AM during daylight time)
-    - cron: "0 22 * * *"   # 5 pm eastern
+    # GitHub Actions cron is UTC and does not follow daylight saving time.
+    # These are pinned to EST (UTC-5); during EDT each run lands one hour later.
+    - cron: "0 10 * * *"   # 10:00 UTC = 5:00 AM EST  (6:00 AM EDT)
+    - cron: "0 16 * * *"   # 16:00 UTC = 11:00 AM EST (12:00 PM EDT)
+    - cron: "0 22 * * *"   # 22:00 UTC = 5:00 PM EST  (6:00 PM EDT)
+    - cron: "0 4 * * *"    # 04:00 UTC = 11:00 PM EST (12:00 AM EDT)
   workflow_dispatch:        # lets you run it by hand from the Actions tab
 
 permissions:
