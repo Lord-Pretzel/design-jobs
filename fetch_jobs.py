@@ -635,7 +635,29 @@ def fetch_aquent():
         if j and j["title"] and AQUENT_TITLE_RE.search(j["title"]) \
                 and not AQUENT_SKIP_RE.search(j["title"]):
             out.append(j)
+    add_aquent_start_dates(out)
     return out
+
+
+def add_aquent_start_dates(jobs):
+    """The Aquent feed leaves out the Overview box (Start Date, Duration) that
+    each posting page shows, so read the start date from the page itself.
+    A page that fails or has no date just keeps what the feed gave us."""
+    def pull(j):
+        try:
+            page = clean(fetch(j["url"], timeout=30).decode("utf-8", "replace"))
+        except Exception as e:
+            print(f"  Aquent page {j['url']} failed: {e}", file=sys.stderr)
+            return ""
+        start, _ = extract_dates(page)
+        return start
+
+    todo = [j for j in jobs if not j["start"]]
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        for j, start in zip(todo, pool.map(pull, todo)):
+            if start:
+                j["start"] = start
+    print(f"Aquent start dates: {sum(bool(j['start']) for j in jobs)}/{len(jobs)}")
 
 
 def get_json(url):
