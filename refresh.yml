@@ -3,11 +3,12 @@ name: Refresh jobs
 on:
   schedule:
     # GitHub Actions cron is UTC and does not follow daylight saving time.
+    # Odd minutes on purpose: GitHub delays or drops runs scheduled at :00.
     # These are pinned to EST (UTC-5); during EDT each run lands one hour later.
-    - cron: "0 10 * * *"   # 10:00 UTC = 5:00 AM EST  (6:00 AM EDT)
-    - cron: "0 16 * * *"   # 16:00 UTC = 11:00 AM EST (12:00 PM EDT)
-    - cron: "0 22 * * *"   # 22:00 UTC = 5:00 PM EST  (6:00 PM EDT)
-    - cron: "0 4 * * *"    # 04:00 UTC = 11:00 PM EST (12:00 AM EDT)
+    - cron: "17 10 * * *"  # 10:17 UTC = 5:17 AM EST  (6:17 AM EDT)
+    - cron: "43 16 * * *"  # 16:43 UTC = 11:43 AM EST (12:43 PM EDT)
+    - cron: "11 22 * * *"  # 22:11 UTC = 5:11 PM EST  (6:11 PM EDT)
+    - cron: "37 4 * * *"   # 04:37 UTC = 11:37 PM EST (12:37 AM EDT)
   workflow_dispatch:        # lets you run it by hand from the Actions tab
 
 permissions:
