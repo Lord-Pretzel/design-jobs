@@ -1,16 +1,145 @@
 {
- "updated": "2026-11-23T23:39:32+00:00",
+ "updated": "2026-11-24T05:51:02+00:00",
  "counts": {
-  "Aquent": 70,
+  "Aquent": 73,
   "Company boards": 172,
   "Coroflot": 9,
-  "We Work Remotely": 13,
+  "We Work Remotely": 12,
   "Dribbble": 28,
   "Remote OK": 0,
-  "Jobicy": 11,
-  "Himalayas": 34
+  "Jobicy": 10,
+  "Himalayas": 33
  },
  "jobs": [
+  {
+   "id": "Aquent:https://aquent.com/find-work/214713",
+   "source": "Aquent",
+   "title": "Senior Video Editor & Motion Graphics Designer [214713]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214713",
+   "city": "Sydney",
+   "state": "",
+   "country": "Australia",
+   "workplace": "remote",
+   "type": "Contract",
+   "industry": "Not stated",
+   "posted": "2026-11-23",
+   "pay": "",
+   "start": "ASAP",
+   "duration": "",
+   "tags": [
+    "Motion",
+    "Adobe CC",
+    "Branding",
+    "3D",
+    "Editorial"
+   ],
+   "description": "Senior Video Editor & Motion Graphics Designer Start Date: Immediate About the Role We are looking for a highly creative, conceptual Senior Video Editor with strong motion graphics capabilities to partner with a premier global brand. In this role, you will lead the creative direction and visual style for a new flagship series of itinerary videos. Rather than simply assembling footage, you will establish a cohesive, repeatable design language, blending dynamic storytelling, motion graphics, and elevated pacing \u2013 that sets the standard for the brand\u2019s travel and destination content. Key Responsibilities Creative & Conceptual Direction: Develop the overarching visual identity, pacing, and motion style for the brand\u2019s itinerary video series from the ground up. End-to-End Video Editing: Craft compelling, narrative-driven edits that capture the energy, rhythm, and unique appeal of curated travel itineraries. Motion Graphics: Design and animate custom maps, route visualizations, kinetic typography, lower thirds, and UI/editorial overlays that elevate the storytelling. Style System & Template Creation: Build scalable motion graphics templates and a visual style guide to ensure consistency across future episodes and editors. Stakeholder Collaboration: Present early creative concepts, mood boards, and rough cuts to creative directors and brand stakeholders, iterating efficiently based on feedback. What We\u2019re Looking For Proven Senior Experience: 5+ years of experience in video editing and motion design, backed by a standout showreel demonstrating strong conceptual thinking and visual \u2026 dobe After Effects and Premiere Pro (experience with Cinema 4D, Blender, or DaVinci Resolve is a strong plus). Storytelling & Pacing Instincts: A sharp editorial eye capable of turning raw travel, lifestyle, or documentary footage into an engaging, structured narrative. Brand & Typography Sensibility: Deep understanding of layout, modern typography, and how to translate a global brand\u2019s existing guidelines into motion. Self-Directed Execution: Ability to take a high-level creative brief, propose distinct visual directions, and deliver high-caliber work on tight timelines. How to Apply To be considered, please submit: Your Showreel / Portfolio: Highlighting your strongest conceptual editing and motion graphics work (please include timestamps or direct links to relevant projects). #LI-Remote",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Aquent:https://aquent.com/find-work/214695",
+   "source": "Aquent",
+   "title": "Production & Visual Design [214695]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214695",
+   "city": "New York City",
+   "state": "NY",
+   "country": "",
+   "workplace": "hybrid",
+   "type": "Contract",
+   "industry": "Consumer Goods",
+   "posted": "2026-11-23",
+   "pay": "",
+   "start": "2027-01-04",
+   "duration": "",
+   "tags": [
+    "Adobe CC",
+    "Prototyping",
+    "Packaging",
+    "Branding",
+    "Illustration"
+   ],
+   "description": "Role Overview Aquent Studios is seeking a detail-obsessed, hands-on Creative Production & Visual Designer to join our collaborative Global Trade Services (GTS) creative team. Supporting several flagship consumer beauty brands across skin care, hair care, and hair color, you will serve as a brand guardian\u2014providing 360-degree oversight of visual identities from initial concept through final production. In this fast-paced hybrid role (approx. 60% print / 40% digital), you will balance long-term retail merchandising rollouts with rapid day-to-day creative requests, ensuring every consumer-facing touchpoint meets the Beauty Brand\u2019s strict standards for quality, consistency, and pre-press accuracy. Key Responsibilities Print & Retail Merchandising (Primary Focus) Point-of-Sale (POS) & Packaging: Design, adapt, and build print-ready mechanicals on complex dielines for promotional displays, permanent merchandising units, and retail packaging. Pre-Press & Production: Manage final file preparation\u2014ensuring accurate bleeds, die-cuts, fold lines, and CMYK/Pantone color profiles\u2014and coordinate directly with outside print vendors and fabricators through proofing and delivery. AI-Assisted Concepting: Utilize generative AI tools to create realistic, internally facing environmental renderings of store displays for stakeholder alignment prior to prototyping. Print Retouching: Perform color correction and light retouching on product and model imagery to optimize assets for physical print substrates. Digital & E-Commerce Omnichannel Asset Adaptation: Resize, reformat, and build high-convertin \u2026 ital Graphic Designer\u2014ideally within beauty, CPG, retail, or an agency environment. Software Mastery: Adobe Illustrator (Expert): Deep mastery of mechanical dielines, vector graphics, typography, and print production setups. Adobe Photoshop (Expert): Advanced skills in photo compositing, masking, color matching, beauty/product retouching, and generative AI tools. Adobe InDesign (Proficient): Strong layout and multi-page document management skills for pitch decks and print collateral. Adobe Acrobat (Proficient): Experienced in pre-flighting print PDFs, managing markups, and verifying press-ready files. Soft Skills: Exceptional time-management abilities to triage competing deadlines; clear, proactive written and verbal communication; and a collaborative, solution-oriented mindset. #LI-Hybrid",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Aquent:https://aquent.com/find-work/214693",
+   "source": "Aquent",
+   "title": "Talent, Influencer & Experiential Events Manager (Beauty & Fashion) [214693]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214693",
+   "city": "New York",
+   "state": "NY",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Contract",
+   "industry": "Consumer Goods",
+   "posted": "2026-11-23",
+   "pay": "$65.25/hr",
+   "start": "2026-12-14",
+   "duration": "",
+   "tags": [
+    "Apparel",
+    "Branding",
+    "Presentations",
+    "Editorial"
+   ],
+   "description": "We are looking for a sharp, hyper-organized PR and talent professional to act as the right hand to the Director of Communications for an iconic luxury fashion and beauty house. This is a high-visibility, fast-paced role at the intersection of Hollywood, luxury beauty, and experiential events. To start, your primary focus will be taking complete ownership of the operational and administrative backbone of the department\u2014handling purchase orders, product seeding/ordering, and logistics\u2014to free up the Director\u2019s bandwidth. Once you have those workflows locked down, you will actively partner with her across her entire portfolio: VIP celebrity activations, red-carpet makeup artistry, large-scale experiential events, and traditional press. This is not an entry-level coordination role. You will be front-facing with high-profile talent, global teams, and agency partners, so you need the poise, instincts, and experience to operate independently under pressure. What You\u2019ll Own & Execute Department Operations & Admin (Immediate Priority): Take full ownership of day-to-day operational logistics, including managing purchase orders (POs), tracking budgets, handling VIP product ordering/seeding, and keeping internal workflows running smoothly. VIP Talent & Celebrity Activations: Support end-to-end talent partnerships for both short-term campaigns and long-term brand ambassadorships. You\u2019ll assist with casting, contract management, tracking deliverables, and on-set content production. Experiential Events & Launches: Partner on the execution of virtual and in-person events\u2014from intimate VIP  \u2026 high-tier influencers. You know how to navigate talent teams with confidence and discretion. Cultural & Gen Z Fluency: You live and breathe pop culture, social platforms, and emerging trends. You have a sharp instinct for who\u2014and what\u2014is next before it hits the mainstream. Flawless Execution Under Pressure: You are relentlessly organized and detail-obsessed, yet calm and adaptable when timelines shift in a high-stress, fast-moving environment. A Proactive, Vocal Self-Starter: You don\u2019t wait to be told what to do, and you aren\u2019t afraid to speak up, ask questions in the moment, or flag roadblocks proactively. Strong Production & Deck Skills: Hands-on experience with content shoots and event production, paired with strong writing skills and high proficiency in PowerPoint and Excel. #LI-Onsite",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Aquent:https://aquent.com/find-work/214686",
+   "source": "Aquent",
+   "title": "Senior Product Designer [214686]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214686",
+   "city": "New York",
+   "state": "NY",
+   "country": "",
+   "workplace": "remote",
+   "type": "Contract",
+   "industry": "Not stated",
+   "posted": "2026-11-23",
+   "pay": "W2, Benefits",
+   "start": "2027-01-04",
+   "duration": "",
+   "tags": [
+    "Prototyping",
+    "Design systems",
+    "Branding",
+    "Motion",
+    "Web"
+   ],
+   "description": "Note: This is a remote role but must work EST hours. \u2014\u2014 We are looking for a Senior Product Designer to join our media clients design team on a 6-month contract. You\u2019ll work on some of the most high-profile consumer experiences, including their annual year-in-listening experience used by hundreds of millions of people around the world, along with work that shapes how the platform looks and feels across the app. This is a hands-on role for designers with exceptional visual craft who can move quickly from idea to prototype to build, and who do their best work alongside brand, motion, and engineering partners. What You\u2019ll Do Concept and explore. Generate and develop new ideas, from early sketches to rapid AI prototypes. Craft the details. Refine designs across visuals, layout, typography, motion, and interaction until they\u2019re polished and consistent. Bring creative direction to product. Turn brand-led direction into product experiences that scale, are technically feasible, and work across iOS, Android, and web. Ship it. Produce high-quality specs and well-structured prototypes for engineering and motion handoff, and stay close to implementation so quality holds through launch. Collaborate and communicate. Partner closely with Brand, Motion, Engineering, and other product designers. Share work early and often, take feedback well, and keep stakeholders aligned. Deliver against fixed milestones. Spot roadblocks early, adapt as needs change, and hit critical deadlines. Who You Are A senior product designer with 5+ years of experience, a strong portfolio of consumer mobile work , a \u2026  Specs and handoff. Producing precise specs and well-structured files for engineering and motion, with a solid understanding of native iOS and Android constraints. Top 3 Soft Skills Navigating ambiguity. Taking open-ended creative briefs and bringing clarity and direction to them. Cross-functional collaboration. Working closely with Brand, Motion, and Engineering, and taking feedback well. Delivering under pressure. Staying calm, adapting, and hitting fixed milestones without losing quality. Nice-to-Have Skills & Experience Motion design experience, especially for product UI Agency or campaign experience in fast-paced, deadline-driven environments Experience with design systems or visual design languages Experience translating brand or marketing creative into product experiences #LI-Remote",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Aquent:https://aquent.com/find-work/214684",
+   "source": "Aquent",
+   "title": "Graphic Designer [214684]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214684",
+   "city": "New York",
+   "state": "NY",
+   "country": "",
+   "workplace": "hybrid",
+   "type": "Full-time",
+   "industry": "Not stated",
+   "posted": "2026-11-23",
+   "pay": "10-20% Annual bonus",
+   "start": "2027-01-11",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Adobe CC",
+    "Prototyping",
+    "Branding",
+    "Illustration"
+   ],
+   "description": "Graphic Designer Partnering with Aquent, a premier talent agency, you\u2019ll have the opportunity to help shape the visual identity of a respected, mission-driven organization. Your work will bridge the physical and digital worlds, creating high-impact designs for live events and digital channels that help communicate important ideas to a professional audience. The Opportunity We\u2019re seeking a versatile designer who thrives on variety, moving easily from large-format event graphics to polished digital assets. Working closely with creative leadership and cross-functional colleagues, you\u2019ll help keep the brand cohesive, engaging and professional across all touchpoints. This role is a great fit for a creative storyteller who wants to see their designs come to life at in-person events and across digital channels. Key Responsibilities Physical events Bring creative direction to life across a range of events, designing print and large-format materials including signage, stage backdrops, step-and-repeats, banners, name badges and programs. Create on-screen event content such as presentation slides, digital signage loops, speaker title cards and livestream graphics. Prepare print-ready files (bleeds, color profiles and specs) and coordinate with print vendors for smooth execution. Support on-site setup for key events, checking installation quality and handling last-minute design needs. Create co-branded materials for events with external partners that respect both sets of brand guidelines. Digital creation Design social content, including event promotions, speaker announcements and reca \u2026 raphy, layout and color skills, with an eye for polished work suited to executive and professional audiences. Strong collaboration skills, with the ability to explain design decisions and constructively incorporate feedback. Ability to manage multiple projects, meet tight deadlines and support occasional events outside regular hours. Nice-to-Have Qualifications Data visualization skills, turning complex data into clear charts and infographics. Video editing and motion graphics experience in Adobe Premiere and After Effects. Familiarity with Canva, Microsoft Word and Excel, and working across macOS and Windows. Familiarity with project management, CMS and CRM tools such as Asana, Contentful and HubSpot. Event photography, videography, or 3D mockup and environmental design skills. #LI-Hybrid",
+   "first_seen": "2026-11-24"
+  },
   {
    "id": "Aquent:https://aquent.com/find-work/214675",
    "source": "Aquent",
@@ -25,7 +154,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-11-20",
    "pay": "",
-   "start": "",
+   "start": "2026-11-30",
    "duration": "",
    "tags": [
     "Packaging",
@@ -51,7 +180,7 @@
    "industry": "Not stated",
    "posted": "2026-11-20",
    "pay": "",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "Packaging",
@@ -77,7 +206,7 @@
    "industry": "Not stated",
    "posted": "2026-11-20",
    "pay": "DOE",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Branding",
@@ -103,7 +232,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-11-20",
    "pay": "",
-   "start": "",
+   "start": "2027-01-25",
    "duration": "",
    "tags": [
     "Packaging",
@@ -128,7 +257,7 @@
    "industry": "Industrial & Manufacturing",
    "posted": "2026-11-20",
    "pay": "$24.82/hr",
-   "start": "",
+   "start": "2026-12-28",
    "duration": "",
    "tags": [
     "3D",
@@ -152,7 +281,7 @@
    "industry": "Not stated",
    "posted": "2026-11-20",
    "pay": "W2, weekly pay, benefits, 401k w/ match",
-   "start": "",
+   "start": "2026-12-01",
    "duration": "",
    "tags": [
     "Motion",
@@ -174,13 +303,11 @@
    "type": "Contract",
    "industry": "Not stated",
    "posted": "2026-11-19",
-   "pay": "$76.15/hr",
-   "start": "",
+   "pay": "W2 + Benefits Offered",
+   "start": "2027-01-12",
    "duration": "",
-   "tags": [
-    "Presentations"
-   ],
-   "description": "Partnering with Aquent, a cutting-edge technology leader is seeking a collaborative and proactive professional to elevate their internal communication systems and event production. In this role, you will have a direct, daily impact on how teams connect, share ideas, and collaborate globally. By maintaining state-of-the-art conferencing technology and producing high-profile live events, you will ensure seamless operations across the organization, helping to drive innovation and keep teams aligned in a fast-paced environment. The Opportunity This role offers an exciting opportunity to work with modern hardware and software solutions while delivering exceptional service to internal teams. You will play a pivotal role in building out new meeting spaces, maintaining existing systems, and providing real-time support for high-stakes company events. If you are passionate about technology, enjoy solving complex problems, and thrive in a dynamic environment, this is the perfect place to grow your career. Key Responsibilities Provide comprehensive support for all internal audio-visual equipment, including displays, cameras, speakers, controllers, and cabling. Deliver high-quality production support for live-streamed meetings, executive presentations, and webinars. Manage and prioritize the support ticket queue, ensuring rapid resolution and excellent communication. Conduct regular physical sweeps of conference rooms and digital signage to proactively verify functionality. Evaluate, test, and implement new hardware and software solutions to enhance the user experience. Troubleshoot tec \u2026 on and remotely. Create and maintain clear documentation for internal processes and user-facing support guides. What You Bring 1 to 3 years of experience in an audio-visual (AV) or IT support role. Excellent verbal and written communication skills with a strong customer-service mindset. Proven experience running live company events streamed to multiple locations. Hands-on experience managing Zoom Rooms and relevant conferencing hardware. Familiarity configuring iOS, macOS, or other meeting room controllers. Basic knowledge of networking concepts and troubleshooting connectivity issues. Basic troubleshooting skills for Windows and macOS environments as they relate to conferencing. Nice-to-Haves Experience providing high-touch, \u201cwhite-glove\u201d support for executive-level leadership. #LI-Onsite",
+   "tags": [],
+   "description": "Aquent has partnered with a pioneering technology leader dedicated to redefining the future of mobility and innovation. In this role, you will have the unique opportunity to directly shape how this forward-thinking company connects, collaborates, and shares its groundbreaking vision with the world. By bringing high-profile internal and external events to life, your work will foster community, drive alignment, and amplify the voices of industry visionaries during a period of exciting growth. The Opportunity Are you ready to take center stage behind the scenes of high-impact corporate broadcasts and live productions? We are looking for a dynamic, detail-oriented production professional to join a collaborative team delivering world-class live and hybrid events. From executive-level summits and global all-hands to interactive livestreams, you will be the technical heartbeat of every production. You will collaborate closely with producers, presenters, and cross-functional partners to ensure seamless execution, making a tangible impact on how our partner\u2019s global team stays inspired and connected. What You Will Do Set up, operate, and strike comprehensive audio, video, and streaming systems for both internal and external events. Direct live productions across major platforms including Zoom Webinar, Zoom Events, Zoom Studio, Vimeo, and OBS. Manage video switching, routing, and signal flow utilizing TriCaster, NDI, and SDI technologies. Configure and manage advanced audio and control systems, including Q-SYS, wired/wireless microphones, and precise gain structure. Deliver high-qual \u2026 sional camera setups, and RTMP workflows. A strong track record of supporting large-capacity corporate or executive-level productions with high visibility. Solid understanding of hybrid event workflows, including stream redundancy and backup planning. Prior experience supporting live events within an enterprise or fast-paced technology environment. Exceptional verbal and written communication skills, with a natural ability to collaborate across diverse teams. A calm, solution-oriented mindset with the ability to troubleshoot effectively under the pressure of live events. Physical capability to lift, transport, and set up production equipment as needed. Flexibility to work variable hours, including early mornings, late evenings, and occasional weekends to support event schedules. #LI-Onsite",
    "first_seen": "2026-11-21"
   },
   {
@@ -197,7 +324,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-11-19",
    "pay": "$46.67/hr",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Apparel",
@@ -223,7 +350,7 @@
    "industry": "Healthcare & Wellness",
    "posted": "2026-11-19",
    "pay": "",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "Design systems",
@@ -247,7 +374,7 @@
    "industry": "Not stated",
    "posted": "2026-11-19",
    "pay": "$50.00/hr",
-   "start": "",
+   "start": "2026-12-06",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -272,7 +399,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-11-19",
    "pay": "",
-   "start": "",
+   "start": "2026-12-01",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -297,14 +424,14 @@
    "type": "Contract",
    "industry": "Consumer Goods",
    "posted": "2026-11-19",
-   "pay": "",
-   "start": "",
+   "pay": "DOE",
+   "start": "2026-12-14",
    "duration": "",
    "tags": [
     "Packaging",
     "Print"
    ],
-   "description": "THIS ROLE REQUIRES YOU TO BE ONSITE 2 TO 3 DAYS A WEEK IN NEW YORK Senior Creative Project Manager \u2013 Packaging Design & Production Location: Hybrid \u2013 available to be in NYC office 2-3 days a week as needed Reports to: Director Creative Operations/Account Management Position Summary: We are seeking a highly organized and experienced Senior Creative Project Manager to lead and refine the project management processes for our Consumer Packaged Goods (CPG) packaging design and production . In this role, you will be responsible for ensuring that creative teams have all the necessary information to execute packaging projects efficiently while maintaining timelines, budgets, and quality standards. The Senior Creative Project Manager will establish best practices for project intake, estimating, scheduling, and execution. Additionally, they will oversee junior project management resources, fostering a high-performance team environment. This position requires a strong leader with a deep understanding of project workflows in a fast-paced, high-volume creative environment, particularly within packaging design and production . Key Responsibilities: Project Management & Execution: Oversee the end-to-end lifecycle of packaging design and production projects, ensuring on-time and on-budget delivery. Serve as a point of contact, along with Creative Director, for creative project intake, ensuring all necessary information, assets, and approvals are secured before work begins. Partner closely with creative, marketing, and production teams to define and manage project scopes, timelines, and bud \u2026 t skills , with experience implementing project management best practices. Expertise in workflow optimization, resource allocation, and risk management . Ability to effectively manage work outside of a formal project management tool Strong budgeting and cost management skills. Experience with print production, packaging materials, and regulatory requirements , working with comp houses to produce samples. Ability to balance multiple priorities in a fast-paced, high-pressure environment. Excellent communication and stakeholder management skills, with the ability to facilitate collaboration across multiple teams. Preferred Qualifications: Knowledge of Microsoft excel/pivot tables for analysis, budget management Experience working in Google (drives, sheets, slides, etc.) environment #LI-Hybrid",
+   "description": "THIS ROLE REQUIRES YOU TO BE ONSITE 2 TO 3 DAYS A WEEK IN NEW YORK Senior Creative Project Manager \u2013 Packaging Design & Production Location: Hybrid \u2013 available to be in NYC office 2-3 days a week as needed Reports to: Director Creative Operations/Account Management Position Summary: Aquent Studios is seeking a highly organized and experienced Senior Creative Project Manager to lead and refine the project management processes for our Consumer Packaged Goods (CPG) packaging design and production . In this role, you will be responsible for ensuring that creative teams have all the necessary information to execute packaging projects efficiently while maintaining timelines, budgets, and quality standards. The Senior Creative Project Manager will establish best practices for project intake, estimating, scheduling, and execution. Additionally, they will oversee junior project management resources, fostering a high-performance team environment. This position requires a strong leader with a deep understanding of project workflows in a fast-paced, high-volume creative environment, particularly within packaging design and production . Key Responsibilities: Project Management & Execution: Oversee the end-to-end lifecycle of packaging design and production projects, ensuring on-time and on-budget delivery. Serve as a point of contact, along with Creative Director, for creative project intake, ensuring all necessary information, assets, and approvals are secured before work begins. Partner closely with creative, marketing, and production teams to define and manage project scopes, timelin \u2026 t skills , with experience implementing project management best practices. Expertise in workflow optimization, resource allocation, and risk management . Ability to effectively manage work outside of a formal project management tool Strong budgeting and cost management skills. Experience with print production, packaging materials, and regulatory requirements , working with comp houses to produce samples. Ability to balance multiple priorities in a fast-paced, high-pressure environment. Excellent communication and stakeholder management skills, with the ability to facilitate collaboration across multiple teams. Preferred Qualifications: Knowledge of Microsoft excel/pivot tables for analysis, budget management Experience working in Google (drives, sheets, slides, etc.) environment #LI-Hybrid",
    "first_seen": "2026-11-19"
   },
   {
@@ -321,7 +448,7 @@
    "industry": "Not stated",
    "posted": "2026-11-18",
    "pay": "+ Annual Bonus",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "Art direction",
@@ -347,7 +474,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-11-18",
    "pay": "",
-   "start": "",
+   "start": "2026-12-28",
    "duration": "",
    "tags": [
     "Packaging",
@@ -373,7 +500,7 @@
    "industry": "Finance & Insurance",
    "posted": "2026-11-18",
    "pay": "W2, Benefits and 401k matching",
-   "start": "",
+   "start": "2026-12-12",
    "duration": "",
    "tags": [
     "Figma",
@@ -399,7 +526,7 @@
    "industry": "Agency & Consulting",
    "posted": "2026-11-18",
    "pay": "",
-   "start": "",
+   "start": "2026-12-14",
    "duration": "",
    "tags": [
     "Figma",
@@ -408,7 +535,7 @@
     "Illustration",
     "Motion"
    ],
-   "description": "Are you ready to shape the visual identity of one of the world\u2019s most recognizable brands on social media? Aquent is partnering with a global pioneer in technology and digital entertainment to find a visionary creative who will craft high-impact, social-first content. In this dynamic role, you will have the unique opportunity to influence how millions of users interact with major product launches, global brand campaigns, and real-time social moments. By blending design fundamentals with cutting-edge creative tools, you will transform strategic goals into thumb-stopping visuals that define the digital conversation. The Opportunity As a key creative force, you will collaborate closely with Art Directors, Social Producers, Strategists, and Motion Designers to own projects from early conceptualization to final, polished delivery. You will thrive in a fast-paced environment, moving seamlessly between large-scale campaigns and rapid-turn social requests. This is a highly collaborative, low-ego environment where your strategic thinking, design expertise, and passion for emerging creative technologies will directly contribute to the brand\u2019s social success. Key Responsibilities Concept and design social-first assets for campaigns, product launches, and always-on content, including carousels, static graphics, thumbnails, and motion-ready layouts. Translate strategic goals and creative direction into highly polished visuals that feel native to each social platform while maintaining brand integrity. Contribute innovative ideas during team brainstorms and confidently present your work t \u2026 rging trends, and user engagement behaviors. Strong foundational design skills, including excellent typography, layout, hierarchy, composition, and color theory. Working knowledge of After Effects or Premiere Pro, or a proven comfort level building motion-ready files. Familiarity with emerging AI creative tools such as Adobe Firefly, Midjourney, or Runway, along with a curiosity to integrate them into your workflow. Excellent verbal and written communication skills, with the ability to clearly present and defend creative decisions. A resilient, self-motivated, and collaborative mindset, with the ability to stay calm and effective under tight deadlines. Bonus Qualifications (Nice-to-Have) Hands-on experience with photography or on-site content capture for social media and events. #LI-Remote",
+   "description": "Are you ready to shape the visual identity of one of the world\u2019s most recognizable brands on social media? Aquent Studios is partnering with a global pioneer in technology and digital entertainment to find a visionary creative who will craft high-impact, social-first content. In this dynamic role, you will have the unique opportunity to influence how millions of users interact with major product launches, global brand campaigns, and real-time social moments. By blending design fundamentals with cutting-edge creative tools, you will transform strategic goals into thumb-stopping visuals that define the digital conversation. The Opportunity As a key creative force, you will collaborate closely with Art Directors, Social Producers, Strategists, and Motion Designers to own projects from early conceptualization to final, polished delivery. You will thrive in a fast-paced environment, moving seamlessly between large-scale campaigns and rapid-turn social requests. This is a highly collaborative, low-ego environment where your strategic thinking, design expertise, and passion for emerging creative technologies will directly contribute to the brand\u2019s social success. Key Responsibilities Concept and design social-first assets for campaigns, product launches, and always-on content, including carousels, static graphics, thumbnails, and motion-ready layouts. Translate strategic goals and creative direction into highly polished visuals that feel native to each social platform while maintaining brand integrity. Contribute innovative ideas during team brainstorms and confidently present you \u2026 rging trends, and user engagement behaviors. Strong foundational design skills, including excellent typography, layout, hierarchy, composition, and color theory. Working knowledge of After Effects or Premiere Pro, or a proven comfort level building motion-ready files. Familiarity with emerging AI creative tools such as Adobe Firefly, Midjourney, or Runway, along with a curiosity to integrate them into your workflow. Excellent verbal and written communication skills, with the ability to clearly present and defend creative decisions. A resilient, self-motivated, and collaborative mindset, with the ability to stay calm and effective under tight deadlines. Bonus Qualifications (Nice-to-Have) Hands-on experience with photography or on-site content capture for social media and events. #LI-Remote",
    "first_seen": "2026-11-19"
   },
   {
@@ -425,7 +552,7 @@
    "industry": "Media & Entertainment",
    "posted": "2026-11-17",
    "pay": "$45.02/hr",
-   "start": "",
+   "start": "2027-01-11",
    "duration": "",
    "tags": [
     "Motion",
@@ -451,7 +578,7 @@
    "industry": "Not stated",
    "posted": "2026-11-17",
    "pay": "DOE",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Figma",
@@ -474,7 +601,7 @@
    "industry": "Not stated",
    "posted": "2026-11-17",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Packaging",
@@ -500,7 +627,7 @@
    "industry": "Not stated",
    "posted": "2026-11-17",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -509,32 +636,6 @@
    ],
    "description": "Are you ready to transform educational concepts into visually stunning, high-impact digital experiences? Partnering with Aquent, a premier learning and development organization is looking for a creative powerhouse to bring training content to life from script to screen. In this dynamic role, your visual storytelling and motion graphics expertise will directly shape how learners engage with and absorb critical information, making a lasting impact on professional development programs. The Opportunity We are seeking a highly skilled and collaborative creative professional to join a fast-paced team on a project-to-project basis. This freelance position offers variable, part-time hours over an initial three-month period, with the potential for extension. Working closely with scriptwriters and instructional designers, you will translate complex training narratives into engaging, high-quality video content. This is a fantastic opportunity to showcase your independent drive and creative flair while working with a supportive, forward-thinking team. Key Responsibilities Edit high-quality video content with a strong emphasis on sophisticated motion graphics. Collaborate closely with scriptwriters and team members to ensure a cohesive, engaging narrative. Utilize Adobe Photoshop and Illustrator to design and create custom visual assets and graphic elements. Manage multiple projects simultaneously from inception to completion, consistently meeting tight deadlines. Stay ahead of industry trends and software advancements to continuously elevate video production quality. What You Bring 5+ years of professional video editing experience, with a portfolio demonstrating compelling training or educational content. Absolute mastery of Final Cut Pro X (FCPX), including advanced editing techniques and motion graphics creation. Proficiency in Adobe Creative Suite, specifically Photoshop and Illustrator, for graphic design and asset creation. Ownership of a professional-grade laptop and active licenses for Final Cut Pro X and Adobe Creative Suite. A keen eye for detail, strong visual storytelling capabilities, and the ability to work independently with minimal onboarding. Excellent communication and collaboration skills to seamlessly integrate with a creative team. Bonus Points Experience with Adobe After Effects or similar advanced motion graphics software. #LI-Remote",
    "first_seen": "2026-11-20"
-  },
-  {
-   "id": "Aquent:https://aquent.com/find-work/214535",
-   "source": "Aquent",
-   "title": "Graphic Designer II [214535]",
-   "company": "Aquent",
-   "url": "https://aquent.com/find-work/214535",
-   "city": "KOHLER",
-   "state": "WI",
-   "country": "",
-   "workplace": "hybrid",
-   "type": "Contract",
-   "industry": "Not stated",
-   "posted": "2026-11-17",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Adobe CC",
-    "Packaging",
-    "Branding",
-    "Illustration"
-   ],
-   "description": "We have partnered with a globally recognized, design-forward industry leader known for its commitment to craftsmanship, innovation, and elegant design. Partnering with Aquent, this premier organization offers a collaborative, high-energy environment where creative minds can thrive, push boundaries, and shape the visual identity of products that reach millions of consumers. By joining this team, you will contribute to a legacy of excellence and play a vital role in bringing sophisticated brand stories to life. The Opportunity In this dynamic role, you will have the unique opportunity to bring brand stories to life across multiple touchpoints, directly influencing how consumers interact with premium products. You will be the creative spark and production powerhouse behind compelling visual communications, translating strategic visions into stunning print, digital, retail, and environmental designs. From initial concept to final execution, your work will elevate the brand\u2019s presence in the retail landscape, making a tangible impact on the customer journey and driving visual excellence across diverse marketing channels. Key Responsibilities Translate creative briefs and strategic direction into effective visual solutions across brochures, advertising, packaging, merchandising displays, signage, point-of-sale materials, sales collateral, and digital content. Prepare accurate, production-ready files tailored for print, digital, retail, and environmental applications. Uphold strict brand consistency across typography, imagery, layout, and overall visual execution across multiple b \u2026 technical specifications. What You Bring Bachelor\u2019s degree in Graphic Design, Commercial Art, Visual Arts, or a related field. 4 to 7+ years of professional design experience within an agency, design studio, or corporate creative environment. A strong portfolio demonstrating creative concepting, typography, layout, brand application, and end-to-end production execution. Advanced proficiency in Adobe Creative Cloud (InDesign, Photoshop, and Illustrator) alongside a deep understanding of print and digital production requirements. Exceptional communication, collaboration, organizational, and presentation skills. Preferred Qualifications Experience in retail marketing, packaging, merchandising, and environmental graphics. Familiarity with Figma, Adobe Workfront, and Microsoft Teams. #LI-Hybrid",
-   "first_seen": "2026-11-17"
   },
   {
    "id": "Aquent:https://aquent.com/find-work/214523",
@@ -550,7 +651,7 @@
    "industry": "Not stated",
    "posted": "2026-11-16",
    "pay": "W2, weekly pay, benefits, 401k w/ match",
-   "start": "",
+   "start": "2027-01-01",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -575,7 +676,7 @@
    "industry": "Not stated",
    "posted": "2026-11-16",
    "pay": "$66/hr",
-   "start": "",
+   "start": "2026-11-23",
    "duration": "",
    "tags": [
     "Illustration",
@@ -599,7 +700,7 @@
    "industry": "Not stated",
    "posted": "2026-11-16",
    "pay": "",
-   "start": "",
+   "start": "2027-02-01",
    "duration": "",
    "tags": [
     "Figma",
@@ -625,7 +726,7 @@
    "industry": "Media & Entertainment",
    "posted": "2026-11-16",
    "pay": "",
-   "start": "",
+   "start": "2027-01-01",
    "duration": "",
    "tags": [
     "Figma",
@@ -651,7 +752,7 @@
    "industry": "Not stated",
    "posted": "2026-11-14",
    "pay": "$65/hr",
-   "start": "",
+   "start": "2027-01-05",
    "duration": "",
    "tags": [
     "Design systems",
@@ -674,7 +775,7 @@
    "industry": "Gaming",
    "posted": "2026-11-13",
    "pay": "$50/hr",
-   "start": "",
+   "start": "2026-11-30",
    "duration": "",
    "tags": [
     "Figma",
@@ -698,7 +799,7 @@
    "industry": "Not stated",
    "posted": "2026-11-13",
    "pay": "$84.60/hr",
-   "start": "",
+   "start": "ASAP",
    "duration": "",
    "tags": [
     "Design systems",
@@ -724,7 +825,7 @@
    "industry": "Media & Entertainment",
    "posted": "2026-11-12",
    "pay": "W2, weekly pay, benefits, 401k w/ match",
-   "start": "",
+   "start": "2026-12-01",
    "duration": "",
    "tags": [
     "Retouching",
@@ -750,7 +851,7 @@
    "industry": "Not stated",
    "posted": "2026-11-12",
    "pay": "",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "Prototyping"
@@ -772,7 +873,7 @@
    "industry": "Healthcare & Wellness",
    "posted": "2026-11-12",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Prototyping"
@@ -794,7 +895,7 @@
    "industry": "Healthcare & Wellness",
    "posted": "2026-11-11",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Design systems"
@@ -842,7 +943,7 @@
    "industry": "Healthcare & Wellness",
    "posted": "2026-11-11",
    "pay": "",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "Figma",
@@ -868,7 +969,7 @@
    "industry": "Not stated",
    "posted": "2026-11-11",
    "pay": "",
-   "start": "",
+   "start": "2026-12-14",
    "duration": "",
    "tags": [
     "Figma",
@@ -892,7 +993,7 @@
    "industry": "Not stated",
    "posted": "2026-11-10",
    "pay": "",
-   "start": "",
+   "start": "2026-11-30",
    "duration": "",
    "tags": [
     "Figma",
@@ -917,7 +1018,7 @@
    "industry": "Not stated",
    "posted": "2026-11-10",
    "pay": "$62.67/hr",
-   "start": "",
+   "start": "2027-02-01",
    "duration": "",
    "tags": [
     "Branding",
@@ -943,7 +1044,7 @@
    "industry": "Not stated",
    "posted": "2026-11-09",
    "pay": "$60/hr",
-   "start": "",
+   "start": "2026-11-24",
    "duration": "",
    "tags": [
     "Illustration",
@@ -969,7 +1070,7 @@
    "industry": "Not stated",
    "posted": "2026-11-09",
    "pay": "$70/hr",
-   "start": "",
+   "start": "2026-11-23",
    "duration": "",
    "tags": [
     "Motion",
@@ -995,7 +1096,7 @@
    "industry": "Not stated",
    "posted": "2026-11-07",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1018,7 +1119,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-11-07",
    "pay": "",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1043,7 +1144,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-11-06",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Accessibility",
@@ -1067,7 +1168,7 @@
    "industry": "Not stated",
    "posted": "2026-11-05",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Art direction",
@@ -1093,7 +1194,7 @@
    "industry": "Travel & Hospitality",
    "posted": "2026-11-05",
    "pay": "",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "Branding",
@@ -1118,7 +1219,7 @@
    "industry": "Not stated",
    "posted": "2026-11-04",
    "pay": "",
-   "start": "",
+   "start": "2027-01-11",
    "duration": "",
    "tags": [
     "Art direction",
@@ -1143,7 +1244,7 @@
    "industry": "Not stated",
    "posted": "2026-11-04",
    "pay": "$90,000 - $115,000",
-   "start": "",
+   "start": "2026-12-01",
    "duration": "",
    "tags": [
     "Branding",
@@ -1169,7 +1270,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-11-03",
    "pay": "",
-   "start": "",
+   "start": "2026-11-30",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1193,7 +1294,7 @@
    "industry": "Education",
    "posted": "2026-11-02",
    "pay": "",
-   "start": "",
+   "start": "2026-11-09",
    "duration": "",
    "tags": [
     "Motion",
@@ -1218,7 +1319,7 @@
    "industry": "Not stated",
    "posted": "2026-11-02",
    "pay": "",
-   "start": "",
+   "start": "2026-11-16",
    "duration": "",
    "tags": [
     "Figma"
@@ -1240,7 +1341,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-30",
    "pay": "bonus and equity in addition to salary",
-   "start": "",
+   "start": "2026-11-23",
    "duration": "",
    "tags": [
     "Figma",
@@ -1266,7 +1367,7 @@
    "industry": "Not stated",
    "posted": "2026-10-30",
    "pay": "",
-   "start": "",
+   "start": "2026-12-14",
    "duration": "",
    "tags": [
     "Figma",
@@ -1292,7 +1393,7 @@
    "industry": "Not stated",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-12-01",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1318,7 +1419,7 @@
    "industry": "Not stated",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-12-01",
    "duration": "",
    "tags": [],
    "description": "Are you ready to shape the future of groundbreaking products from the ground up? In this highly strategic role, you will have a massive, tangible impact on the direction of new product offerings and revenue streams for a global industry leader, acting as the architect of understanding to uncover critical insights that directly inform what gets built next. About the Opportunity Aquent has partnered with a leading global pioneer dedicated to transforming customer experiences through cutting-edge technology and customer-centric design. By continuously exploring new market opportunities and incubating next-generation solutions, this organization strives to redefine how millions of people interact with products and services daily. Partnering with Aquent, they are building a collaborative, fast-paced environment where innovation thrives and customer needs drive every strategic decision. The Opportunity to Make an Impact In this dynamic position, you will move beyond standard usability testing to lead ambiguous discovery initiatives from inception to strategic impact. You will act as a vital thought partner to product management and business leaders, helping to evaluate, prioritize, and sequence high-stakes product bets. If you are highly curious about business models, product-market fit, and pairing user needs with viable enterprise solutions, this is your opportunity to drive 0-to-1 product development in a highly collaborative and forward-thinking environment. What You\u2019ll Do Lead end-to-end qualitative and mixed-methods research to validate early venture concepts, explore net-n \u2026 , ambiguous findings to director- and VP-level stakeholders with confidence and actionable clarity. A pragmatic, resourceful mindset that thrives in ambiguity, adapts quickly to changing priorities, and finds creative ways to get answers. Curiosity about incorporating emerging AI tools into the research process, balanced with critical judgment regarding data quality, synthesis validity, and moderation ethics. Preferred Qualifications Experience working within new venture incubators, innovation labs, or early-stage 0-to-1 product environments. Hands-on experience conducting research around platform interoperability, workflow optimization, or surveying/data analytics tools. Experience running research programs with constrained, niche, or difficult-to-recruit B2B participant pools. #LI-Onsite",
@@ -1351,29 +1452,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Aquent:https://aquent.com/find-work/214114",
-   "source": "Aquent",
-   "title": "UX Writer & Content Designer (III) [214114]",
-   "company": "Aquent",
-   "url": "https://aquent.com/find-work/214114",
-   "city": "New York",
-   "state": "NY",
-   "country": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "industry": "Not stated",
-   "posted": "2026-10-29",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Illustration",
-    "Presentations"
-   ],
-   "description": "Imagine shaping the future of how millions of people create, collaborate, and communicate every single day by designing intuitive, AI-powered experiences for world-class productivity tools. In this role, you will have the unique opportunity to directly influence next-generation digital platforms, transforming complex machine learning capabilities into seamless, human-centric interactions that empower users worldwide to achieve more with unprecedented ease and creativity. About the Opportunity & Partner Aquent has partnered with a globally recognized technology leader at the forefront of digital innovation to find an exceptional product thinker. By joining forces with this industry pioneer through Aquent, you will work on cutting-edge creation tools and play a pivotal role in integrating advanced AI capabilities into a suite of widely used digital applications. The Role and Your Impact In this pivotal position, you will drive the content strategy for a suite of widely used editor applications, including document creation, spreadsheets, presentations, forms, site building, video, and image editing. Working at the intersection of product strategy, systems design, and cutting-edge creation tools, you will integrate advanced AI capabilities to solve genuine user problems and ensure a seamless, intuitive experience across multiple distinct digital surfaces. This is an extraordinary opportunity to make a massive, visible impact on tools that define modern digital collaboration. What You\u2019ll Do Define conceptual frameworks, naming architectures, and end-to-end task flows, illustrati \u2026 or consumer software platforms. Pragmatic AI Fluency: A deep understanding of how to design for machine learning and Large Language Model (LLM) capabilities, translating complex technology into user-friendly experiences. Systems & Taxonomy Architecture: A proven track record of defining product hierarchies, terminology glossaries, and scalable content frameworks across multi-surface ecosystems. High-Caliber Writing Craft: Exceptional clarity in interface copy, information architecture, and microcopy, with an eye for detail and user empathy. Strong ability to build consensus and influence stakeholders across diverse product, engineering, research, and UX teams. Excellent communication and collaboration skills, with the ability to articulate complex ideas clearly and persuasively. #LI-Remote",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Aquent:https://aquent.com/find-work/214113",
    "source": "Aquent",
    "title": "Senior User Researcher [214113]",
@@ -1387,7 +1465,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-11-23",
    "duration": "",
    "tags": [
     "Accessibility",
@@ -1411,7 +1489,7 @@
    "industry": "Not stated",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-12-14",
    "duration": "",
    "tags": [
     "Figma",
@@ -1434,7 +1512,7 @@
    "industry": "Not stated",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1460,7 +1538,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-11-30",
    "duration": "",
    "tags": [
     "Figma",
@@ -1486,7 +1564,7 @@
    "industry": "Not stated",
    "posted": "2026-10-28",
    "pay": "1-2% Equity",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1509,7 +1587,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-27",
    "pay": "",
-   "start": "",
+   "start": "2026-01-03",
    "duration": "",
    "tags": [
     "Branding",
@@ -1535,7 +1613,7 @@
    "industry": "Not stated",
    "posted": "2026-10-27",
    "pay": "",
-   "start": "",
+   "start": "2026-11-02",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1561,7 +1639,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-10-27",
    "pay": "$65.33/hr",
-   "start": "",
+   "start": "2026-11-16",
    "duration": "",
    "tags": [
     "Apparel",
@@ -1587,7 +1665,7 @@
    "industry": "Not stated",
    "posted": "2026-10-26",
    "pay": "",
-   "start": "",
+   "start": "2026-11-09",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1613,7 +1691,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-20",
    "pay": "W2, hourly with Benefits",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "E-commerce",
@@ -1637,7 +1715,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-09-11",
    "pay": "$56.67/hr",
-   "start": "",
+   "start": "2026-11-29",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1663,7 +1741,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-09-09",
    "pay": "",
-   "start": "",
+   "start": "2026-11-19",
    "duration": "",
    "tags": [
     "Packaging",
@@ -1715,7 +1793,7 @@
    "industry": "Not stated",
    "posted": "2026-08-25",
    "pay": "",
-   "start": "",
+   "start": "2026-10-05",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1741,7 +1819,7 @@
    "industry": "Not stated",
    "posted": "2026-08-21",
    "pay": "",
-   "start": "",
+   "start": "ASAP",
    "duration": "",
    "tags": [
     "Branding",
@@ -2982,31 +3060,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8919847002",
-   "source": "Company boards",
-   "title": "Senior Product Designer, T&E",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8919847002?gh_jid=8919847002",
-   "city": "San Francisco",
-   "state": "CA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-11-04",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Prototyping",
-    "Design systems",
-    "Packaging",
-    "Email"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team for designers who want to build, not just talk about building. We ship constantly, use AI to move faster, and care deeply about craft. Product designers at Brex partner closely with Product, Engineering, Research, Data, and Go-to-Market teams to solve high-stakes proble \u2026 g or partnering on generative and evaluative research. Strong ability to translate complex product, technical, or business constraints into simple customer experiences. Compensation The expected salary range for this role is $192,000 - $240,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:brex:8935731002",
    "source": "Company boards",
    "title": "Senior Product Designer, T&E",
@@ -3032,29 +3085,28 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782403002",
+   "id": "Company boards:brex:8919847002",
    "source": "Company boards",
-   "title": "Staff Brand Designer",
+   "title": "Senior Product Designer, T&E",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
+   "url": "https://www.brex.com/careers/8919847002?gh_jid=8919847002",
    "city": "San Francisco",
    "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-09-03",
+   "posted": "2026-11-04",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
     "Prototyping",
-    "Packaging"
+    "Design systems",
+    "Packaging",
+    "Email"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026 Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team for designers who want to build, not just talk about building. We ship constantly, use AI to move faster, and care deeply about craft. Product designers at Brex partner closely with Product, Engineering, Research, Data, and Go-to-Market teams to solve high-stakes proble \u2026 g or partnering on generative and evaluative research. Strong ability to translate complex product, technical, or business constraints into simple customer experiences. Compensation The expected salary range for this role is $192,000 - $240,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -3084,29 +3136,29 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782407002",
+   "id": "Company boards:brex:8782403002",
    "source": "Company boards",
-   "title": "Staff Brand Designer, Interactive",
+   "title": "Staff Brand Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-09-08",
+   "posted": "2026-09-03",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
     "Branding",
     "Figma",
+    "Adobe CC",
     "Prototyping",
-    "Design systems",
-    "Accessibility"
+    "Packaging"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026  consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026 Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -3122,6 +3174,32 @@
    "type": "Unknown",
    "industry": "Finance & Insurance",
    "posted": "2026-09-03",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Accessibility"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026  consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:brex:8782407002",
+   "source": "Company boards",
+   "title": "Staff Brand Designer, Interactive",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
+   "city": "New York",
+   "state": "NY",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-09-08",
    "pay": "",
    "start": "",
    "duration": "",
@@ -3160,13 +3238,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8777953002",
+   "id": "Company boards:brex:8777949002",
    "source": "Company boards",
    "title": "Staff Product Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8777953002?gh_jid=8777953002",
-   "city": "Seattle",
-   "state": "WA",
+   "url": "https://www.brex.com/careers/8777949002?gh_jid=8777949002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -3184,13 +3262,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8777949002",
+   "id": "Company boards:brex:8777953002",
    "source": "Company boards",
    "title": "Staff Product Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8777949002?gh_jid=8777949002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8777953002?gh_jid=8777953002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -4080,14 +4158,14 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:samsara:8358687",
+   "id": "Company boards:samsara:8358689",
    "source": "Company boards",
    "title": "Lead Product Designer",
    "company": "Samsara",
-   "url": "https://www.samsara.com/company/careers/roles/8358687?gh_jid=8358687",
+   "url": "https://www.samsara.com/company/careers/roles/8358689?gh_jid=8358689",
    "city": "",
    "state": "",
-   "country": "",
+   "country": "Canada",
    "workplace": "remote",
    "type": "Unknown",
    "industry": "Technology & Software",
@@ -4103,7 +4181,7 @@
     "Web"
    ],
    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations\u2122 Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Samsara, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global economy. Representing more than 40% of global GDP, these industries are the infrastructure of our planet, including agriculture, construction, field services, transportation, and manufacturing \u2014 and we are excited to help digitally transform their operations at scale. Working at Samsara means you\u2019ll help define the future of physical operations and be on a team that\u2019s shaping an exciting array of product solutions, including Video-Based Safety, Vehicle Telematics, Apps and Driver Workflows, and Equipment Monitoring. As part of a recently public company, you\u2019ll have the autonomy and support to make an impact as we build for the long term. About this role: As a Lead Product Designer at Samsara, you'll own design for strategic initiatives within one of our product areas, building software that runs in the cab, the yard, the job site, and the dispatch floor, built with the people who use it. You'll frame the problem, design and build the experience across web and mobile, and carry it through launch and iteration with your product and engineering partners. You'll also engage directly with customers, bringing their feedback into your process throughout. This is a remote role open to candidates r \u2026 quire any reasonable accommodations throughout the recruiting process. Our Commitment to Authenticity We use Tofu , a fraud detection tool, to validate the authenticity of applications and protect against identity fraud. This ensures we are connecting with real people and allows us to prioritize genuine candidates. Please see Samsara\u2019s Candidate Privacy Notice for more information. Fraudulent Employment Offers Samsara is aware of scams involving fake job interviews and offers. Please know we do not charge fees to applicants at any stage of the hiring process. Official communication about your application will only come from emails ending in @samsara.com, @us-greenhouse-mail.io or @mail3.guide.co. For more information regarding fraudulent employment offers, please visit our blog post here .",
-   "first_seen": "2026-11-23"
+   "first_seen": "2026-11-24"
   },
   {
    "id": "Company boards:samsara:8358704",
@@ -6365,26 +6443,6 @@
    "first_seen": ""
   },
   {
-   "id": "We Work Remotely:https://weworkremotely.com/remote-jobs/elitebrain-photographer-ai-image-quality-evaluation-remote-u-s",
-   "source": "We Work Remotely",
-   "title": "Photographer \u2013 AI Image Quality Evaluation (Remote, U.S.)",
-   "company": "ELITEBRAIN",
-   "url": "https://weworkremotely.com/remote-jobs/elitebrain-photographer-ai-image-quality-evaluation-remote-u-s",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "industry": "Technology & Software",
-   "posted": "2026-11-03",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [],
-   "description": "Headquarters: Pembroke Pines, Florida, United States URL: https://www.elitebrain.ai Company Description Our client is seeking photography professionals to support an initiative focused on evaluating and improving visual data quality for next-generation artificial intelligence systems. The project combines human creative expertise with detailed image assessment to help improve AI-generated visual content. Job Description We are seeking Photographers for a remote, contract opportunity supporting the evaluation and improvement of visual data used to train next-generation AI systems. You will apply your photography expertise to compare original photographs with AI-generated images, identify visual inconsistencies, and provide detailed written feedback. No prior experience in AI is required. Responsibilities: \u2022 Upload your own original photographic content through a secure digital platform. \u2022 Compare original photographs with AI-generated counterparts, identifying differences, visual flaws, and artifacts. \u2022 Evaluate lighting, composition, perspective, texture, and overall image quality. \u2022 Document findings using accurate technical vocabulary and clear, concise written English. \u2022 Participate in iterative review cycles and adjust feedback as project guidelines evolve. \u2022 Collaborate with the project team to clarify requirements and share observations. \u2022 Maintain current profile information to support project tracking and communication. Location: Remote within the United States. Engagement: Independent contractor. Compensation: USD $21\u2013$65 per hour. Qualifications \u2022 Demonstrated bac \u2026 d collaboration skills. \u2022 Must be based in the United States. Preferred: \u2022 Experience in image evaluation, image annotation, or quality assurance for digital or AI-related projects. No prior experience in artificial intelligence is required. Additional Information \u2022 Work arrangement: Remote. Candidates must be based in the United States. \u2022 Engagement type: Independent contractor. \u2022 Compensation: USD $21\u2013$65 per hour. \u2022 Project focus: Evaluation of original photographs and AI-generated images to support the improvement of AI systems. \u2022 Original content: Participants will upload their own original photographs through a secure digital platform. \u2022 Prior AI experience is not required. To apply: https://weworkremotely.com/remote-jobs/elitebrain-photographer-ai-image-quality-evaluation-remote-u-s",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "We Work Remotely:https://weworkremotely.com/remote-jobs/thatch-brand-designer",
    "source": "We Work Remotely",
    "title": "Brand Designer",
@@ -7333,28 +7391,117 @@
    "first_seen": "2026-11-19"
   },
   {
-   "id": "Jobicy:150689",
-   "source": "Jobicy",
-   "title": "Senior Product Designer",
-   "company": "Ashby",
-   "url": "https://jobicy.com/jobs/150689-senior-product-designer",
+   "id": "Himalayas:https://himalayas.app/companies/kirin/jobs/3d-3d-product-visualization-artist",
+   "source": "Himalayas",
+   "title": "3D \u4ea7\u54c1\u53ef\u89c6\u5316\u8bbe\u8ba1\u5e08 / 3D Product Visualization Artist",
+   "company": "Kirin",
+   "url": "https://himalayas.app/companies/kirin/jobs/3d-3d-product-visualization-artist?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Contract",
+   "industry": "Not stated",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "3D",
+    "E-commerce"
+   ],
+   "description": "\u6211\u4eec\u6b63\u5728\u62db\u8058\u4e00\u540d 3D \u4ea7\u54c1\u53ef\u89c6\u5316\u8bbe\u8ba1\u5e08\uff0c\u4e3a AI \u6d88\u8d39\u786c\u4ef6\u5236\u4f5c\u9ad8\u8d28\u91cf\u9759\u5e27\u3001\u4ea7\u54c1\u9875\u9762\u56fe\u3001\u5e7f\u544a\u7d20\u6750\u548c\u53d1\u5e03\u89c6\u89c9\u3002\u4f60\u4f1a\u4ece CAD/STP\u3001CMF \u65b9\u5411\u548c\u4e0d\u5b8c\u6574\u7684\u8bbe\u8ba1\u8f93\u5165\u51fa\u53d1\uff0c\u5feb\u901f\u4ea7\u51fa\u53ef\u4fe1\u3001\u7cbe\u81f4\u3001\u53ef\u590d\u7528\u7684\u6e32\u67d3\u8d44\u4ea7\u3002 \u5de5\u4f5c\u804c\u8d23 \u2022 \u6e05\u7406 CAD/STP \u6a21\u578b\u5e76\u5efa\u7acb\u9002\u5408\u6e32\u67d3\u7684\u573a\u666f\u3001\u6750\u8d28\u3001\u706f\u5149\u548c\u6444\u50cf\u673a\u3002 \u2022 \u5236\u4f5c\u767d\u5e95\u4ea7\u54c1\u56fe\u3001\u751f\u6d3b\u65b9\u5f0f\u573a\u666f\u3001\u7ec6\u8282\u7279\u5199\u3001\u5206\u89e3\u56fe\u548c\u7535\u5546 PDP \u8d44\u4ea7\u3002 \u2022 \u51c6\u786e\u8868\u8fbe\u5851\u6599\u3001\u91d1\u5c5e\u3001\u73bb\u7483\u3001\u7ec7\u7269\u3001\u534a\u900f\u660e\u548c\u8868\u9762\u5904\u7406\u3002 \u2022 \u6839\u636e\u5de5\u5382\u6837\u54c1\u548c\u53cd\u9988\u5feb\u901f\u8c03\u6574 CMF\u3001\u6bd4\u4f8b\u548c\u7ec6\u8282\u3002 \u2022 \u4ea4\u4ed8\u6709\u7ec4\u7ec7\u7684\u6e90\u6587\u4ef6\u3001\u7eb9\u7406\u548c\u53ef\u590d\u7528\u573a\u666f\u3002 \u4efb\u804c\u8981\u6c42 \u2022 \u63d0\u4f9b\u6d88\u8d39\u7535\u5b50\u6216\u4ea7\u54c1\u53ef\u89c6\u5316\u4f5c\u54c1\u96c6\u3002 \u719f\u7ec3\u4f7f\u7528 Blender\u3001Cinema 4D\u30013ds Max\u3001KeyShot\u3001Octane\u3001Redshift \u6216\u540c\u7c7b\u5de5\u5177\u3002 \u2022 \u80fd\u5904\u7406 CAD/STP \u8f93\u5165\uff0c\u7406\u89e3 PBR \u6750\u8d28\u3001\u8272\u5f69\u7ba1\u7406\u548c\u5408\u6210\u3002 \u2022 \u54c1\u5473\u597d\u3001\u901f\u5ea6\u5feb\uff0c\u80fd\u5728\u8f93\u5165\u4e0d\u5b8c\u6574\u65f6\u72ec\u7acb\u63a8\u8fdb\u3002 English We are hiring a 3D Product Visualization Artist to create polished stills, PDP imagery, campaign assets, and launch visuals for AI consumer hardware. Responsibilities Prepare CAD/STP models and build production-ready scenes, materials, lighting, and cameras. Create clean packshots, lifestyle scenes, detail views, exploded views, and e-commerce assets. Render plastic, metal, glass, fabric, transparency, and surface finishes accurately. Iterate quickly from factory samples and CMF feedback; deliver organized reusable source files. Requirements A strong consumer-electronics or product-visualization portfolio. Fluency in Blender, Cinema 4D, 3ds Max, KeyShot, Octane, Redshift, or comparable tools. Experience with CAD/STP inputs, PBR materials, color management, and compositing. Excellent taste, speed, independence, and comfort working from imperfect inputs. Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/intertek/jobs/junior-graphic-designer",
+   "source": "Himalayas",
+   "title": "Junior Graphic Designer",
+   "company": "Intertek",
+   "url": "https://himalayas.app/companies/intertek/jobs/junior-graphic-designer?utm_source=api",
    "city": "",
    "state": "",
    "country": "",
    "workplace": "remote",
    "type": "Full-time",
    "industry": "Not stated",
-   "posted": "2026-11-17",
-   "pay": "USD 180,000-210,000 / yearly",
+   "posted": "2026-11-24",
+   "pay": "",
    "start": "",
    "duration": "",
    "tags": [
-    "Figma",
-    "Design systems",
-    "E-commerce"
+    "Adobe CC",
+    "Branding",
+    "Illustration",
+    "Print",
+    "Social"
    ],
-   "description": "Hi! \ud83d\udc4b I'm Chris , head of Product Design at Ashby. We're looking for a versatile, intrinsically motivated designer who is excited to contribute to rethinking how modern software is designed. At Ashby, you'll be part designer, part product manager, part consultant, and part design system manager (or some combination of the 4!). We do design differently here, and if that excites you, read on. Our unique approach is working - we're growing >100% year-over-year and have notable customers like Notion, Linear, Shopify, and Snowflake. Our growth and retention metrics are best-in-class among our peers: we have tens of millions in ARR, very low churn, and many years of runway. We're backed by amazing investors like Y Combinator, Elad Gil, Lachy Groom, and many more! We\u2019ll share more details once we meet. How We Work In my previous roles, product teams always consisted of a product manager, a designer, and ~4-5 engineers. This may sound familiar to you! The product manager briefs the designer who then designs. After designing, mocks are handed to the engineers. We take a more principled approach here at Ashby. If you've been designing software enough, you'll realize in actuality, design is required in varying degrees on each project. Sometimes in the past, I'd be asked to design yet another settings page, when really all that was needed was an engineer to reuse existing components and just follow some documentation I had written. Other times, I felt I should effectively be the product manager and own a project from beginning to end. In these latter cases, it made sense that I was eve \u2026 t building that environment from the ground up. I hope that excites you enough to apply. Ashby provides equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability, genetics, sexual orientation, gender identity, or gender expression. We are committed to a diverse and inclusive workforce and welcome people from all backgrounds, experiences, perspectives, and abilities. Ashby is committed to a fair and transparent hiring process. We confirm that this advertisement is for an active, existing vacancy within our organization. Please be advised that we may use artificial intelligence-driven tools to assist our recruitment team in screening, assessing, and selecting candidates for this position.",
-   "first_seen": "2026-11-17"
+   "description": "We are currently looking for a talented Junior Graphic Designer to join our remote team. As a junior graphic designer, you will be responsible for creating visual concepts, developing branding materials, and implementing design solutions for a variety of projects. This is a great opportunity for a creative individual who is looking to gain valuable experience and grow within a dynamic and innovative company. Responsibilities: Collaborate with the creative team to develop visual assets for digital and print materials Design and produce marketing materials such as brochures, flyers, social media graphics, and banner ads Assist in the creation and execution of visual branding for various projects and campaigns Contribute to the development and maintenance of brand guidelines Stay up-to-date with industry trends and best practices in graphic design Work with project managers and senior designers to ensure projects are completed on time and within budget Communicate and present design concepts and ideas to internal stakeholders Requirements: A degree or certification in graphic design or a related field Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign) Strong understanding of design principles and typography Excellent time management and organizational skills Ability to manage multiple projects and meet deadlines Strong attention to detail and ability to produce high-quality work Strong communication and teamwork skills This is a remote position, and only applicants from within the United States will be considered. We are looking for a self-motivated and creative individual who is passionate about design and eager to learn and grow within a fast-paced environment. The ideal candidate will have a portfolio showcasing their design skills and a strong desire to contribute to the success of our team. If you meet the qualifications and are excited about the opportunity to work with a dynamic team in a remote setting, please submit your resume and portfolio for consideration. Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/wex/jobs/solution-design-consultant",
+   "source": "Himalayas",
+   "title": "Solution Design Consultant",
+   "company": "wex",
+   "url": "https://himalayas.app/companies/wex/jobs/solution-design-consultant?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "industry": "Not stated",
+   "posted": "2026-11-24",
+   "pay": "USD 97,300-109,300 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Packaging"
+   ],
+   "description": "About the role/team: The Solution Design Consultant (Level 3) is an advisor within the Global Professional Services Team, specializing in Over the Road (OTR) and North American Mobility (NAM) sectors. This individual provides expert consulting services across the suite of WEX solutions to ensure the success of our customers. This role is responsible for bridging complex customer business requirements with scalable platform capabilities across WEX solutions. Working across the standard four-phase operating model\u2014Intake & Alignment, Discovery, Delivery, and Hypercare\u2014the consultant translates partner business processes into detailed functional specifications, authors Statements of Work (SOWs), and executable implementation plans. The consultant works closely with client business and IT leads, as well as internal Product, Engineering, and Project Management teams to ensure solution feasibility, delivery excellence, and commercial value. How you will make an impact: Functional Solution Design & Architecture (50%) Functional Requirements: Lead functional discovery sessions with partner business stakeholders and IT contacts to evaluate inbound/outbound file formats, APIs, data structures, and operational workflows. Solution Definition: Design clear, supportable end-to-end integration designs for accounts, leveraging standard product offerings and proprietary accelerators where applicable. Standard Operating Model (SOM) Execution: Guide partner requests through the structured intake, qualification, and functional mapping process, ensuring alignment with overall platform architectu \u2026 ch as your qualifications, skills, competencies, and proficiency for the role. Base pay is one component of WEX's total compensation package. Most sales positions are eligible for commission under the terms of an applicable plan. Non-sales roles are typically eligible for a quarterly or annual bonus based on their role and applicable plan. WEX's comprehensive and market competitive benefits are designed to support your personal and professional well-being. Benefits include health, dental and vision insurances, retirement savings plan, paid time off, health savings account, flexible spending accounts, life insurance, disability insurance, tuition reimbursement, and more. For more information, check out the \"About Us\" section.Pay Range: $97,300.00 - $109,300.00 Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/jack-westin/jobs/mcat-psych-soc-curriculum-designer",
+   "source": "Himalayas",
+   "title": "MCAT Psych/Soc Curriculum Designer",
+   "company": "Jack Westin",
+   "url": "https://himalayas.app/companies/jack-westin/jobs/mcat-psych-soc-curriculum-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Contract",
+   "industry": "Education",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [],
+   "description": "About Jack Westin Jack Westin is a leading Medical College Admissions Test (MCAT) preparation company which is known for crafting high quality, but free, practice materials. The MCAT tests students on the scientific reasoning skills and scientific knowledge which can be learned during typical undergraduate coursework. MCAT Psych/Soc Curriculum Designer (Remote, Project-based) Role Summary The MCAT Psych/Soc Curriculum Developer is responsible for building lesson materials for Jack Westin 's relaunched live MCAT courses, which launch in January 2027 with a new modular curriculum. This project-based role focuses on turning detailed lesson outlines into clear, engaging slide decks and student handouts for four Psych/Soc lessons across two topic blocks: Research Methods & Social Psychology and Neuroscience & Cognition. The Curriculum Developer works independently and collaboratively with our curriculum and instructor teams to deliver high-quality, teachable materials that follow Jack Westin 's template and style standards. Compensation Terms: $300 per lesson , or $1,200 for all four lessons Pay includes one round of revisions after review All lessons due by January 1, 2027 Project-based contract Work remotely with flexible scheduling Primary Responsibilities We're looking for a contractor to build four Psych/Soc lessons across two blocks. Research Methods & Social Psychology RM.1 Research Design & Social Influence : observational vs. experimental research, biases, statistical analysis, and related topics RM.2 Stress, Identity & Society : mixed P/S topics taught through famous r \u2026 f submission Focus on lesson content only (quiz questions, homework, and passage selection are handled by other teams) Qualifications Education & Credentials Strong command of MCAT Psych/Soc content, including research methods and neuroscience A strong MCAT score is a plus Experience Experience teaching or tutoring the MCAT Experience turning detailed outlines into lesson materials or slide-based instruction Skills & Competencies Ability to build clean, clear slides that follow a template and style guide Strong understanding of how students learn MCAT Psych/Soc content Ability to work independently and meet project deadlines Responsive to feedback and comfortable with revision cycles Proficiency with slide tools and ClickUp or similar project management tools Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/diana-health/jobs/product-designer",
+   "source": "Himalayas",
+   "title": "Product Designer",
+   "company": "Diana Health",
+   "url": "https://himalayas.app/companies/diana-health/jobs/product-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "industry": "Healthcare & Wellness",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Prototyping"
+   ],
+   "description": "We are adding our first internal Product Designer to our growing team! User experience is a key pillar of Diana Health \u2019s care model and this role will be crucial in ensuring that our users get the support they need from our digital products. For that reason, we are looking for a product designer who is passionate about creating great UI & UX, and excited to play a role in improving the lives of our patients and providers through our digital products. The designer will do this by collaborating across numerous functions to facilitate the design process from research and ideation through testing and launch for both our patient app and our provider digital experience. What you will do: Collaborate with product and engineering to design our patient app and provider digital products In partnership with product, conduct user research to understand user needs and problems Use identified needs to facilitate ideation and solution validation Create user flows, prototypes, wireframes to communicate these ideas Design high fidelity UIs for our patient and provider applications Work with engineering to support optimal implementation and QA designs prior to launch Continue to monitor digital experiences to identify areas for improvement 3+ years of full time product design experience working with product managers and engineers Experience designing for mobile first experiences and/or native apps Highly organized and able to bring that organizational mindset to complex problems Interest in and/or experience working in healthcare Enjoys working collaboratively and is a team player Comfortable with ambiguity and fast paced environment All your information will be kept confidential according to EEO guidelines. Diana Health is a network of modern women\u2019s health practices working in partnership with hospitals to reimagine the maternity and women\u2019s healthcare experience. We are restructuring the traditional approach to care to create an experience that is good for patients and good for providers. We do that by combining a tech-enabled, wellness-focused care program that women love with a clinical system that helps us drive continuous quality improvement and ensure work-life balance for our care team. We work with clients across all life stages to empower and support them to live happier, healthier, more fulfilling lives. Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "Himalayas:https://himalayas.app/companies/fluxe-digital-marketing/jobs/senior-graphic-designer",
@@ -7766,30 +7913,6 @@
    "first_seen": "2026-11-22"
   },
   {
-   "id": "Himalayas:https://himalayas.app/companies/neuraflash/jobs/consultant-conversational-design",
-   "source": "Himalayas",
-   "title": "Consultant, Conversational Design",
-   "company": "NeuraFlash",
-   "url": "https://himalayas.app/companies/neuraflash/jobs/consultant-conversational-design?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "industry": "Technology & Software",
-   "posted": "2026-11-21",
-   "pay": "USD 87,400-266,300 / annual",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Email",
-    "E-commerce",
-    "Web"
-   ],
-   "description": "Why NeuraFlash , Part of Accenture: At NeuraFlash , Part of Accenture, we are redefining the future of business through the power of AI and groundbreaking technologies like Agentforce. As a trusted leader in AI, AWS, and Salesforce innovation, we craft intelligent solutions\u2014integrating Salesforce Einstein, Service Cloud Voice, Amazon Connect, Agentforce and more\u2014to revolutionize workflows, elevate customer experiences, and deliver tangible results. From conversational AI to predictive analytics, we empower organizations to stay ahead in an ever-evolving digital landscape with cutting-edge, tailored strategies. We are proud to be creating the future of generative AI and AI agents. Salesforce has launched Agentforce, and NeuraFlash , Part of Accenture, was selected as the only partner for the private beta prior to launch. Post-launch, we\u2019ve earned the distinction of being Salesforce\u2019s #1 partner for Agentforce, reinforcing our role as pioneers in this transformative space. Be part of the NeuraFlash , Part of Accenture journey and help shape the next wave of AI-powered transformation. Here, you\u2019ll collaborate with trailblazing experts who are passionate about pushing boundaries and leveraging technologies like Agentforce to create impactful customer outcomes. Whether you're developing advanced AI-powered bots, streamlining business operations, or building solutions using the latest generative AI technologies, your work will drive innovation at scale. If you\u2019re ready to make your mark in the AI space, NeuraFlash , Part of Accenture is the place for you. As a Conversational Desi \u2026 f those, no problem! We build a culture of trust and understanding. We value good work not the hours in which you get it done Collaboration: You have a voice here! If you work with a team of smart people like we do, it\u2019s a no-brainer to take suggestions and feedback on how to keep NeuraFlash , Part of Accenture thriving. Our executive team holds town halls & company meetings where they address any suggestions or questions asked, no matter how big or small. Celebrate Often: We take our work seriously, but we don\u2019t take ourselves too seriously. Whether it is an arm wrestling contest, costume party, or ugly holiday sweaters our teams love to have fun. And while we work hard, we don\u2019t forget to slow down and celebrate the big things and the small things together. Originally posted on Himalayas",
-   "first_seen": "2026-11-22"
-  },
-  {
    "id": "Himalayas:https://himalayas.app/companies/snappy-kraken/jobs/junior-web-designer",
    "source": "Himalayas",
    "title": "Junior Web Designer",
@@ -8045,32 +8168,6 @@
    "first_seen": "2026-11-21"
   },
   {
-   "id": "Himalayas:https://himalayas.app/companies/remotejobsone/jobs/ui-ux-designer-remote-worldwide",
-   "source": "Himalayas",
-   "title": "UI/UX Designer \u2013 Remote (Worldwide)",
-   "company": "RemoteJobsOne",
-   "url": "https://himalayas.app/companies/remotejobsone/jobs/ui-ux-designer-remote-worldwide?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "industry": "Not stated",
-   "posted": "2026-11-20",
-   "pay": "USD 160,000-250,000 / annual",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Packaging",
-    "Motion"
-   ],
-   "description": "IMPORTANT: after you apply, please check your email. We sendyou a link to complete your application \u2014 it is not considered until that laststep is done. If you do not see it, check your spam folder. This is a fully remote position , open to candidates based in 55 countries, including Nigeria, United States, United Kingdom, Canada, Germany, India, France, Netherlands. Pay: $160,000\u2013$250,000/yr Job Title: UI/UX Designer Job Type: Full-time Location: Remote The Role We're looking for a UI/UX Designer with exceptional visual taste, strong product instincts, and a passion for crafting intuitive digital experiences. You'll own design across our websites, platforms, and digital products, translating complex workflows into elegant, intuitive, and scalable interfaces. This is a hands-on role for someone who thrives in a fast-moving environment, cares deeply about design quality, and knows how to leverage AI to accelerate creative exploration and execution. What You'll Be Doing Design beautiful, intuitive, and high-performing experiences across web, mobile, and internal platforms. Own the end-to-end design process, from early concepts and wireframes to high-fidelity interfaces and interactive prototypes. Build and evolve scalable design systems, ensuring consistency across products and experiences. Collaborate closely with engineering and product teams to turn complex requirements into polished, production-ready designs. Create compelling marketing assets, including landing pages, social media graphics, ads, email campaigns, and presentations. Leverage AI-powered design tools to accel \u2026  regard to race, color, religion, sex (including pregnancy, sexual orientation, or gender identity), national origin, age, disability, genetic information, veteran status, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation during the application process, reach out to us by replying to our email. Our hiring process utilizes artificial intelligence tools to assist in candidate screening and assessment. Our AI tools are designed to complement, not replace, human decision-making. How to apply Apply here with your profile. We will then email you a link to complete yourapplication on the hiring platform \u2014 your application is only considered oncethat final step is done. Originally posted on Himalayas",
-   "first_seen": "2026-11-21"
-  },
-  {
    "id": "Himalayas:https://himalayas.app/companies/hargrovefirm/jobs/designer-sr",
    "source": "Himalayas",
    "title": "Designer, Sr.",
@@ -8118,102 +8215,6 @@
    ],
    "description": "About the opportunity Do you love turning complex ideas into clear, compelling visuals that help win work? At SWCA, the Pursuit Graphic Designer plays a key role in transforming complex information into compelling visual communications that make our proposals and client presentations easier to understand, more compelling, and make a memorable impact. Working across pursuits in water resources and energy and infrastructure to habitat restoration and cultural resources, you'll use your creative expertise to help clients quickly understand our approach, trust our expertise, and recognize why SWCA is the right partner for their project. This role is for a designer who sees visual storytelling as a strategic part of the pursuit process. You\u2019ll work closely with a national team of proposal professionals, technical experts and client-focused leaders to understand what matters most to the client, identify the story we need to tell, and translate complex ideas into persuasive visual communications. Your work may include infographics, data visualizations, proposal layouts, organizational graphics, process diagrams, maps, interview client presentations, or interactive marketing materials. Whether you\u2019re simplifying a complicated technical approach, highlighting the experience of a project team, or helping bring a win strategy to life, your design work will help make our proposals easier to understand, more memorable, and more competitive. The role is a full-time position reporting to the Creative Services Manager. We offer flexibility to work remotely, in a hybrid capacity, or from an \u2026  design experience. Experience/background working in the environmental consulting industry or other science field Knowledge, Skills, and Abilities : Ability to translate complex information into clear, compelling visual communications. Strong verbal and written communication skills, with the ability to collaborate effectively with pursuit teams, marketing professionals, and technical subject matter experts to create persuasive visual storytelling solutions. Excellent creative thinking, organization, problem-solving, and time-management skills, with strong attention to detail. Ability to manage multiple priorities in a fast-paced, deadline-driven environment. Ability to work effectively both independently and collaboratively as part of a cross-functional team. Originally posted on Himalayas",
    "first_seen": "2026-11-21"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/remotejobsone/jobs/digital-designer-remote-us",
-   "source": "Himalayas",
-   "title": "Digital Designer \u2013 Remote (US)",
-   "company": "RemoteJobsOne",
-   "url": "https://himalayas.app/companies/remotejobsone/jobs/digital-designer-remote-us?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "industry": "Not stated",
-   "posted": "2026-11-20",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Adobe CC",
-    "Email",
-    "3D",
-    "Retouching"
-   ],
-   "description": "IMPORTANT: after you apply, please check your email. We sendyou a link to complete your application \u2014 it is not considered until that laststep is done. If you do not see it, check your spam folder. This is a fully remote position , open to candidates based in United States. Pay: $21\u2013$45/hr Role Title: Digital Artist Role Type: Contractor Location: Remote - US only We are engaging Digital Artists to contribute their creative and technical expertise to a unique project focused on evaluating and enhancing AI-generated images. In this role, you'll apply your expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-quality, real-world input. No prior experience in AI is required \u2014 your domain knowledge is what matters. This opportunity is ideal for those who excel in visual analysis, detailed critique, and clear communication, leveraging both original creations and digital photography skills to advance the state of AI image modeling. Scope of Work Upload your own original digital images or photographs in line with provided project specifications. Conduct side-by-side evaluations of your artwork against AI-generated counterparts, documenting every visible difference and deviation. Identify and articulate issues related to anatomy, color, lighting, perspective, texture, and fine detail. Detect and describe common AI artifacts, including warped anatomy, smeared or broken textures, inconsistent shadows, and irregular reflections or text. Compose concise, visually precise written feedback using industry-standard termi \u2026 toshop, Lightroom, Procreate, Blender, or similar platforms. Exceptional written and verbal communication skills, with emphasis on descriptive and technical visual vocabulary. Demonstrated ability to detect subtle differences and accurately identify artifacts unique to AI-generated images. Basic understanding of AI image generation processes and knowledge of typical failure points (e.g., Midjourney, Stable Diffusion, Firefly, Flux experience is a plus). Experience in image evaluation, data annotation, or quality assurance in creative or technical projects is advantageous. How to apply Apply here with your profile. We will then email you a link to complete yourapplication on the hiring platform \u2014 your application is only considered oncethat final step is done. Originally posted on Himalayas",
-   "first_seen": "2026-11-21"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/pavago/jobs/cabinet-designer-3455874879",
-   "source": "Himalayas",
-   "title": "Cabinet Designer",
-   "company": "Pavago",
-   "url": "https://himalayas.app/companies/pavago/jobs/cabinet-designer-3455874879?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "industry": "Not stated",
-   "posted": "2026-11-20",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Packaging",
-    "Presentations"
-   ],
-   "description": "Cabinet designer Key Responsibilities Cabinet Design & Drafting : Produce accurate, detailed cabinet drawings and layouts using 2020 Design software, ensuring every project meets Cabry Design's quality and specification standards. Client-Ready Documentation : Prepare complete design packages including elevations, floor plans, and cut lists that are ready for client presentation and production hand-off. Design Iteration : Incorporate feedback from the internal team and clients into revised drawings efficiently, managing multiple revision cycles without losing accuracy or detail. Specification & Material Selection : Apply knowledge of cabinet construction, hardware, and finish options to select appropriate materials and components for each project. Cross-Team Coordination : Collaborate with the design and production teams at Cabry Design to ensure designs are buildable, on schedule, and aligned with project scope. Required Experience & Skills Demonstrated hands-on experience using 2020 Design software for cabinet layout, rendering, and documentation. Solid understanding of cabinet construction methods, joinery, hardware systems, and industry standard dimensions. Ability to read and produce accurate architectural drawings and translate client briefs into detailed, workable designs. Strong attention to detail and a track record of delivering clean, error-free design files ready for production. Clear written and verbal communication skills in English, sufficient to coordinate with colleagues and understand client requirements. Perfect Fit / Culture Takes full ownership of a desi \u2026 d design process while also flagging improvements when they spot a better way to do something. Typical Day You start the day by reviewing your active project queue and picking up any overnight feedback from the team. Most of your time is spent inside 2020 Design, building out cabinet layouts, refining elevations, and preparing documentation for production or client review. You may jump on a short coordination call with a colleague in the design department to align on a spec detail or resolve a measurement question. By the end of the day you have updated files uploaded and any outstanding questions flagged, so the project keeps moving without delay. Salary / Hours / Location Location : Remote, open to candidates in the Philippines, Pakistan, and Latin America. Originally posted on Himalayas",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/home-depot-u-s-a-inc/jobs/sr-user-experience-designer",
-   "source": "Himalayas",
-   "title": "Sr. User Experience Designer",
-   "company": "HOME DEPOT U.S.A., INC.",
-   "url": "https://himalayas.app/companies/home-depot-u-s-a-inc/jobs/sr-user-experience-designer?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "industry": "Not stated",
-   "posted": "2026-11-20",
-   "pay": "USD 145,184-180,000 / annual",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Prototyping",
-    "Branding",
-    "Motion",
-    "Presentations",
-    "E-commerce"
-   ],
-   "description": "With a career at The Home Depot, you can be yourself and also be part of something bigger. Key Responsibilities: \u2022 Work with other strategists, designers, and researchers to help craft end-to-end experiences and identify customer needs. \u2022 Lead interview exercises, determine cultural and team fits of candidates and aligns needs of the organization. \u2022 Help UX Leadership align resources to products based on skillset and cultural fit. \u2022 Coach junior resources in UX activities and mentors UX resources for career development. \u2022 Provide UX design artifacts, and tests usability of their assigned product. \u2022 Lead data collection and synthesis. \u2022 Drive delivery in product area. Oversee delivery of other designers. \u2022 Drive vision and purpose. \u2022 Combine user research outputs with OGSMs of partners to clearly articulate the vision of their experience and drive alignment with partners in solutions across products and experiences. \u2022 Partner with Product, Development, other UX resources and business stakeholders across products to align multiple experiences in a domain. \u2022 Drive UX practice across experience, domain, or group of products. \u2022 Display situational adaptability, step in and drive change in products to better align with user needs or organizational goals. \u2022 Requires domestic overnight travel 5% to 20% of the time. \u2022 Telecommuting available. Minimum Qualifications: \u2022 Must be eighteen years of age or older. \u2022 Must be legally permitted to work in the United States. \u2022 Bachelor\u2019s degree in Industrial Design, Advanced Architectural Design, or a related field and 4 years of experience in \u2026 sponsive/adaptive designs, design libraries, diagrams, and animation materials using design and visualization software; \u2022 Translating client, business, or digital requirements into visual presentations, visual narratives, branding principles, and user-friendly physical, spatial, or digital interface solutions; Customer-facing or client-facing projects demonstrating end-to-end design processes, including user/client research, context analysis, journey or circulation mapping, concept wireframing and development, and high-fidelity prototypes or 3D modeling. For California, Colorado, Connecticut, Rhode Island, Nevada, New York City, Ithaca (NY), Westchester County (NY), and Washington residents: The pay range for this position is between $145,184.00 - $180,000.00 Originally posted on Himalayas",
-   "first_seen": "2026-11-20"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/abbott/jobs/automation-and-informatics-consultant-technical-solution-design-central-atlan-6996917123",
-   "source": "Himalayas",
-   "title": "Automation and Informatics Consultant, Technical Solution Design - Central Atlan",
-   "company": "Abbott",
-   "url": "https://himalayas.app/companies/abbott/jobs/automation-and-informatics-consultant-technical-solution-design-central-atlan-6996917123?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "industry": "Healthcare & Wellness",
-   "posted": "2026-11-23",
-   "pay": "USD 99,300-198,700 / annual",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Presentations"
-   ],
-   "description": "Abbott is a global healthcare leader that helps people live more fully at all stages of life. Our portfolio of life-changing technologies spans the spectrum of healthcare, with leading businesses and products in diagnostics, medical devices, nutritionals and branded generic medicines. Our 122,000 colleagues serve people in more than 160 countries. JOB DESCRIPTION: Working at Abbott At Abbott , you can do work that matters, grow, and learn, care for yourself and your family, be your true self, and live a full life. You\u2019ll also have access to: Career development with an international company where you can grow the career you dream of. An excellent retirement savings plan with a high employer contribution. Tuition reimbursement, the Freedom 2 Save student debt program, and FreeU education benefit - an affordable and convenient path to getting a bachelor\u2019s degree. A company recognized as a great place to work in dozens of countries worldwide and named one of the most admired companies in the world by Fortune. A company that is recognized as one of the best big companies to work for as well as the best place to work for diversity, working mothers, female executives, and scientists. The Opportunity We\u2019re empowering smarter medical and economic decision-making to help transform the way people manage their health at all stages of life. Every day, more than 10 million tests are run on Abbott \u2019s diagnostics instruments, providing lab results for millions of people. The Automation and Informatics Consultant is a strategic, customer-facing expert within Abbott \u2019s Technical Solution Des \u2026 e Lab LOCATION: United States of America : Remote ADDITIONAL LOCATIONS: WORK SHIFT: Standard TRAVEL: Yes, 75 % of the Time MEDICAL SURVEILLANCE: No SIGNIFICANT WORK ACTIVITIES: Continuous sitting for prolonged periods (more than 2 consecutive hours in an 8 hour day), Continuous standing for prolonged periods (more than 2 consecutive hours in an 8 hour day), Continuous walking for prolonged periods (more than 2 hours at a time in an 8 hour day), Driving a personal auto or company car or truck, or a powered piece of material handling equipment, Keyboard use (greater or equal to 50% of the workday) Abbott is an Equal Opportunity Employer of Minorities/Women/Individuals with Disabilities/Protected Veterans.EEO is the Law link - English: is the Law link - Espanol: Originally posted on Himalayas",
-   "first_seen": "2026-11-23"
   }
  ]
 }
