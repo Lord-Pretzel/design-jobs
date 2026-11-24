@@ -1,16 +1,39 @@
 {
- "updated": "2026-11-24T17:52:34+00:00",
+ "updated": "2026-11-24T23:40:11+00:00",
  "counts": {
-  "Aquent": 75,
-  "Company boards": 171,
-  "Coroflot": 9,
+  "Aquent": 74,
+  "Company boards": 172,
+  "Coroflot": 10,
   "We Work Remotely": 11,
   "Dribbble": 28,
   "Remote OK": 0,
   "Jobicy": 11,
-  "Himalayas": 35
+  "Himalayas": 36
  },
  "jobs": [
+  {
+   "id": "Aquent:https://aquent.com/find-work/214742",
+   "source": "Aquent",
+   "title": "UX Researcher [214742]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/214742",
+   "city": "San Francisco",
+   "state": "CA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Contract",
+   "industry": "Media & Entertainment",
+   "posted": "2026-11-24",
+   "pay": "$100.43/hr",
+   "start": "2026-11-25",
+   "duration": "",
+   "tags": [
+    "Prototyping",
+    "E-commerce"
+   ],
+   "description": "We are partnering with a global entertainment and digital media leader to find an exceptional research professional who will shape how millions of users worldwide interact with premier digital products. In this role, you will have a massive impact on the user journey, directly influencing how customers discover, subscribe to, and engage with world-class streaming and digital experiences. Partnering with Aquent means you will have dedicated support throughout your career journey with this industry-shaping client, ensuring you are set up for success from day one. This role is based in San Francisco, CA or New York, NY or Seattle, WA. The Opportunity We are seeking a strategic research leader to join a dynamic product design team focused on commerce and growth. You will dive deep into user behavior to understand how people sign up, pay for, and remain engaged with digital services, turning complex data and human insights into clear, actionable design strategies. Operating at a senior level, you will act as a key consultant and thought partner to cross-functional squads, helping to navigate fast-paced product cycles and drive high-impact business decisions. Key Responsibilities Lead and execute end-to-end UX research projects, covering the entire customer journey from early discovery through design validation, including onboarding, checkout, payments, and retention. Employ a rich mix of qualitative and quantitative research methodologies, including interviews, usability testing, surveys, concept testing, and journey mapping. Collaborate closely with product managers, designers, \u2026 lder management and consulting skills, with the ability to prioritize competing requests in a fast-paced, evolving environment. A strong portfolio or selection of case studies demonstrating your research process, critical thinking, and real-world problem-solving. Bachelor\u2019s degree in Human-Computer Interaction (HCI), Computer Science, Human Factors, Psychology, Sociology, Cognitive Science, Anthropology, or a related field (or equivalent practical experience). Preferred Qualifications Master\u2019s degree or Ph.D. in a related field. Experience in streaming, media, e-commerce, or consumer subscription industries. Experience conducting international or multi-market user research. Experience researching ad-supported models, premium tier structures, or price-sensitive consumer segments. #LI-Onsite",
+   "first_seen": "2026-11-24"
+  },
   {
    "id": "Aquent:https://aquent.com/find-work/214713",
    "source": "Aquent",
@@ -307,7 +330,7 @@
    "industry": "Not stated",
    "posted": "2026-11-20",
    "pay": "W2, weekly pay, benefits, 401k w/ match",
-   "start": "",
+   "start": "2026-12-01",
    "duration": "",
    "tags": [
     "Motion",
@@ -666,31 +689,6 @@
    "first_seen": "2026-11-20"
   },
   {
-   "id": "Aquent:https://aquent.com/find-work/214523",
-   "source": "Aquent",
-   "title": "Product Designer IV, Advertising and Business Tools [214523]",
-   "company": "Aquent",
-   "url": "https://aquent.com/find-work/214523",
-   "city": "Culver City",
-   "state": "CA",
-   "country": "",
-   "workplace": "hybrid",
-   "type": "Contract",
-   "industry": "Not stated",
-   "posted": "2026-11-16",
-   "pay": "W2, weekly pay, benefits, 401k w/ match",
-   "start": "2027-01-01",
-   "duration": "",
-   "tags": [
-    "Prototyping",
-    "Design systems",
-    "Accessibility",
-    "Web"
-   ],
-   "description": "Partner with Aquent to make a global impact with a world-renowned technology leader dedicated to creating seamless, intuitive experiences that empower businesses worldwide. We are seeking a talented and passionate designer to help shape the tools that businesses rely on every day to manage operations, reach customers, and analyze performance. In this role, you will have a direct impact on simplifying complex workflows and elevating the user experience for millions of professional users globally. The Opportunity In this dynamic role, you will collaborate closely with product managers, engineers, and fellow designers to transform user needs and complex business requirements into elegant, accessible web and mobile experiences. From early-stage concepts to final implementation, your eye for detail and passion for human-centered design will directly influence how businesses interact with our platforms. This is an incredible opportunity to champion the user\u2019s voice while solving intricate design challenges at scale. Key Responsibilities Create comprehensive user flows, wireframes, prototypes, and high-fidelity designs optimized for both web and mobile platforms. Partner cross-functionally with product management and engineering teams to define core problems, explore creative solutions, and guide designs through to successful implementation. Actively participate in design critiques, user research, and usability testing to continuously evaluate and refine design solutions. Advocate passionately for user needs while strategically balancing business goals and technical constraints. A \u2026 xcellent communication skills with the ability to articulate design decisions clearly, collaborate across diverse functions, and constructively give and receive feedback. Preferred Qualifications Experience designing advertising platforms, business tools, enterprise applications, or other web-based software tailored for professional users. Proven experience working within and contributing to an established design system. Strong organizational skills with the ability to manage multiple projects and adapt seamlessly to shifting priorities. Experience designing data-dense dashboards, reporting interfaces, or tools that help users visualize data and make informed decisions. Familiarity with using experimentation, product data, and direct user feedback to iteratively improve designs. #LI-Hybrid",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Aquent:https://aquent.com/find-work/214518",
    "source": "Aquent",
    "title": "Senior Game Artist [214518]",
@@ -837,32 +835,6 @@
     "Web"
    ],
    "description": "As a key contributor to this pioneering team, you will have a profound, highly visible impact on the visual and interactive foundation of every application built, directly shaping how users interact with next-generation digital products. By bringing meticulous craftsmanship to user interfaces, you will elevate the digital experience, ensuring seamless, beautiful, and highly responsive interactions at every touchpoint. About the Partner & Opportunity Aquent has partnered with a pioneering technology company at the forefront of interactive digital experiences to find exceptional frontend engineering talent to shape the future of their user interfaces. In this role, you will join a team dedicated to high-craft engineering, where your passion for cutting-edge web technologies will directly influence the visual and interactive standards of the company\u2019s product ecosystem. We are seeking a meticulous developer who views user interface development as a true craft\u2014someone who notices when an easing curve is slightly off, a focus state is missing, or spacing is misaligned by even a couple of pixels. You will partner closely with designers to bring highly detailed Figma specifications to life, while also leading the way in integrating advanced AI-assisted workflows to keep generated code consistent with top-tier engineering standards. What You Will Do Build and maintain highly performant React components, ranging from foundational primitives to complex, composite interactive elements. Faithfully implement precise designs from Figma, ensuring flawless execution of states, transitions, \u2026 anced knowledge of CSS, including animation, keyframes, and transitions. Solid experience testing components with Vitest, Testing Library, and Playwright, as well as working knowledge of CI pipelines. Familiarity with design tokens and structuring them to support multi-platform environments (Web, iOS, and Android) from a single source of truth. Extensive experience leveraging AI coding tools effectively, with a disciplined approach to reviewing and validating generated code before deployment. Nice-to-Have Skills Familiarity with MUI, including theming, overrides, and customization. Experience building custom tooling around AI agents, such as MCP servers, custom skills, or specialized codegen. Experience working with React Three Fiber or similar React-based bindings for Three.js. #LI-Onsite",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Aquent:https://aquent.com/find-work/214456",
-   "source": "Aquent",
-   "title": "Retoucher IV [214456]",
-   "company": "Aquent",
-   "url": "https://aquent.com/find-work/214456",
-   "city": "Culver City",
-   "state": "CA",
-   "country": "",
-   "workplace": "hybrid",
-   "type": "Contract",
-   "industry": "Media & Entertainment",
-   "posted": "2026-11-12",
-   "pay": "W2, weekly pay, benefits, 401k w/ match",
-   "start": "2026-12-01",
-   "duration": "",
-   "tags": [
-    "Retouching",
-    "Adobe CC",
-    "Branding",
-    "Illustration",
-    "Motion"
-   ],
-   "description": "Are you ready to elevate visual storytelling on a global scale? Partnering with Aquent, you will join a world-class creative team dedicated to crafting stunning, high-impact content experiences for some of the most widely used digital media and entertainment platforms on the planet. In this role, your artistic precision and technical mastery will directly shape how millions of users interact with and experience media content daily, ensuring every image meets the absolute highest standard of visual excellence. About the Opportunity We are seeking an exceptional, highly experienced senior retouching professional to manage image delivery processes and guidelines across multiple digital platforms. Working in close collaboration with talented designers, producers, and art directors, you will bring a rigorous attention to detail to create polished, flawless assets. This role is perfect for a collaborative, highly organized visual artist who thrives in a fast-paced studio environment and can seamlessly lead projects with external vendors to meet weekly production deadlines. What You Will Do Execute expert-level retouching tasks, including color adjustment and correction, complex masking, image extensions, beauty work, and intricate compositing. Collaborate with cross-functional design and production teams to translate design comps and template layouts into final, polished assets. Manage end-to-end image delivery processes, ensuring strict adherence to file-naming structures, organization guidelines, and quality standards. Lead and coordinate projects with external vendors to ensur \u2026  exceptional, high-end photo retouching work. 7+ years of professional experience in photo retouching within a high-volume studio or agency environment. Expert-level skills in masking, extensions, compositing, beauty retouching, and advanced color correction. Expert knowledge of industry-standard creative tools, specifically Adobe Photoshop, Adobe Illustrator, Capture One, and Lightroom. Proven ability to work independently, troubleshoot technical production issues, and maintain meticulous file organization. Experience working within established design comps, templates, and strict brand guidelines. Bonus Skills (Preferred) Proficiency in motion and video tools such as Adobe After Effects or Premiere. Familiarity with digital design and presentation tools like Sketch and Keynote. #LI-Hybrid",
    "first_seen": "2026-11-17"
   },
   {
@@ -1377,7 +1349,7 @@
     "Design systems",
     "E-commerce"
    ],
-   "description": "This role is onsite 5 days/week in San Bruno, CA. As a Principal Design Accessibility Lead, you\u2019ll lead the charge in defining the next generation of accessible, usable and innovative experiences \u2014 infused with automation and AI at their core. You will operate at the intersection of the customer experience, design thinking, business strategy, data and technology to create scalable solutions that integrate accessibility at the foundation of multiple platforms and ecosystems. ABOUT THE TEAM The Global Accessibility team builds and maintains standards that are used in products and services across Walmart, enhancing the lives of millions worldwide. We strive to ensure experiences are borne accessible for customers, associates and partners\u2014whether they are at home, in our stores, or on the go. WHAT YOU\u2019LL DO Define, craft and create the future of accessibility through AI-powered solutions that unlock quality and velocity \u2014 across the product development lifecycle. Lead a roadmap of work and collaborate seamlessly with cross-functional partners through delivery. Actively solicit feedback from peers and cross-functional stakeholders throughout the product design lifecycle. Champion and mentor coworkers in accessible, AI-native ways of working. Engage the design research team at appropriate points to ensure insights inform the work. Rapidly prototype and experiment in a fast-paced environment. Champion accessibility and Design Thinking throughout the business. Communicate effectively with kindness and empathy. Collaborate seamlessly with cross-functional partners. WHAT YOU\u2019LL BRING \u2026 orkflows, versioning, and translating design tokens into code (JSON, CSS variables). MINIMUM QUALIFICATIONS Bachelor\u2019s degree in Inclusive design, graphic design, visual communication, product design, computer science, information technology, or related field. 7+ years of experience driving accessibility programs and strategy, and/ or accessibility development / engineering or product management. 1-2 years\u2019 experience in advancing accessibility through AI-powered solutions. PREFERRED QUALIFICATIONS Design certification, such as IDEO U Foundations in Design Thinking. Experience driving product development in a UX area. Master\u2019s degree in a relevant discipline. Industry experience in retail, supply chain, eCommerce, or healthcare. Experience creating inclusive digital experiences. #LI-Onsite",
+   "description": "This role is onsite 5 days/week in San Bruno, CA. As a Principal Design Accessibility Lead, you\u2019ll lead the charge in defining the next generation of accessible, usable and innovative experiences \u2014 infused with automation and AI at their core. You will operate at the intersection of the customer experience, design thinking, business strategy, data and technology to create scalable solutions that integrate accessibility at the foundation of multiple platforms and ecosystems. ABOUT THE TEAM The Global Accessibility team builds and maintains standards that are used in products and services across the company, enhancing the lives of millions worldwide. They strive to ensure experiences are borne accessible for customers, associates and partners\u2014whether they are at home, in stores, or on the go. WHAT YOU\u2019LL DO Define, craft and create the future of accessibility through AI-powered solutions that unlock quality and velocity \u2014 across the product development lifecycle. Lead a roadmap of work and collaborate seamlessly with cross-functional partners through delivery. Actively solicit feedback from peers and cross-functional stakeholders throughout the product design lifecycle. Champion and mentor coworkers in accessible, AI-native ways of working. Engage the design research team at appropriate points to ensure insights inform the work. Rapidly prototype and experiment in a fast-paced environment. Champion accessibility and Design Thinking throughout the business. Communicate effectively with kindness and empathy. Collaborate seamlessly with cross-functional partners. WHAT YOU\u2019LL BRI \u2026 orkflows, versioning, and translating design tokens into code (JSON, CSS variables). MINIMUM QUALIFICATIONS Bachelor\u2019s degree in Inclusive design, graphic design, visual communication, product design, computer science, information technology, or related field. 7+ years of experience driving accessibility programs and strategy, and/ or accessibility development / engineering or product management. 1-2 years\u2019 experience in advancing accessibility through AI-powered solutions. PREFERRED QUALIFICATIONS Design certification, such as IDEO U Foundations in Design Thinking. Experience driving product development in a UX area. Master\u2019s degree in a relevant discipline. Industry experience in retail, supply chain, eCommerce, or healthcare. Experience creating inclusive digital experiences. #LI-Onsite",
    "first_seen": "2026-11-24"
   },
   {
@@ -1479,32 +1451,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Aquent:https://aquent.com/find-work/214121",
-   "source": "Aquent",
-   "title": "Email & Marketing Designer [214121]",
-   "company": "Aquent",
-   "url": "https://aquent.com/find-work/214121",
-   "city": "New York City",
-   "state": "NY",
-   "country": "",
-   "workplace": "remote",
-   "type": "Contract",
-   "industry": "Healthcare & Wellness",
-   "posted": "2026-10-29",
-   "pay": "$40 - $55/hr",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Email",
-    "Design systems",
-    "Branding",
-    "Social",
-    "Art direction"
-   ],
-   "description": "Aquent has partnered with a premier academic medical institution dedicated to advancing global health through groundbreaking research, innovative medical education, and compassionate care to find a talented digital creator for an exciting freelance opportunity. In this role, your designs will directly shape how this world-class organization connects with its community, students, and stakeholders, playing a pivotal role in elevating their brand presence and driving engagement that supports scientific discovery and educational excellence. The Opportunity In this dynamic freelance position, you will collaborate closely with an in-house creative team to elevate digital marketing initiatives from concept to execution. You will have the unique opportunity to design and build custom, responsive email campaigns that capture attention and drive action. By developing reusable, modular templates, you will empower the broader team with efficient, high-quality assets, ensuring a cohesive and compelling brand experience across multiple digital touchpoints. Key Responsibilities Design and build custom, responsive email newsletters and campaigns natively within Constant Contact to maximize audience engagement. Develop modular, locked-down templates within Constant Contact and Marq, establishing easily maintainable and scalable design systems for the team. Create eye-catching digital assets for social media platforms and other digital channels, maintaining strict brand consistency. Manage the design lifecycle from initial brainstorming and conceptualization through to final handoff, keeping \u2026 reative peers to contribute to a unified, impactful, and forward-thinking visual strategy. Must-Have Qualifications Deep, hands-on experience designing and setting up custom, responsive templates natively within Constant Contact. A strong portfolio demonstrating exceptional layout design, typography, visual hierarchy, mobile-first principles, and email marketing best practices. Proven proficiency with Marq (formerly Lucidpress), specifically in building locked-down, user-friendly templates. Excellent self-direction and project management skills, with the ability to work autonomously and manage multiple deadlines seamlessly. Nice-to-Have Qualifications Familiarity with email-safe HTML/CSS to troubleshoot rendering issues or customize layouts beyond standard drag-and-drop editors. #LI-Remote",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Aquent:https://aquent.com/find-work/214113",
    "source": "Aquent",
    "title": "Senior User Researcher [214113]",
@@ -1518,7 +1464,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "2026-11-23",
+   "start": "",
    "duration": "",
    "tags": [
     "Accessibility",
@@ -1591,7 +1537,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "2026-11-30",
+   "start": "",
    "duration": "",
    "tags": [
     "Figma",
@@ -1617,7 +1563,7 @@
    "industry": "Not stated",
    "posted": "2026-10-28",
    "pay": "1-2% Equity",
-   "start": "2026-12-07",
+   "start": "",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1640,7 +1586,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-27",
    "pay": "",
-   "start": "2026-01-03",
+   "start": "",
    "duration": "",
    "tags": [
     "Branding",
@@ -1666,7 +1612,7 @@
    "industry": "Not stated",
    "posted": "2026-10-27",
    "pay": "",
-   "start": "",
+   "start": "2026-11-02",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1692,7 +1638,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-10-27",
    "pay": "$65.33/hr",
-   "start": "2026-11-16",
+   "start": "",
    "duration": "",
    "tags": [
     "Apparel",
@@ -1744,7 +1690,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-20",
    "pay": "W2, hourly with Benefits",
-   "start": "2027-01-04",
+   "start": "",
    "duration": "",
    "tags": [
     "E-commerce",
@@ -1753,6 +1699,32 @@
    ],
    "description": "Are you ready to make a massive visual impact behind the scenes of a high-energy creative studio? Aquent is excited to partner with a leading national retail brand and fashion innovator to find a talented creative professional who will transform bold concepts into stunning e-commerce and marketing imagery experienced by millions of customers nationwide. In this pivotal role, your organization, passion, and creative problem-solving will directly shape how a beloved brand is experienced, elevating visual storytelling to new heights. About Our Client Partner Our client partner is a household name in the retail industry, celebrated for its forward-thinking approach to fashion, apparel, and customer engagement. Operating out of a vibrant, state-of-the-art creative studio, they produce captivating content that defines their brand identity. Joining this team through Aquent means collaborating with top-tier creative talent in an environment that champions innovation, storytelling, and professional growth. The Opportunity and Your Impact In this hands-on production role, no two days are the same. Supporting high-volume fashion photography and video shoots, you will bridge the gap between creative vision and flawless execution. From managing complex shoot logistics to fostering a collaborative atmosphere on set, your work ensures that every production runs seamlessly. This is your chance to expand your production expertise, build an incredible professional network, and see your contributions come to life across major digital and marketing platforms. Key Responsibilities Collaborate c \u2026 mands in a fast-paced, high-volume environment. Resourcefulness, quick thinking, and sound judgment when navigating unexpected production challenges. Proficiency with Google Workspace. Bachelor\u2019s degree or equivalent professional experience in a related field. Nice-to-Have Qualifications Direct experience in fashion, apparel, or retail e-commerce photography production, particularly with on-figure shoots. Established relationships with model agencies, casting teams, or freelance hair and makeup professionals. Familiarity with talent rates, usage agreements, booking documentation, and production travel logistics. Experience working within a high-volume in-house creative studio or dynamic commercial production agency. Versatility in supporting both photography and video workflows. #LI-Onsite",
    "first_seen": "2026-11-22"
+  },
+  {
+   "id": "Aquent:https://aquent.com/find-work/213342",
+   "source": "Aquent",
+   "title": "Sr. Visual Designer [213342]",
+   "company": "Aquent",
+   "url": "https://aquent.com/find-work/213342",
+   "city": "Hawthorne",
+   "state": "CA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Contract",
+   "industry": "Not stated",
+   "posted": "2026-09-28",
+   "pay": "W2",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Branding",
+    "Email"
+   ],
+   "description": "Aquent, a leader in talent solutions, is partnering with an innovative technology company at the forefront of connected device experiences. This company is dedicated to creating seamless and intuitive digital interactions that enrich the daily lives of millions. Join a team that values creativity, pushes technological boundaries, and empowers designers to make a tangible impact on customer journeys across a vast and engaged user base. Are you a seasoned digital designer ready to take ownership of impactful customer experiences? We\u2019re seeking a creative powerhouse to define and deliver engaging email and in-app journeys for a leading brand in the connected device space. This is your chance to shape how millions of customers interact with cutting-edge technology, working hands-on to set creative direction, build high-quality work, and leverage AI as a core part of your daily workflow. You\u2019ll be instrumental in crafting compelling narratives for seasonal campaigns and always-on marketing, collaborating with an AI-first creative team to deliver exceptional results that resonate with a broad audience and directly influence customer engagement. What You\u2019ll Do Design and produce digital marketing email and in-app customer experiences from concept through final delivery, ensuring a consistent and delightful user journey. Review AI-generated creative output, identify opportunities for improvement, and apply a rigorous QA lens to ensure the highest quality results. Provide visionary creative direction as a senior designer, setting the quality bar for all creative output and guiding d \u2026 system, contributing to brand consistency and efficiency. Experience with marketing for hardware and software products (physical devices plus in-app experiences, such as smart security or wearable technology), understanding the unique challenges of integrated experiences. Prior involvement in product launch support, contributing to the successful introduction of new technologies to the market. Strong stakeholder management abilities, adept at navigating complex organizational structures and influencing key decision-makers. Excellent cross-functional communication and collaboration skills, fostering a positive and productive team environment. A proven ability to self-manage across concurrent campaigns with fixed deadlines, consistently delivering high-quality work under pressure. #LI-Onsite",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "Aquent:https://aquent.com/find-work/212974",
@@ -1768,7 +1740,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-09-11",
    "pay": "$56.67/hr",
-   "start": "2026-11-29",
+   "start": "",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1794,7 +1766,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-09-09",
    "pay": "",
-   "start": "2026-11-19",
+   "start": "",
    "duration": "",
    "tags": [
     "Packaging",
@@ -1846,7 +1818,7 @@
    "industry": "Not stated",
    "posted": "2026-08-25",
    "pay": "",
-   "start": "2026-10-05",
+   "start": "",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1872,7 +1844,7 @@
    "industry": "Not stated",
    "posted": "2026-08-21",
    "pay": "",
-   "start": "ASAP",
+   "start": "",
    "duration": "",
    "tags": [
     "Branding",
@@ -2064,13 +2036,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:ogilvy:4757364005",
+   "id": "Company boards:ogilvy:4757353005",
    "source": "Company boards",
    "title": "2027 Ogilvy Creative Summer Internship",
    "company": "Ogilvy",
-   "url": "https://www.ogilvy.com/careers/4757364005?gh_jid=4757364005",
-   "city": "Chicago",
-   "state": "IL",
+   "url": "https://www.ogilvy.com/careers/4757353005?gh_jid=4757353005",
+   "city": "New York",
+   "state": "NY",
    "country": "",
    "workplace": "hybrid",
    "type": "Unknown",
@@ -2088,13 +2060,13 @@
    "first_seen": "2026-11-22"
   },
   {
-   "id": "Company boards:ogilvy:4757353005",
+   "id": "Company boards:ogilvy:4757364005",
    "source": "Company boards",
    "title": "2027 Ogilvy Creative Summer Internship",
    "company": "Ogilvy",
-   "url": "https://www.ogilvy.com/careers/4757353005?gh_jid=4757353005",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.ogilvy.com/careers/4757364005?gh_jid=4757364005",
+   "city": "Chicago",
+   "state": "IL",
    "country": "",
    "workplace": "hybrid",
    "type": "Unknown",
@@ -2983,32 +2955,6 @@
    "first_seen": "2026-11-20"
   },
   {
-   "id": "Company boards:brex:8932572002",
-   "source": "Company boards",
-   "title": "Brand Design Manager, Growth",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8932572002?gh_jid=8932572002",
-   "city": "New York",
-   "state": "NY",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-11-05",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
-    "Packaging",
-    "Motion"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you'll do Brex is looking for a Manager, Brand Design (Growth) to join the Design team, a cross-disciplinary group of creatives including product designers, brand desig \u2026 arting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:brex:8920564002",
    "source": "Company boards",
    "title": "Brand Design Manager, Growth",
@@ -3061,18 +3007,18 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782450002",
+   "id": "Company boards:brex:8932572002",
    "source": "Company boards",
-   "title": "Senior Brand Designer",
+   "title": "Brand Design Manager, Growth",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782450002?gh_jid=8782450002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8932572002?gh_jid=8932572002",
+   "city": "New York",
+   "state": "NY",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-09-03",
+   "posted": "2026-11-05",
    "pay": "",
    "start": "",
    "duration": "",
@@ -3080,10 +3026,10 @@
     "Branding",
     "Figma",
     "Adobe CC",
-    "Prototyping",
-    "Packaging"
+    "Packaging",
+    "Motion"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Senior Brand Designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, con \u2026 and web building tools (Figma Make, Sanity, etc.) Experience with motion and animation tools (After Effects, Jitter, etc.) Experience working on both B2B and B2C brands Compensation The expected salary range for this role is $147,000 - $187,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you'll do Brex is looking for a Manager, Brand Design (Growth) to join the Design team, a cross-disciplinary group of creatives including product designers, brand desig \u2026 arting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -3113,28 +3059,29 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8919847002",
+   "id": "Company boards:brex:8782450002",
    "source": "Company boards",
-   "title": "Senior Product Designer, T&E",
+   "title": "Senior Brand Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8919847002?gh_jid=8919847002",
+   "url": "https://www.brex.com/careers/8782450002?gh_jid=8782450002",
    "city": "San Francisco",
    "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-11-04",
+   "posted": "2026-09-03",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
+    "Branding",
+    "Figma",
+    "Adobe CC",
     "Prototyping",
-    "Design systems",
-    "Packaging",
-    "Email"
+    "Packaging"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team for designers who want to build, not just talk about building. We ship constantly, use AI to move faster, and care deeply about craft. Product designers at Brex partner closely with Product, Engineering, Research, Data, and Go-to-Market teams to solve high-stakes proble \u2026 g or partnering on generative and evaluative research. Strong ability to translate complex product, technical, or business constraints into simple customer experiences. Compensation The expected salary range for this role is $192,000 - $240,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Senior Brand Designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, con \u2026 and web building tools (Figma Make, Sanity, etc.) Experience with motion and animation tools (After Effects, Jitter, etc.) Experience working on both B2B and B2C brands Compensation The expected salary range for this role is $147,000 - $187,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -3150,6 +3097,31 @@
    "type": "Unknown",
    "industry": "Finance & Insurance",
    "posted": "2026-11-09",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Prototyping",
+    "Design systems",
+    "Packaging",
+    "Email"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team for designers who want to build, not just talk about building. We ship constantly, use AI to move faster, and care deeply about craft. Product designers at Brex partner closely with Product, Engineering, Research, Data, and Go-to-Market teams to solve high-stakes proble \u2026 g or partnering on generative and evaluative research. Strong ability to translate complex product, technical, or business constraints into simple customer experiences. Compensation The expected salary range for this role is $192,000 - $240,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:brex:8919847002",
+   "source": "Company boards",
+   "title": "Senior Product Designer, T&E",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8919847002?gh_jid=8919847002",
+   "city": "San Francisco",
+   "state": "CA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-11-04",
    "pay": "",
    "start": "",
    "duration": "",
@@ -3488,6 +3460,52 @@
    "first_seen": "2026-11-17"
   },
   {
+   "id": "Company boards:coinbase:8411576",
+   "source": "Company boards",
+   "title": "Brand Partnership Associate - esports, Gaming & Internet Culture",
+   "company": "Coinbase",
+   "url": "https://www.coinbase.com/careers/positions/8411576?gh_jid=8411576",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Email"
+   ],
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions 52 million Americans own crypto, and they skew younger, more diverse, and more digitally engaged. Coinbase is building the platform for the onchain economy, from crypto trading to tokenized stocks, prediction markets, and beyond. The Brand Partnerships team meets this audience where they already are, partnering with premium sports, gaming, and lifestyle properties to build cultural relevance and shift brand perception through activations that feel unconventional yet native. As a Brand Partnership Associate - esports, Gaming & Internet Culture, you'll own the coordination and operational execution across Coinbase\u2019s gaming and crypto portfolio, including partnerships with Riot Games, Polytopia, and gaming and crypto-native creators, managing timelines, partner deliverables, and activation logistics. What you\u2019ll do: Develop and maintain relationships with key gaming partne \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Company boards:coinbase:8268156",
+   "source": "Company boards",
+   "title": "Brand Partnership Associate, Sports",
+   "company": "Coinbase",
+   "url": "https://www.coinbase.com/careers/positions/8268156?gh_jid=8268156",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Email"
+   ],
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions 52 million Americans own crypto, and they skew younger, more diverse, and more digitally engaged. Coinbase is building the platform for the onchain economy, from crypto trading to tokenized stocks, prediction markets, and beyond. The Brand Partnerships team meets this audience where they already are, partnering with premium sports, gaming, and lifestyle properties to build cultural relevance and shift brand perception through activations that feel unconventional yet native. As a Brand Partnership Associate - Sports, you'll own the coordination and operational execution across a multi-sport portfolio that includes Aston Martin F1, Golden State Warriors, Valkyries, New York Liberty, and emerging properties, managing timelines, partner deliverables, and hospitality logistics across some of the most visible partnerships in the industry. What you\u2019ll do: Develop and maintain  \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "first_seen": "2026-11-24"
+  },
+  {
    "id": "Company boards:coinbase:8351419",
    "source": "Company boards",
    "title": "Head of Creative Operations",
@@ -3508,7 +3526,7 @@
     "Motion",
     "Email"
    ],
-   "description": "Ready to do the most impactful work of your career? At Coinbase , we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase . Coinbase Creative Studio operates at the intersection of art, culture, and technology. We create original, high-impact work that helps define the Coinbase brand and bring our products to life in differentiated ways. Our portfolio spans large-scale brand and product campaigns with month-long timelines, as well as high-priority assets that need to move from brief to delivery the same day. We partner closely with internal creatives, producers, strategists, marketers, and some of the world\u2019s leading agencies and production partners to deliver work across channels and formats. As Design Operations Manager, you will own and evolve the operating model that enables our design and motion teams to do their best work. You will sit at the center of our creative ecosystem, connecting people, processes, partners, and priorities across a diverse portfolio of work. You will own resource planning for full-time and contract design and motion talent, set resource and capacity strategy across the portfolio \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions Coinbase Creative Studio operates at the intersection of art, culture, and technology. We create original, high-impact work that helps define the Coinbase brand and bring our products to life in differentiated ways. Our portfolio spans large-scale brand and product campaigns with month-long timelines, as well as high-priority assets that need to move from brief to delivery the same day. We partner closely with internal creatives, producers, strategists, marketers, and some of the world\u2019s leading agencies and production partners to deliver work across channels and formats. As Design Operations Manager, you will own and evolve the operating model that enables our design and motion teams to do their best work. You will sit at the center of our creative ecosystem, connecting people, processes, partners, and priorities across a diverse portfolio of work. You will own resourc \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-17"
   },
   {
@@ -3534,7 +3552,7 @@
     "Presentations",
     "Web"
    ],
-   "description": "Ready to do the most impactful work of your career? At Coinbase , we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase . This is a 12-week internship during summer 2027. As a Product Design Intern, you'll spend 12 weeks embedded on a product team solving real design problems across Coinbase's core products including Coinbase app, Prime, Coinbase Wallet, and more. You'll partner with researchers, designers, product managers, and engineers to turn a product idea into a tangible user experience, contributing to large-scale design challenges that help millions of people engage with the crypto economy. What you'll do: Own a product design project end-to-end, translating a product concept into a polished user experience across mobile and/or web platforms with coaching from an intern manager Partner with your product team and cross-functional stakeholders to define user needs, explore solutions, and validate design directions Lead presentations of your work in group design critiques, incorporating feedback to strengthen your solutions Build high-fidelity prototypes in Figma to socialize design concepts and colla \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions This is a 12-week internship during summer 2027. As a Product Design Intern, you'll spend 12 weeks embedded on a product team solving real design problems across Coinbase's core products including Coinbase app, Prime, Coinbase Wallet, and more. You'll partner with researchers, designers, product managers, and engineers to turn a product idea into a tangible user experience, contributing to large-scale design challenges that help millions of people engage with the crypto economy. What you'll do: Own a product design project end-to-end, translating a product concept into a polished user experience across mobile and/or web platforms with coaching from an intern manager Partner with your product team and cross-functional stakeholders to define user needs, explore solutions, and validate design directions Lead presentations of your work in group design critiques, incorporati \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-17"
   },
   {
@@ -3560,7 +3578,7 @@
     "Branding",
     "Illustration"
    ],
-   "description": "Ready to do the most impactful work of your career? At Coinbase , we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase . We're hiring a Senior Product Creative Designer to join the Product Creative team within the Consumer & Business design organization. Product Creative brings visual design, motion, and illustration together so Coinbase's brand language holds from the first marketing touchpoint to the deepest in-app experience. You'll drive creative work inside the Coinbase app, balancing ambition with feasibility, and turn big ideas into shipped experiences millions of customers see and feel. What you'll do: Own visual design and storytelling across the Coinbase consumer product, from concept through final craft Partner with Product Designers to build delight and emotional connection into core product surfaces Shape creative direction for high-impact product launches, holding the bar on visual craft and narrative Evolve the Coinbase design language, covering icons, color, and UI components with Product Design Direct motion design and illustration work with internal and external creative partners Champio \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions We're hiring a Senior Product Creative Designer to join the Product Creative team within the Consumer & Business design organization. Product Creative brings visual design, motion, and illustration together so Coinbase's brand language holds from the first marketing touchpoint to the deepest in-app experience. You'll drive creative work inside the Coinbase app, balancing ambition with feasibility, and turn big ideas into shipped experiences millions of customers see and feel. What you'll do: Own visual design and storytelling across the Coinbase consumer product, from concept through final craft Partner with Product Designers to build delight and emotional connection into core product surfaces Shape creative direction for high-impact product launches, holding the bar on visual craft and narrative Evolve the Coinbase design language, covering icons, color, and UI compone \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-19"
   },
   {
@@ -3583,7 +3601,7 @@
     "Email",
     "Web"
    ],
-   "description": "Ready to do the most impactful work of your career? At Coinbase , we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase . Coinbase's Financial Services & Loyalty (FSL) team is building the products that make Coinbase the best place to deposit, hold, and grow your money. The Coinbase One (CB1) pillar owns our membership product with 1M+ paid subscribers. As a Senior Product Designer on the Financial Services & Loyalty team within the Consumer & Business group, you'll own the Coinbase One (CB1) member experience, shape the member home, engagement and retention flows, and campaign expressions that drive subscriber value and reduce churn. What you'll do: Own end-to-end design for CB1 Member Home, engagement surfaces, and retention flows across mobile and web Drive the member home redesign, a P0 initiative creating a persistent, personalized destination for CB1 subscribers Design campaign expressions (Member Month/Week), gamification mechanics (streaks, challenges), and discovery surfaces that increase benefit attach rates Partner with Product Management and Engineering to shape roadmap, scope, and ship high-qu \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions Coinbase's Financial Services & Loyalty (FSL) team is building the products that make Coinbase the best place to deposit, hold, and grow your money. The Coinbase One (CB1) pillar owns our membership product with 1M+ paid subscribers. As a Senior Product Designer on the Financial Services & Loyalty team within the Consumer & Business group, you'll own the Coinbase One (CB1) member experience, shape the member home, engagement and retention flows, and campaign expressions that drive subscriber value and reduce churn. What you'll do: Own end-to-end design for CB1 Member Home, engagement surfaces, and retention flows across mobile and web Drive the member home redesign, a P0 initiative creating a persistent, personalized destination for CB1 subscribers Design campaign expressions (Member Month/Week), gamification mechanics (streaks, challenges), and discovery surfaces that  \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-17"
   },
   {
@@ -3607,7 +3625,7 @@
     "Prototyping",
     "Email"
    ],
-   "description": "Ready to do the most impactful work of your career? At Coinbase , we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase . The Platform Design and Research team at Coinbase plays a critical role in executing on our vision to create more economic freedom for the world and sits at the center of building products across the company. We design the core platforms and internal tools that accelerate product development and operations across Coinbase, and we're building the most secure, trusted, and easy-to-use experiences for the teams that build on top of our platform. You'll join our Infra pillar, partnering closely with engineering leadership to bring design rigor to the internal tools and dashboards Coinbase teams rely on every day, from configuration and deployment tooling to observability and operational dashboards. As a Senior Product Designer, you'll independently define the problem space for these often-ambiguous, engineer-facing tools, using research and usage data to shape a roadmap that doesn't yet exist, and lead design end-to-end from discovery through launch. What you\u2019ll do: Contribute to the overal \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions The Platform Design and Research team at Coinbase plays a critical role in executing on our vision to create more economic freedom for the world and sits at the center of building products across the company. We design the core platforms and internal tools that accelerate product development and operations across Coinbase, and we're building the most secure, trusted, and easy-to-use experiences for the teams that build on top of our platform. You'll join our Infra pillar, partnering closely with engineering leadership to bring design rigor to the internal tools and dashboards Coinbase teams rely on every day, from configuration and deployment tooling to observability and operational dashboards. As a Senior Product Designer, you'll independently define the problem space for these often-ambiguous, engineer-facing tools, using research and usage data to shape a roadmap tha \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-17"
   },
   {
@@ -3633,7 +3651,7 @@
     "Email",
     "Presentations"
    ],
-   "description": "Ready to do the most impactful work of your career? At Coinbase , we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase . Team/ Role Paragraph: As a Staff Design Researcher on the Platform Design and Research team within the Platform group, you'll set the research vision and practice across the systems, tools, and infrastructure that power Coinbase. This team works across Identity, Payments, Developer Experience, Financial Infrastructure, Compliance, and other foundational areas. You'll define how Platform understands its customers, combining deep research with hands-on design to translate ambiguous problem spaces into clear product opportunities, high-quality deliverables, and shipped solutions. What you\u2019ll do: Define and own the research practice for Platform, setting the vision, strategy, prioritization, and engagement models that connect customer insight to product and design decisions across the organization. Own and run Platform's recurring internal CSAT program, designing surveys, setting cadence, analyzing results, and reporting to leadership to track how internal teams experience Platform tools an \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions Team/ Role Paragraph: As a Staff Design Researcher on the Platform Design and Research team within the Platform group, you'll set the research vision and practice across the systems, tools, and infrastructure that power Coinbase. This team works across Identity, Payments, Developer Experience, Financial Infrastructure, Compliance, and other foundational areas. You'll define how Platform understands its customers, combining deep research with hands-on design to translate ambiguous problem spaces into clear product opportunities, high-quality deliverables, and shipped solutions. What you\u2019ll do: Define and own the research practice for Platform, setting the vision, strategy, prioritization, and engagement models that connect customer insight to product and design decisions across the organization. Own and run Platform's recurring internal CSAT program, designing surveys, s \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-19"
   },
   {
@@ -3658,7 +3676,7 @@
     "Email",
     "Web"
    ],
-   "description": "Ready to do the most impactful work of your career? At Coinbase , we are uncompromising on our mission to increase economic freedom. The bar is high, the environment is intense, and we like it that way. This isn't a place for complacency, it\u2019s a place to be pushed past your perceived limits. If you're ready to build the future of finance alongside people who refuse to settle for \"good enough,\" you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for intense in-person working sessions called \u201csurges.\u201d Learn more about working at Coinbase . Coinbase's Financial Services & Loyalty team builds the products that make Coinbase the best place to deposit, hold, and grow your money. Our Yield & Investments team makes onchain lending, borrowing, and earning accessible to everyday customers. We're looking for a Staff Product Designer to own design strategy and lead hands-on execution across these experiences and their shared onchain foundations. This is an individual contributor role: you'll shape product direction alongside Product and Engineering leaders, lead through influence, and turn complex financial mechanics into clear, trustworthy experiences. What you'll do: Own the design vision and strategy for onchain Yield & Investments, connecting lending, borrowing, earning, and shared foundations into one cohesive customer experience. Lead ambiguous, zero-to-one initiatives from customer insight through prototypes, polished interaction design, and launch. Partner with Product and Engineering leaders to define priorities, shape roa \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
+   "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions Coinbase's Financial Services & Loyalty team builds the products that make Coinbase the best place to deposit, hold, and grow your money. Our Yield & Investments team makes onchain lending, borrowing, and earning accessible to everyday customers. We're looking for a Staff Product Designer to own design strategy and lead hands-on execution across these experiences and their shared onchain foundations. This is an individual contributor role: you'll shape product direction alongside Product and Engineering leaders, lead through influence, and turn complex financial mechanics into clear, trustworthy experiences. What you'll do: Own the design vision and strategy for onchain Yield & Investments, connecting lending, borrowing, earning, and shared foundations into one cohesive customer experience. Lead ambiguous, zero-to-one initiatives from customer insight through prototypes \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-19"
   },
   {
@@ -3689,7 +3707,7 @@
   {
    "id": "Company boards:robinhood:8240638",
    "source": "Company boards",
-   "title": "Product Designer, International",
+   "title": "Product Designer, Interaction Design",
    "company": "Robinhood",
    "url": "https://boards.greenhouse.io/robinhood/jobs/8240638?t=gh_src=&gh_jid=8240638",
    "city": "Menlo Park",
@@ -3703,7 +3721,11 @@
    "start": "",
    "duration": "",
    "tags": [
-    "Prototyping"
+    "Prototyping",
+    "Design systems",
+    "Accessibility",
+    "Motion",
+    "Web"
    ],
    "description": "Join us in building the future of finance. Our mission is to democratize finance for all. An estimated $124 trillion of assets will be inherited by younger generations in the next two decades. The largest transfer of wealth in human history. If you\u2019re ready to be at the epicenter of this historic cultural and financial shift, keep reading. About the team + role We are building an elite team, applying frontier technologies to the world's biggest financial problems. We're looking for bold thinkers. Sharp problem-solvers. Builders who are wired to make an impact. Robinhood isn't a place for complacency, it's where ambitious people do the best work of their careers. We're a high-performing, fast-moving team with ethics at the center of everything we do. Expectations are high, and so are the rewards. Robinhood's International team owns the full international product experience, bringing investing, trading, and crypto to customers in the EU, UK, Canada, Singapore, and beyond. As a Product Designer, you'll help shape how customers around the world experience our products for the first time. You'll design onboarding, trading, and money movement experiences that hold up across currencies, languages, and regulatory environments, while staying true to the craft and clarity Robinhood is known for. Design at Robinhood is AI-first. This role is for someone who already uses AI as a core part of how they think, explore, and execute. This role is based in our Menlo Park, CA and New York, NY office(s), with in-person attendance expected at least 3 days per week. At Robinhood, we believe in t \u2026  forward to seeing your application. AI Usage Disclosure: Robinhood uses artificial intelligence (AI) tools to support parts of our recruiting process. These tools enhance the efficiency and consistency of our hiring process; however, all hiring decisions are made by our hiring teams. Application Limit: Candidates may submit no more than 3 applications in any 90 days. Within that time, they may apply to each role only once. Robinhood provides equal opportunity for all applicants, offers reasonable accommodations upon request, and complies with applicable equal employment and privacy laws. Inclusion is built into how we hire and work\u2014welcoming different backgrounds, perspectives, and experiences so everyone can do their best. Please review the Privacy Policy for your country of application.",
    "first_seen": "2026-11-17"
@@ -4728,13 +4750,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792309002",
+   "id": "Company boards:twitch:8792844002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -4753,13 +4775,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792844002",
+   "id": "Company boards:twitch:8792309002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
-   "city": "Seattle",
-   "state": "WA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -5463,16 +5485,16 @@
    "first_seen": "2026-11-19"
   },
   {
-   "id": "Company boards:instacart:8394157",
+   "id": "Company boards:instacart:8394152",
    "source": "Company boards",
    "title": "Senior Product Designer II - Commerce & Retailer Platform",
    "company": "Instacart",
-   "url": "https://instacart.careers/job/?gh_jid=8394157",
+   "url": "https://instacart.careers/job/?gh_jid=8394152",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
-   "type": "Full-time",
+   "type": "Unknown",
    "industry": "Retail & E-commerce",
    "posted": "2026-11-16",
    "pay": "",
@@ -5485,20 +5507,20 @@
     "Accessibility",
     "Branding"
    ],
-   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. Overview Every day, millions of people use Instacart to get the essentials they need, and along the way they discover new ways to save and earn rewards. Our payments, loyalty, offers and retailer storefront teams power those moments, with a mission to make affordability and financial ease accessible to all through experiences that feel seamless and rewarding. Instacart powers grocery shopping in two ways: the Instacart marketplace, where customers shop across many retailer \u2026 ship workflows. #LI-remote Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Currently, we are only hiring in the following provinces: Ontario, Alberta, British Columbia, and Nova Scotia. Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please read more about our benefits offerings here . For Canadian based candidates, the base pay ranges for a successful candidate are listed below. CAN $171,000 \u2014 $180,500 CAD",
-   "first_seen": "2026-11-23"
+   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. Overview Every day, millions of people use Instacart to get the essentials they need, and along the way they discover new ways to save and earn rewards. Our payments, loyalty, offers and retailer storefront teams power those moments, with a mission to make affordability and financial ease accessible to all through experiences that feel seamless and rewarding. Instacart powers grocery shopping in two ways: the Instacart marketplace, where customers shop across many retailer \u2026 highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please rea d more about our benefits offerings here . For US based candidates, the base pay ranges for a successful candidate are listed below. CA, NY, CT, NJ $203,000 \u2014 $214,000 USD WA $194,000 \u2014 $205,000 USD OR, DE, ME, MA, MD, NH, RI, VT, DC, PA, VA, CO, TX, IL, HI $185,000 \u2014 $195,000 USD All other states $169,000 \u2014 $178,500 USD",
+   "first_seen": "2026-11-24"
   },
   {
-   "id": "Company boards:instacart:8191765",
+   "id": "Company boards:instacart:8191763",
    "source": "Company boards",
    "title": "Senior Product Designer II - Growth Systems & AI Workflows",
    "company": "Instacart",
-   "url": "https://instacart.careers/job/?gh_jid=8191765",
+   "url": "https://instacart.careers/job/?gh_jid=8191763",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
-   "type": "Full-time",
+   "type": "Unknown",
    "industry": "Retail & E-commerce",
    "posted": "2026-09-10",
    "pay": "",
@@ -5511,7 +5533,7 @@
     "Branding",
     "Web"
    ],
-   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offer \u2026 e you to apply. #LI-remote Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Currently, we are only hiring in the following provinces: Ontario, Alberta, British Columbia, and Nova Scotia. Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please read more about our benefits offerings here . For Canadian based candidates, the base pay ranges for a successful candidate are listed below. CAN $171,000 \u2014 $180,500 CAD",
+   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offer \u2026 highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please rea d more about our benefits offerings here . For US based candidates, the base pay ranges for a successful candidate are listed below. CA, NY, CT, NJ $203,000 \u2014 $214,000 USD WA $194,000 \u2014 $205,000 USD OR, DE, ME, MA, MD, NH, RI, VT, DC, PA, VA, CO, TX, IL, HI $185,000 \u2014 $195,000 USD All other states $169,000 \u2014 $178,500 USD",
    "first_seen": "2026-11-24"
   },
   {
@@ -5911,31 +5933,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:hearst:4466263009",
-   "source": "Company boards",
-   "title": "News Graphic Designer",
-   "company": "Hearst",
-   "url": "https://job-boards.greenhouse.io/hearst/jobs/4466263009",
-   "city": "Winter Park",
-   "state": "FL",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Media & Entertainment",
-   "posted": "2026-10-26",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Adobe CC",
-    "Illustration",
-    "Motion",
-    "3D"
-   ],
-   "description": "Hearst Television (HTV) is seeking a graphic artist with exceptional design, organizational and communication skills to join HTV Design, our centralized corporate graphics hub. This Graphic Designer position is located inside the HTV Design graphics hub in Winter Park, FL. You will interact with other design staff members, assignment desk editors and station producers and newsrooms. In this role, you will be responsible for the production of daily news graphics and select custom graphics projects for all Hearst Television\u2019s markets. You will report to the News Operations Manager. Job Responsibilities: Work from existing HTV graphics templates, complete daily news graphics requests from Hearst Television stations Develop custom 2D and 3D animations for news and promotion for HTV stations as assigned Demonstrate strict adherence to HTV Graphics Style Guide Work in a collaborative, hands on, and results driven environment Build professional relationships with news departments across all HTV stations Willing to work nights, weekends and holidays as scheduled In person attendance required Requirements: Proficient in Adobe Creative Suite programs to deliver polished still and motion design, with an emphasis on Photoshop, Illustrator and After Effects Cinema 4D and Vizrt a plus Produce high quality results within the parameters of technological infrastructure and Hearst Graphics Style Guide Extraordinary visualization, conceptualization, and graphic design skills with strong background in typography, color theory, photography, design layout, and 2D and 3D animation Portfolio work  \u2026 ustomer service Related military experience will be considered Values in Action At Hearst Television we tell stories every day. Stories about people of all backgrounds, perspectives, and identities. That\u2019s why, behind the scenes, we believe in being an organization that fosters collaboration and open communication, ensuring that the content we create is authentic, accurate, and connected to the communities we serve. Benefits Hearst's benefit programs are modern, flexible and designed to focus on you. As a Hearst employee, you and your spouse or partner or dependents would have access to the following benefits. Medical | Dental | Vision 401(k) matching Emotional Wellness Support Paid Time Off Paid Parental Leave LGBTQ+ Health Services Additional benefits to meet your and your family's needs",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:hearst:4466148009",
    "source": "Company boards",
    "title": "Print Motion Designer",
@@ -6113,6 +6110,26 @@
    ],
    "description": "#Team Nextdoor Nextdoor is the essential neighborhood network. Neighbors, public agencies, and businesses use Nextdoor to connect around local information that matters in more than 350,000 neighborhoods across 11 countries. Nextdoor builds innovative technology to foster local community, share important news, and create neighborhood connections at scale. Download the app and join the neighborhood at nextdoor.com . Meet Your Future Neighbors As the Product Designer for Nextdoor's Monetization pillar, you'll be a key player in driving our design vision for the experiences that generate sustainable revenue for Nextdoor while strengthening the neighborhood. You'll join a small team of designers and work alongside product managers, engineers, and researchers to shape end-to-end experiences that deliver measurable business impact without compromising trust or engagement. This position reports to the Head of Design, Monetization. Deeply human-centered and mission-driven, you're excited to create digital experiences that strengthen real-world connections and empower neighbors and the businesses that serve them to build stronger communities. At Nextdoor, we operate in an AI-first environment and expect every team member to actively use AI tools as part of their workflow. We aren't looking for prompt engineers; we\u2019re looking for people who use tools like Claude, Gemini, ChatGPT, and Glean to challenge their own thinking and take full ownership of AI-assisted outputs. We also offer a warm and inclusive work environment that embraces a hybrid employment model, blending an in office pre \u2026 lans, including a 100% covered employee only plan option, and we also provide a OneMedical membership for concierge care. At Nextdoor, we empower our employees to build stronger local communities. To create a platform where all feel welcome, we want our workforce to reflect the diversity of the neighbors we serve. We encourage everyone interested in our mission to apply. We do not discriminate on the basis of race, gender, religion, sexual orientation, age, or any other trait that unfairly targets a group of people. In accordance with the San Francisco Fair Chance Ordinance, we always consider qualified applicants with arrest and conviction records. For information about our collection and use of applicants\u2019 personal information, please see Nextdoor's Personnel Privacy Notice, found here .",
    "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Coroflot:https://www.coroflot.com/design-jobs/Graphic-Designer-TOMY-International-Dyersville-IA-686666",
+   "source": "Coroflot",
+   "title": "Graphic Designer",
+   "company": "TOMY International",
+   "url": "https://www.coroflot.com/design-jobs/Graphic-Designer-TOMY-International-Dyersville-IA-686666",
+   "city": "Dyersville",
+   "state": "IA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Not stated",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [],
+   "description": "",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "Coroflot:https://www.coroflot.com/design-jobs/Industrial-Designer-Junior-to-Senior-ThreeSixty-Group-Merchsource-Irvine-CA-686286",
@@ -6565,6 +6582,26 @@
    "first_seen": ""
   },
   {
+   "id": "Dribbble:https://dribbble.com/jobs/311957-UI-UX-Designer-iGaming?1795546684",
+   "source": "Dribbble",
+   "title": "UI/UX Designer (iGaming)",
+   "company": "Altosoft LLC",
+   "url": "https://dribbble.com/jobs/311957-UI-UX-Designer-iGaming?source=feed",
+   "city": "Boca Raton",
+   "state": "FL",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Not stated",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [],
+   "description": "",
+   "first_seen": "2026-11-24"
+  },
+  {
    "id": "Dribbble:https://dribbble.com/jobs/311231-Product-Design-Builder?1792944503",
    "source": "Dribbble",
    "title": "Product Design Builder",
@@ -6933,28 +6970,6 @@
    "start": "",
    "duration": "",
    "tags": [],
-   "description": "",
-   "first_seen": ""
-  },
-  {
-   "id": "Dribbble:https://dribbble.com/jobs/311495-Brand-Designer?1793306679",
-   "source": "Dribbble",
-   "title": "Brand Designer",
-   "company": "Edison Scientific",
-   "url": "https://dribbble.com/jobs/311495-Brand-Designer?source=feed",
-   "city": "San Francisco",
-   "state": "CA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Not stated",
-   "posted": "2026-10-29",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Branding"
-   ],
    "description": "",
    "first_seen": ""
   },
@@ -7417,6 +7432,58 @@
    ],
    "description": "About Us: Homebound is on a mission to make it possible for anyone, anywhere, to build a home using technology. Created by an experienced team of construction, real estate, design, and technology experts, Homebound is transforming the residential construction industry by improving the costly and inefficient process of building a home. We\u2019ve created an entirely new way to build homes with technology powering every stage from start to finish to provide a seamless experience for our customers. Homeowners across the country can choose where they want to live, select a home plan that\u2019s perfect for them, then personalize and buy it, all online. Homebound has raised $150M in capital from leading venture capitalists like Google, Khosla, Thrive Ventures, and we\u2019re scaling quickly in places like Texas, Colorado and Florida. Come build your future with us. About the Role: This is an early-stage app with huge expansion planned this year \u2014 a rare opportunity for a designer who wants to define the vision for a mobile product from the ground up. As Senior Product Designer, you will define how AI feels for the teams building our homes. You'll shape the experiences that our Superintendents and Direct Construction Operators (DCOs) rely on every day\u2014across our mobile application, advanced AI based video analysis, and new experiences around automated data capture on site. This is a role for a designer who blends sharp interaction design with strong visual craft. You'll take novel, sometimes ambiguous AI capabilities\u2014computer vision, multimodal models, agents\u2014and turn them into interfaces that  \u2026 l law. Homebound considers all qualified applicants in accordance with the San Francisco Fair Chance Ordinance. Our Compensation Philosophy : Our salary ranges are determined by role, level, and location. Please note that the salary range displayed on each job posting may vary by state. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Your recruiter will share more about the specific salary range for your preferred location during the hiring process. Please note that each job posting includes a general description of any other compensation offered for the position in addition to the salary range displayed on the job posting. You can find information about our benefits here .",
    "first_seen": "2026-11-19"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/lifeway-christian-resources/jobs/summer-internship-graphic-designer-lifeway-kids",
+   "source": "Himalayas",
+   "title": "Summer Internship | Graphic Designer - Lifeway Kids",
+   "company": "LifeWay Christian Resources",
+   "url": "https://himalayas.app/companies/lifeway-christian-resources/jobs/summer-internship-graphic-designer-lifeway-kids?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Unknown",
+   "industry": "Not stated",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "June 7 - August 11, 2027 (11 w",
+   "tags": [
+    "Adobe CC",
+    "Branding",
+    "Illustration",
+    "Print",
+    "Presentations"
+   ],
+   "description": "Overview The Lifeway Internship Program is a unique opportunity designed to provide college students and recent graduates with a valuable learning experience that fosters growth both professionally, personally, and spiritually. Our internships go far beyond \"busy work\"\u2014you\u2019ll engage in meaningful projects, gain hands-on experience, and be empowered to make an impact. Interns at Lifeway receive professional development, have opportunities for exposure to senior leaders, and benefit from mentoring relationships with experts in their chosen field. Job Overview Lifeway is seeking a summer graphic design intern to join the Lifeway Kids design team. The intern will create design comps, print files, and digital files across all five Lifeway Kids product lines, work with editors and designers to guide projects from start to final delivery, and take on short-term projects on a fast-moving team timeline. Internship Program Details & Requirements Compensation : Lifeway\u2019s summer internship program offers a competitive hourly pay rate, and all necessary equipment is provided. Work Schedule : Interns work an average of 32 hours per week, with core workdays from Tuesday to Thursday. The expectation is that the internship is the primary focus during working hours. Program Duration : June 7 - August 11, 2027 (11 weeks). Interns must commit to participating in the entire program. Eligibility : Candidates must be enrolled in an undergraduate or graduate program and have completed at least two years of study by the internship start date. Recent graduates (December 2026 or May 2027) are also el \u2026 or a recent graduate, in Graphic Design, Visual Arts, or a related field, required Skills, Knowledge, & Experiences, required Knowledge of Adobe Creative Suite, particularly Photoshop, Illustrator, and InDesign A portfolio showing a range of work, including layout design, brand implementation, and knowledge of color and typography Strong organizational and multitasking skills Excellent communication and interpersonal skills Ability to work in a fast-paced environment juggling multiple projects A self-starter and eager learner Actively involved in an evangelical Christian church Skills, Knowledge, & Experiences, preferred Experience or interest in kids ministry Experience preparing print-ready or digital production files Familiarity with Lifeway Kids resources Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
+  },
+  {
+   "id": "Himalayas:https://himalayas.app/companies/enlyte-group-llc/jobs/senior-product-designer",
+   "source": "Himalayas",
+   "title": "Senior Product Designer",
+   "company": "Enlyte Group, LLC",
+   "url": "https://himalayas.app/companies/enlyte-group-llc/jobs/senior-product-designer?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "industry": "Healthcare & Wellness",
+   "posted": "2026-11-24",
+   "pay": "USD 98,700-115,000 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Prototyping",
+    "Design systems",
+    "Packaging",
+    "Presentations"
+   ],
+   "description": "Company Overview At Enlyte, we combine innovative technology, clinical expertise, and human compassion to help people recover after workplace injuries or auto accidents. We support their journey back to health and wellness through our industry-leading solutions and services. Whether you're supporting a Fortune 500 client or a local business, developing cutting-edge technology, or providing clinical services you'll work alongside dedicated professionals who share your commitment to excellence and make a meaningful impact. Join us in fueling our mission to protect dreams and restore lives, while building your career in an environment that values collaboration, innovation, and personal growth. Be part of a team that makes a real difference. Job Description This is a full-time remote position that can be located anywhere in the U.S. Product Designers on our team are responsible for creating products that are easy to use, intuitive, and enjoyable. We are looking for a talented Sr. Product Designer to lead UX work across the Auto First Party space. You\u2019re a dedicated problem solver who understands how to align business strategy with established user-centered design principles. Success in this role means identifying the most compelling problems in complex, rules-driven workflows, then brainstorming, evaluating, and implementing meaningful solutions. You\u2019ll lead UX projects that reduce manual work, build user confidence, and deliver measurable results. What You\u2019ll Work On You\u2019ll help shape the experience behind auto-injury medical bills, from the moment they arrive to the final dec \u2026 ployer. All qualified applicants will receive consideration for employment without regard to race, religion, color, national origin, gender, gender identity, sexual orientation, age, status as a protected veteran, among other things, or status as a qualified individual with disability. Don\u2019t meet every single requirement? Studies have shown that women and underrepresented minorities are less likely to apply to jobs unless they meet every single qualification. We are dedicated to building a diverse, inclusive, and authentic workplace, so if you\u2019re excited about this role but your past experience doesn\u2019t align perfectly with every qualification in the job description, we encourage you to apply anyway. You may be just the right candidate for this or other roles. Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "Himalayas:https://himalayas.app/companies/lifeway-christian-resources/jobs/summer-internship-graphic-designer-books-marketing",
@@ -8266,31 +8333,6 @@
    ],
    "description": "About the opportunity Do you love turning complex ideas into clear, compelling visuals that help win work? At SWCA, the Pursuit Graphic Designer plays a key role in transforming complex information into compelling visual communications that make our proposals and client presentations easier to understand, more compelling, and make a memorable impact. Working across pursuits in water resources and energy and infrastructure to habitat restoration and cultural resources, you'll use your creative expertise to help clients quickly understand our approach, trust our expertise, and recognize why SWCA is the right partner for their project. This role is for a designer who sees visual storytelling as a strategic part of the pursuit process. You\u2019ll work closely with a national team of proposal professionals, technical experts and client-focused leaders to understand what matters most to the client, identify the story we need to tell, and translate complex ideas into persuasive visual communications. Your work may include infographics, data visualizations, proposal layouts, organizational graphics, process diagrams, maps, interview client presentations, or interactive marketing materials. Whether you\u2019re simplifying a complicated technical approach, highlighting the experience of a project team, or helping bring a win strategy to life, your design work will help make our proposals easier to understand, more memorable, and more competitive. The role is a full-time position reporting to the Creative Services Manager. We offer flexibility to work remotely, in a hybrid capacity, or from an \u2026  design experience. Experience/background working in the environmental consulting industry or other science field Knowledge, Skills, and Abilities : Ability to translate complex information into clear, compelling visual communications. Strong verbal and written communication skills, with the ability to collaborate effectively with pursuit teams, marketing professionals, and technical subject matter experts to create persuasive visual storytelling solutions. Excellent creative thinking, organization, problem-solving, and time-management skills, with strong attention to detail. Ability to manage multiple priorities in a fast-paced, deadline-driven environment. Ability to work effectively both independently and collaboratively as part of a cross-functional team. Originally posted on Himalayas",
    "first_seen": "2026-11-21"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/harman-international/jobs/intern-product-design",
-   "source": "Himalayas",
-   "title": "Intern - Product Design",
-   "company": "HARMAN International",
-   "url": "https://himalayas.app/companies/harman-international/jobs/intern-product-design?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Unknown",
-   "industry": "Not stated",
-   "posted": "2026-11-24",
-   "pay": "USD 19-28 / hourly",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Email",
-    "Presentations"
-   ],
-   "description": "Introduction: A Career at HARMAN Lifestyle We\u2019re a global, multi-disciplinary team that\u2019s putting the innovative power of technology to work and transforming tomorrow. As a member of HARMAN Lifestyle, you connect consumers with the power of superior sound. Contribute your talents to high-end, esteemed brands like JBL, Mark Levinson, Roon, Revel, Denon, and Bowers & Wilkins Unite your passion for audio innovation with high-tech product development Create pitch-perfect, cutting-edge technology that elevates the listening experience About the Role HARMAN's Software Experiences Business Unit (SEBU) builds software products that connect people to music. Our portfolio includes Roon, the leading music library management and playback platform for audiophiles, alongside new music products currently in development. In this role you will help our product teams understand the people we build for. You will run competitive and user research across music discovery, streaming, and short-form content, sit inside the day-to-day work of a product team, and bring back the language, habits, and unmet needs of a younger audience in a form the team can act on. This is a paid internship, and you will work as a member of the team rather than an observer. Length of the internship is dependent on when your new hire onboarding happens, but a typical program is 12-weeks. You will join standups and reviews, own your own research threads, and present what you learn directly to the people making product decisions. How You'll Make An Impact Work as an embedded member of the team: join standups, design and  \u2026  qualified applicants will receive consideration for employment without regard to race, religion, color, national origin, gender (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics.HARMAN attracts, hires, and develops employees based on merit, qualifications and job-related performance.() HARMAN is committed to providing reasonable accommodations to applicants with disabilities. If you need assistance or an accommodation during the application process, please contact us at . Requests will be considered on a case-by-case basis in accordance with applicable law. Originally posted on Himalayas",
-   "first_seen": "2026-11-24"
   }
  ]
 }
