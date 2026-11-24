@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T05:51:02+00:00",
+ "updated": "2026-11-24T11:45:10+00:00",
  "counts": {
   "Aquent": 73,
   "Company boards": 172,
@@ -2930,13 +2930,13 @@
    "first_seen": "2026-11-20"
   },
   {
-   "id": "Company boards:brex:8932573002",
+   "id": "Company boards:brex:8920564002",
    "source": "Company boards",
    "title": "Brand Design Manager, Growth",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8932573002?gh_jid=8932573002",
-   "city": "Seattle",
-   "state": "WA",
+   "url": "https://www.brex.com/careers/8920564002?gh_jid=8920564002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -2956,13 +2956,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8920564002",
+   "id": "Company boards:brex:8932573002",
    "source": "Company boards",
    "title": "Brand Design Manager, Growth",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8920564002?gh_jid=8920564002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8932573002?gh_jid=8932573002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -3110,6 +3110,32 @@
    "first_seen": "2026-11-17"
   },
   {
+   "id": "Company boards:brex:8782403002",
+   "source": "Company boards",
+   "title": "Staff Brand Designer",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
+   "city": "San Francisco",
+   "state": "CA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-09-03",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Figma",
+    "Adobe CC",
+    "Prototyping",
+    "Packaging"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026 Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
    "id": "Company boards:brex:8782405002",
    "source": "Company boards",
    "title": "Staff Brand Designer",
@@ -3136,29 +3162,29 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782403002",
+   "id": "Company boards:brex:8782407002",
    "source": "Company boards",
-   "title": "Staff Brand Designer",
+   "title": "Staff Brand Designer, Interactive",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782403002?gh_jid=8782403002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
+   "city": "New York",
+   "state": "NY",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-09-03",
+   "posted": "2026-09-08",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
     "Branding",
     "Figma",
-    "Adobe CC",
     "Prototyping",
-    "Packaging"
+    "Design systems",
+    "Accessibility"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026 Bonus points Motion, video, or illustration experience applied to brand systems or campaigns Experience art directing complex brand work with external creative partners Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026  consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -3188,29 +3214,27 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8782407002",
+   "id": "Company boards:brex:8777953002",
    "source": "Company boards",
-   "title": "Staff Brand Designer, Interactive",
+   "title": "Staff Product Designer",
    "company": "Brex",
-   "url": "https://www.brex.com/careers/8782407002?gh_jid=8782407002",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.brex.com/careers/8777953002?gh_jid=8777953002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
    "industry": "Finance & Insurance",
-   "posted": "2026-09-08",
+   "posted": "2026-09-02",
    "pay": "",
    "start": "",
    "duration": "",
    "tags": [
-    "Branding",
     "Figma",
-    "Prototyping",
-    "Design systems",
-    "Accessibility"
+    "Packaging",
+    "Email"
    ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do Brex is looking for a Staff brand designer to join the Design team, a cross-disciplinary group of creatives including product designers, brand designers, cont \u2026  consumer-facing brands. Understanding of accessibility standards for motion and interactivity. Track record of delivering award-winning or high-impact web experiences. Compensation The expected salary range for this role is $187,000 - $234,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do You will work with Product and Engineering teams to successfully communicate, evolve, and execute a strong product design standard that showcases Brex as a le \u2026 ng on products in both B2B and B2C companies Experience writing/editing/contributing to documentation, training materials, and help articles to support product launches Compensation The expected salary range for this role is $240,000 - $300,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
    "first_seen": "2026-11-17"
   },
   {
@@ -3245,30 +3269,6 @@
    "url": "https://www.brex.com/careers/8777949002?gh_jid=8777949002",
    "city": "San Francisco",
    "state": "CA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-09-02",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Packaging",
-    "Email"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do You will work with Product and Engineering teams to successfully communicate, evolve, and execute a strong product design standard that showcases Brex as a le \u2026 ng on products in both B2B and B2C companies Experience writing/editing/contributing to documentation, training materials, and help articles to support product launches Compensation The expected salary range for this role is $240,000 - $300,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Company boards:brex:8777953002",
-   "source": "Company boards",
-   "title": "Staff Product Designer",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8777953002?gh_jid=8777953002",
-   "city": "Seattle",
-   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -4158,14 +4158,14 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:samsara:8358689",
+   "id": "Company boards:samsara:8358687",
    "source": "Company boards",
    "title": "Lead Product Designer",
    "company": "Samsara",
-   "url": "https://www.samsara.com/company/careers/roles/8358689?gh_jid=8358689",
+   "url": "https://www.samsara.com/company/careers/roles/8358687?gh_jid=8358687",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
    "type": "Unknown",
    "industry": "Technology & Software",
@@ -4700,13 +4700,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792309002",
+   "id": "Company boards:twitch:8792844002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -4725,13 +4725,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792844002",
+   "id": "Company boards:twitch:8792309002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
-   "city": "Seattle",
-   "state": "WA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -5461,16 +5461,16 @@
    "first_seen": "2026-11-23"
   },
   {
-   "id": "Company boards:instacart:8191765",
+   "id": "Company boards:instacart:8191763",
    "source": "Company boards",
    "title": "Senior Product Designer II - Growth Systems & AI Workflows",
    "company": "Instacart",
-   "url": "https://instacart.careers/job/?gh_jid=8191765",
+   "url": "https://instacart.careers/job/?gh_jid=8191763",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
-   "type": "Full-time",
+   "type": "Unknown",
    "industry": "Retail & E-commerce",
    "posted": "2026-09-10",
    "pay": "",
@@ -5483,8 +5483,8 @@
     "Branding",
     "Web"
    ],
-   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offer \u2026 e you to apply. #LI-remote Instacart provides highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Currently, we are only hiring in the following provinces: Ontario, Alberta, British Columbia, and Nova Scotia. Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please read more about our benefits offerings here . For Canadian based candidates, the base pay ranges for a successful candidate are listed below. CAN $171,000 \u2014 $180,500 CAD",
-   "first_seen": "2026-11-23"
+   "description": "We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offering safe and flexible earnings opportunities to Instacart Personal Shoppers. Instacart has become a lifeline for millions of people, and we\u2019re building the team to help push our shopping cart forward. If you\u2019re ready to do the best work of your life, come join our table. Instacart is a Flex First team There\u2019s no one-size fits all approach to how we do our best work. Our employees have the flexibility to choose where they do their best work\u2014whether it\u2019s from home, an office, or your favorite coffee shop\u2014while staying connected and building community through regular in-person events. Learn more about our flexible approach to where we work. We're transforming the grocery industry At Instacart, we invite the world to share love through food because we believe everyone should have access to the food they love and more time to enjoy it together. Where others see a simple need for grocery delivery, we see exciting complexity and endless opportunity to serve the varied needs of our community. We work to deliver an essential service that customers rely on to get their groceries and household goods, while also offer \u2026 highly market-competitive compensation and benefits in each location where our employees work. This role is remote and the base pay range for a successful candidate is dependent on their permanent work location. Please review our Flex First remote work policy here . Offers may vary based on many factors, such as candidate experience and skills required for the role. Additionally, this role is eligible for a new hire equity grant as well as annual refresh grants. Please rea d more about our benefits offerings here . For US based candidates, the base pay ranges for a successful candidate are listed below. CA, NY, CT, NJ $203,000 \u2014 $214,000 USD WA $194,000 \u2014 $205,000 USD OR, DE, ME, MA, MD, NH, RI, VT, DC, PA, VA, CO, TX, IL, HI $185,000 \u2014 $195,000 USD All other states $169,000 \u2014 $178,500 USD",
+   "first_seen": "2026-11-24"
   },
   {
    "id": "Company boards:waymo:8221714",
@@ -7391,6 +7391,29 @@
    "first_seen": "2026-11-19"
   },
   {
+   "id": "Himalayas:https://himalayas.app/companies/icf/jobs/substation-protection-control-designer-remote-9020735793",
+   "source": "Himalayas",
+   "title": "Substation Protection & Control Designer - Remote",
+   "company": "ICF",
+   "url": "https://himalayas.app/companies/icf/jobs/substation-protection-control-designer-remote-9020735793?utm_source=api",
+   "city": "",
+   "state": "",
+   "country": "",
+   "workplace": "remote",
+   "type": "Full-time",
+   "industry": "Not stated",
+   "posted": "2026-11-24",
+   "pay": "USD 67,355-114,503 / annual",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Packaging",
+    "Email"
+   ],
+   "description": "Ready to make a difference? ICF is seeking a Substation P&C Designer, to work on the design of relay and protection and control projects on high voltage substations at voltages from 12kV to 500kV under the direction of the Electrical Project Lead. We are a relentlessly client-focused group who are re-imagining, re-designing, and re-engineering the way electric utilities tackle industry problems. We're seeking passionate and innovative people who are constantly looking for ways to provide better quality engineering services for our clients. Why you will love working here: Quality of life: Flexible workplace arrangements, work-life balance Investment in you: Tuition reimbursement, access to professional development resources, 401k matching, Employee Stock Purchase Plan Investment of the community: Donation matching, volunteer opportunities And many, many more (Ask your recruiter for more details!) What you will be doing: Responsibilities include, but are not limited, to the design and preparation of the following Protection and Control Drawings: Substation Relay One Lines and Three Lines AC/DC Schematics Substation Panel Layouts Substation Wiring Diagram and Cable Schedule SCADA and Communication Diagrams Point to Point Wiring Diagrams Coordination with physical, settings, and drafting disciplines to ensure quality deliverables Interpret and incorporate vendor information into design deliverables Apply client standards related to the work Perform/ensure company\u2019s Quality assurance/Quality Control (QA/QC) processes are being followed on all design packages Continuous improveme \u2026 ndidates may require accommodation that involves the use of AI. If such an accommodation is needed, candidates are instructed to contact us in advance at . We are dedicated to providing the necessary support to ensure that all candidates have an equal opportunity to succeed. Pay Range There are multiple factors that are considered in determining final pay for a position, including, but not limited to, relevant work experience, skills, certifications and competencies that align to the specified role, geographic location, education and certifications as well as contract provisions regarding labor categories that are specific to the position. The pay range for this position based on full-time employment is: $67,355.00 - $114,503.00Nationwide Remote Office (US99) Originally posted on Himalayas",
+   "first_seen": "2026-11-24"
+  },
+  {
    "id": "Himalayas:https://himalayas.app/companies/kirin/jobs/3d-3d-product-visualization-artist",
    "source": "Himalayas",
    "title": "3D \u4ea7\u54c1\u53ef\u89c6\u5316\u8bbe\u8ba1\u5e08 / 3D Product Visualization Artist",
@@ -7579,32 +7602,6 @@
     "Branding"
    ],
    "description": "Silverback Strategies is a performance marketing agency built to help marketers grow and capitalize on change. Ad Age, Inc Magazine, The Washington Post, The Washingtonian, and The Washington Business Journal have recognized Silverback as one of the best places to work. We hire the best and help them get better. Silverbackers are supported, challenged and inspired by their peers. Regardless of title or tenure, every Silverbacker plays a role in helping our agency get better. This is a place where you can make a difference. Job Highlights Role: Senior Motion & Graphic Designer Department: Creative Salary Band: $90,000 - $110,000 Location: Remote (U.S.) Position Status: Actively hiring for this role Application Deadline: We review applications on a rolling basis, so there\u2019s no cutoff date. If this job sounds like you, go for it. Today, we're looking for a Senior Motion & Graphic Designer to join our growing team. We're hiring a Senior Performance Creative to partner with our Creative Strategist and turn research, hooks, and loose briefs into polished static and short-form video ads for paid social. The role requires strong range across design and motion editing, including cutting raw shoot footage into finished assets. It also requires the brand fluency to stay on-brand at high volume, whether working from a one-pager or a full brand system, while pushing creative into fresh territory. Here\u2019s what we expect from our Senior Motion & Graphic Designer. \u2014What You'll Do\u2014 \u2022 Translate strategy into visuals: partner closely with our Creative Strategist to take research, hooks, and lo \u2026  and our CEO is a DIGIDAY Top Boss. Think this sounds like your kind of team? Apply today. We can't wait to hear from you! Silverback Strategies is an equal opportunity employer. If you believe you meet the qualifications for the position, then we invite you to apply. We celebrate the free flow of conversation, ideas and opinions at Silverback, but actions such as bullying, discrimination, harassment or retaliation of any kind are strictly prohibited in our workplace. We are committed to providing a safe, open and accommodating environment that allows all of our team members to thrive. Employment decisions are made without regard to age, color, disability, family, genetic information, origin, race, religion, sex. For more information, we invite you to visit . Originally posted on Himalayas",
-   "first_seen": "2026-11-23"
-  },
-  {
-   "id": "Himalayas:https://himalayas.app/companies/yo-ai-labs/jobs/ui-ux-designer-remote",
-   "source": "Himalayas",
-   "title": "UI/UX Designer - Remote",
-   "company": "YO AI Labs",
-   "url": "https://himalayas.app/companies/yo-ai-labs/jobs/ui-ux-designer-remote?utm_source=api",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "remote",
-   "type": "Full-time",
-   "industry": "Not stated",
-   "posted": "2026-11-22",
-   "pay": "USD 7-10 / hourly",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Motion",
-    "Social"
-   ],
-   "description": "Job Description: UI/UX Designer Job Type: Full-time Location: Remote About the Role We're seeking a creative UI/UX Designer with strong visual design skills and product instincts to create intuitive, scalable digital experiences across websites, platforms, and applications. You'll own the design process and use AI tools to improve creativity and efficiency. Key Responsibilities Design user-friendly experiences for web, mobile, and internal platforms. Manage end-to-end design, from wireframes to prototypes and final interfaces. Build and maintain scalable design systems. Collaborate with product and engineering teams to deliver polished designs. Create marketing assets, including landing pages, ads, social media graphics, and presentations. Use AI-powered tools to accelerate design and prototyping. Improve user experiences through feedback and usability insights. Manage multiple projects while maintaining high design standards. Required Qualifications 3+ years of experience in UI/UX or product design. Strong portfolio demonstrating visual design and UX expertise. Advanced Figma skills, including components, auto layout, variants, and prototyping. Experience building design systems from scratch. Strong understanding of responsive design and usability principles. Ability to simplify complex workflows into intuitive interfaces. Excellent communication, ownership, and collaboration skills. Experience using AI tools in design workflows. Availability to collaborate during Pacific Time business hours. Preferred Qualifications Experience with AI products, SaaS platforms, or B2B applications. Familiarity with frontend technologies. Experience designing conversion-focused landing pages. Knowledge of motion design and micro-interactions. Startup or fast-paced product team experience. Originally posted on Himalayas",
    "first_seen": "2026-11-23"
   },
   {
