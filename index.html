@@ -111,9 +111,19 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
     <div class="f" id="inds"></div>
     <div class="f two"><div><label for="cat">Primary tag</label><select id="cat"></select></div><div><label for="tag">Also tagged with</label><select id="tag"></select></div></div>
     <div class="f two"><div><label for="type">Employment</label><select id="type"><option value="">Any</option><option>Full-time</option><option>Contract</option><option>Part-time</option><option>Unknown</option></select></div><div><label for="age">Posted within</label><select id="age"><option value="90">3 months</option><option value="30">1 month</option><option value="14">2 weeks</option><option value="7">1 week</option><option value="">Any time</option></select></div></div>
+    <div class="f"><label>Experience level</label><details class="dd" id="expdd"><summary>All</summary><div class="ddbody row">
+      <div class="ddtools"><button type="button" data-chk="all">Select all</button><button type="button" data-chk="none">Clear all</button></div>
+      <label><input type="checkbox" name="exp" value="entry" checked> Intern / Entry</label>
+      <label><input type="checkbox" name="exp" value="junior" checked> Junior</label>
+      <label><input type="checkbox" name="exp" value="mid" checked> Mid</label>
+      <label><input type="checkbox" name="exp" value="senior" checked> Senior</label>
+      <label><input type="checkbox" name="exp" value="lead" checked> Staff / Principal / Lead</label>
+      <label><input type="checkbox" name="exp" value="director" checked> Director / Manager</label>
+      <label><input type="checkbox" name="exp" value="unknown" checked> Not stated</label>
+    </div></details></div>
     <div class="f two"><div><label for="st">Location</label><select id="st"></select></div><div><label for="city">City</label><select id="city"></select></div></div>
     <div class="f two"><div><label for="start">Starts</label><select id="start"><option value="">Any time</option><option value="30">Within 1 month</option><option value="60">Within 2 months</option><option value="90">Within 3 months</option><option value="known">Has a start date</option></select></div><div><label for="sdate">On or after</label><input id="sdate" type="date"></div></div>
-    <div class="f"><label for="sort">Sort by</label><select id="sort"><option value="score">Best Match</option><option value="new">Newest</option></select></div>
+    <div class="f two"><div><label for="expy">Years required</label><select id="expy" title="Read from phrases like “5+ years of experience”; a range such as 4–7 years counts as 4"><option value="">Any</option><option value="0-2">0–2 years</option><option value="3-5">3–5 years</option><option value="6-9">6–9 years</option><option value="10+">10+ years</option><option value="none">Not stated</option></select></div><div><label for="sort">Sort by</label><select id="sort"><option value="score">Best Match</option><option value="new">Newest</option></select></div></div>
     <div class="f"><details class="dd" id="moredd"><summary>More options</summary><div class="ddbody row">
       <label><input id="rem" type="checkbox" checked> Keep remote roles with no location</label>
       <label><input id="only" type="checkbox" checked> Hide roles with an Off tag</label>
@@ -124,7 +134,7 @@ footer{max-width:1100px;margin:0 auto;padding:0 20px 32px;color:var(--muted);fon
   </aside>
   <section id="list" aria-live="polite"></section>
 </div>
-<footer>Job data: <a href="https://aquent.com" target="_blank" rel="noopener">Aquent</a>, <a href="https://www.coroflot.com" target="_blank" rel="noopener">Coroflot</a>, <a href="https://www.greenhouse.io" target="_blank" rel="noopener">Greenhouse</a>, <a href="https://www.ashbyhq.com" target="_blank" rel="noopener">Ashby</a>, and <a href="https://www.lever.co" target="_blank" rel="noopener">Lever</a> company boards, <a href="https://weworkremotely.com" target="_blank" rel="noopener">We Work Remotely</a>, <a href="https://dribbble.com/jobs" target="_blank" rel="noopener">Dribbble</a>, <a href="https://remoteok.com" target="_blank" rel="noopener">Remote OK</a>, <a href="https://jobicy.com" target="_blank" rel="noopener">Jobicy</a>, and <a href="https://himalayas.app" target="_blank" rel="noopener">Himalayas</a>. Work setup, tags, start dates, and durations are read from each posting’s text, so check the posting before you apply. Favorites and your tag ranking are saved in this browser only.<br>Non-US roles come only from employer career pages, Aquent and Coroflot, and are checked for English text and common scam warning signs. Always confirm a posting on the employer’s own site before sharing personal details.</footer>
+<footer>Job data: <a href="https://aquent.com" target="_blank" rel="noopener">Aquent</a>, <a href="https://www.coroflot.com" target="_blank" rel="noopener">Coroflot</a>, <a href="https://www.greenhouse.io" target="_blank" rel="noopener">Greenhouse</a>, <a href="https://www.ashbyhq.com" target="_blank" rel="noopener">Ashby</a>, and <a href="https://www.lever.co" target="_blank" rel="noopener">Lever</a> company boards, <a href="https://weworkremotely.com" target="_blank" rel="noopener">We Work Remotely</a>, <a href="https://dribbble.com/jobs" target="_blank" rel="noopener">Dribbble</a>, <a href="https://remoteok.com" target="_blank" rel="noopener">Remote OK</a>, <a href="https://jobicy.com" target="_blank" rel="noopener">Jobicy</a>, and <a href="https://himalayas.app" target="_blank" rel="noopener">Himalayas</a>. Work setup, tags, start dates, and durations are read from each posting’s text, so check the posting before you apply. Experience level is inferred from the job title, and years required are read from phrases like “5+ years of experience”; both are best guesses, so verify them on the posting. Favorites and your tag ranking are saved in this browser only.<br>Non-US roles come only from employer career pages, Aquent and Coroflot, and are checked for English text and common scam warning signs. Always confirm a posting on the employer’s own site before sharing personal details.</footer>
 <script>
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -204,9 +214,9 @@ let OFFIND=new Set(store.get("jobindoff",[]));
 Object.keys(FAVS).forEach(k=>{FAVS[k]=stripInternal(FAVS[k])});
 let QT;
 
-const CTRL=["q","st","city","rem","cat","tag","type","sort","age","only","eng","nonus","start","sdate"];
-function saveFilters(){const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);store.set("jobfilters",o)}
-function restore(){const o=store.get("jobfilters",{});CTRL.forEach(k=>{if(!(k in o)||k==="city")return;const e=$("#"+k);if(e.type==="checkbox")e.checked=o[k];else e.value=o[k]});(o.wp||[]).forEach((v,i)=>{const e=document.querySelectorAll("[name=wp]")[i];if(e)e.checked=v});return o.city||""}
+const CTRL=["q","st","city","rem","cat","tag","type","sort","age","expy","only","eng","nonus","start","sdate"];
+function saveFilters(){const o={};CTRL.forEach(k=>{const e=$("#"+k);o[k]=e.type==="checkbox"?e.checked:e.value});o.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);o.exp=[...document.querySelectorAll("[name=exp]")].map(x=>x.checked);store.set("jobfilters",o)}
+function restore(){const o=store.get("jobfilters",{});CTRL.forEach(k=>{if(!(k in o)||k==="city")return;const e=$("#"+k);if(e.type==="checkbox")e.checked=o[k];else e.value=o[k]});(o.wp||[]).forEach((v,i)=>{const e=document.querySelectorAll("[name=wp]")[i];if(e)e.checked=v});(o.exp||[]).forEach((v,i)=>{const e=document.querySelectorAll("[name=exp]")[i];if(e)e.checked=v});return o.city||""}
 
 /* ---------- phrase matching: plain phrases, case-insensitive, word boundaries, plurals allowed ---------- */
 const norm=s=>String(s??"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
@@ -258,6 +268,58 @@ const TITLE_SKIP=/\b(engineer|engineering|developer|devops|architect|technician|
 /* A title that names a design craft is never treated as engineering. */
 const DESIGNER_TITLE=/\bdesigner\b|graphic|art director|creative director|illustrat/i;
 
+/* ---------- experience: title sets the level; explicit years set the range ---------- */
+const EXP_LEVELS=[["entry","Intern / Entry"],["junior","Junior"],["mid","Mid"],["senior","Senior"],["lead","Staff / Principal / Lead"],["director","Director / Manager"],["unknown","Not stated"]];
+const EXP_LABEL=Object.fromEntries(EXP_LEVELS);
+const EXP_TITLE=[
+  ["entry",/\b(?:intern(?:ship)?s?|co[- ]?ops?|apprentices?)\b/i],
+  ["director",/\b(?:director|head\s+of|head,|vp\b|vice\s+president|chief|manager|supervisor)\b/i],
+  ["lead",/\b(?:staff|principal|lead|architect)\b/i],
+  ["senior",/\b(?:senior|sr\.?)\b|\b(?:designer|design|retoucher|illustrator|animator|artist|editor)\s+(?:iii|3|iv|4)\b/i],
+  ["junior",/\b(?:junior|jr\.?|entry[- ]level|associate|assistant|graduate|trainee)\b|\b(?:designer|design)\s+(?:i|1)\b/i],
+  ["mid",/\b(?:mid[- ]?(?:level|weight|senior)|intermediate)\b|\b(?:designer|design)\s+(?:ii|2)\b/i]
+];
+const EXP_GOOD=/\b(?:experience|background|expertise|proficien\w*|minimum|at\s+least|must\s+have|requires?|required|you(?:'ll| will)?\s+(?:have|bring|need)|what\s+you(?:'ll)?\s+bring|who\s+you\s+are|qualifications|requirements|we(?:'re| are)\s+looking\s+for|working\s+knowledge|professional|industry|relevant)\b/i;
+const EXP_BAD=/\b(?:founded|established|anniversary|in\s+business|years?\s+ago|years?\s+of\s+(?:operation|service|history)|(?:spent|spend)\s+the\s+(?:last|past)|(?:last|past)\s+\d{1,2}\s+years?|(?:for\s+)?more\s+than\s+\d{1,2}\s+years?|over\s+\d{1,2}\s+years?)\b/i;
+const EXP_AGE=/\b(?:with|has|have|we(?:'ve|\s+have)?\s+(?:spent|been)|our\s+(?:team|company|firm|agency))\b.{0,25}\b(?:over|more\s+than|nearly|almost)\s+\d{1,2}\s+years?\s+(?:of\s+)?experience/i;
+
+function titleExp(title){
+  const t=String(title||"");
+  for(const [id,rx] of EXP_TITLE)if(rx.test(t))return id;
+  return "unknown";
+}
+function yearsText(e){return e.min==null?"":e.max>e.min?`${e.min}–${e.max} yrs`:`${e.min}${e.plus?"+":""} yrs`}
+function yearHits(title,desc){
+  const text=`${title||""} . ${desc||""}`;
+  const rx=/(\d{1,2})\s*(\+|plus)?\s*(?:(?:-|–|—|to)\s*(\d{1,2})\s*\+?)?\s*(?:years?|yrs?)\b/gi;
+  const hits=[];let m;
+  while((m=rx.exec(text))){
+    let min=Number(m[1]),max=m[3]?Number(m[3]):min;
+    if(min>25||max>25)continue;
+    if(max<min){const swap=min;min=max;max=swap}
+    const before=text.slice(Math.max(0,m.index-90),m.index);
+    const after=text.slice(m.index+m[0].length,m.index+m[0].length+70);
+    const near=`${before} ${m[0]} ${after}`;
+    const direct=/(?:years?|yrs?)\s*(?:of\s+|['’]\s*)?(?:[a-z][a-z-]*\s+){0,3}(?:experience|background|expertise)/i.test(`${m[0]} ${after}`)
+      || /(?:experience|background|expertise)\b.{0,50}(?:years?|yrs?)/i.test(before);
+    if(!(direct||EXP_GOOD.test(near)))continue;
+    if((!direct&&EXP_BAD.test(near))||EXP_AGE.test(near))continue;
+    hits.push({min,max,plus:!!m[2],direct});
+  }
+  if(!hits.length)return null;
+  const pool=hits.some(h=>h.direct)?hits.filter(h=>h.direct):hits;
+  return pool.sort((a,b)=>b.min-a.min)[0];
+}
+function expOf(j){
+  if(j._exp)return j._exp;
+  const level=titleExp(j.title),y=yearHits(j.title,j.description);
+  const bucket=!y?"none":y.min<=2?"0-2":y.min<=5?"3-5":y.min<=9?"6-9":"10+";
+  const e={level,bucket,min:y?y.min:null,max:y?y.max:null,plus:!!(y&&y.plus)};
+  e.chip=[level!=="unknown"?EXP_LABEL[level]:"",yearsText(e)].filter(Boolean).join(" · ");
+  e.why=[level!=="unknown"?"level from the job title":"",y?"years stated in the posting":""].filter(Boolean).join("; ")||"no experience signal found";
+  j._exp=e;return e;
+}
+
 /* ---------- score: title tag sets the base, extra title tags and description evidence nudge it up ---------- */
 function score(j){
   const T=norm(j.title),D=j._D||norm((j.description||"")+" "+(j.tags||[]).join(" "));
@@ -299,6 +361,16 @@ function tagOptions(first){
 }
 function fillCat(){$("#cat").innerHTML=tagOptions("All primary tags")}
 function fillTag(){$("#tag").innerHTML=tagOptions("Any tag")}
+function fillExperience(){
+  const c=tally(j=>expOf(j).level);
+  document.querySelector("#expdd .ddbody").innerHTML=DDTOOLS+EXP_LEVELS.map(([id,label])=>`<label><input type="checkbox" name="exp" value="${id}" checked> ${esc(label)} (${c[id]||0})</label>`).join("");
+}
+function fillYears(){
+  const c=tally(j=>expOf(j).bucket),cur=$("#expy").value;
+  const opts=[["0-2","0–2 years"],["3-5","3–5 years"],["6-9","6–9 years"],["10+","10+ years"],["none","Not stated"]];
+  $("#expy").innerHTML='<option value="">Any</option>'+opts.map(([v,l])=>`<option value="${v}">${l} (${c[v]||0})</option>`).join("");
+  if([...$("#expy").options].some(o=>o.value===cur))$("#expy").value=cur;
+}
 /* Start-date filter. Jobs with no stated start date are hidden whenever a start filter is on.
    "ASAP" counts as starting today. */
 function inStart(j,sel,from){
@@ -321,9 +393,10 @@ function fillLocations(){
 function fillCities(keep){const c={};JOBS.forEach(j=>{if(j.city&&inLoc(j)&&(!j.country||$("#nonus").checked))c[j.city]=(c[j.city]||0)+1});$("#city").innerHTML=opts("All cities",c);if(keep&&c[keep])$("#city").value=keep}
 const DDTOOLS='<div class="ddtools"><button type="button" data-chk="all">Select all</button><button type="button" data-chk="none">Clear all</button></div>';
 function clearFilters(){
-  $("#q").value="";["st","city","cat","tag","type","age","start","sort"].forEach(k=>{$("#"+k).selectedIndex=0});$("#sdate").value="";
+  $("#q").value="";["st","city","cat","tag","type","age","expy","start","sort"].forEach(k=>{$("#"+k).selectedIndex=0});$("#sdate").value="";
   $("#rem").checked=true;$("#only").checked=true;$("#eng").checked=false;$("#nonus").checked=false;
   document.querySelectorAll("[name=wp]").forEach(x=>x.checked=true);
+  document.querySelectorAll("[name=exp]").forEach(x=>x.checked=true);
   OFF.clear();OFFIND.clear();store.set("jobsrcoff",[]);store.set("jobindoff",[]);
   fillSources();fillIndustry();fillLocations();fillCities();saveFilters();render()}
 function fillSources(){$("#srcs").innerHTML='<label>Sources</label><details class="dd" id="srcdd"><summary>All</summary><div class="ddbody row">'+DDTOOLS+Object.entries(DATA.counts).map(([k,n])=>`<label><input type="checkbox" data-src="${esc(k)}" ${OFF.has(k)?"":"checked"}> ${esc(k)} (${n})</label>`).join("")+'</div></details>'}
@@ -335,6 +408,7 @@ function ddLabels(){
   const sum=(id,total,off)=>{const s=document.querySelector("#"+id+">summary");if(s)s.textContent=off?`${total-off} of ${total} selected`:"All"};
   const ks=Object.keys(DATA.counts);sum("srcdd",ks.length,ks.filter(k=>OFF.has(k)).length);
   const wp=[...document.querySelectorAll("[name=wp]")];sum("wpdd",wp.length,wp.filter(x=>!x.checked).length);
+  const ex=[...document.querySelectorAll("[name=exp]")];sum("expdd",ex.length,ex.filter(x=>!x.checked).length);
   const ik=[...document.querySelectorAll("[data-ind]")];sum("inddd",ik.length,ik.filter(x=>!x.checked).length);
 }
 function fmt(d){return new Date(d+"T12:00:00").toLocaleDateString([],{month:"short",day:"numeric",year:"numeric"})}
@@ -346,11 +420,12 @@ function card(j,gone){
   const when=[j.start?(j.start==="ASAP"?"Starts ASAP":"Starts "+fmt(j.start)):"",j.duration?"Duration "+j.duration:""].filter(Boolean).join(" · ");
   const saved=!!FAVS[j.id];
   const ids=j._tags&&j._tags.length?j._tags:["unclassified"];
+  const ex=expOf(j);
   return `<article class="card${gone?" gone":""}"><div>
     <h2><a href="${esc(safeUrl(j.url))}" target="_blank" rel="noopener">${esc(j.title)}</a></h2>
     <div class="meta">${esc(j.company)} · ${esc(where)}${j.posted?" · posted "+ago(j.posted):""}${j.pay?" · "+esc(j.pay):""}</div>
     ${when?`<div class="meta">${esc(when)}</div>`:""}
-    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&isNew(j)?'<span class="tag new">New</span>':""}${ids.map(id=>`<button class="tag cat" data-tagid="${id}" title="Show only ${esc(LABEL[id])} roles">${esc(LABEL[id])}</button>`).join("")}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
+    <div class="tags">${gone?'<span class="tag warn" title="This posting is no longer in the latest refresh. It may have been filled or removed.">! No longer listed</span>':""}${!gone&&isNew(j)?'<span class="tag new">New</span>':""}${ids.map(id=>`<button class="tag cat" data-tagid="${id}" title="Show only ${esc(LABEL[id])} roles">${esc(LABEL[id])}</button>`).join("")}${ex.chip?`<span class="tag" title="Experience: ${esc(ex.why)}">${esc(ex.chip)}</span>`:""}<span class="tag">${wl}</span><span class="tag">${esc(j.type)}</span><span class="tag">${esc(j.source)}</span></div>
   </div><div class="side"><button class="star" data-id="${esc(j.id)}" aria-pressed="${saved}" aria-label="${saved?"Remove from favorites":"Save to favorites"}">${saved?"★":"☆"}</button><small>Match Score</small><b>${j._score}</b><div class="bar"><i style="width:${j._score}%"></i></div></div></article>`}
 function elsewhere(q,city,st){
   const kw=q||"graphic designer",loc=city?`${city}, ${st}`:st;
@@ -371,13 +446,16 @@ function render(){
   if(TAB==="rank")return renderRank(upd);
   const q=$("#q").value.trim().toLowerCase(),st=$("#st").value,city=$("#city").value,type=$("#type").value,cat=$("#cat").value,tag=$("#tag").value,rem=$("#rem").checked,only=$("#only").checked,eng=$("#eng").checked,nonus=$("#nonus").checked;
   const age=$("#age").value,cutoff=age?new Date(Date.now()-Number(age)*864e5).toISOString().slice(0,10):"";
-  const startSel=$("#start").value,sdate=$("#sdate").value;
+  const startSel=$("#start").value,sdate=$("#sdate").value,expy=$("#expy").value;
   const wp=[...document.querySelectorAll("[name=wp]:checked")].map(x=>x.value);
+  const exps=[...document.querySelectorAll("[name=exp]:checked")].map(x=>x.value);
   ddLabels();
   elsewhere($("#q").value.trim(),city,st.replace(/^C:/,""));
   let r=JOBS.filter(j=>{
     if(TAB==="new"&&!isNew(j))return false;
     if(OFF.has(j.source)||(only&&j._off)||!wp.includes(j.workplace))return false;
+    const ex=expOf(j);
+    if(!exps.includes(ex.level)||(expy&&ex.bucket!==expy))return false;
     if(OFFIND.has(j.industry||"Not stated")||(!eng&&j._eng)||(!nonus&&j.country))return false;
     if(cutoff&&j.posted&&j.posted<cutoff)return false;
     if(!inStart(j,startSel,sdate))return false;
@@ -388,7 +466,7 @@ function render(){
     return true});
   r.sort($("#sort").value==="new"?(a,b)=>(b.posted||"").localeCompare(a.posted||"")||b._score-a._score:(a,b)=>b._score-a._score||(b.posted||"").localeCompare(a.posted||""));
   $("#status").textContent=TAB==="new"?`${r.length} of ${JOBS.filter(isNew).length} new roles · updated ${upd}`:`${r.length} of ${nonus?JOBS.length:JOBS.filter(j=>!j.country).length} roles · updated ${upd}`;
-  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):(TAB==="new"?'<div class="empty">No new listings right now. A role appears here on the day it first shows up in a refresh, then it moves to All roles.</div>':'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, turn a source back on, or clear the tag filters.<br><button id="clrf" class="clr">Clear filters</button></div>');
+  $("#list").innerHTML=r.length?r.map(j=>card(j)).join(""):(TAB==="new"?'<div class="empty">No new listings right now. A role appears here on the day it first shows up in a refresh, then it moves to All roles.</div>':'<div class="empty">No roles match these filters. Try another state, widen “Posted within”, change the experience level or years, turn a source back on, or clear the tag filters.<br><button id="clrf" class="clr">Clear filters</button></div>');
 }
 
 function renderFavs(upd){
@@ -444,6 +522,7 @@ function moveTag(id,delta){const i=ORDER.indexOf(id),j=i+delta;if(i<0||j<0||j>=O
 function exportSettings(){
   const f={};CTRL.forEach(k=>{const e=$("#"+k);f[k]=e.type==="checkbox"?e.checked:e.value});
   f.wp=[...document.querySelectorAll("[name=wp]")].map(x=>x.checked);
+  f.exp=[...document.querySelectorAll("[name=exp]")].map(x=>x.checked);
   const data={version:2,exported:new Date().toISOString(),favorites:Object.fromEntries(Object.entries(FAVS).map(([k,v])=>[k,stripInternal(v)])),filters:f,sources:[...OFF],industries:[...OFFIND],
     ranking:{order:ORDER,off:[...OFFRANK],phrases:PHR}};
   const a=document.createElement("a");
@@ -519,7 +598,7 @@ $("#list").addEventListener("drop",e=>{
 fetch("jobs.json?"+Date.now()).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
   DATA=d;JOBS=d.jobs;buildRx();calcWeights();calcDescWeights();JOBS.forEach(j=>{score(j);BYID[j.id]=j});
   $("#nonus").checked=!!store.get("jobfilters",{}).nonus;fillLocations();
-  fillCat();fillTag();
+  fillCat();fillTag();fillExperience();fillYears();
   fillSources();fillIndustry();const keepCity=restore();fillCities(keepCity);
   $("#filters").addEventListener("input",e=>{
     if(e.target.id==="q"){clearTimeout(QT);QT=setTimeout(()=>{saveFilters();render()},150);return}
