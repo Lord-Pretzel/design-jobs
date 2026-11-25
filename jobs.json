@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T23:40:11+00:00",
+ "updated": "2026-11-25T05:51:55+00:00",
  "counts": {
   "Aquent": 74,
-  "Company boards": 172,
+  "Company boards": 173,
   "Coroflot": 10,
   "We Work Remotely": 11,
   "Dribbble": 28,
@@ -399,7 +399,7 @@
    "industry": "Healthcare & Wellness",
    "posted": "2026-11-19",
    "pay": "",
-   "start": "2027-01-04",
+   "start": "",
    "duration": "",
    "tags": [
     "Design systems",
@@ -1044,7 +1044,7 @@
    "industry": "Not stated",
    "posted": "2026-11-09",
    "pay": "$60/hr",
-   "start": "2026-11-24",
+   "start": "2026-11-25",
    "duration": "",
    "tags": [
     "Illustration",
@@ -1294,7 +1294,7 @@
    "industry": "Education",
    "posted": "2026-11-02",
    "pay": "",
-   "start": "2026-11-09",
+   "start": "",
    "duration": "",
    "tags": [
     "Motion",
@@ -1464,7 +1464,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-11-23",
    "duration": "",
    "tags": [
     "Accessibility",
@@ -1537,7 +1537,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-29",
    "pay": "",
-   "start": "",
+   "start": "2026-11-30",
    "duration": "",
    "tags": [
     "Figma",
@@ -1563,7 +1563,7 @@
    "industry": "Not stated",
    "posted": "2026-10-28",
    "pay": "1-2% Equity",
-   "start": "",
+   "start": "2026-12-07",
    "duration": "",
    "tags": [
     "Prototyping",
@@ -1586,7 +1586,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-27",
    "pay": "",
-   "start": "",
+   "start": "2026-01-03",
    "duration": "",
    "tags": [
     "Branding",
@@ -1638,7 +1638,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-10-27",
    "pay": "$65.33/hr",
-   "start": "",
+   "start": "2026-11-16",
    "duration": "",
    "tags": [
     "Apparel",
@@ -1664,7 +1664,7 @@
    "industry": "Not stated",
    "posted": "2026-10-26",
    "pay": "",
-   "start": "",
+   "start": "2026-11-09",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1690,7 +1690,7 @@
    "industry": "Retail & E-commerce",
    "posted": "2026-10-20",
    "pay": "W2, hourly with Benefits",
-   "start": "",
+   "start": "2027-01-04",
    "duration": "",
    "tags": [
     "E-commerce",
@@ -1714,7 +1714,7 @@
    "industry": "Not stated",
    "posted": "2026-09-28",
    "pay": "W2",
-   "start": "",
+   "start": "2026-01-26",
    "duration": "",
    "tags": [
     "Figma",
@@ -1740,7 +1740,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-09-11",
    "pay": "$56.67/hr",
-   "start": "",
+   "start": "2026-11-29",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1766,7 +1766,7 @@
    "industry": "Consumer Goods",
    "posted": "2026-09-09",
    "pay": "",
-   "start": "",
+   "start": "2026-11-19",
    "duration": "",
    "tags": [
     "Packaging",
@@ -1818,7 +1818,7 @@
    "industry": "Not stated",
    "posted": "2026-08-25",
    "pay": "",
-   "start": "",
+   "start": "2026-10-05",
    "duration": "",
    "tags": [
     "Adobe CC",
@@ -1844,7 +1844,7 @@
    "industry": "Not stated",
    "posted": "2026-08-21",
    "pay": "",
-   "start": "",
+   "start": "ASAP",
    "duration": "",
    "tags": [
     "Branding",
@@ -2036,13 +2036,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:ogilvy:4757353005",
+   "id": "Company boards:ogilvy:4757364005",
    "source": "Company boards",
    "title": "2027 Ogilvy Creative Summer Internship",
    "company": "Ogilvy",
-   "url": "https://www.ogilvy.com/careers/4757353005?gh_jid=4757353005",
-   "city": "New York",
-   "state": "NY",
+   "url": "https://www.ogilvy.com/careers/4757364005?gh_jid=4757364005",
+   "city": "Chicago",
+   "state": "IL",
    "country": "",
    "workplace": "hybrid",
    "type": "Unknown",
@@ -2060,13 +2060,13 @@
    "first_seen": "2026-11-22"
   },
   {
-   "id": "Company boards:ogilvy:4757364005",
+   "id": "Company boards:ogilvy:4757353005",
    "source": "Company boards",
    "title": "2027 Ogilvy Creative Summer Internship",
    "company": "Ogilvy",
-   "url": "https://www.ogilvy.com/careers/4757364005?gh_jid=4757364005",
-   "city": "Chicago",
-   "state": "IL",
+   "url": "https://www.ogilvy.com/careers/4757353005?gh_jid=4757353005",
+   "city": "New York",
+   "state": "NY",
    "country": "",
    "workplace": "hybrid",
    "type": "Unknown",
@@ -2955,6 +2955,32 @@
    "first_seen": "2026-11-20"
   },
   {
+   "id": "Company boards:brex:8932572002",
+   "source": "Company boards",
+   "title": "Brand Design Manager, Growth",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8932572002?gh_jid=8932572002",
+   "city": "New York",
+   "state": "NY",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-11-05",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Figma",
+    "Adobe CC",
+    "Packaging",
+    "Motion"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you'll do Brex is looking for a Manager, Brand Design (Growth) to join the Design team, a cross-disciplinary group of creatives including product designers, brand desig \u2026 arting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
    "id": "Company boards:brex:8920564002",
    "source": "Company boards",
    "title": "Brand Design Manager, Growth",
@@ -2988,32 +3014,6 @@
    "url": "https://www.brex.com/careers/8932573002?gh_jid=8932573002",
    "city": "Seattle",
    "state": "WA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-11-05",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Branding",
-    "Figma",
-    "Adobe CC",
-    "Packaging",
-    "Motion"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you'll do Brex is looking for a Manager, Brand Design (Growth) to join the Design team, a cross-disciplinary group of creatives including product designers, brand desig \u2026 arting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Company boards:brex:8932572002",
-   "source": "Company boards",
-   "title": "Brand Design Manager, Growth",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8932572002?gh_jid=8932572002",
-   "city": "New York",
-   "state": "NY",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -3239,30 +3239,6 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:brex:8777953002",
-   "source": "Company boards",
-   "title": "Staff Product Designer",
-   "company": "Brex",
-   "url": "https://www.brex.com/careers/8777953002?gh_jid=8777953002",
-   "city": "Seattle",
-   "state": "WA",
-   "country": "",
-   "workplace": "onsite",
-   "type": "Unknown",
-   "industry": "Finance & Insurance",
-   "posted": "2026-09-02",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Packaging",
-    "Email"
-   ],
-   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do You will work with Product and Engineering teams to successfully communicate, evolve, and execute a strong product design standard that showcases Brex as a le \u2026 ng on products in both B2B and B2C companies Experience writing/editing/contributing to documentation, training materials, and help articles to support product launches Compensation The expected salary range for this role is $240,000 - $300,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
-   "first_seen": "2026-11-17"
-  },
-  {
    "id": "Company boards:brex:8777949002",
    "source": "Company boards",
    "title": "Staff Product Designer",
@@ -3294,6 +3270,30 @@
    "url": "https://www.brex.com/careers/8777938002?gh_jid=8777938002",
    "city": "New York",
    "state": "NY",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-09-02",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Figma",
+    "Packaging",
+    "Email"
+   ],
+   "description": "Why join us Brex is the intelligent finance platform that enables companies to spend smarter and move faster in more than 200 markets. By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly. Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most. Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek. Working at Brex allows you to push your limits, challenge the status quo, and collaborate with some of the brightest minds in the industry. We\u2019re committed to building a diverse team and inclusive culture and believe your potential should only be limited by how big you can dream. We make this a reality by empowering you with the tools, resources, and support you need to grow your career. Design at Brex Design at Brex creates the experiences that make complex systems feel effortless through thoughtful, scalable design. Whether crafting interfaces, shaping product strategy, or harnessing AI to empower our users, we obsess over quality and clarity. This is a team where creativity meets high craft, and where designers grow by building for ambitious customers. What you\u2019ll do You will work with Product and Engineering teams to successfully communicate, evolve, and execute a strong product design standard that showcases Brex as a le \u2026 ng on products in both B2B and B2C companies Experience writing/editing/contributing to documentation, training materials, and help articles to support product launches Compensation The expected salary range for this role is $240,000 - $300,000. However, the starting base pay will depend on a number of factors including the candidate\u2019s location, skills, experience, market demands, and internal pay parity. Depending on the position offered, equity and other forms of compensation may be provided as part of a total compensation package. Please be aware, job-seekers may be at risk of targeting by malicious actors looking for personal data. Brex recruiters will only reach out via LinkedIn or email with a brex.com domain. Any outreach claiming to be from Brex via other sources should be ignored.",
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "Company boards:brex:8777953002",
+   "source": "Company boards",
+   "title": "Staff Product Designer",
+   "company": "Brex",
+   "url": "https://www.brex.com/careers/8777953002?gh_jid=8777953002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -3678,6 +3678,51 @@
    ],
    "description": "Ready to do the most impactful work of your career? Coinbase is building the future of finance for people, institutions and their agents, with one place to trade crypto, equities, derivatives and prediction markets, use stablecoins, and connect AI agents with clear controls. The bar is high and the pace is intense, and we like it that way. This isn\u2019t a place for complacency. It\u2019s a place to be pushed past your perceived limits and do the best work of your career. If you\u2019re ready to build the future of finance with a championship team who refuse to settle for \u201cgood enough,\u201d you belong here. Coinbase is a remote-first, but not remote-only company. Expect to get together quarterly for in-person working sessions Coinbase's Financial Services & Loyalty team builds the products that make Coinbase the best place to deposit, hold, and grow your money. Our Yield & Investments team makes onchain lending, borrowing, and earning accessible to everyday customers. We're looking for a Staff Product Designer to own design strategy and lead hands-on execution across these experiences and their shared onchain foundations. This is an individual contributor role: you'll shape product direction alongside Product and Engineering leaders, lead through influence, and turn complex financial mechanics into clear, trustworthy experiences. What you'll do: Own the design vision and strategy for onchain Yield & Investments, connecting lending, borrowing, earning, and shared foundations into one cohesive customer experience. Lead ambiguous, zero-to-one initiatives from customer insight through prototypes \u2026 sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered consistent with applicable federal, state, and local laws. US Applicants: View Employee Rights , Know Your Rights , and E-Verify Notice of Participation. Accommodations: If you are an individual with a disability who needs a reasonable accommodation, email us your request and contact info at accommodations[at]coinbase.com. Need screen reading technology? Click here to download a free compatible screen reader and view the tutorial . Data Privacy & Arbitration: By submitting your application, you agree to our Candidate Privacy Notice . US applicants: By submitting your application, you agree to Arbitration of Disputes .",
    "first_seen": "2026-11-19"
+  },
+  {
+   "id": "Company boards:robinhood:8346570",
+   "source": "Company boards",
+   "title": "Creative Director, Brand (Art)",
+   "company": "Robinhood",
+   "url": "https://boards.greenhouse.io/robinhood/jobs/8346570?t=gh_src=&gh_jid=8346570",
+   "city": "Menlo Park",
+   "state": "CA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding",
+    "Art direction"
+   ],
+   "description": "Join us in building the future of finance. Our mission is to democratize finance for all. An estimated $124 trillion of assets will be inherited by younger generations in the next two decades. The largest transfer of wealth in human history. If you\u2019re ready to be at the epicenter of this historic cultural and financial shift, keep reading. About the team + role We are building an elite team, applying frontier technologies to the world's biggest financial problems. We're looking for bold thinkers. Sharp problem-solvers. Builders who are wired to make an impact. Robinhood isn't a place for complacency, it's where ambitious people do the best work of their careers. We're a high-performing, fast-moving team with ethics at the center of everything we do. Expectations are high, and so are the rewards. The Brand Creative Team is evolving and elevating how the Robinhood brand shows up and reaches people \u2013 capturing attention, earning trust, and driving our next phase of growth. The next generation is figuring out their money, and we want them to do it with Robinhood. That means disruptive, culturally relevant work that cuts through where they actually spend their time and wins them over. As Creative Director, Brand (Art) you will lead the work that defines the brand and changes how people see Robinhood. You will concept big ideas and own them from insight to execution, with story and exceptional design at the core. The bar is world-class: work that breaks through, commands attention and moves the business. This role is based in our New York, NY or Menlo Park, CA offices, with in-pe \u2026  forward to seeing your application. AI Usage Disclosure: Robinhood uses artificial intelligence (AI) tools to support parts of our recruiting process. These tools enhance the efficiency and consistency of our hiring process; however, all hiring decisions are made by our hiring teams. Application Limit: Candidates may submit no more than 3 applications in any 90 days. Within that time, they may apply to each role only once. Robinhood provides equal opportunity for all applicants, offers reasonable accommodations upon request, and complies with applicable equal employment and privacy laws. Inclusion is built into how we hire and work\u2014welcoming different backgrounds, perspectives, and experiences so everyone can do their best. Please review the Privacy Policy for your country of application.",
+   "first_seen": "2026-11-25"
+  },
+  {
+   "id": "Company boards:robinhood:8346575",
+   "source": "Company boards",
+   "title": "Creative Director, Brand (Copy)",
+   "company": "Robinhood",
+   "url": "https://boards.greenhouse.io/robinhood/jobs/8346575?t=gh_src=&gh_jid=8346575",
+   "city": "Menlo Park",
+   "state": "CA",
+   "country": "",
+   "workplace": "onsite",
+   "type": "Unknown",
+   "industry": "Finance & Insurance",
+   "posted": "2026-11-24",
+   "pay": "",
+   "start": "",
+   "duration": "",
+   "tags": [
+    "Branding"
+   ],
+   "description": "Join us in building the future of finance. Our mission is to democratize finance for all. An estimated $124 trillion of assets will be inherited by younger generations in the next two decades. The largest transfer of wealth in human history. If you\u2019re ready to be at the epicenter of this historic cultural and financial shift, keep reading. About the team + role We are building an elite team, applying frontier technologies to the world\u2019s biggest financial problems. We\u2019re looking for bold thinkers. Sharp problem-solvers. Builders who are wired to make an impact. Robinhood isn\u2019t a place for complacency, it\u2019s where ambitious people do the best work of their careers. We\u2019re a high-performing, fast-moving team with ethics at the center of everything we do. Expectations are high, and so are the rewards. The Brand Creative Team is evolving and elevating how the Robinhood brand shows up and reaches people \u2013 capturing attention, earning trust, and driving our next phase of growth. The next generation is figuring out their money, and we want them to do it with Robinhood. That means disruptive, culturally relevant work that cuts through where they actually spend their time and wins them over. As Creative Director, Brand (Copy) you will lead the work that defines the brand and changes how people see Robinhood. You will concept big ideas and own them from insight to execution, with story and great writing at the core. The bar is world-class: work that breaks through, commands attention and moves the business. This role is based in our New York, NY or Menlo Park, CA offices, with in-person \u2026  forward to seeing your application. AI Usage Disclosure: Robinhood uses artificial intelligence (AI) tools to support parts of our recruiting process. These tools enhance the efficiency and consistency of our hiring process; however, all hiring decisions are made by our hiring teams. Application Limit: Candidates may submit no more than 3 applications in any 90 days. Within that time, they may apply to each role only once. Robinhood provides equal opportunity for all applicants, offers reasonable accommodations upon request, and complies with applicable equal employment and privacy laws. Inclusion is built into how we hire and work\u2014welcoming different backgrounds, perspectives, and experiences so everyone can do their best. Please review the Privacy Policy for your country of application.",
+   "first_seen": "2026-11-25"
   },
   {
    "id": "Company boards:robinhood:8265130",
@@ -4233,14 +4278,14 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:samsara:8358689",
+   "id": "Company boards:samsara:8358687",
    "source": "Company boards",
    "title": "Lead Product Designer",
    "company": "Samsara",
-   "url": "https://www.samsara.com/company/careers/roles/8358689?gh_jid=8358689",
+   "url": "https://www.samsara.com/company/careers/roles/8358687?gh_jid=8358687",
    "city": "",
    "state": "",
-   "country": "Canada",
+   "country": "",
    "workplace": "remote",
    "type": "Unknown",
    "industry": "Technology & Software",
@@ -4256,7 +4301,7 @@
     "Web"
    ],
    "description": "Who we are Samsara (NYSE: IOT) is the pioneer of the Connected Operations\u2122 Cloud, which is a platform that enables organizations that depend on physical operations to harness Internet of Things (IoT) data to develop actionable insights and improve their operations. At Samsara, we are helping improve the safety, efficiency and sustainability of the physical operations that power our global economy. Representing more than 40% of global GDP, these industries are the infrastructure of our planet, including agriculture, construction, field services, transportation, and manufacturing \u2014 and we are excited to help digitally transform their operations at scale. Working at Samsara means you\u2019ll help define the future of physical operations and be on a team that\u2019s shaping an exciting array of product solutions, including Video-Based Safety, Vehicle Telematics, Apps and Driver Workflows, and Equipment Monitoring. As part of a recently public company, you\u2019ll have the autonomy and support to make an impact as we build for the long term. About this role: As a Lead Product Designer at Samsara, you'll own design for strategic initiatives within one of our product areas, building software that runs in the cab, the yard, the job site, and the dispatch floor, built with the people who use it. You'll frame the problem, design and build the experience across web and mobile, and carry it through launch and iteration with your product and engineering partners. You'll also engage directly with customers, bringing their feedback into your process throughout. This is a remote role open to candidates r \u2026 quire any reasonable accommodations throughout the recruiting process. Our Commitment to Authenticity We use Tofu , a fraud detection tool, to validate the authenticity of applications and protect against identity fraud. This ensures we are connecting with real people and allows us to prioritize genuine candidates. Please see Samsara\u2019s Candidate Privacy Notice for more information. Fraudulent Employment Offers Samsara is aware of scams involving fake job interviews and offers. Please know we do not charge fees to applicants at any stage of the hiring process. Official communication about your application will only come from emails ending in @samsara.com, @us-greenhouse-mail.io or @mail3.guide.co. For more information regarding fraudulent employment offers, please visit our blog post here .",
-   "first_seen": "2026-11-24"
+   "first_seen": "2026-11-25"
   },
   {
    "id": "Company boards:samsara:8358690",
@@ -4750,13 +4795,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792844002",
+   "id": "Company boards:twitch:8792309002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
-   "city": "Seattle",
-   "state": "WA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
+   "city": "San Francisco",
+   "state": "CA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -4775,13 +4820,13 @@
    "first_seen": "2026-11-17"
   },
   {
-   "id": "Company boards:twitch:8792309002",
+   "id": "Company boards:twitch:8792844002",
    "source": "Company boards",
    "title": "Director, Head of Creative",
    "company": "Twitch",
-   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792309002",
-   "city": "San Francisco",
-   "state": "CA",
+   "url": "https://job-boards.greenhouse.io/twitch/jobs/8792844002",
+   "city": "Seattle",
+   "state": "WA",
    "country": "",
    "workplace": "onsite",
    "type": "Unknown",
@@ -5837,32 +5882,6 @@
     "Print"
    ],
    "description": "Clean luxury. Better for you. At Everlane, we believe luxury should be as effortless as it is conscious. We partner with ethical factories, work with premium, sustainably sourced materials, and strive to leave the industry cleaner than we found it. There's still much to do, and we're excited to grow a team of motivated humans ready for the challenge. The journey toward better continues. At Everlane we are product leaders. We are building a first-class design team, and we are currently looking to fill a Designer level position that will focus on designing and developing great products for Women\u2019s Everlane Customers. This includes shirting, dresses, casual and tailored bottoms, as well as support on both technical and tailored outerwear. You must be passionate, enthusiastic, and rigorous, with an obsessive eye for detail. You will bring your designs to life by reviewing samples, attending fittings, and collaborating with product development, merchandising, and production teams. Our designs are seen by thousands of people and are consistently featured in popular social media influencers. Our brand ethos and design aesthetic is one of purity and simplicity; less is more. Our vision is to create perfect, timeless, modern & effortless pieces for every woman. We rely on a thorough editing process to get these essential pieces just right, from fabric to fit, to drape and construction. The ideal candidate graduated from a competitive design school and has 5+ years experience working with highly respected fashion houses. Your day-to-day: Report to and support the Womens Design Direct \u2026 sumer Strong communication and organizational skills An entrepreneurial mindset and a solution-oriented approach to challenges The Fine Print: HQ: This is a full-time role based at our LA office headquarters in the Art District neighborhood. California resident: At Everlane, we carefully consider a wide range of compensation factors, including your background and experience. These considerations can cause your compensation to vary. The annual compensation range for this role is $100-130k. This range is based on the LA geographic area and the actual pay may vary depending on your skills, qualifications, experience, and geographic location. Everlane is deeply committed to respecting and protecting your data privacy. For information on our privacy practices, please review our Privacy Policy .",
-   "first_seen": "2026-11-17"
-  },
-  {
-   "id": "Company boards:poshmark:c058d95f-99d3-4998-abc8-3e656a7c328b",
-   "source": "Company boards",
-   "title": "Director of Product Design",
-   "company": "Poshmark",
-   "url": "https://jobs.ashbyhq.com/poshmark/c058d95f-99d3-4998-abc8-3e656a7c328b",
-   "city": "",
-   "state": "",
-   "country": "",
-   "workplace": "unknown",
-   "type": "Full-time",
-   "industry": "Retail & E-commerce",
-   "posted": "2026-07-27",
-   "pay": "",
-   "start": "",
-   "duration": "",
-   "tags": [
-    "Figma",
-    "Prototyping",
-    "Design systems",
-    "Branding",
-    "E-commerce"
-   ],
-   "description": "ABOUT POSHMARK Poshmark is the leading fashion marketplace where style comes alive through discovery, self-expression, and human connection. Powered by a vibrant community of 165 million members, Poshmark brings real people and taste to shopping through a social experience shaped by shared discovery. Buying and selling fashion feels simple, joyful, and personal, while every item tells its own story. Poshmark empowers sellers to grow meaningful businesses, keeps fashion in circulation longer, and gives shoppers access to unique and trusted finds, from everyday pieces to one-of-a-kind vintage and luxury. ROLE OVERVIEW Poshmark is seeking a Director of Product Design to lead and elevate our end-to-end product design experience. This role will define how users discover, buy, interact and sell across our platform, shaping a seamless and engaging journey for both sides of our marketplace. As a key member of the product leadership team, you will report to the Chief Product Officer and set the design vision, guide a talented team of designers and managers, and partner closely with Product, Engineering, Customer Research, Analytics and Marketing to deliver thoughtful, high-impact experiences. This role requires a balance of strategic leadership, strong design craft, prior working experience utilizing AI-based design tools, and deep understanding of marketplace ecosystems. WHAT YOU\u2019LL DO Design Vision & Strategy - Define and drive a cohesive, forward-looking design vision across Poshmark\u2019s buyer and seller experiences ensuring that Poshmark\u2019s product stays current with evolving desig \u2026 g scale of design work and prototyping through use of AI-based design tools Marketplace Insight & User Empathy - Deep understanding of marketplace dynamics, including supply/demand balance, trust, and incentives - Empathy for diverse user segments, from casual participants to power sellers - Passion for community-driven, social product experiences NICE TO HAVE - Experience with live commerce, creator tools, or social engagement features - Background or experience with two-sided marketplaces, fashion, retail, resale, or lifestyle marketplaces WHY JOIN POSHMARK - Shape the future of social commerce at scale - Lead design for a deeply engaged, entrepreneurial community - Build experiences that directly impact users\u2019 livelihoods and success - Work alongside a collaborative, mission-driven team",
    "first_seen": "2026-11-17"
   },
   {
@@ -8309,30 +8328,29 @@
    "first_seen": "2026-11-21"
   },
   {
-   "id": "Himalayas:https://himalayas.app/companies/swca-environmental-consultants/jobs/graphic-designer-pursuits",
+   "id": "Himalayas:https://himalayas.app/companies/harman-international/jobs/intern-product-design",
    "source": "Himalayas",
-   "title": "Graphic Designer- Pursuits",
-   "company": "SWCA Environmental Consultants",
-   "url": "https://himalayas.app/companies/swca-environmental-consultants/jobs/graphic-designer-pursuits?utm_source=api",
+   "title": "Intern - Product Design",
+   "company": "HARMAN International",
+   "url": "https://himalayas.app/companies/harman-international/jobs/intern-product-design?utm_source=api",
    "city": "",
    "state": "",
    "country": "",
    "workplace": "remote",
-   "type": "Full-time",
+   "type": "Unknown",
    "industry": "Not stated",
-   "posted": "2026-11-20",
-   "pay": "",
+   "posted": "2026-11-24",
+   "pay": "USD 19-28 / hourly",
    "start": "",
    "duration": "",
    "tags": [
-    "Adobe CC",
-    "Packaging",
-    "Branding",
-    "Illustration",
-    "Print"
+    "Figma",
+    "Prototyping",
+    "Email",
+    "Presentations"
    ],
-   "description": "About the opportunity Do you love turning complex ideas into clear, compelling visuals that help win work? At SWCA, the Pursuit Graphic Designer plays a key role in transforming complex information into compelling visual communications that make our proposals and client presentations easier to understand, more compelling, and make a memorable impact. Working across pursuits in water resources and energy and infrastructure to habitat restoration and cultural resources, you'll use your creative expertise to help clients quickly understand our approach, trust our expertise, and recognize why SWCA is the right partner for their project. This role is for a designer who sees visual storytelling as a strategic part of the pursuit process. You\u2019ll work closely with a national team of proposal professionals, technical experts and client-focused leaders to understand what matters most to the client, identify the story we need to tell, and translate complex ideas into persuasive visual communications. Your work may include infographics, data visualizations, proposal layouts, organizational graphics, process diagrams, maps, interview client presentations, or interactive marketing materials. Whether you\u2019re simplifying a complicated technical approach, highlighting the experience of a project team, or helping bring a win strategy to life, your design work will help make our proposals easier to understand, more memorable, and more competitive. The role is a full-time position reporting to the Creative Services Manager. We offer flexibility to work remotely, in a hybrid capacity, or from an \u2026  design experience. Experience/background working in the environmental consulting industry or other science field Knowledge, Skills, and Abilities : Ability to translate complex information into clear, compelling visual communications. Strong verbal and written communication skills, with the ability to collaborate effectively with pursuit teams, marketing professionals, and technical subject matter experts to create persuasive visual storytelling solutions. Excellent creative thinking, organization, problem-solving, and time-management skills, with strong attention to detail. Ability to manage multiple priorities in a fast-paced, deadline-driven environment. Ability to work effectively both independently and collaboratively as part of a cross-functional team. Originally posted on Himalayas",
-   "first_seen": "2026-11-21"
+   "description": "Introduction: A Career at HARMAN Lifestyle We\u2019re a global, multi-disciplinary team that\u2019s putting the innovative power of technology to work and transforming tomorrow. As a member of HARMAN Lifestyle, you connect consumers with the power of superior sound. Contribute your talents to high-end, esteemed brands like JBL, Mark Levinson, Roon, Revel, Denon, and Bowers & Wilkins Unite your passion for audio innovation with high-tech product development Create pitch-perfect, cutting-edge technology that elevates the listening experience About the Role HARMAN's Software Experiences Business Unit (SEBU) builds software products that connect people to music. Our portfolio includes Roon, the leading music library management and playback platform for audiophiles, alongside new music products currently in development. In this role you will help our product teams understand the people we build for. You will run competitive and user research across music discovery, streaming, and short-form content, sit inside the day-to-day work of a product team, and bring back the language, habits, and unmet needs of a younger audience in a form the team can act on. This is a paid internship, and you will work as a member of the team rather than an observer. Length of the internship is dependent on when your new hire onboarding happens, but a typical program is 12-weeks. You will join standups and reviews, own your own research threads, and present what you learn directly to the people making product decisions. How You'll Make An Impact Work as an embedded member of the team: join standups, design and  \u2026  qualified applicants will receive consideration for employment without regard to race, religion, color, national origin, gender (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, or other applicable legally protected characteristics.HARMAN attracts, hires, and develops employees based on merit, qualifications and job-related performance.() HARMAN is committed to providing reasonable accommodations to applicants with disabilities. If you need assistance or an accommodation during the application process, please contact us at . Requests will be considered on a case-by-case basis in accordance with applicable law. Originally posted on Himalayas",
+   "first_seen": "2026-11-25"
   }
  ]
 }
