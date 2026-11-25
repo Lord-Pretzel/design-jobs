@@ -800,7 +800,17 @@ def fetch_jobicy():
     return [j for j in (normalize(d, "Jobicy") for d in out) if j and j["title"]]
 
 
-HIMALAYAS_SEARCHES = [("designer", 3), ("design", 2)]
+# Each query is paged newest-first until it reaches postings older than
+# HIMALAYAS_DAYS (or HIMALAYAS_MAX_PAGES, whichever comes first). A fixed page
+# count only ever saw the last few days, so a posting from six weeks ago that is
+# still open never made it in. Page size is 20.
+HIMALAYAS_DAYS = 75
+HIMALAYAS_MAX_PAGES = 25
+HIMALAYAS_SEARCHES = [
+    "graphic designer", "designer", "ux designer", "ui designer",
+    "product designer", "brand designer", "visual designer", "web designer",
+    "motion designer", "digital designer", "art director", "creative director",
+]
 
 
 def fetch_himalayas():
@@ -809,8 +819,12 @@ def fetch_himalayas():
     Links use the posting's applicationLink unchanged, per their API terms.
     """
     out, seen = [], set()
-    for query, pages in HIMALAYAS_SEARCHES:
-        for page in range(1, pages + 1):
+    dropped = {"title": [], "location": []}
+    from urllib.parse import quote_plus
+    floor = datetime.now(timezone.utc).timestamp() - HIMALAYAS_DAYS * 86400
+    for query in HIMALAYAS_SEARCHES:
+        query = quote_plus(query)
+        for page in range(1, HIMALAYAS_MAX_PAGES + 1):
             url = (f"https://himalayas.app/jobs/api/search?q={query}"
                    f"&country=US&sort=recent&page={page}")
             try:
@@ -826,9 +840,11 @@ def fetch_himalayas():
                 title = clean(r.get("title", ""))
                 desc = r.get("description", "")
                 if not DESIGN_TITLE_RE.search(title):
+                    dropped["title"].append(title)
                     continue
                 locs = r.get("locationRestrictions") or []
                 if locs and not any(looks_us(x) for x in locs):
+                    dropped["location"].append(f"{title} {locs}")
                     continue
                 cur = r.get("currency") or ""
                 lo, hi = money(r.get("minSalary")), money(r.get("maxSalary"))
@@ -846,9 +862,19 @@ def fetch_himalayas():
                     "salary": salary, "description": desc, "date": date,
                 })
             time.sleep(0.5)
-            if len(jobs) < 20:
-                break
-    return [j for j in (normalize(d, "Himalayas") for d in out) if j and j["title"]]
+            stamps = [r["pubDate"] for r in jobs
+                      if isinstance(r.get("pubDate"), (int, float))]
+            if not jobs or (stamps and max(stamps) < floor):
+                break  # out of results, or this whole page is older than we keep
+    kept = [j for j in (normalize(d, "Himalayas") for d in out) if j and j["title"]]
+    # Shows up in the Actions log so a missing job can be traced to its filter.
+    print(f"Himalayas: {len(seen)} seen, {len(dropped['title'])} dropped on title, "
+          f"{len(dropped['location'])} on location, {len(out) - len(kept)} in normalize, "
+          f"{len(kept)} kept")
+    for why, rows in dropped.items():
+        for t in rows[:60]:
+            print(f"  Himalayas dropped ({why}): {t}")
+    return kept
 
 
 # ---------------------------------------------------------------------------
