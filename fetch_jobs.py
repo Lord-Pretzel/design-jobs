@@ -731,12 +731,31 @@ def fetch_dribbble():
     return [j for j in (normalize(d, "Dribbble") for d in out) if j and j["title"]]
 
 
+REMOTEOK_TAGS = ("design", "ui", "ux", "graphic-design", "illustrator", "product-design")
+
+
 def fetch_remoteok():
     """Remote OK public API. The footer links back to Remote OK as required."""
-    out = []
-    for r in get_json("https://remoteok.com/api"):
+    out, seen = [], set()
+    # The bare API is just the newest ~100 postings across every category, so a
+    # design role is easily crowded out. Tag feeds go straight to design work.
+    urls = ["https://remoteok.com/api"] + [
+        f"https://remoteok.com/api?tag={t}" for t in REMOTEOK_TAGS]
+    rows = []
+    for i, url in enumerate(urls):
+        try:
+            rows += get_json(url)
+        except Exception as e:
+            if i == 0:
+                raise
+            print(f"Remote OK {url} failed: {e}", file=sys.stderr)
+        time.sleep(1)
+    for r in rows:
         if not isinstance(r, dict) or not r.get("id") or not r.get("position"):
             continue
+        if r["id"] in seen:
+            continue
+        seen.add(r["id"])
         title = clean(r.get("position", ""))
         tags = " ".join(str(t).lower() for t in (r.get("tags") or []))
         # Remote OK tags nearly every posting "design", so filter on the title.
@@ -761,6 +780,7 @@ def fetch_remoteok():
 
 
 JOBICY_INDUSTRIES = ("design-multimedia", "web-app-design")
+JOBICY_TAGS = ("designer", "graphic", "ux", "ui")  # keyword searches on top
 
 
 def fetch_jobicy():
@@ -770,9 +790,18 @@ def fetch_jobicy():
     their API terms require.
     """
     out, seen = [], set()
-    for industry in JOBICY_INDUSTRIES:
-        url = f"https://jobicy.com/api/jobs?count=100&geo=usa&industry={industry}"
-        for r in get_json(url).get("jobs", []):
+    queries = [f"industry={i}" for i in JOBICY_INDUSTRIES] + [
+        f"tag={t}" for t in JOBICY_TAGS]
+    for n, q in enumerate(queries):
+        url = f"https://jobicy.com/api/jobs?count=100&geo=usa&{q}"
+        try:
+            jobs = get_json(url).get("jobs", [])
+        except Exception as e:
+            if n < len(JOBICY_INDUSTRIES):
+                raise
+            print(f"Jobicy {q} failed: {e}", file=sys.stderr)
+            jobs = []
+        for r in jobs:
             jid = str(r.get("id", ""))
             if not jid or jid in seen:
                 continue
@@ -1138,6 +1167,9 @@ def fetch_coroflot():
     return [j for j in (normalize(d, "Coroflot") for d in kept) if j and j["title"]]
 
 
+# Pages of 50 per search. Each page is one API call and the free tier has a
+# monthly cap, so raise this (repo variable ADZUNA_PAGES) only if you have room.
+ADZUNA_PAGES = int(os.environ.get("ADZUNA_PAGES", "2"))
 ADZUNA_SEARCHES = ["graphic designer", "ux designer", "ui designer",
                    "product designer", "packaging designer", "web designer"]
 # Recruiters are found by company name: Adzuna's search has a company filter.
@@ -1149,7 +1181,7 @@ def fetch_adzuna():
     """Adzuna API (free key). About 17 calls per run, well inside the free quota."""
     from urllib.parse import urlencode
     app = {"app_id": os.environ["ADZUNA_APP_ID"], "app_key": os.environ["ADZUNA_APP_KEY"]}
-    jobs = [({"what": w}, 2) for w in ADZUNA_SEARCHES]
+    jobs = [({"what": w}, ADZUNA_PAGES) for w in ADZUNA_SEARCHES]
     jobs += [({"what": "design", "company": c}, 1) for c in ADZUNA_RECRUITERS]
     seen, out, errors = set(), [], 0
     for extra, pages in jobs:
@@ -1189,6 +1221,27 @@ def fetch_adzuna():
     return [j for j in (normalize(d, "Adzuna") for d in out) if j and j["title"]]
 
 
+# These feeds only ever show the newest handful of postings (an RSS window, one
+# page of results), so a role scrolls off them within days even though it is
+# still open. Keep what we saw earlier for CARRY_DAYS after it last appeared.
+CARRY_SOURCES = {"We Work Remotely", "Dribbble", "Remote OK", "Jobicy",
+                 "Coroflot", "Adzuna"}
+CARRY_DAYS = 21
+
+
+def carried(name, fresh_ids, prev_jobs, today):
+    limit = (datetime.fromisoformat(today).date()
+             - timedelta(days=CARRY_DAYS)).isoformat()
+    keep = []
+    for jid, old in prev_jobs.items():
+        if old.get("source") != name or jid in fresh_ids:
+            continue
+        seen = old.get("last_seen") or old.get("first_seen") or today
+        if seen >= limit:
+            keep.append({**old, "last_seen": seen})
+    return keep
+
+
 # Recruiter sites (Creative Circle and others) come in through Adzuna above.
 SOURCES = {
     "Aquent": fetch_aquent,
@@ -1217,6 +1270,8 @@ def main():
     for name, fn in SOURCES.items():
         try:
             got = fn()
+            if name in CARRY_SOURCES:
+                got = got + carried(name, {j["id"] for j in got}, prev_jobs, today)
         except Exception as e:  # keep yesterday's data for a source that fails
             print(f"{name} failed: {e}", file=sys.stderr)
             got = [j for j in prev_jobs.values() if j["source"] == name]
@@ -1231,6 +1286,7 @@ def main():
         for j in got:
             old = prev_jobs.get(j["id"])
             j["first_seen"] = old["first_seen"] if old else (today if prev else "")
+            j.setdefault("last_seen", today)
             jobs[j["id"]] = j
 
     # Keep the file small: the page's "Posted within" filter only goes back to
